@@ -1,0 +1,33 @@
+	Conversion Board Game:
+
+		Objectives:
+			Objective cards:
+				2 Fire	2 Water	2 Air	2 Earth
+		
+		Turn:
+			Generate an element.
+			Place elements in worker spots to do different conversions:
+				Double an element
+				Fire to Air
+				Air to Water
+				Water to Earth
+				Earth to Fire
+				Fire to Earth
+				Earth to Water
+				Water to Air
+				Air to Fire
+				
+				Fair trade:
+					Put one element out for someone to trade with you.
+			
+			Foregoing placement for the round allows a player to turn in objectives, draw a new objective, or buy elements.
+		
+		End condition:
+				Buy Out:		A player is out of objective cards, with at least 10 currency.
+				Retire:			A player is out of objective cards, has completed 5 objectives and is out of elements.
+				Shortage:		No elements can be collected.
+				Monopoly:		A player has all of one element.
+				Market Crash:	No currency is available.
+		
+		Win condition:
+			Have more currency than the other players.

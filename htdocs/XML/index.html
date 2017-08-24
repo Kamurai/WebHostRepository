@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<!-- saved from url=(0023)./ -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
+<font color="white">
+
+<!--Overall body-->
+<body id="mainbody" bgcolor="#000000" link="#C0C0C0" vlink="#808080" alink="#FF0000">
+	<link href="./moo.css" rel="stylesheet" type="text/css">
+	<!--Centered division.-->
+	<div align="center">
+		<!--Table to place all subsections-->
+		<table width="100%" cellpadding="0px" cellspacing="0px" border="0" align="center">
+			<tbody>
+				<!--Top Row-->
+				<tr>
+					<!--Center Sub Section-->
+					<td class="td-header" colspan="3" alt="" valign="top">
+						<p align="center">
+							<!--Primary Header: Main Splash / Logo-->
+							<img id="logo" width="100%" alt="" border="0" align="center" vspace="0" hspace="0">
+							<br>
+						</p>
+					</td>
+				</tr>
+				<!--2nd Row-->
+				<tr>
+					<!--NavBar-->
+					<td class="td-navbar" colspan="3" alt="">
+						<div>
+							<ul id="list-nav">
+								<li id="navlist">
+								</li>
+							</ul>
+					   </div>
+					</td>
+				</tr>				
+				<!--3rd Row-->
+				<tr>
+					<!--Left Sub Section-->
+					<td class="td-left" valign="top">
+						<div align="center">
+							<div class="left-box">
+								<div class="navlinks">
+									<h4>
+										Navigation
+									</h4>
+									<span class="navlink">
+										<a href="./AboutUs.html">About Us</a>
+									</span>
+									<br>
+									<span class="navlink">
+										<a href="./Affiliation.html">HTKB Affiliations</a>
+									</span>
+									<br>
+									<span class="navlink">
+										<a href="./Minecraft.html">Minecraft!</a>
+									</span>
+									<br>
+									<span class="navlink">
+										<a href="./PublicProjects.html">Public Projects</a>
+									</span>
+									<br>
+									<span class="navlink">
+										<a href="./MemberPages.html">Member Pages</a>
+									</span>
+									<br>	
+								</div>
+							</div>
+						</div>
+					</td>
+					<!--Center Sub Section-->
+					<td class="td-content">
+						<div align="center">
+							<div class="content-box">
+								<div>
+									<title>HTKB Home Page</title>
+									<h2>
+										Welcome to the House That Kamurai Built!
+									</h2>
+									<p align="left">
+										The House That Kamurai Built is an 
+										entertainment company with the primary 
+										focus of increasing awesome by stimulating 
+										intelligent conversation and entertainment 
+										via discussion and game design. <br>
+										Increase the Awesome with us!<br>
+									</p>
+								</div>
+								<br>
+								<br>
+							</div>
+						</div>
+					</td>
+					<!--Right Sub Section-->
+					<td class="td-right" valign="top">
+						<div align="center">
+							<div class="right-box">
+								<h4>
+									Information
+								</h4>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<!--4th Row-->
+				<tr>
+					<!--Center Sub Section-->
+					<td class="td-footer" colspan="3">
+						<div align="center">
+							<div id="footer" align="center" class="footer-box">
+							</div>
+							<div id="gdr" align="center" class="footer-box">
+							</div>
+							<div id="winrar" align="center" class="footer-box">
+							</div>
+							<div id="webadmin" align="left" font size="1">
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<script>
+		xmlhttp=new XMLHttpRequest();
+		xmlhttp.open("GET","./Universal.xml",false);
+		xmlhttp.send();
+		xmlDoc=xmlhttp.responseXML;
+		
+		//logo
+		document.getElementById("logo").src=xmlDoc.getElementsByTagName("logo")[0].childNodes[0].nodeValue;
+		
+		//navbar
+		x=xmlDoc.getElementsByTagName("navlist")[0].childNodes;
+		for (i=0;i<4;)
+		{ 
+			//Process only element nodes (type 1) 
+			document.getElementById("navlist").innerHTML+="<a href='" + xmlDoc.getElementsByTagName("url")[i].childNodes[0].nodeValue + "'>" + xmlDoc.getElementsByTagName("txt")[i].childNodes[0].nodeValue + "</a>";
+			i++;
+		}
+		
+		
+		
+		//footer
+		document.getElementById("footer").innerHTML+=xmlDoc.getElementsByTagName("footer")[0].childNodes[0].nodeValue;
+		//winrar
+		document.getElementById("winrar").innerHTML+=xmlDoc.getElementsByTagName("winrar")[0].childNodes[0].nodeValue;
+		//gdr
+		document.getElementById("gdr").innerHTML+=xmlDoc.getElementsByTagName("gdr")[0].childNodes[0].nodeValue;
+		
+		//webadmin
+		document.getElementById("webadmin").innerHTML+=xmlDoc.getElementsByTagName("webadmin")[0].childNodes[0].nodeValue;
+		
+	</script>
+	
+	
+</font></body></html>

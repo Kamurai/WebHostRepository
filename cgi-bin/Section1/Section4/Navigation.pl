@@ -1,0 +1,56 @@
+#!"C:\xampp\perl\bin\perl.exe"
+use strict;
+use warnings;
+##  Writes the navigation content of the webpage
+
+my $Path = $ARGV[0];
+my $DownPath = $ARGV[1];
+
+print "<span class='navlink'>";
+    print "<a href='".$Path."Section1/Project1.html'>Basic HTML</a>";
+print "</span>";
+print "<br>";
+print "<span class='navlink'>";
+    print "<a href='".$Path."Section1/Project1.php'>PHP</a>";
+print "</span>";
+print "<br>";
+print "<span class='navlink'>";
+    print "<a href='".$Path."Section1/Section2/Index.shtml'>Javascript</a>";
+print "</span>";
+print "<br>";
+print "<span class='navlink'>";
+    print "<a href='".$Path."Section1/Project3.shtml'>Perl</a>";
+print "</span>";
+print "<br>";
+print "<span class='navlink'>";
+    print "<a href='".$Path."Section1/Section4/Index.html'>Java</a>";
+    print "<h5>";
+        print "<span class='navlink'>";
+            print "<a href='http://htkb.dyndns.org:8080/JSPApplication/Section1/Section4/Project1.jsp'>JSP Programming</a>";
+        print "</span>";
+        print "<span class='navlink'>";
+            print "<a href='http://htkb.dyndns.org:8080/JSFApplication/Section1/Section4/Project2.xhtml'>JSF Programming</a>";
+        print "</span>";
+    print "</h5>";
+print "</span>";
+print "<br>";
+print "<span class='navlink'>";
+    print "<a href='".$Path."Section1/Section5/Index.shtml'>ASP.Net</a>";
+print "</span>";
+print "<br>";
+print "<span class='navlink'>";
+    print "<a href='".$Path."Section1/Section6/Index.shtml'>Databases</a>";
+print "</span>";
+print "<br>";
+print "<span class='navlink'>";
+    print "<a href='".$Path."Section1/Project7.shtml'>HTML5</a>";
+print "</span>";
+print "<br>";
+print "<span class='navlink'>";
+    print "<a href='".$Path."Section1/Project8.shtml'>XSL</a>";
+print "</span>";
+print "<br>";
+print "<span class='navlink'>";
+    print "<a href='".$Path."Section1/Project9.shtml'>XML DOM</a>";
+print "</span>";
+print "<br>";
