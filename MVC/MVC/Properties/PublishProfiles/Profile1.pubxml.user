@@ -67,7 +67,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/10/2016 10:15:28</publishTime>
     </File>
     <File Include="bin/MVC.dll">
-      <publishTime>04/13/2017 21:50:22</publishTime>
+      <publishTime>06/24/2017 16:35:43</publishTime>
     </File>
     <File Include="bin/MySql.Data.dll">
       <publishTime>04/01/2016 11:16:29</publishTime>
@@ -148,7 +148,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/21/2016 16:52:16</publishTime>
     </File>
     <File Include="Content/Main.css">
-      <publishTime>04/14/2017 15:58:40</publishTime>
+      <publishTime>06/28/2017 20:00:02</publishTime>
     </File>
     <File Include="Content/moo.css">
       <publishTime>10/13/2016 03:45:36</publishTime>
@@ -157,19 +157,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/13/2016 03:45:49</publishTime>
     </File>
     <File Include="Content/Section1/Section1.css">
-      <publishTime>04/14/2017 01:37:33</publishTime>
+      <publishTime>06/24/2017 17:11:08</publishTime>
     </File>
     <File Include="Content/Section2/moo.css">
       <publishTime>10/13/2016 03:45:19</publishTime>
     </File>
     <File Include="Content/Section2/Section2.css">
-      <publishTime>04/14/2017 01:37:49</publishTime>
+      <publishTime>06/28/2017 20:00:35</publishTime>
     </File>
     <File Include="Content/Section3/moo.css">
       <publishTime>10/13/2016 03:46:02</publishTime>
     </File>
     <File Include="Content/Section3/Section3.css">
-      <publishTime>04/14/2017 01:37:57</publishTime>
+      <publishTime>06/28/2017 20:01:06</publishTime>
     </File>
     <File Include="Content/Site.css">
       <publishTime>03/10/2016 09:15:23</publishTime>
@@ -331,7 +331,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/10/2016 09:33:21</publishTime>
     </File>
     <File Include="Views/Main/Minecraft.cshtml">
-      <publishTime>04/11/2017 17:51:40</publishTime>
+      <publishTime>06/24/2017 09:03:44</publishTime>
     </File>
     <File Include="Views/Main/PublicProjects.cshtml">
       <publishTime>03/10/2016 09:33:21</publishTime>
@@ -421,19 +421,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/11/2017 17:51:39</publishTime>
     </File>
     <File Include="Views/Section1_6/Project1.cshtml">
-      <publishTime>04/11/2017 17:51:39</publishTime>
+      <publishTime>06/24/2017 15:15:26</publishTime>
     </File>
     <File Include="Views/Section1_6/Project2.cshtml">
       <publishTime>04/11/2017 17:51:39</publishTime>
     </File>
     <File Include="Views/Section1_6/Project3.cshtml">
-      <publishTime>04/11/2017 17:51:39</publishTime>
+      <publishTime>06/24/2017 15:17:00</publishTime>
     </File>
     <File Include="Views/Section1_6/Project4.cshtml">
-      <publishTime>04/11/2017 17:51:39</publishTime>
+      <publishTime>06/28/2017 22:32:47</publishTime>
     </File>
     <File Include="Views/Section1_6/Project5.cshtml">
-      <publishTime>04/11/2017 17:51:39</publishTime>
+      <publishTime>06/24/2017 15:17:00</publishTime>
     </File>
     <File Include="Views/Section1_6/Project6.cshtml">
       <publishTime>03/10/2016 09:46:15</publishTime>
@@ -727,55 +727,55 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/10/2016 10:15:32</publishTime>
     </File>
     <File Include="Views/Shared/Section1/Section2/_Section1_2Layout.cshtml">
-      <publishTime>04/11/2017 17:15:25</publishTime>
+      <publishTime>06/28/2017 20:08:54</publishTime>
     </File>
     <File Include="Views/Shared/Section1/Section4/_Section1_4Layout.cshtml">
-      <publishTime>04/11/2017 17:21:08</publishTime>
+      <publishTime>06/28/2017 20:08:54</publishTime>
     </File>
     <File Include="Views/Shared/Section1/Section5/_Section1_5Layout.cshtml">
-      <publishTime>04/11/2017 17:18:23</publishTime>
+      <publishTime>06/28/2017 20:08:54</publishTime>
     </File>
     <File Include="Views/Shared/Section1/Section6/_Section1_6Layout.cshtml">
-      <publishTime>04/11/2017 17:16:48</publishTime>
+      <publishTime>06/28/2017 20:08:54</publishTime>
     </File>
     <File Include="Views/Shared/Section1/_Section1Layout.cshtml">
-      <publishTime>04/11/2017 17:14:12</publishTime>
+      <publishTime>06/28/2017 20:08:54</publishTime>
     </File>
     <File Include="Views/Shared/Section2/Section1/_Section2_1Layout.cshtml">
-      <publishTime>04/11/2017 17:22:33</publishTime>
+      <publishTime>06/28/2017 20:08:54</publishTime>
     </File>
     <File Include="Views/Shared/Section2/Section4/_Section2_4Layout.cshtml">
-      <publishTime>04/11/2017 17:23:44</publishTime>
+      <publishTime>06/28/2017 20:08:54</publishTime>
     </File>
     <File Include="Views/Shared/Section2/Section5/Section1/_Section2_5_1Layout.cshtml">
-      <publishTime>04/11/2017 17:29:04</publishTime>
+      <publishTime>06/28/2017 20:08:54</publishTime>
     </File>
     <File Include="Views/Shared/Section2/Section5/Section2/_Section2_5_2Layout.cshtml">
-      <publishTime>04/11/2017 17:26:21</publishTime>
+      <publishTime>06/28/2017 20:08:54</publishTime>
     </File>
     <File Include="Views/Shared/Section2/Section5/Section3/_Section2_5_3Layout.cshtml">
-      <publishTime>04/11/2017 17:19:54</publishTime>
+      <publishTime>06/28/2017 20:08:54</publishTime>
     </File>
     <File Include="Views/Shared/Section2/Section5/Section4/_Section2_5_4Layout.cshtml">
-      <publishTime>04/11/2017 16:54:16</publishTime>
+      <publishTime>06/28/2017 20:08:54</publishTime>
     </File>
     <File Include="Views/Shared/Section2/Section5/_Section2_5Layout.cshtml">
-      <publishTime>04/11/2017 17:30:17</publishTime>
+      <publishTime>06/28/2017 20:08:54</publishTime>
     </File>
     <File Include="Views/Shared/Section2/Section6/Section2/Section2/_Section2_6_2_2Layout.cshtml">
-      <publishTime>04/11/2017 15:43:19</publishTime>
+      <publishTime>06/28/2017 20:08:54</publishTime>
     </File>
     <File Include="Views/Shared/Section2/Section6/Section2/_Section2_6_2Layout.cshtml">
-      <publishTime>04/11/2017 16:49:56</publishTime>
+      <publishTime>06/28/2017 20:08:54</publishTime>
     </File>
     <File Include="Views/Shared/Section2/Section6/_Section2_6Layout.cshtml">
-      <publishTime>04/11/2017 17:13:06</publishTime>
+      <publishTime>06/28/2017 20:08:54</publishTime>
     </File>
     <File Include="Views/Shared/Section2/_Section2Layout.cshtml">
-      <publishTime>04/11/2017 17:10:19</publishTime>
+      <publishTime>06/28/2017 20:08:54</publishTime>
     </File>
     <File Include="Views/Shared/Section3/_Section3Layout.cshtml">
-      <publishTime>04/11/2017 16:57:04</publishTime>
+      <publishTime>06/28/2017 20:05:25</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
       <publishTime>03/10/2016 09:15:31</publishTime>
@@ -784,7 +784,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/10/2016 09:15:32</publishTime>
     </File>
     <File Include="Views/Shared/_MainLayout.cshtml">
-      <publishTime>04/14/2017 01:52:14</publishTime>
+      <publishTime>06/24/2017 17:07:26</publishTime>
     </File>
     <File Include="Views/SQLServer/Create.cshtml">
       <publishTime>03/10/2016 16:03:13</publishTime>
@@ -808,7 +808,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/10/2016 09:15:23</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>09/28/2016 03:45:19</publishTime>
+      <publishTime>06/24/2017 16:59:59</publishTime>
     </File>
   </ItemGroup>
 </Project>

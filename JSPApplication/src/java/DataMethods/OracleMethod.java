@@ -60,7 +60,7 @@ public class OracleMethod
             sqlStatement += "color ";
         }
 
-        sqlStatement += "from test where ";        
+        sqlStatement += "from OracleTests where ";        
         
         if(col <= 0)
         {

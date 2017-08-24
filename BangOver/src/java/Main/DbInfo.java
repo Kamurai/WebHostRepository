@@ -11,57 +11,49 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 /**
- *
  * @author Kamurai
  */
 public class DbInfo 
 {
     private String driver;
-    private String url;
-    private String dbName;
-    private String dbUsername;
-    private String dbPassword;
-    private Connection connect;
-    
-    public DbInfo()
-    {
-        driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-        //url = "jdbc:sqlserver://localhost:1433";
-        url = "jdbc:sqlserver://localhost\\SQLSERVER";
-        dbName = ";DatabaseName=BangOver";
-        dbUsername = "SA";
-        dbPassword = "yellow23";
-        connect = null;
-    }
-    
     public String getDriver()
     {
         return driver;
     }
-    
+    private String url;
     public String getUrl()
     {
         return url;
     }
-    
+    private String dbName;
     public String getDbName()
     {
         return dbName;
     }
-    
+    private String dbUsername;
     public String getDbUsername()
     {
         return dbUsername;
     }
-    
+    private String dbPassword;
     public String getDbPassword()
     {
         return dbPassword;
     }
-    
+    private Connection connect;
     public Connection getConnect()
     {
         return connect;
+    }
+    
+    public DbInfo()
+    {
+        driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
+        url = "jdbc:sqlserver://localhost\\SQLSERVER";
+        dbName = ";DatabaseName=Over";
+        dbUsername = "SA";
+        dbPassword = "yellow23";
+        connect = null;
     }
     
     public Connection openConnection()

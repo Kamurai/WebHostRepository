@@ -6,14 +6,12 @@
       xmlns:c="http://java.sun.com/jsp/jstl/core"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
     <c:choose>
-        <c:when test="#{LoginBean.getLoggedIn()}">
+        <c:when test="#{LoginBean.currentUser.loggedOn}">
             <title>
                 Bang Over!
             </title>
             <h2>
-                <u>
-                    The User List!
-                </u>
+                The User List!
             </h2>
             <p id="idCenterContent">
                 This is a list of the users on Bang Over.<br/>
@@ -30,78 +28,95 @@
                         <td>Users Online</td>
                     </tr>
                     <!--User Counts -->
-                    <!--<c:set value="#{BangBean.setUserCounts()}" var="tickle"></c:set>-->
+                    <!--<c:set value="#{ManagementBean.setUserCounts()}" var="tickle"></c:set>-->
                     <tr>
-                        <ui:repeat var="x" value="#{BangBean.uc}" size="#{BangBean.getUCSize()}" varStatus="myVarStatus">
+                        <ui:repeat var="x" value="#{ManagementBean.uc}" size="#{ManagementBean.getUCSize()}" varStatus="myVarStatus">
                             <td><h:outputText value="#{x[0]}" /></td>
                         </ui:repeat>
                     </tr>
                 </table>
                 <br/>
                 <br/>
-                <table id="idTableManagementUsers">
-                    <!--User Headers -->
-                    <tr>
-                        <td>#</td>
-                        <td>Username</td>
-                        <td>Email</td>
-                        <td>Admin Level</td>
-                        <td>Into Women</td>
-                        <td>Into Men</td>
-                        <td>Into Trans Women</td>
-                        <td>Into Trans Men</td>
-                        <td>Online</td>
-                    </tr>
-                    <!--Users-->
-                    <!--<c:set value="#{BangBean.setUserList()}" var="tickle"></c:set>-->
-                    <ui:repeat var="x" value="#{BangBean.ul}" size="#{BangBean.getULSize()}" varStatus="myVarStatus">
-                        <tr>
-                            <td><h:outputText value="#{myVarStatus.index+1}" /></td>
-                            <td><h:outputText value="#{x[0]}" /></td>
-                            <td><h:outputText value="#{x[1]}" /></td>
-                            <ui:fragment rendered="#{x[2] == '2'}">
-                                <td><h:outputText value="Admin" /></td>
-                            </ui:fragment>
-                            <ui:fragment rendered="#{x[2] == '1'}">
-                                <td><h:outputText value="Manager" /></td>
-                            </ui:fragment>
-                            <ui:fragment rendered="#{x[2] == '0'}">
-                                <td><h:outputText value="Basic" /></td>
-                            </ui:fragment>
-                            <ui:fragment rendered="#{x[3] == '1'}">
-                                <td><h:outputText value="Yes" /></td>
-                            </ui:fragment>
-                            <ui:fragment rendered="#{x[3] != '1'}">
-                                <td><h:outputText value="No" /></td>
-                            </ui:fragment>
-                             <ui:fragment rendered="#{x[4] == '1'}">
-                                <td><h:outputText value="Yes" /></td>
-                            </ui:fragment>
-                            <ui:fragment rendered="#{x[4] != '1'}">
-                                <td><h:outputText value="No" /></td>
-                            </ui:fragment>
-                             <ui:fragment rendered="#{x[5] == '1'}">
-                                <td><h:outputText value="Yes" /></td>
-                            </ui:fragment>
-                            <ui:fragment rendered="#{x[5] != '1'}">
-                                <td><h:outputText value="No" /></td>
-                            </ui:fragment>
-                             <ui:fragment rendered="#{x[6] == '1'}">
-                                <td><h:outputText value="Yes" /></td>
-                            </ui:fragment>
-                            <ui:fragment rendered="#{x[6] != '1'}">
-                                <td><h:outputText value="No" /></td>
-                            </ui:fragment>
-                             <ui:fragment rendered="#{x[7] == '1'}">
-                                <td><h:outputText value="Yes" /></td>
-                            </ui:fragment>
-                            <ui:fragment rendered="#{x[7] != '1'}">
-                                <td><h:outputText value="No" /></td>
-                            </ui:fragment>
-
-                        </tr>
-                    </ui:repeat>
-                </table>
+                <h:dataTable id="idTableManagementUsers" value="#{ManagementBean.dataModel}" var="user"
+                    styleClass="idTableManagementUsers"
+                    headerClass="classTableManagementHeader"
+                    rowClasses="classTableManagementRow"
+                    columnClasses="classTableManagementUsersColIndex,
+                    classTableManagementUsersColUsername,
+                    classTableManagementUsersColEmail,
+                    classTableManagementUsersColAdminLevel,
+                    classTableManagementUsersColWomen,
+                    classTableManagementUsersColMen,
+                    classTableManagementUsersColTransWomen,
+                    classTableManagementUsersColTransMen,
+                    classTableManagementUsersColOnline            
+                    ">
+                    <h:column> 
+                        <f:facet id="idTableManagementUsersColHeaderIndex" name="header">#</f:facet>
+                        #{ManagementBean.dataModel.rowIndex + 1}
+                    </h:column>
+                    <h:column>    				
+                        <f:facet id="idTableManagementUsersColHeaderUsername" name = "header">Username</f:facet>    				
+                        #{user.username}
+                    </h:column>
+                    <h:column>
+                        <f:facet id="idTableManagementUsersColHeaderEmail" name = "header">Email</f:facet>
+                        #{user.email}
+                    </h:column>
+                    <h:column>
+                        <f:facet id="idTableManagementUsersColHeaderAdminLevel" name = "header">Admin Level</f:facet>
+                        <h:selectOneMenu value="#{user.adminLevel}" onchange="submit()" valueChangeListener="#{ManagementBean.UpdateUser}" immediate="true" >
+                            <f:selectItem itemValue="2" itemLabel="Admin" />
+                            <f:selectItem itemValue="1" itemLabel="Manager"/>
+                            <f:selectItem itemValue="0" itemLabel="Basic"/>
+                        </h:selectOneMenu>
+                    </h:column>
+                    <h:column>
+                        <f:facet id="idTableManagementUsersColHeaderWomen" name = "header">Into Women</f:facet>
+                        <ui:fragment rendered="#{user.women}">
+                            <h:outputText value="Yes" />
+                        </ui:fragment>
+                        <ui:fragment rendered="#{!user.women}">
+                            <h:outputText value="No" />
+                        </ui:fragment>
+                    </h:column>
+                    <h:column>
+                        <f:facet id="idTableManagementUsersColHeaderMen" name = "header">Into Men</f:facet>
+                        <ui:fragment rendered="#{user.men}">
+                            <h:outputText value="Yes" />
+                        </ui:fragment>
+                        <ui:fragment rendered="#{!user.men}">
+                            <h:outputText value="No" />
+                        </ui:fragment>
+                    </h:column>
+                    <h:column>
+                        <f:facet id="idTableManagementUsersColHeaderTransWomen" name = "header">Into Trans Women</f:facet>
+                        <ui:fragment rendered="#{user.transWomen}">
+                            <h:outputText value="Yes" />
+                        </ui:fragment>
+                        <ui:fragment rendered="#{!user.transWomen}">
+                            <h:outputText value="No" />
+                        </ui:fragment>
+                    </h:column>
+                    <h:column>
+                        <f:facet id="idTableManagementUsersColHeaderTransMen" name = "header">Into Trans Men</f:facet>
+                        <ui:fragment rendered="#{user.transMen}">
+                            <h:outputText value="Yes" />
+                        </ui:fragment>
+                        <ui:fragment rendered="#{!user.transMen}">
+                            <h:outputText value="No" />
+                        </ui:fragment>
+                    </h:column>
+                    <h:column>
+                        <f:facet id="idTableManagementUsersColHeaderLoggedOn" name = "header">Online</f:facet>
+                        <ui:fragment rendered="#{user.loggedOn}">
+                            <h:outputText value="Yes" />
+                        </ui:fragment>
+                        <ui:fragment rendered="#{!user.loggedOn}">
+                            <h:outputText value="No" />
+                        </ui:fragment>
+                    </h:column>
+                </h:dataTable>
             </p>
         </c:when>
     </c:choose>

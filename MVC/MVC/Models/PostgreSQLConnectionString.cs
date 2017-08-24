@@ -9,7 +9,7 @@
         public DbSet<PostgreSQLTest> Colors { get; set; }
 
         public PostgreSQLConnectionString()
-            : base("name=PostgreSQLConnectionString")
+            : base(nameOrConnectionString: "PostgreSQLConnectionString")
         {
         }
         /*

@@ -78,13 +78,6 @@ h6{
 	padding-left: 20px;
 }
 
-body
-{
-    background-color: #aaaaaa;
-    padding: 0px;
-    margin: 0px;
-}
-
 navlink
 {
     font-weight: bold;
@@ -218,13 +211,67 @@ navlink a:hover
     color: #00aa00;
 }
 
+.navlinkD
+{
+    font-weight: bold;
+    border: transparent;
+	width: auto;
+	max-width: auto;
+	padding: 2px;
+	text-align: left;
+    font-size: 70%;
+    margin: 15%;
+}
+
+.navlinkD a
+{
+    padding: 0px;
+	text-decoration: underline;
+	display: block;
+	color: #0000ff;
+	border: transparent;
+	margin: 0px;
+}
+
+.navlinkD a:hover
+{
+    color: #00aa00;
+}
+
+.classObject
+{
+	height: 100%;
+	width: 100%;
+	overflow: visible;
+	border: 1px solid #FE0101;
+	
+}
+
 /* IDs */
 #idBody
 {
-    font-family: Verdana, Geneva, sans-serif;
+    height: 100%;
+	font-family: Verdana, Geneva, sans-serif;
 	font-size: 100%;
 	line-height: 25px;
-	height: 100%;
+	width: 100%;
+	max-width: 100%;
+	background-color: #aaaaaa;
+	padding: 0;
+	margin: 0;
+}
+
+#idInnerBody
+{
+    height: 100%;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 100%;
+	line-height: 25px;
+	width: 100%;
+	max-width: 100%;
+	background-color: #000000;
+	padding: 0;
+	margin: 0;
 }
 
 #idTableMain
@@ -232,7 +279,8 @@ navlink a:hover
     background-color: #000000;
     border: 0px solid #FE0101;
     vertical-align: top;
-	height: 100%;
+	width: 100%;
+	max-width: 100%;
 }
 
 #idHeaderRow
@@ -247,25 +295,25 @@ navlink a:hover
 #idHeaderRowCenter
 {
 	width: 100%;
-    max-width: 100%;
-    border: 0px solid #FE0101;
+	max-width: 100%;
+	border: 0px solid #FE0101;
     vertical-align: top;
-
 }
 
 #idLogo
 {
-    width: 100%;
-    max-width: 100%;
-    border: 0px solid #FE0101;
+    height: 25%;
+	width: 100%;
+	max-width: 100%;
+	border: 0px solid #FE0101;
     vertical-align: top;
 }
 
 #idNavigationRow
 {
 	width: 100%;
-    max-width: 100%;
-    border: 0px solid #FE0101;
+	max-width: 100%;
+	border: 0px solid #FE0101;
     vertical-align: top;
 }
 
@@ -273,7 +321,7 @@ navlink a:hover
 {
 	width: 100%;
 	max-width: 100%;
-    border: 0px solid #FE0101;
+	border: 0px solid #FE0101;
     vertical-align: top;
 }
 
@@ -281,7 +329,7 @@ navlink a:hover
 {
 	width: 100%;
 	max-width: 100%;
-    border: 0px solid #FE0101;
+	border: 0px solid #FE0101;
     vertical-align: top;
 }
 
@@ -302,11 +350,14 @@ navlink a:hover
 	padding: 0px;
     border: 0px solid #FE0101;
     vertical-align: top;
+	overflow: visible;
 }
 
 #idCenterContent
 {
-    color: #aaaaaa;
+    width: 100%;
+	max-width: 100%;
+	color: #aaaaaa;
     border: 0px solid #FE0101;
     vertical-align: top;
 }

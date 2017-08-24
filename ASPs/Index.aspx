@@ -10,7 +10,7 @@
     var vLevel = 0;
     var vExtension = 2;
     var vCSS = "Main.css";
-		Response.Write("<head>");
+	Response.Write("<head>");
         WriteHeader(vLevel, vCSS);
     Response.Write("</head>");
     Response.Write("<body id=\"idBody\">");

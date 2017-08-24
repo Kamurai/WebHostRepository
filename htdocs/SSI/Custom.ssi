@@ -104,22 +104,6 @@
 				<a href='./Downloads/Minecraft/Reis-Minimap-Mod-1.7.10.jar'>Rei's Minimap</a></br>
 				<a href='./Downloads/Minecraft/Xaeros_Minimap_1.10.8_Forge_1.7.10.jar'>Xaero's Minimap</a></br>
 			Vanilla Server:      (1.10.2) htkb.dyndns.org:25566</br>
-			Come Alive Server:   (1.10.2) htkb.dyndns.org:25568</br>
-				This is a list of mods that we are using on the server, compatible with 1.10.2.</br>
-				<a href='./Downloads/Minecraft/forge-1.10.2-12.18.1.2011-installer.jar'>Forge 1.10.2</a></br>
-				<a href='./Downloads/Minecraft/RadixCore-1.10.2-2.1.2-universal.jar'>Radix Core</a></br>
-				<a href='./Downloads/Minecraft/MCA-1.10.2-5.2.1-universal.jar'>Minecraft Comes Alive</a></br>
-				<a href='./Downloads/Minecraft/Xaeros_Minimap_1.10.8_Forge_1.10.2.jar'>Xaero's Minimap</a></br>
-			Pixelmon Server:     (1.8.9)  htkb.dyndns.org:25569</br>
-				This is a list of mods that we are using on the server, compatible with 1.8.9.</br>
-				<a href='./Downloads/Minecraft/forge-1.8.9-11.15.1.1902-1.8.9-installer.jar'>Forge 1.8.9</a></br>
-				<a href='./Downloads/Minecraft/Pixelmon-1.8.9-4.2.7-universal.jar'>Pixelmon</a></br>
-				<a href='./Downloads/Minecraft/Xaeros_Minimap_1.10.8_Forge_1.8.9.jar'>Xaero's Minimap</a></br>
-				<a href='./Downloads/Minecraft/PixelExtras-1.8.9-2.1.5-universal.jar'>Pixelmon Extras</a></br>
-			ArkCraft Server:     (1.8) htkb.dyndns.org:25570</br>
-				This is a list of mods that we are using on the server, compatible with 1.8.</br>
-				<a href='./Downloads/Minecraft/forge-1.8-11.14.4.1577-installer.jar'>Forge 1.8</a></br>
-				<a href='./Downloads/Minecraft/arkcraft-1.1.3-beta.jar'>Ark Craft</a></br>
 			Here is a skin template to make custom skins:</br>
 			<a href='./Downloads/Minecraft/skin_template.png'>Steve skin template</a></br>
 	<br/>
@@ -133,14 +117,11 @@
 					Windows: It is in a hidden folder: c:\Users\*Username*\Appdata\Roaming\.minecraft</br>
 					Mac: "Go to" ~/Library/Application Support/minecraft</br>
 				 5) If you are managing multiple non-compatible mods, then you man have to make folders like:</br>
-					"..\Roaming\ComeAlive"</br>
-					"..\Roaming\Pixelmon"</br>
-					"..\Roaming\ArkCraft"</br>
+					"..\Roaming\MoCreatures"</br>
 				 6) If your folder doesn't have a /Mods folder, create one. Place the files from the mod list into the /mods folder.</br>
 					Even if it works, don't put two minimap mods in the same folder.</br>
 				 7) Open the Minecraft Launcher, edit your version (e.g. 1.7.10) profile to use the forge version of the same.</br>
 				 8) If you are using a different folder, then remember to change the Game Directory in the profile.</br>
-					For Pixelmon, then you'll also have to change the Java argument -Xmx1G to -Xmx2G.
 				 9) Save the Profile, select the new profile and click play.</br>
 				10) You should see the mods listed on the side of the Minecraft window.</br>
 				11) Go to multiplayer and click add server.</br>

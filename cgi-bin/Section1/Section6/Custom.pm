@@ -164,7 +164,7 @@ sub Versions
 		print "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section1/Section6/Project1.xhtml\">JSF</a><br>";
 		print "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section1/Section6/Project1.cshtml\">ASP.NET Web App</a><br>";
 		print "<a href=\"http://htkb.dyndns.org:81/WebForm/Section1/Section6/Project1.aspx\">ASP.NET Webform</a><br>";
-		print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section1/Section6/Project1\">ASP.NET MVC App</a><br>";
+		print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section1_6/Project1\">ASP.NET MVC App</a><br>";
 		print "<a href=\"http://htkb.dyndns.org/SSI/Section1/Section6/Project1.html\">Apache SSI</a><br>";
 		
 	}
@@ -179,7 +179,7 @@ sub Versions
 		print "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section1/Section6/Project2.xhtml\">JSF</a><br>";
 		print "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section1/Section6/Project2.cshtml\">ASP.NET Web App</a><br>";
 		print "<a href=\"http://htkb.dyndns.org:81/WebForm/Section1/Section6/Project2.aspx\">ASP.NET Webform</a><br>";
-		print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section1/Section6/Project2\">ASP.NET MVC App</a><br>";
+		print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section1_6/Project2\">ASP.NET MVC App</a><br>";
 		print "<a href=\"http://htkb.dyndns.org/SSI/Section1/Section6/Project2.html\">Apache SSI</a><br>";
 		
 	}
@@ -194,7 +194,7 @@ sub Versions
 		print "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section1/Section6/Project3.xhtml\">JSF</a><br>";
 		print "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section1/Section6/Project3.cshtml\">ASP.NET Web App</a><br>";
 		print "<a href=\"http://htkb.dyndns.org:81/WebForm/Section1/Section6/Project3.aspx\">ASP.NET Webform</a><br>";
-		print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section1/Section6/Project3\">ASP.NET MVC App</a><br>";
+		print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section1_6/Project3\">ASP.NET MVC App</a><br>";
 		print "<a href=\"http://htkb.dyndns.org/SSI/Section1/Section6/Project3.html\">Apache SSI</a><br>";
 	}
 	elsif($Page == 4)
@@ -208,7 +208,7 @@ sub Versions
 		print "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section1/Section6/Project4.xhtml\">JSF</a><br>";
 		print "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section1/Section6/Project4.cshtml\">ASP.NET Web App</a><br>";
 		print "<a href=\"http://htkb.dyndns.org:81/WebForm/Section1/Section6/Project4.aspx\">ASP.NET Webform</a><br>";
-		print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section1/Section6/Project4\">ASP.NET MVC App</a><br>";
+		print "<a href=\"http://htkb.dyndns.org:81/MVC/Section1_6/Project4\">ASP.NET MVC App</a><br>";
 		print "<a href=\"http://htkb.dyndns.org/SSI/Section1/Section6/Project4.html\">Apache SSI</a><br>";
 	}
 	elsif($Page == 5)
@@ -222,7 +222,7 @@ sub Versions
 		print "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section1/Section6/Project5.xhtml\">JSF</a><br>";
 		print "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section1/Section6/Project5.cshtml\">ASP.NET Web App</a><br>";
 		print "<a href=\"http://htkb.dyndns.org:81/WebForm/Section1/Section6/Project5.aspx\">ASP.NET Webform</a><br>";
-		print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section1/Section6/Project5\">ASP.NET MVC App</a><br>";
+		print "<a href=\"http://htkb.dyndns.org:81/MVC/Section1_6/Project5\">ASP.NET MVC App</a><br>";
 		print "<a href=\"http://htkb.dyndns.org/SSI/Section1/Section6/Project5.html\">Apache SSI</a><br>";
 	}
 	

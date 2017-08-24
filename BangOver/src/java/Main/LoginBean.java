@@ -7,13 +7,12 @@ package Main;
 
 import java.io.*;
 import javax.faces.bean.ManagedBean;
-import DataMethods.*;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import javax.faces.bean.SessionScoped;
+import javax.annotation.PreDestroy;
 
 /**
- *
  * @author Kamurai
  */
 @ManagedBean(name="LoginBean")
@@ -22,68 +21,145 @@ public class LoginBean implements Serializable
 {
     private Connection connect;
     private DbInfo dbi;
+    private Validator validate;
     
-    private int userindex;
+    private User DefaultUser;
+    public User getDefaultUser()
+    {
+        return DefaultUser;
+    }
+    public void setDefaultUser(User input)
+    {
+        DefaultUser = input;
+    }
+    private User CurrentUser;
+    public User getCurrentUser()
+    {
+        return CurrentUser;
+    }
+    public void setCurrentUser(User input)
+    {
+        CurrentUser = input;
+    }
+    
     private String username;
+    public String getUsername()
+    {
+        return username;
+    }
+    public void setUsername(String input)
+    {
+        username = input;
+    }
     private String password;
-    private String correctUname;
-    private String correctPword;
-    String error;
-    boolean LoggedIn;
-    private int admin;
+    public String getPassword()
+    {
+        return password;
+    }
+    public void setPassword(String input)
+    {
+        password = input;
+    }
+    private String confirmPassword;
+    public String getconfirmPassword()
+    {
+        return confirmPassword;
+    }
+    public void setconfirmPassword(String input)
+    {
+        confirmPassword = input;
+    }
+    private String email;
+    public String getEmail()
+    {
+        return email;
+    }
+    public void setEmail(String input)
+    {
+        email = input;
+    }
+    private String error;
+    public String getError()
+    {
+        return error;
+    }
+    public void setError(String input)
+    {
+        error = input;
+    }
     
     private boolean boolWomen;
+    public boolean getboolWomen()
+    {
+        return boolWomen;
+    }
+    public void setboolWomen(boolean input)
+    {
+        boolWomen = input;
+    }
     private boolean boolMen;
+    public boolean getboolMen()
+    {
+        return boolMen;
+    }
+    public void setboolMen(boolean input)
+    {
+        boolMen = input;
+    }
     private boolean boolTransWomen;
+    public boolean getboolTransWomen()
+    {
+        return boolTransWomen;
+    }
+    public void setboolTransWomen(boolean input)
+    {
+        boolTransWomen = input;
+    }
     private boolean boolTransMen;
-    
-    private String strCelebrityToSuggest;
-    private String strURLToSuggest;
-    private String strSexToSuggest;
-    
-    private String strCelebrityToAdd;
-    private String strURLToAdd;
-    private String strSexToAdd;
-    
-    private String email;
-    private String confirmPassword;
+    public boolean getboolTransMen()
+    {
+        return boolTransMen;
+    }
+    public void setboolTransMen(boolean input)
+    {
+        boolTransMen = input;
+    }
     
     
     public LoginBean()
     {
         connect = null;
-        
         dbi = new DbInfo();
+        validate = new Validator();
 
-        userindex = -1;
+        DefaultUser = new User(
+        -1,
+        "",
+        "",
+        0,
+        false,
+        false,
+        false,
+        false,
+        false
+        );
+        CurrentUser = new User(DefaultUser);
+        
+        //SignUp Page variables
         username = "";
         password = "";
-        correctUname = "";
-        correctPword = "";
+        confirmPassword = "";
+        email = "";
         error = "";
-        //db = new GeneralMethods();
-        LoggedIn = false;
-        admin = 0;
         
         boolWomen = false;
         boolMen = false;
         boolTransWomen = false;
         boolTransMen = false;
         
-        strCelebrityToSuggest = "";
-        strURLToSuggest = "";
-        strSexToSuggest = "F";
-        
-        strCelebrityToAdd = "";
-        strURLToAdd = "";
-        strSexToAdd = "F";
-        
-        email = "";
-        confirmPassword = "";
-        
     }
     
-    public String LogIn()
+    public String LogIn(String targetPage)
     {
         String Result = "Login";
         int rows = -1;
@@ -92,7 +168,6 @@ public class LoginBean implements Serializable
         {
             //validate given username
                 //open connection
-            //connect = db.openConnection(dbi.getDriver(), dbi.getUrl(), dbi.getDbName(), dbi.getDbUsername(), dbi.getDbPassword());
             connect = dbi.openConnection();
         }
         catch(Exception ex)
@@ -105,27 +180,26 @@ public class LoginBean implements Serializable
             return Result;
         }
         
-        String sqlQuery = "select * from Users where Username = '" + username + "'";
+        String sqlQuery = "BangOverGetValidUser " + username + ", " + password;
         
-        //ResultSet rs = db.executeStatement(connect, sqlQuery);
         ResultSet rs = dbi.executeStatement(sqlQuery);
-        
         
         try
         {
             rs.next();
             rows = rs.getRow();
             
-            //pull username and password
-            userindex = rs.getInt("Indext");
-            correctUname = rs.getString("Username");
-            correctPword = rs.getString("Passcode");
-            admin = rs.getInt("Access");
-            
-            boolWomen = rs.getBoolean("Women");
-            boolMen = rs.getBoolean("Men");
-            boolTransWomen = rs.getBoolean("TransWomen");
-            boolTransMen = rs.getBoolean("TransMen");
+            CurrentUser = new User(
+                rs.getInt("Indext"), 
+                rs.getString("Username"), 
+                rs.getString("Email"), 
+                rs.getInt("AdminLevel"),
+                rs.getBoolean("Women"), 
+                rs.getBoolean("Men"), 
+                rs.getBoolean("TransWomen"), 
+                rs.getBoolean("TransMen"), 
+                rs.getBoolean("LoggedOn") 
+            );
             
             //close connection
             dbi.closeConnection();
@@ -138,28 +212,19 @@ public class LoginBean implements Serializable
             return Result;
         }
 
-        
         //if valid
-        if(rows >= 0)
+        if(rows < 1)
         {
-            //compare Passcodes
-                //if match
-            if(password.compareTo(correctPword) != 0)
-            {
-                return Result;
-            }
-            
-            //Update Username
-            setOnline(username);        
+            return Result;
         }
         //else
         else
         {    
-            return Result;
-        
+            //Update Username
+            setOnline(CurrentUser.getUsername());
         }
         
-        Result = "index";
+        Result = targetPage;
         
         return Result;
                 
@@ -170,180 +235,68 @@ public class LoginBean implements Serializable
         String Result = "Login";
         int rows = -1;
         
-        //reset variables
-        userindex = -1;
-        username = "";
-        password = "";
-        correctUname = "";
-        correctPword = "";
-        error = "";
-        //db = new GeneralMethods();
-        admin = 0;
-        
-        boolWomen = false;
-        boolMen = false;
-        boolTransWomen = false;
-        boolTransMen = false;
-        
         //Update Username
-        setOffline(username);
+        setOffline(CurrentUser.getUsername());
+        
+        //reset variables
+        CurrentUser = new User(DefaultUser);
         
         return Result;
     }
     
-    public String getUsername()
+    @PreDestroy
+    public void preDestroyLogOut()
     {
-        return username;
+        setOffline(CurrentUser.getUsername());
     }
     
-    public void setUsername(String input)
-    {
-        username = input;
-    }
-    
-    public String getPassword()
-    {
-        return password;
-    }
-    
-    public void setPassword(String input)
-    {
-        password = input;
-    }
-    
-    public String getError()
-    {
-        return error;
-    }
-    
-    public void setError(String input)
-    {
-        error = input;
-    }
-    
-    public boolean getLoggedIn()
-    {
-        return LoggedIn;
-    }
-    
-    public void setLoggedIn(boolean input)
-    {
-        LoggedIn = input;
-    }
-            
     public void setOnline(String user)
     {
-        String sqlQuery = "";
+        String sqlQuery = "BangOverSetOnlineStatus 1, " + user;
         
         //set local
-        setLoggedIn(true);
+        CurrentUser.setLoggedOn(true);
         
         //open connection
-        //connect = db.openConnection(driver, url, dbName, dbUsername, dbPassword);
         connect = dbi.openConnection();
         
-        sqlQuery = "update Users set LoggedOn = 1 where Username = '" + user + "'";
-        
-        //db.executeStatement(connect, sqlQuery);
         dbi.executeStatement(sqlQuery);
         
         //close connection
-        //db.closeConnection(connect);
         dbi.closeConnection(connect);
         
     }
     
     public void setOffline(String user)
     {
-        String sqlQuery = "";
+        String sqlQuery = "BangOverSetOnlineStatus 0, " + user;
         
         //set local
-        setLoggedIn(false);
+        CurrentUser.setLoggedOn(false);
         
         //open connection
-        //connect = db.openConnection(driver, url, dbName, dbUsername, dbPassword);
         connect = dbi.openConnection();
         
-        sqlQuery = "update Users set LoggedOn = 0 where Username = " + "'" + user + "'";
-        
-        //db.executeStatement(connect, sqlQuery);
         dbi.executeStatement(sqlQuery);
         
         //close connection
-        //db.closeConnection(connect);
         dbi.closeConnection(connect);
         
     }
     
-    public boolean getboolWomen()
+    public String UpdateOptions()
     {
-        return boolWomen;
-    }
-    
-    public void setboolWomen(boolean input)
-    {
-        boolWomen = input;
-    }
-    
-    public boolean getboolMen()
-    {
-        return boolMen;
-    }
-    
-    public void setboolMen(boolean input)
-    {
-        boolMen = input;
-    }
-    
-    public boolean getboolTransWomen()
-    {
-        return boolTransWomen;
-    }
-    
-    public void setboolTransWomen(boolean input)
-    {
-        boolTransWomen = input;
-    }
-    
-    public boolean getboolTransMen()
-    {
-        return boolTransMen;
-    }
-   
-    public void setboolTransMen(boolean input)
-    {
-        boolTransMen = input;
-    }
-    
-    public int getuserindex()
-    {
-        return userindex;
-    }
-   
-    public void setuserindex(int input)
-    {
-        userindex = input;
-    }
-    
-    public int getadmin()
-    {
-        return admin;
-    }
-   
-    public void setadmin(int input)
-    {
-        admin = input;
-    }
-    
-    public void UpdateOptions()
-    {
+        String Result = "";
         String sqlQuery = "";
         
         //if all are false
-        if( !getboolWomen() && !getboolMen() && !getboolTransWomen() && !getboolTransMen())
+        if( !CurrentUser.getWomen() && 
+            !CurrentUser.getMen() && 
+            !CurrentUser.getTransWomen() && 
+            !CurrentUser.getTransMen())
         {
-            //then set female to true
-            setboolWomen(true);
+            //then set default to true
+            CurrentUser.setWomen(true);
         }
         
         //Update preferences to match check boxes (local variables)
@@ -355,148 +308,23 @@ public class LoginBean implements Serializable
         }
         catch(Exception ex)
         {
-            //return null;
+            error = "There seems to be a connection issue.";
+            Result = "Options.xhtml";
         }
         
-        sqlQuery = "UpdateOptions " + getuserindex() + ", " + getboolWomen() + ", " + getboolMen() + ", " + getboolTransWomen() + ", " + getboolTransMen() + ";";
-        
-        ResultSet rs = dbi.executeStatement(sqlQuery);
-        
-        dbi.closeConnection(connect);
-    }
-    
-    public String getstrCelebrityToAdd()
-    {
-        return strCelebrityToAdd;
-    }
-    
-    public String getstrSexToAdd()
-    {
-        return strSexToAdd;
-    }
-    
-    public String getstrURLToAdd()
-    {
-        return strURLToAdd;
-    }
-    
-    public String getEmail()
-    {
-        return email;
-    }
-    
-    public String getconfirmPassword()
-    {
-        return confirmPassword;
-    }
-    
-    public void setstrCelebrityToAdd(String input)
-    {
-        strCelebrityToAdd = input;
-    }
-    
-    public void setstrSexToAdd(String input)
-    {
-        strSexToAdd = input;
-    }
-    
-    public void setstrURLToAdd(String input)
-    {
-        strURLToAdd = input;
-    }
-    
-    public void setEmail(String input)
-    {
-        email = input;
-    }
-    
-    public void setconfirmPassword(String input)
-    {
-        confirmPassword = input;
-    }
-    
-    public String getstrCelebrityToSuggest()
-    {
-        return strCelebrityToSuggest;
-    }
-    
-    public String getstrSexToSuggest()
-    {
-        return strSexToSuggest;
-    }
-    
-    public String getstrURLToSuggest()
-    {
-        return strURLToSuggest;
-    }
-    
-    public void setstrCelebrityToSuggest(String input)
-    {
-        strCelebrityToSuggest = input;
-    }
-    
-    public void setstrSexToSuggest(String input)
-    {
-        strSexToSuggest = input;
-    }
-    
-    public void setstrURLToSuggest(String input)
-    {
-        strURLToSuggest = input;
-    }
-    
-    public void AddCelebrity()
-    {
-        String sqlQuery = "";
-        
-        //Update preferences to match check boxes (local variables)
-        try
-        {
-            //validate given username
-                //open connection
-            connect = dbi.openConnection();
-        }
-        catch(Exception ex)
-        {
-            //return null;
-        }
-        
-        sqlQuery = "AddCelebrity '" + strCelebrityToAdd + "', '" + strSexToAdd + "', '" + strURLToAdd + "';";
+        sqlQuery = "BangOverUpdateOptions " + 
+                CurrentUser.getUserIndex() + ", " + 
+                CurrentUser.getWomen() + ", " + 
+                CurrentUser.getMen() + ", " + 
+                CurrentUser.getTransWomen() + ", " + 
+                CurrentUser.getTransMen() + 
+                ";";
         
         ResultSet rs = dbi.executeStatement(sqlQuery);
         
         dbi.closeConnection(connect);
         
-        strCelebrityToAdd = "";
-        strSexToAdd = "F";
-        strURLToAdd = "";
-    }
-    
-    public void AddCelebritySuggestion()
-    {
-        String sqlQuery = "";
-        
-        //Update preferences to match check boxes (local variables)
-        try
-        {
-            //validate given username
-                //open connection
-            connect = dbi.openConnection();
-        }
-        catch(Exception ex)
-        {
-            //return null;
-        }
-        
-        sqlQuery = "AddCelebritySuggestion '" + strCelebrityToSuggest + "', '" + strSexToSuggest + "', '" + strURLToSuggest + "';";
-        
-        ResultSet rs = dbi.executeStatement(sqlQuery);
-        
-        dbi.closeConnection(connect);
-        
-        strCelebrityToSuggest = "";
-        strSexToSuggest = "F";
-        strURLToSuggest = "";
+        return Result;
     }
     
     public String SignUp()
@@ -504,39 +332,52 @@ public class LoginBean implements Serializable
         String sqlQuery = "";
         String Result = "";
         
-        if( password.compareTo(confirmPassword) == 0 )
-        {
-        
-            //Update preferences to match check boxes (local variables)
-            try
-            {
-                //validate given username
-                    //open connection
-                connect = dbi.openConnection();
-            }
-            catch(Exception ex)
-            {
-                //return null;
-            }
-
-            sqlQuery = "SignUp '" + username + "', '" + email + "', '" + password + "', '" + boolWomen + "', '" + boolMen + "', '" + boolTransWomen + "', '" + boolTransMen + "';";
-
-            ResultSet rs = dbi.executeStatement(sqlQuery);
-
-            dbi.closeConnection(connect);
-            
-            
-            
-            
-            Result = "Login.xhtml";
-        }
-        else
+        if( password.compareTo(confirmPassword) != 0 )
         {
             //Return error for passwords not matching
             error = "Passwords do not match.";
             Result = "SignUp.xhtml";
         }
         
+        //Update preferences to match check boxes (local variables)
+        try
+        {
+            //validate given username
+                //open connection
+            connect = dbi.openConnection();
+        }
+        catch(Exception ex)
+        {
+            error = "There seems to be a connection issue.";
+            Result = "SignUp.xhtml";
+        }
+
+        if( !validate.ValidateEmail(email) )
+        {
+            return Result;
+        }
+        
+        if( !boolWomen &&
+            !boolMen &&
+            !boolTransWomen &&
+            !boolTransMen)
+        {
+            error = "You didn't select any preferences.";
+            Result = "SignUp.xhtml";
+        }
+        
+        sqlQuery = "BangOverSignUp '" + username + "', '" + email + "', '" + password + "', '" + 
+                boolWomen + "', '" + 
+                boolMen + "', '" + 
+                boolTransWomen + "', '" + 
+                boolTransMen + 
+                "';";
+
+        ResultSet rs = dbi.executeStatement(sqlQuery);
+
+        dbi.closeConnection(connect);
+
+        Result = "Login.xhtml";
         
         return Result;
     }

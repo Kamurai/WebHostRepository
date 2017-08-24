@@ -2,15 +2,14 @@ package Main;
 
 public class Custom
 {
-    int level;
-    int page;
-    int extension;
+    private int level;
+    private int page;
+    private int extension;
 
-    Universal bob;
+    private Universal bob;
 
     public Custom()
     {
-        
         bob = new Universal();
     }
 
@@ -53,6 +52,50 @@ public class Custom
         else if(input == 8)
         {
             Result += "./Content/Content_Management.xhtml";
+        }
+       
+        return Result;
+    }
+    
+    public String Page(int input)
+    {
+        String Result = "";
+        
+        if(input <= 0)
+        {
+            Result += "index";
+        }
+        else if(input == 1)
+        {
+            Result += "BangOver";
+        }
+        else if(input == 2)
+        {
+            Result += "MyList";
+        }
+        else if(input == 3)
+        {
+            Result += "GlobalList";
+        }
+        else if(input == 4)
+        {
+            Result += "Options";
+        }
+        else if(input == 5)
+        {
+            Result += "Add";
+        }
+        else if(input == 6)
+        {
+            Result += "index";
+        }
+        else if(input == 7)
+        {
+            Result += "SignUp";
+        }
+        else if(input == 8)
+        {
+            Result += "Management";
         }
        
         return Result;

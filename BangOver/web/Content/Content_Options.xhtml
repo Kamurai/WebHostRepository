@@ -5,14 +5,12 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:c="http://java.sun.com/jsp/jstl/core">
     <c:choose>
-        <c:when test="#{LoginBean.getLoggedIn()}">
+        <c:when test="#{LoginBean.currentUser.loggedOn}">
             <title>
                Bang Over!
             </title>
             <h2>
-                <u>
-                    You got options!
-                </u>
+                You got options!
             </h2>
             <p id="idCenterContent">
                 This is where you can set your options!
@@ -20,36 +18,20 @@
                 Just click what you're into.
                 <table id="idTableOptions">
                     <tr>
-                        <td>
-                            Into Women?
-                        </td>
-                        <td>
-                            <h:selectBooleanCheckbox value="#{LoginBean.boolWomen}"/>
-                        </td>
+                        <td>Into Women?</td>
+                        <td><h:selectBooleanCheckbox value="#{LoginBean.currentUser.women}"/></td>
                     </tr>
                     <tr>
-                        <td>
-                            Into Men?
-                        </td>
-                        <td>
-                            <h:selectBooleanCheckbox value="#{LoginBean.boolMen}"/>
-                        </td>
+                        <td>Into Men?</td>
+                        <td><h:selectBooleanCheckbox value="#{LoginBean.currentUser.men}"/></td>
                     </tr>
                     <tr>
-                        <td>
-                            Into Trans Women?
-                        </td>
-                        <td>
-                            <h:selectBooleanCheckbox value="#{LoginBean.boolTransWomen}"/>
-                        </td>
+                        <td>Into Trans Women?</td>
+                        <td><h:selectBooleanCheckbox value="#{LoginBean.currentUser.transWomen}"/></td>
                     </tr>
                     <tr>
-                        <td>
-                            Into Trans Men?
-                        </td>
-                        <td>
-                            <h:selectBooleanCheckbox value="#{LoginBean.boolTransMen}"/>
-                        </td>
+                        <td>Into Trans Men?</td>
+                        <td><h:selectBooleanCheckbox value="#{LoginBean.currentUser.transMen}"/></td>
                     </tr>
                 </table>
             </p>

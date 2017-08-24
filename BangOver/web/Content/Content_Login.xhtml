@@ -18,7 +18,7 @@
         <br/>
         <br/>
         <h:outputText id="error" value="#{LoginBean.error}"/>
-        <h:commandButton value ="Login" action="#{LoginBean.LogIn()}"/>
+        <h:commandButton value ="Login" action="#{LoginBean.LogIn(MainBean.Page())}"/>
         <h:commandButton value ="Sign Up" action="SignUp.xhtml"/>
     </p>
 </html>
