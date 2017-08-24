@@ -178,8 +178,8 @@ public class Custom
                         Result += " 2) Save the Profile, select the new profile and click play.</br>";
                         Result += " 3) Exit the program.</br>";
                         Result += " 4) Install Forge.  If it is not automatically selected, then browse to your .minecraft folder.</br>";
-                        Result += "     Windows: It is in a hidden folder: c:\\Users\\*Username*\\Appdata\\Roaming\\.minecraft";
-                        Result += "     Mac: 'Go to' ~/Library/Application Support/minecraft";
+                        Result += "     Windows: It is in a hidden folder: c:\\Users\\*Username*\\Appdata\\Roaming\\.minecraft</br>";
+                        Result += "     Mac: 'Go to' ~/Library/Application Support/minecraft</br>";
                         Result += " 5) Place the Mo Creatures, Custom Mob Spawner, iPixeli's Gender Mod, Bspkers Core, Tree Capitator, Moar Food, Moar Ores, Biblio Craft and Rei's Minimap files into .minecraft/mods.  You may have to make the mods folder.</br>";
                         Result += " 6) Open the Minecraft Launcher, edit your 1.7.10 profile to use the forge version of 1.7.10.</br>";
                         Result += " 7) Save the Profile, select the new profile and click play.</br>";

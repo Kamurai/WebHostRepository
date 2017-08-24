@@ -1,8 +1,5 @@
 <html>
-	<head>
-        <!--#include virtual="/cgi-bin/WriteHeader.pl?vCSS=./" -->
-	</head>
 	<body>
-        <!--#include virtual="/cgi-bin/WriteWebPage.pl?vPage=0&vPath=./&vDownPath=./&vScriptPath=./&vScriptDownPath=./" -->
+        <!--#include virtual="/cgi-bin/Layout.pl?vCSS=./&vPage=0&vPath=./&vDownPath=./&vScriptPath=./&vScriptDownPath=./" -->
 	</body>
 </html>

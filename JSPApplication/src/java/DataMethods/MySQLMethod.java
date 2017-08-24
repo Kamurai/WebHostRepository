@@ -28,10 +28,13 @@ public class MySQLMethod
     public MySQLMethod()
     {
         driver = "com.mysql.jdbc.Driver";
-        url = "jdbc:mysql://localhost:3307/";
+        //url = "jdbc:mysql://localhost:3307/";
+        url = "jdbc:mysql://localhost:3306/";
+        //url = "jdbc:mysql://localhost/MySQL";
+        //url = "jdbc:mysql://localhost:3306/mysql";
         dbName = "test";
-        dbUsername = "Test";
-        dbPassword = "bluezer0";
+        dbUsername = "root";
+        dbPassword = "";
         connect = null;
 
         Method = new GeneralMethods();
@@ -43,7 +46,7 @@ public class MySQLMethod
         
         if(connect == null)
         {
-            return "SQL Error";
+            return "SQL Connection Error";
         }
         
         ResultSet rs;
@@ -91,6 +94,7 @@ public class MySQLMethod
         catch (Exception ex)
         {
             ex.printStackTrace();
+            return "SQL Value Error";
         }
         
         //Method.closeConnection(connect);

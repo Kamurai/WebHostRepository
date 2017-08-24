@@ -90,13 +90,13 @@ function WriteWebpage(input, level, extension)
 function GDR()
 {
 	Response.Write("<p align='center'>");
-		Response.Write("<a href='http://htkb.dyndns.org/Section3/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>");	
+		Response.Write("<a href='http://htkb.dyndns.org/Downloads/GDR.zip'>You can download my Games Development Report here.</a></br>");	
 	Response.Write("</p>");
 }
 
 function WinRAR()
 {
 	Response.Write("<p align='center'>");
-		Response.Write("<a href='http://htkb.dyndns.org/Section3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>");	
+		Response.Write("<a href='http://htkb.dyndns.org/Downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>");	
 	Response.Write("</p>");
 }

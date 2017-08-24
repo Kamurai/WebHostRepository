@@ -73,6 +73,10 @@ echo "
 		<span class='navlink'>
 			<a href='".$path."Section2/Project14.php'>Conspiratorium</a>
 		</span>
+		</br>
+		<span class='navlink'>
+			<a href='".$path."Section2/Project15.php'>Conversion</a>
+		</span>
 		</br>				
 	";
 ?>

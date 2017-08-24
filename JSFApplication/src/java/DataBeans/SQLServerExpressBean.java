@@ -33,10 +33,10 @@ public class SQLServerExpressBean
     public SQLServerExpressBean()
     {
         driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-        url = "jdbc:sqlserver://localhost\\SQLEXPRESS:1433";
-        dbName = ";DatabaseName=Test";
+        url = "jdbc:sqlserver://localhost\\SQLEXPRESS";
+        dbName = ";DatabaseName=TEST";
         dbUsername = "SA";
-        dbPassword = "bluezer0";
+        dbPassword = "yellow23";
         connect = null;
 
         Method = new GeneralMethods();
@@ -48,7 +48,7 @@ public class SQLServerExpressBean
         
         if(connect == null)
         {
-            return "SQL Error";
+            return "SQL Connection Error";
         }
         
         ResultSet rs;
@@ -96,6 +96,7 @@ public class SQLServerExpressBean
         catch (Exception ex)
         {
             ex.printStackTrace();
+            return "SQL Value Error";
         }
         
         Method.closeConnection(connect);

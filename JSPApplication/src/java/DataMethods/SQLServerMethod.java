@@ -27,10 +27,11 @@ public class SQLServerMethod
     public SQLServerMethod()
     {
         driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-        url = "jdbc:sqlserver://localhost:1433";
-        dbName = ";DatabaseName=Test";
+        //url = "jdbc:sqlserver://localhost:1433";
+        url = "jdbc:sqlserver://localhost\\SQLSERVER";
+        dbName = ";DatabaseName=TEST";
         dbUsername = "SA";
-        dbPassword = "bluezer0";
+        dbPassword = "yellow23";
         connect = null;
 
         Method = new GeneralMethods();
@@ -42,7 +43,7 @@ public class SQLServerMethod
         
         if(connect == null)
         {
-            return "SQL Error";
+            return "SQL Connection Error";
         }
         
         ResultSet rs;
@@ -90,6 +91,7 @@ public class SQLServerMethod
         catch (Exception ex)
         {
             ex.printStackTrace();
+            return "SQL Value Error";
         }
         
         Method.closeConnection(connect);

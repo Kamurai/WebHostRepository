@@ -36,7 +36,7 @@ public class OracleBean
         url = "jdbc:oracle:thin:@localhost:1521:xe";
         dbName = "Test";
         dbUsername = "kamurai";
-        dbPassword = "bluezer0";
+        dbPassword = "yellow23";
         connect = null;
 
         Method = new GeneralMethods();
@@ -49,7 +49,7 @@ public class OracleBean
         
         if(connect == null)
         {
-            return "SQL Error";
+            return "SQL Connection Error";
         }
         
         ResultSet rs;
@@ -96,6 +96,7 @@ public class OracleBean
         catch (Exception ex)
         {
             ex.printStackTrace();
+            return "SQL Value Error";
         }
         
         Method.closeConnection(connect);

@@ -56,6 +56,10 @@ public class Custom extends Main.Custom
         {
             Result += "./Content/Content_Project14.xhtml";
         }
+        else if(input == 15)
+        {
+            Result += "./Content/Content_Project15.xhtml";
+        }
         return Result;
     }
 }

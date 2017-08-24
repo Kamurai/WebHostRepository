@@ -64,6 +64,10 @@ function Navigation(level)
 		document.write("<a href='"+GetPath(level)+"Section2/Project14.html'>Conspiratorium</a>");
 	document.write("</span>");
 	document.write("<br>");
+	document.write("<span class='navlink'>");
+		document.write("<a href='"+GetPath(level)+"Section2/Project15.html'>Conversion</a>");
+	document.write("</span>");
+	document.write("<br>");
 }
 
 function Title(input)

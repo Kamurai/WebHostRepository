@@ -33,10 +33,11 @@ public class MySQLBean
     public MySQLBean()
     {
         driver = "com.mysql.jdbc.Driver";
-        url = "jdbc:mysql://localhost:3307/";
+        //url = "jdbc:mysql://localhost:3307/";
+        url = "jdbc:mysql://localhost:3306/";
         dbName = "test";
-        dbUsername = "Test";
-        dbPassword = "bluezer0";
+        dbUsername = "root";
+        dbPassword = "";
         connect = null;
 
         Method = new GeneralMethods();
@@ -48,7 +49,7 @@ public class MySQLBean
         
         if(connect == null)
         {
-            return "SQL Error";
+            return "SQL Connection Error";
         }
         
         ResultSet rs;
@@ -96,6 +97,7 @@ public class MySQLBean
         catch (Exception ex)
         {
             ex.printStackTrace();
+            return "SQL Value Error";
         }
         
         //Method.closeConnection(connect);

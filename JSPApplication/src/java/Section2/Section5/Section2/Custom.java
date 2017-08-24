@@ -93,6 +93,10 @@ public class Custom extends Section2.Section5.Custom
             Result += "<a href='"+bob.GetPath(level)+"Section2/Project14"+bob.GetExtension(extension)+"'>Conspiratorium</a>";
         Result += "</span>";
         Result += "<br>";
+        Result += "<span class='navlink'>";
+            Result += "<a href='"+bob.GetPath(level)+"Section2/Project15"+bob.GetExtension(extension)+"'>Conversion</a>";
+        Result += "</span>";
+        Result += "<br>";
         return Result;
     }
 

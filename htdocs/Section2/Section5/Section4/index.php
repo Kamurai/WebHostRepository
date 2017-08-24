@@ -16,8 +16,8 @@
 							Nine Card: a Tactical card game played through the Elvia Empire.</br>
 						</p>
 					";
-	$GDR = "<a href='../Section2/Downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";
-	$winrar = "<a href='../Section3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";
+	$GDR = "<a href='../Downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";
+	$winrar = "<a href='../Downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";
 	
 	#Overall body
 	include $style.'Layout.php';

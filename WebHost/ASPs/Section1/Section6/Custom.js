@@ -167,22 +167,22 @@ function Content(input)
 		{
 			Response.Write("This section is dedicated to Oracle based programming.");
 			Response.Write("<table>");
-			Response.Write("<tr>");
-			Response.Write("<td>");
-			Response.Write("Index");
-			Response.Write("</td>");
-			Response.Write("<td>");
-			Response.Write("Color");
-			Response.Write("</td>");
-			Response.Write("</tr>");
-			Response.Write("<tr>");
-			Response.Write("<td>");
-			OracleMethod("1",0);
-			Response.Write("</td>");
-			Response.Write("<td>");
-			OracleMethod("Red",0);
-			Response.Write("</td>");
-			Response.Write("</tr>");
+				Response.Write("<tr>");
+					Response.Write("<td>");
+						Response.Write("Index");
+					Response.Write("</td>");
+					Response.Write("<td>");
+						Response.Write("Color");
+					Response.Write("</td>");
+				Response.Write("</tr>");
+				Response.Write("<tr>");
+					Response.Write("<td>");
+						OracleMethod("1",0);
+					Response.Write("</td>");
+					Response.Write("<td>");
+						//OracleMethod("Red",0);
+					Response.Write("</td>");
+				Response.Write("</tr>");
 			Response.Write("</table>");
 			
 		}
@@ -196,7 +196,28 @@ function Content(input)
 		}
 		else if(input == 4)
 		{
+			SQLServerDataList();
+		
 			Response.Write("This section is dedicated to SQL Server based programming.");
+			Response.Write("<table>");
+				Response.Write("<tr>");
+					Response.Write("<td>");
+						Response.Write("Index");
+					Response.Write("</td>");
+					Response.Write("<td>");
+						Response.Write("Color");
+					Response.Write("</td>");
+				Response.Write("</tr>");
+				Response.Write("<tr>");
+					Response.Write("<td>");
+						//Response.Write("<%#Container.DataItem(\"Index\")%>");
+					Response.Write("</td>");
+					Response.Write("<td>");
+						//Response.Write("<%#Container.DataItem(\"Color\")%>");
+					Response.Write("</td>");
+				Response.Write("</tr>");
+			Response.Write("</table>");
+			
 		}
 		else if(input == 5)
 		{

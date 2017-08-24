@@ -107,6 +107,10 @@ function Navigation(level, extension)
 		Response.Write("<a href='"+GetPath(level)+"Section2/Project14"+GetExtension(extension)+"'>Conspiratorium</a>");
 	Response.Write("</span>");
 	Response.Write("<br>");
+	Response.Write("<span class='navlink'>");
+		Response.Write("<a href='"+GetPath(level)+"Section2/Project15"+GetExtension(extension)+"'>Conversion</a>");
+	Response.Write("</span>");
+	Response.Write("<br>");
 }
 
 function Title(input)

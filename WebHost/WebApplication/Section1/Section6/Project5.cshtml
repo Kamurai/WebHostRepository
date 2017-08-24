@@ -1,0 +1,32 @@
+﻿@{
+    Layout = "~/Layouts/Section1/Section6/_Layout.cshtml";
+    Page.Title = "PostgreSQL Programming";
+
+    var db = Database.Open("PostgresConnectionString");
+    var selectQueryString = "SELECT * FROM \"Test\".\"Test\"";
+
+}
+
+<p align="left">
+	This section is dedicated to PostgreSQL based programming.
+</p>
+
+<table> 
+    <tr>
+        <td>
+            PostgreSQL Instance  
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Index</th> 
+        <th>Color</th> 
+    </tr>
+    @foreach(var row in db.Query(selectQueryString))
+    {
+        <tr> 
+            <td>@row.index</td> 
+            <td>@row.Color</td> 
+        </tr> 
+    }
+</table>

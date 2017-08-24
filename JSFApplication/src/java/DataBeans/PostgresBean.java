@@ -33,10 +33,10 @@ public class PostgresBean
     public PostgresBean()
     {
         driver = "org.postgresql.Driver";
-        url = "jdbc:postgresql://localhost:5437/";
+        url = "jdbc:postgresql://localhost:5432/";
         dbName = "Test";
         dbUsername = "postgres";
-        dbPassword = "bluezer0";
+        dbPassword = "yellow23";
         connect = null;
 
         Method = new GeneralMethods();
@@ -48,7 +48,7 @@ public class PostgresBean
         
         if(connect == null)
         {
-            return "SQL Error";
+            return "SQL Connection Error";
         }
         
         ResultSet rs;
@@ -64,7 +64,7 @@ public class PostgresBean
             sqlStatement += "\"Color\" ";
         }
 
-        sqlStatement += "from Public.\"Test\" where ";        
+        sqlStatement += "from \"Test\".\"Test\" where ";        
         
         if(col <= 0)
         {
@@ -96,6 +96,7 @@ public class PostgresBean
         catch (Exception ex)
         {
             ex.printStackTrace();
+            return "SQL Value Error";
         }
         
         //Method.closeConnection(connect);

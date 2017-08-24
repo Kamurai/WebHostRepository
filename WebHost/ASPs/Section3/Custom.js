@@ -121,45 +121,45 @@ function Content(input)
 			Response.Write("<p align='left'>");
 			Response.Write("Here are downloads to play Cube World with us:</br>");
 			Response.Write("</br>");
-			Response.Write("Cube World:<t><a href='http://htkb.dyndns.org/Section3/downloads/CubeSetup3.exe'>Come play Cube World!</a></br>");
+			Response.Write("Cube World:<t><a href='http://htkb.dyndns.org/Downloads/CubeSetup3.exe'>Come play Cube World!</a></br>");
 			Response.Write("</br>");
-			Response.Write("DirectX:<t><a href='http://htkb.dyndns.org/Section3/downloads/directx_Jun2010_redist.exe'>Direct X Redistrutable</a></br>");
-			Response.Write("DirectX 'Web':<t><a href='http://htkb.dyndns.org/Section3/downloads/dxwebsetup.exe'>Direct X Redistrutable</a></br>");
+			Response.Write("DirectX:<t><a href='http://htkb.dyndns.org/Downloads/directx_Jun2010_redist.exe'>Direct X Redistrutable</a></br>");
+			Response.Write("DirectX 'Web':<t><a href='http://htkb.dyndns.org/Downloads/dxwebsetup.exe'>Direct X Redistrutable</a></br>");
 			Response.Write("</br>");
 		}
 		else if(input == 2)
 		{
 			Response.Write("Here are Game Maker Projects to play:</br>");
 			Response.Write("</br>");
-			Response.Write("'Gamebox Client: v6.0':<t><a href='http://htkb.dyndns.org/Section3/downloads/GameBox_Client_Installer_v6p0.exe'>Play games from...well, anywhere.</a></br>");
-			Response.Write("'Gamebox Server: v6.0':<t><a href='http://htkb.dyndns.org/Section3/downloads/GameBox_Server_Installer_v6p0.exe'>Host GameBox.</a></br>");
-			Response.write("'39dll.dll: v2.5':<t><a href='http://htkb.dyndns.org/Section3/downloads/39dll.dll'>You may need this in your 'user/AppData/Local/GameBox_Client' folder.</a></br>");
-			Response.Write("'A Chess Server':<t><a href='http://htkb.dyndns.org/Section3/downloads/Chess_Server.exe'>Host a Chess game.</a></br>");
-			Response.Write("'A Chess Client':<t><a href='http://htkb.dyndns.org/Section3/downloads/Chess_Client.exe'>A game of Chess from anywhere.</a></br>");
-			Response.Write("'I Dunno':<t><a href='http://htkb.dyndns.org/Section3/downloads/Idunno.exe'>I dunno, it's a fun puzzle game though.</a></br>");
-			Response.Write("'Purification':<t><a href='http://htkb.dyndns.org/Section3/downloads/Zombies.exe'>Kill zombies...lots of zombies.</a></br>");
-			Response.Write("'Trail of the Undead: The Way Home':<t><a href='http://htkb.dyndns.org/Section3/downloads/TrailoftheUndead.exe'>An adventure of zombie killing goodness.</a></br>");
-			Response.Write("'Discovery' (buggy Alpha):<t><a href='http://htkb.dyndns.org/Section3/downloads/Discovery.exe'>Play a game of discovery and survival.</a></br>");
-			Response.Write("'Twisted Tactics: Version 0.1' (buggy Alpha):<t><a href='http://htkb.dyndns.org/Section3/downloads/Tactical.exe'>Scrapped two player tactical system.</a></br>");
-			Response.Write("'Skitzo Burrito (Alpha)': <t><a href='http://htkb.dyndns.org/Section3/downloads/Emotive-Default-1.0.0.3.exe'>An emotional platform survival game.</a></br>");
+			Response.Write("'Gamebox Client: v6.0':<t><a href='http://htkb.dyndns.org/Downloads/GameBox_Client_Installer_v6p0.exe'>Play games from...well, anywhere.</a></br>");
+			Response.Write("'Gamebox Server: v6.0':<t><a href='http://htkb.dyndns.org/Downloads/GameBox_Server_Installer_v6p0.exe'>Host GameBox.</a></br>");
+			Response.write("'39dll.dll: v2.5':<t><a href='http://htkb.dyndns.org/Downloads/39dll.dll'>You may need this in your 'user/AppData/Local/GameBox_Client' folder.</a></br>");
+			Response.Write("'A Chess Server':<t><a href='http://htkb.dyndns.org/Downloads/Chess_Server.exe'>Host a Chess game.</a></br>");
+			Response.Write("'A Chess Client':<t><a href='http://htkb.dyndns.org/Downloads/Chess_Client.exe'>A game of Chess from anywhere.</a></br>");
+			Response.Write("'I Dunno':<t><a href='http://htkb.dyndns.org/Downloads/Idunno.exe'>I dunno, it's a fun puzzle game though.</a></br>");
+			Response.Write("'Purification':<t><a href='http://htkb.dyndns.org/Downloads/Zombies.exe'>Kill zombies...lots of zombies.</a></br>");
+			Response.Write("'Trail of the Undead: The Way Home':<t><a href='http://htkb.dyndns.org/Downloads/TrailoftheUndead.exe'>An adventure of zombie killing goodness.</a></br>");
+			Response.Write("'Discovery' (buggy Alpha):<t><a href='http://htkb.dyndns.org/Downloads/Discovery.exe'>Play a game of discovery and survival.</a></br>");
+			Response.Write("'Twisted Tactics: Version 0.1' (buggy Alpha):<t><a href='http://htkb.dyndns.org/Downloads/Tactical.exe'>Scrapped two player tactical system.</a></br>");
+			Response.Write("'Skitzo Burrito (Alpha)': <t><a href='http://htkb.dyndns.org/Downloads/Emotive-Default-1.0.0.3.exe'>An emotional platform survival game.</a></br>");
 		}
 		else if(input == 3)
 		{
 			Response.Write("Here are Java Programs to download:</br>");
 			Response.Write("</br>");
-			Response.Write("'Blood Bowl Manager':<t><a href='http://htkb.dyndns.org/Section3/downloads/pichaku.zip'>This is currently not available.</a></br>");
+			Response.Write("'Blood Bowl Manager':<t><a href='http://htkb.dyndns.org/Downloads/pichaku.zip'>This is currently not available.</a></br>");
 		}
 		else if(input == 4)
 		{
 			Response.Write("Here are C# Programs to download:</br>");
 			Response.Write("</br>");
-			Response.Write("'Chess Program':<t><a href='http://htkb.dyndns.org/Section3/downloads/pichaku.zip'>This is currently not available.</a></br>");
+			Response.Write("'Chess Program':<t><a href='http://htkb.dyndns.org/Downloads/pichaku.zip'>This is currently not available.</a></br>");
 		}
 		else if(input == 5)
 		{
 			Response.Write("Here are C++ Programs to download:</br>");
 			Response.Write("</br>");
-			Response.Write("'HTKB Bar Code System':<t><a href='http://htkb.dyndns.org/Section3/downloads/pichaku.zip'>This is currently not available.</a></br>");
+			Response.Write("'HTKB Bar Code System':<t><a href='http://htkb.dyndns.org/Downloads/pichaku.zip'>This is currently not available.</a></br>");
 		}
 	Response.Write("</p>");
 }

@@ -35,8 +35,8 @@ public class DerbyBean
         driver = "org.apache.derby.jdbc.EmbeddedDriver";
         url = "jdbc:derby://localhost:1527/";
         dbName = "Test";
-        dbUsername = "Kamurai";
-        dbPassword = "bluezer0";
+        dbUsername = "Test";
+        dbPassword = "yellow23";
         connect = null;
         
         Method = new GeneralMethods();
@@ -48,7 +48,7 @@ public class DerbyBean
         
         if(connect == null)
         {
-            return "SQL Error";
+            return "SQL Connection Error";
         }
         
         ResultSet rs;
@@ -96,6 +96,7 @@ public class DerbyBean
         catch (Exception ex)
         {
             ex.printStackTrace();
+            return "SQL Value Error";
         }
         
         Method.closeConnection(connect);

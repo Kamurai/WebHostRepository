@@ -1,4 +1,4 @@
-﻿<%@ master language="C#" autoeventwireup="true" inherits="Template1_6Master, App_Web_lcaavobu" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Template.master.cs" Inherits="Template1_6Master" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
@@ -71,7 +71,7 @@
 									</span>
 									</br>
 									<span class="navlink">
-										<a href="../Project5.aspx">ASP.Net</a>
+										<a href="../Section5/Index.aspx">ASP.Net</a>
 									</span>
 									</br>
 									<span class="navlink">
@@ -81,13 +81,19 @@
 												<a href="./Project1.aspx">Oracle</a>
 											</span>
 											<span class="navlink">
-												<a href="./Project2.aspx">MySQL</a>
+												<a href="./Project2.aspx">Derby</a>
 											</span>
 											<span class="navlink">
-												<a href="./Project3.aspx">Postgres</a>
+												<a href="./Project3.aspx">MySQL</a>
 											</span>
 											<span class="navlink">
-												<a href="./Project4.aspx">XML</a>
+												<a href="./Project4.aspx">SQL Server</a>
+											</span>
+										    <span class="navlink">
+												<a href="./Project5.aspx">Postgres</a>
+											</span>
+											<span class="navlink">
+												<a href="./Project6.aspx">XML</a>
 											</span>
 										</h5>
 									</span>
@@ -139,7 +145,7 @@
 						<div align="center">
 							<div class="footer-box">
 								<p align="center">
-								<a href="../Section3/downloads/wrar371.exe">You may need WinRar to open zip files from this site.</a>
+								<a href="../Section3/downloads/wrar371.exe">You may need WinRar to open zip files from this site.</a><br />
 									© Copyright 2012 All rights reserved<br>
 									House That Kamurai Built<br>
 								</p>

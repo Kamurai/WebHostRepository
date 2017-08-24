@@ -56,6 +56,10 @@ function Navigation(level, extension)
 		Response.Write("<a href='"+GetPath(level)+"Section2/Project14"+GetExtension(extension)+"'>Conspiratorium</a>");
 	Response.Write("</span>");
 	Response.Write("<br>");
+	Response.Write("<span class='navlink'>");
+		Response.Write("<a href='"+GetPath(level)+"Section2/Project15"+GetExtension(extension)+"'>Conversion</a>");
+	Response.Write("</span>");
+	Response.Write("<br>");
 }
 
 function Title(input)
@@ -104,6 +108,10 @@ function Title(input)
 		else if(input == 14)
 		{
 			Response.Write("Conspiratorium");
+		}
+		else if(input == 15)
+		{
+			Response.Write("Conversion");
 		}
 	Response.Write("</title>");
 }
@@ -198,6 +206,14 @@ function Header(input)
 				Response.Write("</u>");
 			Response.Write("</h2>");
 		}
+		else if(input == 15)
+		{
+			Response.Write("<h2>");
+				Response.Write("<u>");
+					Response.Write("Conversion");
+				Response.Write("</u>");
+			Response.Write("</h2>");
+		}
 }
 
 function Content(input)
@@ -253,6 +269,11 @@ function Content(input)
 		{
 			Response.Write("This section is dedicated to the board game project 'Conspiratorium'.");
 			Response.Write("A game of assassins and CIA, you must remember who is friend and who is not.");
+		}
+		else if(input == 15)
+		{
+			Response.Write("This section is dedicated to the board game project 'Conversion'.");
+			Response.Write("Compete on the elemental market by processing elements and becoming the elemental kingpin.");
 		}
 	Response.Write("</p>");
 }

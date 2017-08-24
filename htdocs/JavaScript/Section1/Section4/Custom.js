@@ -20,10 +20,10 @@ function Navigation(level, extension)
 		document.write("<a href='"+GetPath(level)+"Section1/Section4/Index"+GetExtension(extension)+"'>Java</a>");
 		document.write("<h5>");
 			document.write("<span class='navlink'>");
-				document.write("<a href='"+GetPath(level)+"Section1/Section4/Project1"+GetExtension(extension)+"'>JSP</a>");
+				document.write("<a href='http://htkb.dyndns.org:8080/JSPApplication/Section1/Section4/Project1.jsp'>JSP Programming</a>");
 			document.write("</span>");
 			document.write("<span class='navlink'>");
-				document.write("<a href='"+GetPath(level)+"Section1/Section4/Project2"+GetExtension(extension)+"'>JSF</a>");
+				document.write("<a href='http://htkb.dyndns.org:8080/JSFApplication/Section1/Section4/Project2.xhtml'>JSF Programming</a>");
 			document.write("</span>");
 		document.write("</h5>");
 	document.write("</span>");

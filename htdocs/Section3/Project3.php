@@ -17,7 +17,7 @@
 						</p>
 					";
 	$GDR = "";
-	$winrar = "<a href='../Section3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";
+	$winrar = "<a href='../Downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";
 
 	#Overall body
 	include $style.'Layout.php';

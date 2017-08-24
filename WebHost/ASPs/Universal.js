@@ -111,3 +111,7 @@ function GetInformation(extension)
     }
 }
 
+function GetMonkeys()
+{
+	Response.Write("Monkeys");
+}

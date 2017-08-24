@@ -68,6 +68,10 @@ public class Custom extends Main.Custom
             Result += "<a href='"+bob.GetPath(level)+"Section2/Project14"+bob.GetExtension(extension)+"'>Conspiratorium</a>";
         Result += "</span>";
         Result += "<br>";
+        Result += "<span class='navlink'>";
+            Result += "<a href='"+bob.GetPath(level)+"Section2/Project15"+bob.GetExtension(extension)+"'>Conversion</a>";
+        Result += "</span>";
+        Result += "<br>";
         return Result;
     }
 
@@ -118,6 +122,10 @@ public class Custom extends Main.Custom
             else if(input == 14)
             {
                 Result += "Conspiratorium";
+            }
+            else if(input == 15)
+            {
+                Result += "Conversion";
             }
         Result += "</title>";
         return Result;
@@ -214,6 +222,14 @@ public class Custom extends Main.Custom
                 Result += "</u>";
             Result += "</h2>";
         }
+        else if(input == 15)
+        {
+            Result += "<h2>";
+                Result += "<u>";
+                    Result += "Conversion";
+                Result += "</u>";
+            Result += "</h2>";
+        }
         return Result;
     }
 
@@ -227,33 +243,33 @@ public class Custom extends Main.Custom
             }
             else if(input == 2)
             {
-                Result += "This section is dedicated CCG project 'Assault'.";
+                Result += "This section is dedicated CCG project \"Assault\".";
             }
             else if(input == 3)
             {
-                Result += "This section is dedicated to the Mars centered project 'Opposition'.";
+                Result += "This section is dedicated to the Mars centered project \"Opposition\".";
             }
             else if(input == 7)
             {
-                Result += "This section is dedicated to the MMO RTS project 'Truth'.  Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.";
+                Result += "This section is dedicated to the MMO RTS project \"Truth\".  Explore the galaxy, smuggle goods, steal from your friends and battle your adversaries.";
             }
             else if(input == 8)
             {
-                Result += "This section is dedicated to the digital board game project 'Kingdoms'.  Explore the world's Kingdoms, get rich, get strong and conquer.";
+                Result += "This section is dedicated to the digital board game project \"Kingdoms\".  Explore the world's Kingdoms, get rich, get strong and conquer.";
             }
             else if(input == 9)
             {
-                Result += "This section is dedicated to the simulation MMO centered project 'Terminal World'.  This is a virtual environment where a zombie outbreak is about to happen.  Can you beat";
+                Result += "This section is dedicated to the simulation MMO centered project \"Terminal World\".  This is a virtual environment where a zombie outbreak is about to happen.  Can you beat";
                 Result += "the zombies?  Can you survive?";
             }
             else if(input == 10)
             {
-                Result += "This section is dedicated to the card and board game project 'Monster Office Workplace'.  These monsters mean serious business.";
+                Result += "This section is dedicated to the card and board game project \"Monster Office Workplace\".  These monsters mean serious business.";
                 Result += "Can you earn the most credit and smooze your way into a promotion?";
             }
             else if(input == 11)
             {
-                Result += "This section is dedicated to the card game project 'Battle Princesses'.  Ever wanted to see your favorite princess battle for the kingdom?";
+                Result += "This section is dedicated to the card game project \"Battle Princesses\".  Ever wanted to see your favorite princess battle for the kingdom?";
                 Result += "These princess aren't your helpless maidens, but valiant warriors themselves.";
             }
             else if(input == 12)
@@ -271,6 +287,11 @@ public class Custom extends Main.Custom
             {
                 Result += "This section is dedicated to the board game project \"Conspiratorium\".";
                 Result += "A game of assassins and CIA, you must remember who is friend and who is not.";
+            }
+            else if(input == 15)
+            {
+                Result += "This section is dedicated to the board game project \"Conversion\".";
+                Result += "Compete on the elemental market by processing elements and becoming the elemental kingpin.";
             }
         Result += "</p>";
         return Result;
