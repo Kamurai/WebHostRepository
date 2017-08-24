@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<!-- saved from url=(0023)./ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></head><body bgcolor="#000000" link="#C0C0C0" vlink="#808080" alink="#FF0000">
+  
+<font color="white">
+
+<!--Overall body-->
+<?php
+	$centerHeader = "Welcome to the House That Kamurai Built!";
+	$centerContent = "The House That Kamurai Built is an entertainment company with the primary 
+						focus of increasing awesome by stimulating intelligent conversation and 
+						entertainment via discussion and game design. <br>
+						Increase the Awesome with us!";
+							
+	$navHeader = "Navigation";
+	$navListArray = "";
+	$infoHeader = "Information";
+	$infoContent = "";
+	
+	
+	$footer = "© Copyright 2012 All rights reserved<br>
+				House That Kamurai Built<br>";
+	$winrar = "";
+	$management = "Website managed by Kamurai.";
+?>
+
+<link href="./moo.css" rel="stylesheet" type="text/css"/>
+	<!--Centered division.-->
+	<div align="center">
+		<!--Table to place all subsections-->
+		<table width="100%" cellpadding="0px" cellspacing="0px" border="0" align="center">
+			<tbody>
+				<!--Top Row-->
+				<tr>
+					<!--Center Sub Section-->
+					<td class="td-header" colspan="3" alt="" valign="top">
+						<p align="center">
+							<!--Primary Header: Main Splash / Logo-->
+							<img src="./logo_HouseThatKamuraiBuilt_blueonblack.jpg" width="100%" alt="" border="0" align="center" vspace="0" hspace="0"></br>
+						</p>
+					</td>
+				</tr>
+				<!--2nd Row-->
+				<tr>
+					<!--NavBar-->
+					<td class="td-navbar" colspan="3" alt="">
+						<?php 
+							include 'navBar.php';
+						?>
+					</td>
+				</tr>				
+				<!--3rd Row-->
+				<tr>
+					<!--Left Sub Section-->
+					<td class="td-left" valign="top">
+						<div align="center">
+							<div class="left-box">
+								<div class="navlinks">
+									<h4>
+										Navigation
+									</h4>
+									<span class="navlink">
+										<a href="./AboutUs.html">About Us</a>
+									</span>
+									</br>
+									<span class="navlink">
+										<a href="./Affiliation.html">HTKB Affiliations</a>
+									</span>
+									</br>
+									<span class="navlink">
+										<a href="./Minecraft.html">Minecraft!</a>
+									</span>
+									</br>
+									<span class="navlink">
+										<a href="./PublicProjects.html">Public Projects</a>
+									</span>
+									</br>
+									<span class="navlink">
+										<a href="./MemberPages.html">Member Pages</a>
+									</span>
+									</br>	
+								</div>
+							</div>
+						</div>
+					</td>
+					<!--Center Sub Section-->
+					<td class="td-content">
+						<div align="center">
+							<div class="content-box">
+								<div>
+									<h2>
+										Minecraft!
+									</h2>
+									<p align="left">
+										If you would like to play Minecraft with us, then you're welcome to join us here:</br>
+										</br>
+										http://htkb.dyndns.org:25565
+									</p>
+								</div>
+								</br>
+								</br>
+							</div>
+						</div>
+					</td>
+					<!--Right Sub Section-->
+					<td class="td-right" valign="top">
+						<div align="center">
+							<div class="right-box">
+								<h4>
+									Information
+								</h4>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<!--4th Row-->
+				<tr>
+					<!--Center Sub Section-->
+					<td class="td-footer" colspan="3">
+						<div align="center">
+							<div class="footer-box">
+								<p align="center">
+									© Copyright 2012 All rights reserved<br>
+									House That Kamurai Built<br>
+								</p>
+								<p align="left">
+									<font size="1">
+									Website managed by Kamurai.
+									</font>
+								</p>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<!-- saved from url=(0023)./ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></head><body bgcolor="#000000" link="#C0C0C0" vlink="#808080" alink="#FF0000">
+ 
+<font color="white">
+
+<?php
+	$title = "Online Experience Downloads";
+	$centerHeader = "<u>Online Experience Downloads</u>";
+	$centerContent = "
+						<p align='left'>
+							Here are downloads to play Minecraft with us:</br>
+							</br>
+							Mo Creatures (Minecraft v1.6.4):<t><a href='./downloads/Minecraft_MoCreatures.rar'>Come play Mo' Creatures!</a></br>
+							Pixelmon (Minecraft v1.6.2):<t><a href='./downloads/Minecraft_Pixelmon.rar'>Come play Pixelmon!</a></br>
+							Just follow the instructions in the compressed file.</br>
+						</p>
+						<p align='left'>
+							Here are downloads to play Cube World with us:</br>
+							</br>
+							Cube World:<t><a href='./downloads/CubeSetup3.exe'>Come play Cube World!</a></br>
+							</br>
+							DirectX:<t><a href='./downloads/directx_Jun2010_redist.exe'>Direct X Redistrutable</a></br>
+							DirectX 'Web':<t><a href='./downloads/dxwebsetup.exe'>Direct X Redistrutable</a></br>
+							</br>
+						</p>
+					";
+	$winrar = "<a href='../Section3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a>";
+?>
+
+<!--Overall body-->
+<?php 
+	include './layout.php';
+?>
+
+</font></body></html>
