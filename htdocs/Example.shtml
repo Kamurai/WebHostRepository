@@ -1,9 +1,0 @@
-<html>
-	<head>
-		<title>CGI Test Page</title>
-	</head>
-	<body>
-		The hit count should appear bolded below this line<br>
-	<b><!--#exec cgi="/cgi-bin/HelloWorld.pl" --></b><br>
-	</body>
-</html>
