@@ -1,6 +1,0 @@
-2012-01-31 23:03:50 ESTLOG:  database system was shut down at 2012-01-31 23:01:54 EST
-2012-01-31 23:03:50 ESTFATAL:  the database system is starting up
-2012-01-31 23:03:59 ESTLOG:  database system is ready to accept connections
-2012-01-31 23:03:59 ESTLOG:  autovacuum launcher started
-2012-01-31 23:03:59 ESTLOG:  could not receive data from client: No connection could be made because the target machine actively refused it.
-	

@@ -1,7 +1,0 @@
-2011-10-13 20:00:27 EDTLOG:  database system was shut down at 2011-10-13 19:58:32 EDT
-2011-10-13 20:00:27 EDTFATAL:  the database system is starting up
-2011-10-13 20:00:27 EDTLOG:  database system is ready to accept connections
-2011-10-13 20:00:27 EDTLOG:  autovacuum launcher started
-2011-10-13 20:00:38 EDTLOG:  could not receive data from client: No connection could be made because the target machine actively refused it.
-	
-2011-10-13 20:00:38 EDTLOG:  unexpected EOF on client connection

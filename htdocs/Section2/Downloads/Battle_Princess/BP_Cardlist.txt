@@ -1,0 +1,155 @@
+Faction Cards:
+	Ariel		Mermaid Princess
+		"Ocean Bound":						1 Defense
+		"Siren":							1 Stun or 1 Turn
+		1)King Triton						2 Defense
+		2)Underwater						3 Prevent
+		3)Prince Eric						2 Defense
+		4)Mermaid							1 Stun
+		5)Trident							1 Wish
+		6)Sing a little song				1 Prevent
+		7)Stormy Seas						3 Prevent
+		8)Ursula							2 Attack or 3 Defense
+	Aurora		Sleeping Princess
+		"Sleeping":							2 Resource
+		"Awakened":							3 Resource
+		1)Prince Philip						2 Defense
+		2)Sword of Truth					2 Attack
+		3)Shield of Virtue					2 Defense
+		4)True Loves's Kiss					1 Prevent
+		5)Fairy								1 Wish
+		6)Poisoned Needle					3 Stun
+		7)Enchanted Dragon					3 Attack
+		8)Maleficient						3 Starve
+	Rapunzel	Tower Princess
+		"Tower Bound":						2 Defense
+		"Hair of Gold":						1 Stun
+		1)Prince Flynn						2 Defense
+		2)Magical Hair						1 Score
+		3)Maximus							1 Defense
+		4)Pascal							1 Steal
+		5)Briar Thorns						2 Stun
+		6)Young Prince						1 Defense
+		7)Young Princess					1 Resource
+		8)Gothel							3 Starve
+	Belle		Abducted Princess
+		"Castle Bound":						2 Defense
+		"A Kingdom Whole":					2 Resource
+		1)Beast								2 Attack
+		2)Healthy Rose						1 Score
+		3)Maurice							1 Resource
+		4)Cogsworth							1 Starve
+		5)Lumiere							1 Prevent
+		6)Mrs. Potts						2 Resource
+		7)Angry Wolf						1 Attack
+		8)Gaston							1 Kill
+	Snow		Outlaw Princess
+		"Persuasive":						1 Turn
+		"My prince will come":				2 Resource
+		1)Prince Valiant					2 Defense
+		2)Dwarf								1 Resource
+		3)Negotations						2 Resource
+		4)Talking to Animals				1 Score
+		5)Poison Apple						2 Poison
+		6)Magic Mirror						2 Stun
+		7)Royal Guard						2 Starve
+		8)Evil Queen						3 Starve
+	Cinderella	Ragged Princess
+		"Lost Slipper":						1 Stun
+		"Rags to Riches":					2 Resource
+		1)Prince Charming					2 Defense
+		2)Fairy Godmother					1 Wish
+		3)A fitting dress					1 Resource
+		4)Pumpkin Carriage					1 Resource
+		5)Grand Castle						2 Resource
+		6)Dance Card						1 Stun
+		7)Evil Stepsister					1 Starve
+		8)Evil Stepmother					2 Starve
+	Tiana		Frog Princess
+		"Risk of warts":					1 Turn
+		"Frog kiss":						1 Stun
+		1)Prince Naveen						2 Defense
+		2)Mama Odie							1 Prevent
+		3)Alligator							1 Defense
+		4)Charlotte							1 Resource
+		5)Eli La Bouff						2 Resource
+		6)Shadow							1 Attack
+		7)Frog Curse						1 Kill
+		8)Facilier							2 Wish
+	Alice		Lolita Princess
+		"Tea Party":						Move a character from each other player (if it exists) to another player than yourself.
+		"Vorpal Sword":						1 Attack
+		1)"Eat Me"							Double the Attack and/or Defense of a character, trash from game.
+		2)Cheshire Cat						1 Steal
+		3)Bandersnatch						2 Attack
+		4)Jub jub bird						1 Attack
+		5)Off with Her head					1 Score
+		6)Red Queen							1 Resource
+		7)White Queen						1 Resource
+		8)Jabberwocky						3 Attack
+	Jasmine		Arabian Princess
+		"Desert Bound":						1 Prevent
+		"Magic Lamp":						3 Wish 
+		1)Carpet							Allow another character to attack without being blocked.
+		2)Abu								1 Steal
+		3)Aladdin							2 Steal
+		4)Genie								3 Wish, trash from game when out of wishes.
+		5)Nala								1 Prevent
+		6)Agraba							2 Resource
+		7)Eago								1 Steal
+		8)Jaffar							1 Kill or 3 Starve
+	Elsa		Ice Princess
+		"Ice Magic":						1 Attack
+		"Control":							1 Stun
+		1)Anna								2 Resource
+		2)Giant Snowman						2 Defense
+		3)Kristoff							2 Defense
+		4)A Moose							1 Resource or 1 Defense
+		5)Tiny Snowman						1 Stun
+		6)Winter Castle						1 Score
+		7)Soldier							1 Attack
+		8)Prince Hans						3 Starve
+	Pocahontas	Native American Princess
+		"Dances with Wolves":				1 Attack
+		"Colors in the Wind":				2 Prevent
+		1)John Smith						2 Defense
+		2)Chief Powhatan					1 Stun
+		3)One with Nature					1 Score
+		4)Grandma Willow					1 Resource
+		5)Meeko								1 Steal
+		6)Flit								1 Resource
+		7)Kocoum							2 Attack
+		8)Governer Ratcliffe				3 Starve
+	Mulan		Asian Warrior Princess
+		"By the sword"						1 Attack
+		"Charge"							2 Attack
+		1)Captain Li						1 Attack
+		2)Cricket							1 Resource
+		3)Mu Shu							1 Turn
+		4)Soldier							1 Attack
+		5)Friend of the Emporer				1 Score
+		6)"Noble Steed"						1 Defense
+		7)Shan Yu							2 Attack
+		8)Hun								1 Attack
+	Tinkerbell	Fairy Princess
+		"Sneak in, sneak out":				1 Steal
+		"Medicine":							1 Kill
+		1)Peter Pan							2 Steal
+		2)Lost Boy							1 Attack
+		3)Neverland							3 Prevent
+		4)Treasure							1 Score
+		5)Pixie								1 Steal
+		6)Pirate							1 Attack
+		7)Storyteller						3 Stun
+		8)Captain Hook						2 Attack
+	Merida		Scottish Princess
+		"One shot":							1 Kill
+		"Two shots":						2 Kill
+		1)Battle King						2 Attack
+		2)Daemon Bear						2 Attack
+		3)Clansmen							1 Attack
+		4)Unhelpful Witch					1 Wish
+		5)Gentle Bear						1 Prevent
+		6)Helpful Witch						2 Stun
+		7)Castle of the Highlands			2 Defense
+		8)Brother							1 Stun

@@ -1,6 +1,0 @@
-2011-10-01 22:55:58 EDTLOG:  received fast shutdown request
-2011-10-01 22:55:58 EDTLOG:  aborting any active transactions
-2011-10-01 22:55:58 EDTFATAL:  terminating connection due to administrator command
-2011-10-01 22:55:58 EDTLOG:  autovacuum launcher shutting down
-2011-10-01 22:55:58 EDTLOG:  shutting down
-2011-10-01 22:55:59 EDTLOG:  database system is shut down

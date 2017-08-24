@@ -1,0 +1,122 @@
+Battle Princesses Deck Building Game:
+
+This project is the merging of two concepts:
+
+	1) Semi-Permanent resources
+	2) Using Disney Princesses as characters to create themes
+	
+	
+Princesses:
+	Two stages:
+		Ariel		Mermaid Princess
+		Aurora		Sleeping Princess
+		Rapunzel	Tower Princess
+		Belle		Abducted Princess
+	Influential:
+		Snow		Outlaw Princess
+		Cinderella	Ragged Princess
+		Tiana		Frog Princess
+		Alice		Lolita Princess
+		Jasmine		Arabian Princess
+	Action:
+		Elsa		Ice Princess
+		Pocahontas	Native American Princess
+		Mulan		Asian Warrior Princess
+		Tinkerbell	Fairy Princess
+		Merida		Scottish Princess
+	
+Abilities: Princesses, Princes and characters have abilities.
+	Attack		Supply 1 strength against another kingdom, will take 1 point from the defending kingdom if not blocked, discarded or removed.
+	Defense		Will prevent attacks against the kingdom.
+	Prevent		Discard that number of attackers.
+	Steal		Will transfer points without attacking.
+	Stun		A character gains stun tokens and cannot be used while stunned.
+	Kill		Discard that number of characters from the board.
+	Poison		A character gains poison tokens and is removed when the counters run out.
+	Stop		Prevent an attack character from attacking.
+	Turn		Recruit a character to your kingdom
+	Resource	Generates that much resource and is discarded.
+	Starve		Prevents that much resource from being uses and is then discarded.
+	Score		Take a point from the Pooled points.
+	Wish		A character gains wish tokens.
+				A wish token can be removed to perform the following:
+					1) Stun
+					2) Steal
+					3) Stop
+					4) Turn
+					5) Prevent
+					6) Score
+					7) Cast a character without paying its cost
+					8) Buy a card without paying its cost
+					9) Pay for an ability without paying its cost
+Tokens:
+	Remove a token once per turn per character.
+	
+Attack:
+	A character may attack another character or player
+			
+Scoring:
+	Each player starts with 10 point counters.
+	20 points per player are added to the pool.
+	The Queen's crown is worth 10 points and allows the player to steal one point per turn.
+
+	Buying pooled points:
+	5 Resources may buy 1 point from the community pool.
+	
+	
+Win conditions:
+	One player has half of the available points.
+		2 players:	10+20 = 30*2 = 60 + 10 (Crown) = 70 / 2 (Number of players) = 35 (to win) - 10 (starting points) = 25 (to score)
+	All other players are reduced to 0 points.
+	
+Loss conditions:
+	A player is reduced to 0 points.
+	Another player(s) attains a win condition.
+
+Resources:
+	Option 1:	Love and Hate as two different resources
+	Option 2:	Charm/Influence as a single resource (recommended)
+	Option 3: Any card can be placed in the resource bank.
+	
+Cards:
+	Cards are always played to the field and exhausted when used.
+	At end of turn, exhausted cards are cleaned into the discard pile.
+	A player may chose whether or not to discard cards in hand.
+	
+	Resource cards
+	Character cards
+	
+	Factions:
+		Each card is related to a specific princess.
+		That princess may buy/play their own faction's cards at one less resouce.
+	
+	Stock:
+		Each player may select one card from their faction for the stock.
+		The remaining stock may be created in different ways:
+			1) Split between in game factions, but random.
+			2) Randomly chosen from in game factions.
+			3) Randomly chosen from all factions.
+			4) Random selection for in game faction for per player
+				with excess random stacks being chosen from non-in-game factions.
+		Options:
+		1) There should be stacks equal to the number of players.
+		2) There should be two stacks for each player.
+		3) Number of stacks is relative to player. (recommended)
+			2	4 per player
+			3	2 per player, 2 random
+			4	2 per player
+			5	1 per player, 3 random
+			6	1 per player, 2 random
+			7	1 per player, 1 random
+			8	1 per player
+	
+Phases:
+	Draw
+	Play
+		Cast
+			Play a card to the field or resource bank.
+		Attack
+			Exhaust characters to resolve their effects.
+	Clean
+	Discard
+	Fizzle to 5
