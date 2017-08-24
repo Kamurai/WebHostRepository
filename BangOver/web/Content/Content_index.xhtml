@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+    <h:head />
+    <h:body>
+        <c:choose>
+            <c:when test="#{LoginBean.getLoggedIn()}">
+                <title>
+                    Bang Over!
+                </title>
+                <h2>
+                    <u>
+                        Welcome to Bang Over!
+                    </u>
+                </h2>
+                <p align='center'>
+                    Select which Celebrity you'd Bang Over the other.
+                </p>
+                <!--<c:set value="#{BangBean.PullCelebrityPair(LoginBean.userindex)}" var="tickle"></c:set>-->
+                <table>
+                    <tr>
+                        <td width="50%">
+                            <h:commandLink action="#{BangBean.SwapPositions(LoginBean.userindex,BangBean.celebrityName1,BangBean.celebrityName2)}"> 
+                                <h:graphicImage value="#{BangBean.getpath()}#{BangBean.getfolder()}#{BangBean.celebrityURL1}" alt="#{BangBean.celebrityName1}"  width="240px" height="320px"/>
+                            </h:commandLink>
+                        </td>
+                        <td width="50%">
+                            <h:commandLink action="#{BangBean.SwapPositions(LoginBean.userindex,BangBean.celebrityName2,BangBean.celebrityName1)}"> 
+                                <h:graphicImage value="#{BangBean.getpath()}#{BangBean.getfolder()}#{BangBean.celebrityURL2}" alt="#{BangBean.celebrityName2}"  width="240px" height="320px"/>
+                            </h:commandLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50%">
+                            <h:outputText value='#{BangBean.celebrityName1}' />
+                        </td>
+                        <td width="50%">
+                            <h:outputText value='#{BangBean.celebrityName2}' />
+                        </td>
+                    </tr>
+                </table>
+            </c:when>
+        </c:choose>
+    </h:body>
+</html>
+

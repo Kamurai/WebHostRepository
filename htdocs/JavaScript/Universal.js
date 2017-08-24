@@ -104,7 +104,6 @@ function GetExtension(extension)
     }
 }
 
-
 function GetInformation(extension)
 {
     if(extension == 0)

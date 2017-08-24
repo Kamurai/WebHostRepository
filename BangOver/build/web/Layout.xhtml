@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <link href='#{MainBean.GetPath()}Pictures/favicon.ico' rel='shortcut icon' type='image/x-icon' />
+        <link href='#{MainBean.GetPath()}Pictures/favicon.ico' rel='icon'          type='image/x-icon' />
+        <link href='#{MainBean.GetStylePath()}moo.css'         rel='stylesheet'    type='text/css' />
+    </h:head>
+    <h:body>
+        <f:event type="preRenderView" listener="#{BangBean.PullAdvertPair()}" />
+            <div align='center' width='100%'>
+                <!--Table to place all subsections-->
+                <table width='100%' cellpadding='0px' cellspacing='0px' border='10' align='center'>
+                    <!--Top Row-->
+                    <tr>
+                        <h:form>
+                             <ui:include src="#{MainBean.GetPath()}Common/Logo.xhtml"></ui:include>
+                        </h:form>
+                    </tr>
+                    <!--2nd Row-->
+                    <tr>
+                        <!--NavBar-->
+                        <td class='td-navbar' colspan='3' alt=''>
+                                <ul id='list-nav'>
+                                        <h:form>
+                                            <ui:include src="#{MainBean.GetPath()}Common/NavBar.xhtml"></ui:include>
+                                        </h:form>
+                                    
+                                </ul>
+                        </td>
+                    </tr>
+                    <!--3rd Row-->
+                    <tr>
+                        <!--Left Sub Section-->
+                        <td class='td-left' valign='top'>
+                            <div align='center'>
+                                <img src="#{BangBean.getpath()}#{BangBean.getadvertfolder()}#{BangBean.advert1}"  width="200px" height="400px"/>
+                            </div>
+                        </td>
+                        <!--Center Sub Section-->
+                        <td class='td-content'>
+                            <div align='center' valign='top'>
+                                <div class='content-box'>
+                                    <div>
+                                        <h:form>
+                                            <ui:include src="#{MainBean.Content()}"></ui:include>
+                                        </h:form>
+                                     </div>
+                                    <br/>
+                                    <br/>
+                                </div>
+                            </div>
+                        </td>
+                        <!--Right Sub Section-->
+                        <td class='td-right' valign='top'>
+                            <div align='center'>");
+                                <img src="#{BangBean.getpath()}#{BangBean.getadvertfolder()}#{BangBean.advert2}"  width="200px" height="400px"/>
+                            </div>
+                        </td>
+                    </tr>
+                    <!--4th Row-->
+                    <tr>
+                        <!--Center Sub Section-->
+                        <td class='td-footer' colspan='3'>
+                            <div align='center'>
+                                <div class='footer-box'>
+                                    <h:form>
+                                        <ui:include src="#{MainBean.GetPath()}Common/Footer.xhtml"></ui:include>
+                                    </h:form>
+                                    <p align='left'>
+                                        <font size='1'>
+                                            #{MainBean.WebMaster()}
+                                        </font>
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    </h:body>
+</html>
+

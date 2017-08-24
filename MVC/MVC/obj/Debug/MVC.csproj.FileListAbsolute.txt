@@ -4,6 +4,7 @@ C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\MVC.pdb
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\Antlr3.Runtime.dll
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\EntityFramework.dll
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\EntityFramework.SqlServer.dll
+C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\EntityFramework6.Npgsql.dll
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\Microsoft.AspNet.Identity.Core.dll
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\Microsoft.AspNet.Identity.Owin.dll
@@ -17,7 +18,15 @@ C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\Microsoft.Owi
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\Microsoft.Owin.Security.OAuth.dll
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\Microsoft.Owin.Security.Twitter.dll
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\MySql.Data.dll
+C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\MySql.Data.Entity.EF5.dll
+C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\MySql.Data.Entity.EF6.dll
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\Newtonsoft.Json.dll
+C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\Npgsql.dll
+C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\Oracle.DataAccess.dll
+C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\Oracle.ManagedDataAccess.dll
+C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\Oracle.Web.dll
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\Owin.dll
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\System.Web.Helpers.dll
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\System.Web.Mvc.dll
@@ -28,7 +37,9 @@ C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\System.Web.We
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\System.Web.WebPages.Razor.dll
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\WebGrease.dll
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\Antlr3.Runtime.pdb
+C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\EntityFramework6.Npgsql.xml
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\Newtonsoft.Json.xml
+C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\Npgsql.xml
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\System.Web.Helpers.xml
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\System.Web.Mvc.xml
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\System.Web.Optimization.xml
@@ -50,9 +61,6 @@ C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\Microsoft.Owi
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\obj\Debug\MVC.csprojResolveAssemblyReference.cache
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\obj\Debug\MVC.dll
 C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\obj\Debug\MVC.pdb
-C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\obj\Debug\MVC.csprojResolveAssemblyReference.cache
-C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\MySql.Data.Entity.EF5.dll
-C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\MySql.Data.Entity.EF6.dll
-C:\Users\Kamurai\Documents\Visual Studio 2013\Projects\MVC\MVC\bin\MySql.Data.dll

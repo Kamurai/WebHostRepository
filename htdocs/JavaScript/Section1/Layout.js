@@ -1,14 +1,14 @@
 function WriteWebpage(input, level, extension)
 {
-	document.write("<div align='center'>");
+	document.write("<div align=\"center\">");
 		//<!--Table to place all subsections-->
-		document.write("<table width='100%' cellpadding='0px' cellspacing='0px' border='0' align='center'>");
+		document.write("<table width=\"100%\" cellpadding=\"0px\" cellspacing=\"0px\" border=\"0\" align=\"center\">");
 			document.write("<tbody>");
 				//<!--Top Row-->
 				document.write("<tr>");
 					//<!--Center Sub Section-->
-					document.write("<td class='td-header' colspan='3' alt='' valign='top'>");
-						document.write("<p align='center'>");
+					document.write("<td class=\"td-header\" colspan=\"3\" alt=\"\" valign=\"top\">");
+						document.write("<p align=\"center\">");
 							//<!--Primary Header: Main Splash / Logo-->
 							TitlePicture(level);
 						document.write("</p>");
@@ -17,9 +17,9 @@ function WriteWebpage(input, level, extension)
 				//<!--2nd Row-->
 				document.write("<tr>");
 					//<!--NavBar-->
-					document.write("<td class='td-navbar' colspan='3' alt=''>");
+					document.write("<td class=\"td-navbar\" colspan=\"3\" alt=\"\">");
 						document.write("<div>");
-							document.write("<ul id='list-nav'>");
+							document.write("<ul id=\"list-nav\">");
 								document.write("<li>");
 									NavBar(level, extension);
 								document.write("</li>");
@@ -30,10 +30,10 @@ function WriteWebpage(input, level, extension)
 				//<!--3rd Row-->
 				document.write("<tr>");
 					//<!--Left Sub Section-->
-					document.write("<td class='td-left' valign='top'>");
-						document.write("<div align='center'>");
-							document.write("<div class='left-box'>");
-								document.write("<div class='navlinks'>");
+					document.write("<td class=\"td-left\" valign=\"top\">");
+						document.write("<div align=\"center\">");
+							document.write("<div class=\"left-box\">");
+								document.write("<div class=\"navlinks\">");
 									document.write("<h4>");
 										document.write("Navigation");
 									document.write("</h4>");
@@ -43,9 +43,9 @@ function WriteWebpage(input, level, extension)
 						document.write("</div>");
 					document.write("</td>");
 					//<!--Center Sub Section-->
-					document.write("<td class='td-content'>");
-						document.write("<div align='center'>");
-							document.write("<div class='content-box'>");
+					document.write("<td class=\"td-content\">");
+						document.write("<div align=\"center\">");
+							document.write("<div class=\"content-box\">");
 								document.write("<div>");
 									Title(input);
 									Header(input);
@@ -57,13 +57,14 @@ function WriteWebpage(input, level, extension)
 						document.write("</div>");
 					document.write("</td>");
 					//<!--Right Sub Section-->
-					document.write("<td class='td-right' valign='top'>");
-						document.write("<div align='center'>");
-							document.write("<div class='right-box'>");
+					document.write("<td class=\"td-right\" valign=\"top\">");
+						document.write("<div align=\"center\">");
+							document.write("<div class=\"right-box\">");
 								document.write("<h4>");
 									document.write("Information");
 								document.write("</h4>");
 								GetInformation(extension);
+                            	Versions(input);
                             document.write("</div>");
 						document.write("</div>");
 					document.write("</td>");
@@ -71,9 +72,9 @@ function WriteWebpage(input, level, extension)
 				//<!--4th Row-->
 				document.write("<tr>");
 					//<!--Center Sub Section-->
-					document.write("<td class='td-footer' colspan='3'>");
-						document.write("<div align='center'>");
-							document.write("<div class='footer-box'>");
+					document.write("<td class=\"td-footer\" colspan=\"3\">");
+						document.write("<div align=\"center\">");
+							document.write("<div class=\"footer-box\">");
 								Footer();
 								WebMaster();
 							document.write("</div>");
@@ -87,7 +88,7 @@ function WriteWebpage(input, level, extension)
 
 function WinRAR()
 {
-	document.write("<p align='center'>");
-		document.write("<a href='http://htkb.dyndns.org/Section3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>");	
+	document.write("<p align=\"center\">");
+		document.write("<a href=\"http://htkb.dyndns.org/Section3/downloads/wrar371.exe\">You may need WinRar to open zip files from this site.</a></br>");	
 	document.write("</p>");
 }

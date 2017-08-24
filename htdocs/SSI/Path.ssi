@@ -1,0 +1,39 @@
+<!--#if expr="$vLevel == 0" -->
+	<!--#set var="vPath" value="./" -->
+<!--#elif expr="$vLevel == 1" -->
+	<!--#set var="vPath" value="../" -->
+<!--#elif expr="$vLevel == 2" -->
+	<!--#set var="vPath" value="../../" -->
+<!--#elif expr="$vLevel == 3" -->
+	<!--#set var="vPath" value="../../../" -->
+<!--#elif expr="$vLevel == 4" -->
+	<!--#set var="vPath" value="../../../../" -->
+<!--#elif expr="$vLevel == 5" -->
+	<!--#set var="vPath" value="../../../../../" -->
+<!--#elif expr="$vLevel == 6" -->
+	<!--#set var="vPath" value="../../../../../../" -->
+<!--#elif expr="$vLevel == 7" -->
+	<!--#set var="vPath" value="../../../../../../../" -->
+<!--#else -->
+	NOPE!
+<!--#endif -->
+	
+<!--#if expr="$vLevel == 0" -->
+	<!--#set var="vTopPath" value="../" -->
+<!--#elif expr="$vLevel == 1" -->
+	<!--#set var="vTopPath" value="../../" -->
+<!--#elif expr="$vLevel == 2" -->
+	<!--#set var="vTopPath" value="../../../" -->
+<!--#elif expr="$vLevel == 3" -->
+	<!--#set var="vTopPath" value="../../../../" -->
+<!--#elif expr="$vLevel == 4" -->
+	<!--#set var="vTopPath" value="../../../../../" -->
+<!--#elif expr="$vLevel == 5" -->
+	<!--#set var="vTopPath" value="../../../../../../" -->
+<!--#elif expr="$vLevel == 6" -->
+	<!--#set var="vTopPath" value="../../../../../../../" -->
+<!--#elif expr="$vLevel == 7" -->
+	<!--#set var="vTopPath" value="../../../../../../../../" -->
+<!--#else -->
+	NOPE!
+<!--#endif -->

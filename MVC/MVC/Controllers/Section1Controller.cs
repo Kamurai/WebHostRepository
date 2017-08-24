@@ -32,22 +32,10 @@ namespace MVCApplication.Controllers
             return View("http://htkb.dyndns.org/Section1/Project3.shtml");
         }
 
-        public ActionResult Project7()
+        public ActionResult Project4() //Apache SSI
         {
             ViewBag.Message = "";
-            return View();
-        }
-
-        public ActionResult Project8()
-        {
-            ViewBag.Message = "";
-            return View();
-        }
-
-        public ActionResult Project9()
-        {
-            ViewBag.Message = "";
-            return View();
+            return View("http://htkb.dyndns.org/SSI/Section1/index.html");
         }
     }
 }

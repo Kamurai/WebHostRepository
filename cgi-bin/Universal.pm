@@ -74,16 +74,19 @@ sub Information
 {
 	##  Writes the Information section of the webpage
 
+	my $Page = $_[0];
+	
 	print "<p align='center'>";
 		print "This page is written using Perl.";
 	print "</p>";
+	Versions($Page);
 }
 
 sub GetPath
 {
 	##  Gets the base path based on the level of the webpage
 
-	my $Level = $ARGV[0];
+	my $Level = $_[0];
 
 	my $Result = "";
 

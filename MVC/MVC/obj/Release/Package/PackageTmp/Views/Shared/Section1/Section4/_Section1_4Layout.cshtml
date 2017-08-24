@@ -85,17 +85,9 @@
                                         @Html.ActionLink("Databases", "Index", "Section1_6")
 									</span>
 									<br>	
-									<span class="navlink">
-                                        @Html.ActionLink("HTML5", "Project7", "Section1")
-									</span>
-									<br>	
-									<span class="navlink">
-                                        @Html.ActionLink("XLS", "Project8", "Section1")
-									</span>
-									<br>	
-									<span class="navlink">
-                                        @Html.ActionLink("XML DOM", "Project9", "Section1")
-									</span>
+                                    <span class="navlink">
+                                        <a href="http://htkb.dyndns.org/SSI/Section1/index.html">Apache SSI</a>
+                                    </span>
                                     <br>
 								</div>
 							</div>
@@ -120,7 +112,9 @@
 								<h4>
 									Information
 								</h4>
-							    This is written with ASP.NET as a MVC Application.
+							    This is written with ASP.NET as a MVC Application.<br /><br />
+                                Other verisons can be found here:<br />
+                                @Html.Raw(@Page.Versions)
                             </div>
 						</div>
 					</td>

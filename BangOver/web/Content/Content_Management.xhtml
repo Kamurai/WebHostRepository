@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head />
+    <h:body>
+        <c:choose>
+            <c:when test="#{LoginBean.getLoggedIn()}">
+                <title>
+                    Bang Over!
+                </title>
+                <h2>
+                    <u>
+                        The User List!
+                    </u>
+                </h2>
+                <p align='center'>
+                    This is a list of the users on Bang Over.<br/>
+                    <table>
+                        <!--User Count Headers -->
+                        <tr>
+                            <td>Basic Users</td>
+                            <td>Managers</td>
+                            <td>Administrators</td>
+                            <td>Into Women</td>
+                            <td>Into Men</td>
+                            <td>Into Trans Women</td>
+                            <td>Into Trans Men</td>
+                            <td>Users Online</td>
+                        </tr>
+                        <!--User Counts -->
+                        <!--<c:set value="#{BangBean.setUserCounts()}" var="tickle"></c:set>-->
+                        <tr>
+                            <ui:repeat var="x" value="#{BangBean.uc}" size="#{BangBean.getUCSize()}" varStatus="myVarStatus">
+                                <td><h:outputText value="#{x[0]}" /></td>
+                            </ui:repeat>
+                        </tr>
+                    </table>
+                    <br/>
+                    <br/>
+                    <table>
+                        <!--User Headers -->
+                        <tr>
+                            <td>#</td>
+                            <td>Username</td>
+                            <td>Email</td>
+                            <td>Admin Level</td>
+                            <td>Into Women</td>
+                            <td>Into Men</td>
+                            <td>Into Trans Women</td>
+                            <td>Into Trans Men</td>
+                            <td>Online</td>
+                        </tr>
+                        <!--Users-->
+                        <!--<c:set value="#{BangBean.setUserList()}" var="tickle"></c:set>-->
+                        <ui:repeat var="x" value="#{BangBean.ul}" size="#{BangBean.getULSize()}" varStatus="myVarStatus">
+                            <tr>
+                                <td><h:outputText value="#{myVarStatus.index+1}" /></td>
+                                <td><h:outputText value="#{x[0]}" /></td>
+                                <td><h:outputText value="#{x[1]}" /></td>
+                                <ui:fragment rendered="#{x[2] == '2'}">
+                                    <td><h:outputText value="Admin" /></td>
+                                </ui:fragment>
+                                <ui:fragment rendered="#{x[2] == '1'}">
+                                    <td><h:outputText value="Manager" /></td>
+                                </ui:fragment>
+                                <ui:fragment rendered="#{x[2] == '0'}">
+                                    <td><h:outputText value="Basic" /></td>
+                                </ui:fragment>
+                                <ui:fragment rendered="#{x[3] == '1'}">
+                                    <td><h:outputText value="Yes" /></td>
+                                </ui:fragment>
+                                <ui:fragment rendered="#{x[3] != '1'}">
+                                    <td><h:outputText value="No" /></td>
+                                </ui:fragment>
+                                 <ui:fragment rendered="#{x[4] == '1'}">
+                                    <td><h:outputText value="Yes" /></td>
+                                </ui:fragment>
+                                <ui:fragment rendered="#{x[4] != '1'}">
+                                    <td><h:outputText value="No" /></td>
+                                </ui:fragment>
+                                 <ui:fragment rendered="#{x[5] == '1'}">
+                                    <td><h:outputText value="Yes" /></td>
+                                </ui:fragment>
+                                <ui:fragment rendered="#{x[5] != '1'}">
+                                    <td><h:outputText value="No" /></td>
+                                </ui:fragment>
+                                 <ui:fragment rendered="#{x[6] == '1'}">
+                                    <td><h:outputText value="Yes" /></td>
+                                </ui:fragment>
+                                <ui:fragment rendered="#{x[6] != '1'}">
+                                    <td><h:outputText value="No" /></td>
+                                </ui:fragment>
+                                 <ui:fragment rendered="#{x[7] == '1'}">
+                                    <td><h:outputText value="Yes" /></td>
+                                </ui:fragment>
+                                <ui:fragment rendered="#{x[7] != '1'}">
+                                    <td><h:outputText value="No" /></td>
+                                </ui:fragment>
+                                
+                            </tr>
+                        </ui:repeat>
+                    </table>
+                </p>
+            </c:when>
+        </c:choose>
+    </h:body>
+</html>
+

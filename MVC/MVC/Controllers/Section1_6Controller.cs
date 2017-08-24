@@ -58,11 +58,5 @@ namespace MVC.Controllers
             ViewBag.Message = "";
             return View(new PostgreSQLConnectionString());
         }
-
-        public ActionResult Project6()
-        {
-            ViewBag.Message = "";
-            return View();
-        }
     }
 }

@@ -88,7 +88,7 @@ print "<div align='center'>";
                                     print "Information";
                                 print "</h4>";
                             	#Universal level
-                                Information();
+                                Information($Page);
                             print "</div>";
                         print "</div>";
                     print "</td>";

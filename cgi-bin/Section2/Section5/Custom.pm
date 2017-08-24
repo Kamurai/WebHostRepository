@@ -171,4 +171,28 @@ sub Content
 
 }
 
+sub Versions
+{
+	my $Page = $_[0];
+
+	print "<p align='left'>";
+		print "Other versions of this page are here:<br>";
+		if($Page <= 0)
+		{
+			print "<a href=\"http://htkb.dyndns.org/Section2/Section5/index.html\">HTML</a><br>";
+			print "<a href=\"http://htkb.dyndns.org/Section2/Section5/index.php\">PHP</a><br>";
+			print "<a href=\"http://htkb.dyndns.org/Javascript/Section2/Section5/index.html\">HTML Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Section5/index.asp\">ASP Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Section5/index.aspx\">ASP.NET Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Section5/index.jsp\">JSP</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Section5/index.xhtml\">JSF</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Section5/index.cshtml\">ASP.NET Web App</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Section5/index.aspx\">ASP.NET Webform</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Section5/index\">ASP.NET MVC App</a><br>";
+			print "<a href=\"http://htkb.dyndns.org/SSI/Section2/Section5/index.html\">Apache SSI</a><br>";
+			
+		}
+	print "</p>";
+}
+
 1;

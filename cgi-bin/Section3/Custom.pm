@@ -129,12 +129,6 @@ sub Content
     }
     elsif($Page == 1)
     {
-        print "Here are downloads to play Minecraft with us:</br>";
-        print "</br>";
-        print "Mo Creatures (Minecraft v1.7.2):<t><a href='http://mocreatures.org/'>Go here to download and manually install Mo Creatures!</a></br>";
-        print "</br>";
-        print "</p>";
-        print "<p align='left'>";
         print "Here are downloads to play Cube World with us:</br>";
         print "</br>";
         print "Cube World:<t><a href='http://htkb.dyndns.org/Downloads/CubeSetup3.exe'>Come play Cube World!</a></br>";
@@ -180,6 +174,102 @@ sub Content
         print "</p>";
     }
 print "</p>";
+}
+
+sub Versions
+{
+	my $Page = $_[0];
+
+	print "<p align='left'>";
+		print "Other versions of this page are here:<br>";
+		if($Page <= 0)
+		{
+			print "<a href=\"http://htkb.dyndns.org/Section3/index.html\">HTML</a><br>";
+			print "<a href=\"http://htkb.dyndns.org/Section3/index.php\">PHP</a><br>";
+			print "<a href=\"http://htkb.dyndns.org/Javascript/Section3/index.html\">HTML Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/ASP/Section3/index.asp\">ASP Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section3/index.aspx\">ASP.NET Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section3/index.jsp\">JSP</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section3/index.xhtml\">JSF</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section3/index.cshtml\">ASP.NET Web App</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/WebForm/Section3/index.aspx\">ASP.NET Webform</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section3/index\">ASP.NET MVC App</a><br>";
+			print "<a href=\"http://htkb.dyndns.org/SSI/Section3/index.html\">Apache SSI</a><br>";
+			
+		}
+		elsif($Page == 1)
+		{
+			print "<a href=\"http://htkb.dyndns.org/Section3/Project1.html\">HTML</a><br>";
+			print "<a href=\"http://htkb.dyndns.org/Section3/Project1.php\">PHP</a><br>";
+			print "<a href=\"http://htkb.dyndns.org/Javascript/Section3/Project1.html\">HTML Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/ASP/Section3/Project1.asp\">ASP Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section3/Project1.aspx\">ASP.NET Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section3/Project1.jsp\">JSP</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section3/Project1.xhtml\">JSF</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section3/Project1.cshtml\">ASP.NET Web App</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/WebForm/Section3/Project1.aspx\">ASP.NET Webform</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section3/Project1\">ASP.NET MVC App</a><br>";
+			print "<a href=\"http://htkb.dyndns.org/SSI/Section3/Project1.html\">Apache SSI</a><br>";
+			
+		}
+		elsif($Page == 2)
+		{
+			print "<a href=\"http://htkb.dyndns.org/Section3/Project2.html\">HTML</a><br>";
+			print "<a href=\"http://htkb.dyndns.org/Section3/Project2.php\">PHP</a><br>";
+			print "<a href=\"http://htkb.dyndns.org/Javascript/Section3/Project2.html\">HTML Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/ASP/Section3/Project2.asp\">ASP Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section3/Project2.aspx\">ASP.NET Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section3/Project2.jsp\">JSP</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section3/Project2.xhtml\">JSF</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section3/Project2.cshtml\">ASP.NET Web App</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/WebForm/Section3/Project2.aspx\">ASP.NET Webform</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section3/Project2\">ASP.NET MVC App</a><br>";
+			print "<a href=\"http://htkb.dyndns.org/SSI/Section3/Project2.html\">Apache SSI</a><br>";
+			
+		}
+		elsif($Page == 3)
+		{
+			print "<a href=\"http://htkb.dyndns.org/Section3/Project3.html\">HTML</a><br>";
+			print "<a href=\"http://htkb.dyndns.org/Section3/Project3.php\">PHP</a><br>";
+			print "<a href=\"http://htkb.dyndns.org/Javascript/Section3/Project3.html\">HTML Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/ASP/Section3/Project3.asp\">ASP Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section3/Project3.aspx\">ASP.NET Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section3/Project3.jsp\">JSP</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section3/Project3.xhtml\">JSF</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section3/Project3.cshtml\">ASP.NET Web App</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/WebForm/Section3/Project3.aspx\">ASP.NET Webform</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section3/Project3\">ASP.NET MVC App</a><br>";
+			print "<a href=\"http://htkb.dyndns.org/SSI/Section3/Project3.html\">Apache SSI</a><br>";
+		}
+		elsif($Page == 4)
+		{
+			print "<a href=\"http://htkb.dyndns.org/Section3/Project4.html\">HTML</a><br>";
+			print "<a href=\"http://htkb.dyndns.org/Section3/Project4.php\">PHP</a><br>";
+			print "<a href=\"http://htkb.dyndns.org/Javascript/Section3/Project4.html\">HTML Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/ASP/Section3/Project4.asp\">ASP Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section3/Project4.aspx\">ASP.NET Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section3/Project4.jsp\">JSP</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section3/Project4.xhtml\">JSF</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section3/Project4.cshtml\">ASP.NET Web App</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/WebForm/Section3/Project4.aspx\">ASP.NET Webform</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section3/Project4\">ASP.NET MVC App</a><br>";
+			print "<a href=\"http://htkb.dyndns.org/SSI/Section3/Project4.html\">Apache SSI</a><br>";
+		}
+		elsif($Page == 5)
+		{
+			print "<a href=\"http://htkb.dyndns.org/Section3/Project5.html\">HTML</a><br>";
+			print "<a href=\"http://htkb.dyndns.org/Section3/Project5.php\">PHP</a><br>";
+			print "<a href=\"http://htkb.dyndns.org/Javascript/Section3/Project5.html\">HTML Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/ASP/Section3/Project5.asp\">ASP Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/ASPNET/Section3/Project5.aspx\">ASP.NET Javascript</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section3/Project5.jsp\">JSP</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section3/Project5.xhtml\">JSF</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/WebApplication/Section3/Project5.cshtml\">ASP.NET Web App</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/WebForm/Section3/Project5.aspx\">ASP.NET Webform</a><br>";
+			print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section3/Project5\">ASP.NET MVC App</a><br>";
+			print "<a href=\"http://htkb.dyndns.org/SSI/Section3/Project5.html\">Apache SSI</a><br>";
+		}
+	print "</p>";
 }
 
 1;

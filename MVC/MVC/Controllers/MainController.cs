@@ -21,7 +21,7 @@ namespace MVCApplication.Controllers
             return View();
         }
 
-        public ActionResult Affiliation()
+        public ActionResult Media()
         {
             ViewBag.Message = "";
             return View();
@@ -32,19 +32,5 @@ namespace MVCApplication.Controllers
             ViewBag.Message = "";
             return View();
         }
-
-        public ActionResult PublicProjects()
-        {
-            ViewBag.Message = "";
-            return View();
-        }
-
-        public ActionResult MemberPages()
-        {
-            ViewBag.Message = "";
-            return View();
-        }
-
-
     }
 }

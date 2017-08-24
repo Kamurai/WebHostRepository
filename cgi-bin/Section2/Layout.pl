@@ -86,7 +86,7 @@ print "<div align='center'>";
                                 print "<h4>";
                                     print "Information";
                                 print "</h4>";
-                                Information();
+                                Information($Page);
                             print "</div>";
                         print "</div>";
                     print "</td>";

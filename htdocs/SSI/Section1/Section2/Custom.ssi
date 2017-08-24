@@ -1,0 +1,106 @@
+<!--#if expr="$vCustom == 0" -->
+	<link href="<!--#echo var="$vStylePath"-->moo.css" rel="stylesheet" type="text/css"/>
+<!--#elif expr="$vCustom == 1" -->
+	<span class='navlink'>
+		<a href='http://htkb.dyndns.org/Section1/Project1.html'>Basic HTML</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="http://htkb.dyndns.org/Section1/Project1.php">PHP</a>
+	</span>
+	<span class="navlink">
+		<a href="../Section2/index.html">Java Script</a>
+		<h5>
+			<span class="navlink">
+				<a href="http://htkb.dyndns.org/Javascript/Section1/Section2/Project1.html">HTML Javascript</a>
+			</span>
+			<span class="navlink">
+				<a href="http://htkb.dyndns.org:81/ASP/Section1/Section2/Project2.asp">ASP Javascript</a>
+			</span>
+			<span class="navlink">
+				<a href="http://htkb.dyndns.org:81/ASPNET/Section1/Section2/Project3.aspx">ASP.NET Javascript</a>
+			</span>
+		</h5>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="http://htkb.dyndns.org/Section1/Project3.shtml">Perl</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../Section4/index.html">Java</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href='../Section5/index.html'>ASP.Net</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../Section6/index.html">Databases</a>
+	</span>
+	</br>	
+	<span class="navlink">
+		<a href="http://htkb.dyndns.org/SSI/Section1/index.html">Apache SSI</a>
+	</span>
+	</br>
+<!--#elif expr="$vCustom == 2" -->
+	<title>
+		<!--#if expr="$vPage == 0" -->
+			Javascript Programming
+		<!--#elif expr="$vPage == 1" -->
+			HTML Javascript
+		<!--#elif expr="$vPage == 2" -->
+			ASP Javascript
+		<!--#elif expr="$vPage == 3" -->
+			ASP.NET Javascript
+		<!--#else -->
+			NOPE!
+		<!--#endif -->
+	</title>
+<!--#elif expr="$vCustom == 3" -->
+	<h2>
+		<!--#if expr="$vPage == 0" -->
+			Javascript Programming
+		<!--#elif expr="$vPage == 1" -->
+			HTML Javascript
+		<!--#elif expr="$vPage == 2" -->
+			ASP Javascript
+		<!--#elif expr="$vPage == 3" -->
+			ASP.NET Javascript
+		<!--#else -->
+			NOPE!
+		<!--#endif -->
+	</h2>
+<!--#elif expr="$vCustom == 4" -->
+	<!--#if expr="$vPage == 0" -->
+		<p align="left">
+			This section is dedicated to Javascript programming.
+		</p>
+	<!--#else -->
+		NOPE!
+	<!--#endif -->
+<!--#elif expr="$vCustom == 5" -->
+	<p>
+		This is written with basic HTML and Server Side Integration.
+	</p>
+	<p align="left">
+		Other versions of this page are here:<br>
+		<!--#if expr="$vPage == 0" -->
+			<a href="http://htkb.dyndns.org/Section1/Section2/index.html">Basic HTML</a><br>
+			<a href="http://htkb.dyndns.org/Section1/Section2/index.php">PHP</a><br>
+			<a href="http://htkb.dyndns.org/Javascript/Section1/Section2/index.html">HTML Javascript</a><br>
+			<a href="http://htkb.dyndns.org:81/ASP/Section1/Section2/index.asp">ASP Javascript</a><br>
+			<a href="http://htkb.dyndns.org:81/ASPNET/Section1/Section2/index.aspx">ASP.NET Javascript</a><br>
+			<a href="http://htkb.dyndns.org/Section1/Section2/index.shtml">Perl</a><br>
+			<a href="http://htkb.dyndns.org:8080/JSPApplication/Section1/Section2/index.jsp">JSP</a><br>
+			<a href="http://htkb.dyndns.org:8080/JSFApplication/Section1/Section2/index.xhtml">JSF</a><br>
+			<a href="http://htkb.dyndns.org:81/WebApplication/Section1/Section2/index.cshtml">ASP.NET Web App</a><br>
+			<a href="http://htkb.dyndns.org:81/WebForm/Section1/Section2/index.aspx">ASP.NET Webform</a><br>
+			<a href="http://htkb.dyndns.org:81/MVC/Main/Section1/Section2/index">ASP.NET MVC App</a><br>
+		<!--#else -->
+			NOPE!
+		<!--#endif -->
+	</p>
+<!--#else -->
+	NOPE!
+<!--#endif -->

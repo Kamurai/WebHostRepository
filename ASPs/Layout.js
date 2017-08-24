@@ -1,14 +1,14 @@
 function WriteWebpage(input, level, extension)
 {
-    Response.Write("<div align='center'>");
+    Response.Write("<div align=\"center\">");
         //<!--Table to place all subsections-->
-        Response.Write("<table width='100%' cellpadding='0px' cellspacing='0px' border='0' align='center'>");
+        Response.Write("<table width=\"100%\" cellpadding=\"0px\" cellspacing=\"0px\" border=\"0\" align=\"center\">");
             Response.Write("<tbody>");
                 //<!--Top Row-->
                 Response.Write("<tr>");
                     //<!--Center Sub Section-->
-                    Response.Write("<td class='td-header' colspan='3' alt='' valign='top'>");
-                        Response.Write("<p align='center'>");
+                    Response.Write("<td class=\"td-header\" colspan=\"3\" alt=\"\" valign=\"top\">");
+                        Response.Write("<p align=\"center\">");
                             //<!--Primary Header: Main Splash / Logo-->
                             TitlePicture(level);
                         Response.Write("</p>");
@@ -17,9 +17,9 @@ function WriteWebpage(input, level, extension)
                 //<!--2nd Row-->
                 Response.Write("<tr>");
                     //<!--NavBar-->
-                    Response.Write("<td class='td-navbar' colspan='3' alt=''>");
+                    Response.Write("<td class=\"td-navbar\" colspan=\"3\" alt=\"\">");
                         Response.Write("<div>");
-                            Response.Write("<ul id='list-nav'>");
+                            Response.Write("<ul id=\"list-nav\">");
                                 Response.Write("<li>");
                                     NavBar(level, extension);
                                 Response.Write("</li>");
@@ -30,10 +30,10 @@ function WriteWebpage(input, level, extension)
                 //<!--3rd Row-->
                 Response.Write("<tr>");
                     //<!--Left Sub Section-->
-                    Response.Write("<td class='td-left' valign='top'>");
-                        Response.Write("<div align='center'>");
-                            Response.Write("<div class='left-box'>");
-                                Response.Write("<div class='navlinks'>");
+                    Response.Write("<td class=\"td-left\" valign=\"top\">");
+                        Response.Write("<div align=\"center\">");
+                            Response.Write("<div class=\"left-box\">");
+                                Response.Write("<div class=\"navlinks\">");
                                     Response.Write("<h4>");
                                         Response.Write("Navigation");
                                     Response.Write("</h4>");
@@ -43,9 +43,9 @@ function WriteWebpage(input, level, extension)
                         Response.Write("</div>");
                     Response.Write("</td>");
                     //<!--Center Sub Section-->
-                    Response.Write("<td class='td-content'>");
-                        Response.Write("<div align='center'>");
-                            Response.Write("<div class='content-box'>");
+                    Response.Write("<td class=\"td-content\">");
+                        Response.Write("<div align=\"center\">");
+                            Response.Write("<div class=\"content-box\">");
                                 Response.Write("<div>");
                                     Title(input);
                                     Header(input);
@@ -57,13 +57,14 @@ function WriteWebpage(input, level, extension)
                         Response.Write("</div>");
                     Response.Write("</td>");
                     //<!--Right Sub Section-->
-                    Response.Write("<td class='td-right' valign='top'>");
-                        Response.Write("<div align='center'>");
-                            Response.Write("<div class='right-box'>");
+                    Response.Write("<td class=\"td-right\" valign=\"top\">");
+                        Response.Write("<div align=\"center\">");
+                            Response.Write("<div class=\"right-box\">");
                                 Response.Write("<h4>");
                                     Response.Write("Information");
                                 Response.Write("</h4>");
 								GetInformation(extension);
+								Versions(input, extension);
                             Response.Write("</div>");
                         Response.Write("</div>");
                     Response.Write("</td>");
@@ -71,9 +72,9 @@ function WriteWebpage(input, level, extension)
                 //<!--4th Row-->
                 Response.Write("<tr>");
                     //<!--Center Sub Section-->
-                    Response.Write("<td class='td-footer' colspan='3'>");
-                        Response.Write("<div align='center'>");
-                            Response.Write("<div class='footer-box'>");
+                    Response.Write("<td class=\"td-footer\" colspan=\"3\">");
+                        Response.Write("<div align=\"center\">");
+                            Response.Write("<div class=\"footer-box\">");
                                 Footer();
                                 WebMaster();
                             Response.Write("</div>");

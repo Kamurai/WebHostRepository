@@ -1,0 +1,391 @@
+<!--#if expr="$vCustom == 0" -->
+	<link href="<!--#echo var="$vStylePath"-->moo.css" rel="stylesheet" type="text/css"/>
+<!--#elif expr="$vCustom == 1" -->
+	<span class="navlink">
+		<a href="../../../Section1/index.html">Gynowars</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../../Project2.html">Assault</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../../Project3.html">Mars</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../../Section4/index.html">Renley</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../../Section5/index.html">Antarrea</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../../Section6/index.html">Editations</a>
+		<h5>
+			<span class="navsublink">
+				<a href="../../Project1.html">Magic: The Tactical</a>
+			</span>
+			<span class="navsublink">
+				<a href="../../Section2/index.html">Warhammer 40K</a>
+				<h5>
+					<span class="navsublink">
+						<a href="../Project1.html">Mission!</a>
+					</span>
+					<span class="navsublink">
+						<a href="./index.html">HTKB Armies</a>
+						<h5>
+							<span class="navsublink">
+								<a href="./Project1.html">Ad Infinitum</a>
+							</span>
+							<span class="navsublink">
+								<a href="./Project2.html">Avia</a>
+							</span>
+							<span class="navsublink">
+								<a href="./Project3.html">De Luna</a>
+							</span>
+							<span class="navsublink">
+								<a href="./Project4.html">Eve</a>
+							</span>
+							<span class="navsublink">
+								<a href="./Project5.html">Geo Marines</a>
+							</span>
+							<span class="navsublink">
+								<a href="./Project6.html">Twin Fists</a>
+							</span>
+							<span class="navsublink">
+								<a href="./Project7.html">Voboulids</a>
+							</span>
+							<span class="navsublink">
+								<a href="./Project8.html">Fungi</a>
+							</span>
+							<span class="navsublink">
+								<a href="./Project9.html">Synergy</a>
+							</span>
+							<span class="navsublink">
+								<a href="./Project10.html">The Dark</a>
+							</span>
+							<span class="navsublink">
+								<a href="./Project11.html">Vivus Mortem</a>
+							</span>
+						</h5>
+					</span>
+				</h5>
+			</span>
+		</h5>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../../Project7.html">Truth</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../../Project8.html">Kingdoms</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../../Project9.html">Terminal World</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../../Project10.html">Monster Office Workplace</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../../Project11.html">Battle Princesses</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../../Project12.html">Sacred Offerings</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../../Project13.html">The Way</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../../Project14.html">Conspiratorium</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../../Project15.html">Conversion</a>
+	</span>
+	</br>
+<!--#elif expr="$vCustom == 2" -->
+	<title>
+		<!--#if expr="$vPage == 0" -->
+			HTKB Armies
+		<!--#elif expr="$vPage == 1" -->
+			Ad Infinitum
+		<!--#elif expr="$vPage == 2" -->
+			Avia
+		<!--#elif expr="$vPage == 3" -->
+			De Luna
+		<!--#elif expr="$vPage == 4" -->
+			Eve
+		<!--#elif expr="$vPage == 5" -->
+			Geo Marines
+		<!--#elif expr="$vPage == 6" -->
+			Twin Fists
+		<!--#elif expr="$vPage == 7" -->
+			Voboulids
+		<!--#elif expr="$vPage == 8" -->
+			Fungi
+		<!--#elif expr="$vPage == 9" -->
+			Synergy
+		<!--#elif expr="$vPage == 10" -->
+			The Dark
+		<!--#elif expr="$vPage == 11" -->
+			Vivus Mortem
+	<!--#else -->
+			NOPE!
+		<!--#endif -->
+	</title>
+<!--#elif expr="$vCustom == 3" -->
+	<h2>
+		<u>
+			<!--#if expr="$vPage == 0" -->
+				HTKB Armies
+			<!--#elif expr="$vPage == 1" -->
+				Ad Infinitum
+			<!--#elif expr="$vPage == 2" -->
+				Avia
+			<!--#elif expr="$vPage == 3" -->
+				De Luna
+			<!--#elif expr="$vPage == 4" -->
+				Eve
+			<!--#elif expr="$vPage == 5" -->
+				Geo Marines
+			<!--#elif expr="$vPage == 6" -->
+				Twin Fists
+			<!--#elif expr="$vPage == 7" -->
+				Voboulids
+			<!--#elif expr="$vPage == 8" -->
+				Fungi
+			<!--#elif expr="$vPage == 9" -->
+				Synergy
+			<!--#elif expr="$vPage == 10" -->
+				The Dark
+			<!--#elif expr="$vPage == 11" -->
+				Vivus Mortem
+	<!--#else -->
+				NOPE!
+			<!--#endif -->
+		</u>
+	</h2>
+<!--#elif expr="$vCustom == 4" -->
+	<!--#if expr="$vPage == 0" -->
+		<p align="left">
+			This section is dedicated to HTKB designed armies based on the Warhammer 40K universe.
+		</p>
+	<!--#elif expr="$vPage == 1" -->
+		<p align="left">
+			Ad Infinitum is a collective of A.I. constructs.  Little is known about these constructs 
+			as they are not known to negotiate.  While some technology has been recovered, it is rare 
+			to find anything viable after battles.
+		</p>
+	<!--#elif expr="$vPage == 2" -->
+		<p align="left">
+			The Avia are a humanoid xenos that are naturally equipped with wings.  They can are the very least 
+			glide for short times without technological assistance.
+		</p>
+	<!--#elif expr="$vPage == 3" -->
+		<p align="left">
+			De Luna is a designation for squads of walker vehicles that tend to ambush their targets.  
+			While De Luna are automated vehicles, wreckage has determine that there are seats for 
+			pilots.  Theories range from A.I. control to remote communication.
+		</p>
+	<!--#elif expr="$vPage == 4" -->
+		<p align="left">
+			The Eve are a race of terrifying beast creatures.  
+			These Xenos somewhat resemble large cats.
+		</p>
+	<!--#elif expr="$vPage == 5" -->
+		<p align="left">
+			Geo Marines are a specialized Chapter concentrating equipment speciality.
+		</p>
+	<!--#elif expr="$vPage == 6" -->
+		<p align="left">
+			This lost Chapter spent far too long stranded outside the reach of civilisation.  
+			The Twin Fists specialize in close combat battles.
+		</p>
+	<!--#elif expr="$vPage == 7" -->
+		<p align="left">
+			Vouboulids are a plant-like group of entities.  Using a hive structure, 
+			these Xenos seem to concentrate on populating one area at a time, causing a slow expansion.
+		</p>
+	<!--#elif expr="$vPage == 8" -->
+		<p align="left">
+			These Xenos are unidentifiable as anything other than an advanced form of Fungus.  
+			Their appearances range incredible wide, but tend to even resemble familiar forms of fungus.
+		</p>
+	<!--#elif expr="$vPage == 9" -->
+		<p align="left">
+			These almost intangible Xenos appear to made of energy itself.  They use technology that appears unstable in nature.
+		</p>
+	<!--#elif expr="$vPage == 10" -->
+		<p align="left">
+			The Dark are a Hive centered Xenos resembling a disturbing cross between snake, bird and insect.
+		</p>
+	<!--#elif expr="$vPage == 11" -->
+		<p align="left">
+			Vivus mortem is a category for humans that are encountered and exhibit certain traits.  These possibly once humans 
+			have extreme abilities to endure the harshest environment, avoid lighted scenarios whenever possible, and attempt to 
+			take human prisoner whenever possible.  Escapees had stated that the Vivus Mortem would feed on them, and upon death 
+			and exposed bodies lose their excessive durability and seem to disintegrate rapidly enough to appear to "turn to ash".
+		</p>
+	<!--#else -->
+		NOPE!
+	<!--#endif -->
+<!--#elif expr="$vCustom == 5" -->
+	<!--#if expr="$vPage == 0" -->
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2index.html">Basic HTML</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2index.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Section2/Section6/Section2/Section2index.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Section2/Section6/Section2/Section2index.asp">ASP Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Section2/Section6/Section2/Section2index.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2index.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/Section6/Section2/Section2index.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/Section6/Section2/Section2index.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Section2/Section6/Section2/Section2index.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Section2/Section6/Section2/Section2index.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Section6/Section2/Section2index">ASP.NET MVC App</a><br>
+	<!--#elif expr="$vPage == 1" -->
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project1.html">Basic HTML</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project1.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Section2/Section6/Section2/Section2/Project1.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Section2/Section6/Section2/Section2/Project1.asp">ASP Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Section2/Section6/Section2/Section2/Project1.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project1.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/Section6/Section2/Section2/Project1.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/Section6/Section2/Section2/Project1.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Section2/Section6/Section2/Section2/Project1.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Section2/Section6/Section2/Section2/Project1.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Section6/Section2/Section2/Project1">ASP.NET MVC App</a><br>
+	<!--#elif expr="$vPage == 2" -->
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project2.html">Basic HTML</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project2.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Section2/Section6/Section2/Section2/Project2.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Section2/Section6/Section2/Section2/Project2.asp">ASP Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Section2/Section6/Section2/Section2/Project2.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project2.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/Section6/Section2/Section2/Project2.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/Section6/Section2/Section2/Project2.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Section2/Section6/Section2/Section2/Project2.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Section2/Section6/Section2/Section2/Project2.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Section6/Section2/Section2/Project2">ASP.NET MVC App</a><br>
+	<!--#elif expr="$vPage == 3" -->
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project3.html">Basic HTML</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project3.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Section2/Section6/Section2/Section2/Project3.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Section2/Section6/Section2/Section2/Project3.asp">ASP Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Section2/Section6/Section2/Section2/Project3.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project3.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/Section6/Section2/Section2/Project3.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/Section6/Section2/Section2/Project3.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Section2/Section6/Section2/Section2/Project3.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Section2/Section6/Section2/Section2/Project3.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Section6/Section2/Section2/Project3">ASP.NET MVC App</a><br>
+	<!--#elif expr="$vPage == 4" -->
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project4.html">Basic HTML</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project4.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Section2/Section6/Section2/Section2/Project4.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Section2/Section6/Section2/Section2/Project4.asp">ASP Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Section2/Section6/Section2/Section2/Project4.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project4.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/Section6/Section2/Section2/Project4.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/Section6/Section2/Section2/Project4.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Section2/Section6/Section2/Section2/Project4.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Section2/Section6/Section2/Section2/Project4.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Section6/Section2/Section2/Project4">ASP.NET MVC App</a><br>
+	<!--#elif expr="$vPage == 5" -->
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project5.html">Basic HTML</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project5.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Section2/Section6/Section2/Section2/Project5.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Section2/Section6/Section2/Section2/Project5.asp">ASP Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Section2/Section6/Section2/Section2/Project5.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project5.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/Section6/Section2/Section2/Project5.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/Section6/Section2/Section2/Project5.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Section2/Section6/Section2/Section2/Project5.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Section2/Section6/Section2/Section2/Project5.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Section6/Section2/Section2/Project5">ASP.NET MVC App</a><br>
+	<!--#elif expr="$vPage == 6" -->
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project6.html">Basic HTML</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project6.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Section2/Section6/Section2/Section2/Project6.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Section2/Section6/Section2/Section2/Project6.asp">ASP Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Section2/Section6/Section2/Section2/Project6.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project6.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/Section6/Section2/Section2/Project6.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/Section6/Section2/Section2/Project6.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Section2/Section6/Section2/Section2/Project6.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Section2/Section6/Section2/Section2/Project6.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Section6/Section2/Section2/Project6">ASP.NET MVC App</a><br>
+	<!--#elif expr="$vPage == 7" -->
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project7.html">Basic HTML</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project7.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Section2/Section6/Section2/Section2/Project7.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Section2/Section6/Section2/Section2/Project7.asp">ASP Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Section2/Section6/Section2/Section2/Project7.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project7.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/Section6/Section2/Section2/Project7.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/Section6/Section2/Section2/Project7.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Section2/Section6/Section2/Section2/Project7.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Section2/Section6/Section2/Section2/Project7.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Section6/Section2/Section2/Project7">ASP.NET MVC App</a><br>
+	<!--#elif expr="$vPage == 8" -->
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project8.html">Basic HTML</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project8.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Section2/Section6/Section2/Section2/Project8.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Section2/Section6/Section2/Section2/Project8.asp">ASP Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Section2/Section6/Section2/Section2/Project8.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project8.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/Section6/Section2/Section2/Project8.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/Section6/Section2/Section2/Project8.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Section2/Section6/Section2/Section2/Project8.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Section2/Section6/Section2/Section2/Project8.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Section6/Section2/Section2/Project8">ASP.NET MVC App</a><br>
+	<!--#elif expr="$vPage == 9" -->
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project9.html">Basic HTML</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project9.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Section2/Section6/Section2/Section2/Project9.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Section2/Section6/Section2/Section2/Project9.asp">ASP Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Section2/Section6/Section2/Section2/Project9.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project9.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/Section6/Section2/Section2/Project9.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/Section6/Section2/Section2/Project9.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Section2/Section6/Section2/Section2/Project9.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Section2/Section6/Section2/Section2/Project9.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Section6/Section2/Section2/Project9">ASP.NET MVC App</a><br>
+	<!--#elif expr="$vPage == 10" -->
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project10.html">Basic HTML</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project10.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Section2/Section6/Section2/Section2/Project10.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Section2/Section6/Section2/Section2/Project10.asp">ASP Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Section2/Section6/Section2/Section2/Project10.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project10.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/Section6/Section2/Section2/Project10.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/Section6/Section2/Section2/Project10.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Section2/Section6/Section2/Section2/Project10.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Section2/Section6/Section2/Section2/Project10.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Section6/Section2/Section2/Project10">ASP.NET MVC App</a><br>
+	<!--#elif expr="$vPage == 11" -->
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project11.html">Basic HTML</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project11.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Section2/Section6/Section2/Section2/Project11.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Section2/Section6/Section2/Section2/Project11.asp">ASP Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Section2/Section6/Section2/Section2/Project11.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2/Project11.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/Section6/Section2/Section2/Project11.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/Section6/Section2/Section2/Project11.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Section2/Section6/Section2/Section2/Project11.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Section2/Section6/Section2/Section2/Project11.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Section6/Section2/Section2/Project11">ASP.NET MVC App</a><br>
+	<!--#else -->
+		NOPE!
+	<!--#endif -->
+<!--#else -->
+	NOPE!
+<!--#endif -->

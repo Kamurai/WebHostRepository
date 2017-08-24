@@ -1,0 +1,149 @@
+<!--#if expr="$vCustom == 0" -->
+	<link href="<!--#echo var="$vStylePath"-->moo.css" rel="stylesheet" type="text/css"/>
+<!--#elif expr="$vCustom == 1" -->
+	<span class="navlink">
+		<a href="../../Section1/index.html">Gynowars</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Project2.html">Assault</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Project3.html">Mars</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Section4/index.html">Renley</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../index.html">Antarrea</a>
+			<h5>
+				<span class="navsublink">
+					<a href="../Section1/index.html">Global:</a>
+				</span>
+				<span class="navsublink">
+					<a href="../Section2/index.html">Grendol:</a>
+				</span>
+				<span class="navsublink">
+					<a href="../Section3/index.html">Utopia:</a>
+				</span>
+				<span class="navsublink">
+					<a href="./index.html">Elvia:</a>
+					<h5>
+						<span class="navsublink">
+							<a href="./Project1.html">Nine Card</a>
+						</span>
+					</h5>
+				</span>
+			</h5>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Section6/index.html">Editations</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Project7.html">Truth</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Project8.html">Kingdoms</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Project9.html">Terminal World</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Project10.html">Monster Office Workplace</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Project11.html">Battle Princesses</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Project12.html">Sacred Offerings</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Project13.html">The Way</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Project14.html">Conspiratorium</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Project15.html">Conversion</a>
+	</span>
+	</br>
+<!--#elif expr="$vCustom == 2" -->
+	<title>
+		<!--#if expr="$vPage == 0" -->
+			Elvia
+		<!--#elif expr="$vPage == 1" -->
+			Nine Card
+		<!--#else -->
+			NOPE!
+		<!--#endif -->
+	</title>
+<!--#elif expr="$vCustom == 3" -->
+	<h2>
+		<u>
+			<!--#if expr="$vPage == 0" -->
+				Elvia
+			<!--#elif expr="$vPage == 1" -->
+				Nine Card
+			<!--#else -->
+				NOPE!
+			<!--#endif -->
+		</u>
+	</h2>
+<!--#elif expr="$vCustom == 4" -->
+	<!--#if expr="$vPage == 0" -->
+		<p align="left">
+			Here are projects based in the Elvia Empire:</br>
+			</br>
+			Nine Card: a Tactical card game played through the Elvia Empire.</br>
+		</p>
+	<!--#elif expr="$vPage == 1" -->
+		<p align="left">
+			Nine Card is a Tactical card game played through the Elvia Empire.</br>
+		</p>
+	<!--#else -->
+		NOPE!
+	<!--#endif -->
+<!--#elif expr="$vCustom == 5" -->
+	<!--#if expr="$vPage == 0" -->
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section4/index.html">Basic HTML</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section4/index.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Section2/Section5/Section4/index.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Section2/Section5/Section4/index.asp">ASP Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Section2/Section5/Section4/index.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section4/index.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/Section5/Section4/index.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/Section5/Section4/index.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Section2/Section5/Section4/index.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Section2/Section5/Section4/index.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Section5/Section4/index">ASP.NET MVC App</a><br>
+	<!--#elif expr="$vPage == 1" -->
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section4/Project1.html">Basic HTML</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section4/Project1.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Section2/Section5/Section4/Project1.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Section2/Section5/Section4/Project1.asp">ASP Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Section2/Section5/Section4/Project1.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section4/Project1.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/Section5/Section4/Project1.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/Section5/Section4/Project1.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Section2/Section5/Section4/Project1.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Section2/Section5/Section4/Project1.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Section5/Section4/Project1">ASP.NET MVC App</a><br>
+	<!--#else -->
+		NOPE!
+	<!--#endif -->
+<!--#else -->
+	NOPE!
+<!--#endif -->

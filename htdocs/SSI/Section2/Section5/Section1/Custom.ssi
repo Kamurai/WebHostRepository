@@ -1,0 +1,270 @@
+<!--#if expr="$vCustom == 0" -->
+	<link href="<!--#echo var="$vStylePath"-->moo.css" rel="stylesheet" type="text/css"/>
+<!--#elif expr="$vCustom == 1" -->
+	<span class="navlink">
+		<a href="../../Section1/index.html">Gynowars</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Project2.html">Assault</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Project3.html">Mars</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Section4/index.html">Renley</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../index.html">Antarrea</a>
+			<h5>
+				<span class="navsublink">
+					<a href="./index.html">Global:</a>
+					<h5>
+						<span class="navsublink">
+							<a href="./Project1.html">Team Tactial: Crash Ball</a>
+						</span>
+						<span class="navsublink">
+							<a href="./Project2.html">Wars of Antarrea</a>
+						</span>
+						<span class="navsublink">
+							<a href="./Project3.html">Revolutions: Invading Nations:</a>
+						</span>
+						<span class="navsublink">
+							<a href="./Project4.html">Revolutions: Rebellion Against the Fist</a>
+						</span>
+						<span class="navsublink">
+							<a href="./Project5.html">Revolutions: Return to Arms</a>
+						</span>
+						<span class="navsublink">
+							<a href="./Project6.html">Revolutions: Post Wars</a>
+						</span>
+					</h5>
+				</span>
+				<span class="navsublink">
+					<a href="../Section2/index.html">Grendol:</a>
+				</span>
+				<span class="navsublink">
+					<a href="../Section3/index.html">Utopia:</a>
+				</span>
+				<span class="navsublink">
+					<a href="../Section4/index.html">Elvia:</a>
+				</span>
+			</h5>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Section6/index.html">Editations</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Project7.html">Truth</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Project8.html">Kingdoms</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Project9.html">Terminal World</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Project10.html">Monster Office Workplace</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Project11.html">Battle Princesses</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Project12.html">Sacred Offerings</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Project13.html">The Way</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Project14.html">Conspiratorium</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="../../Project15.html">Conversion</a>
+	</span>
+	</br>
+<!--#elif expr="$vCustom == 2" -->
+	<title>
+		<!--#if expr="$vPage == 0" -->
+			Global Antarrea
+		<!--#elif expr="$vPage == 1" -->
+			Team Tactical: Crash Ball
+		<!--#elif expr="$vPage == 2" -->
+			Wars of Antarrea
+		<!--#elif expr="$vPage == 3" -->
+			Revolutions: Invading Nations
+		<!--#elif expr="$vPage == 4" -->
+			Revolutions: Rebellion Against the Fist
+		<!--#elif expr="$vPage == 5" -->
+			Revolutions: Invading Nations
+		<!--#elif expr="$vPage == 6" -->
+			Revolutions: Invading Nations
+			<!--#else -->
+			NOPE!
+		<!--#endif -->
+	</title>
+<!--#elif expr="$vCustom == 3" -->
+	<h2>
+		<u>
+			<!--#if expr="$vPage == 0" -->
+				Global Antarrea
+			<!--#elif expr="$vPage == 1" -->
+				Team Tactical: Crash Ball
+			<!--#elif expr="$vPage == 2" -->
+				Wars of Antarrea
+			<!--#elif expr="$vPage == 3" -->
+				Revolutions: Invading Nations
+			<!--#elif expr="$vPage == 4" -->
+				Revolutions: Rebellion Against the Fist
+			<!--#elif expr="$vPage == 5" -->
+				Revolutions: Return to Arms
+			<!--#elif expr="$vPage == 6" -->
+				Revolutions: Post Wars
+			<!--#else -->
+				NOPE!
+			<!--#endif -->
+		</u>
+	</h2>
+<!--#elif expr="$vCustom == 4" -->
+	<!--#if expr="$vPage == 0" -->
+		<p align="left">
+			Here are projects based in the Antarrea universe:</br>
+			</br>
+			Team Tactical: Crash Ball:               Tactical board game centered on a battle version of football.</br>
+			Wars of Antarrea:                        Table-top game where two or more armies battle for supremacy.</br>
+			Revolutions: Invading Nations:           Tactical RPG, 1st story arc.</br>
+			Revolutions: Rebellion Against the Fist: Tactical RPG, 2nd story arc.</br>
+			Revolutions: Return to Arms:             Tactical RPG, 3rd story arc.</br>
+			Revoultions: Post Wars:                  Tactical RPG, 4th story arc.</br>
+		</p>
+	<!--#elif expr="$vPage == 1" -->
+		<p align="left">
+			Team Tactical: Crash Ball is a tactical board game centered on a battle version of football.
+			</br>
+		</p>
+	<!--#elif expr="$vPage == 2" -->
+		<p align="left">
+			Wars of Antarrea is a table-top game where two or more armies battle for supremacy.</br>
+		</p>
+	<!--#elif expr="$vPage == 3" -->
+		<p align="left">
+			Revolutions is a Tactical RPG with Invading Nations as its 1st story arc.</br>
+		</p>
+	<!--#elif expr="$vPage == 4" -->
+		<p align="left">
+			Revolutions is a Tactical RPG with Rebellion Against the Fist as its 2nd story arc.</br>
+		</p>
+	<!--#elif expr="$vPage == 5" -->
+		<p align="left">
+			Revolutions is a Tactical RPG with Return to Arms as its 3rd story arc.</br>
+		</p>
+	<!--#elif expr="$vPage == 6" -->
+		<p align="left">
+			Revolutions is a Tactical RPG with Post Wars as its 4th story arc.</br>
+		</p>
+	<!--#else -->
+		NOPE!
+	<!--#endif -->
+<!--#elif expr="$vCustom == 5" -->
+	<!--#if expr="$vPage == 0" -->
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section1/index.html">Basic HTML</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section1/index.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Section2/Section5/Section1/index.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Section2/Section5/Section1/index.asp">ASP Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Section2/Section5/Section1/index.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section1/index.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/Section5/Section1/index.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/Section5/Section1/index.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Section2/Section5/Section1/index.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Section2/Section5/Section1/index.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Section5/Section1/index">ASP.NET MVC App</a><br>
+	<!--#elif expr="$vPage == 1" -->
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section1/Project1.html">Basic HTML</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section1/Project1.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Section2/Section5/Section1/Project1.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Section2/Section5/Section1/Project1.asp">ASP Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Section2/Section5/Section1/Project1.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section1/Project1.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/Section5/Section1/Project1.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/Section5/Section1/Project1.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Section2/Section5/Section1/Project1.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Section2/Section5/Section1/Project1.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Section5/Section1/Project1">ASP.NET MVC App</a><br>
+	<!--#elif expr="$vPage == 2" -->
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section1/Project2.html">Basic HTML</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section1/Project2.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Section2/Section5/Section1/Project2.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Section2/Section5/Section1/Project2.asp">ASP Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Section2/Section5/Section1/Project2.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section1/Project2.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/Section5/Section1/Project2.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/Section5/Section1/Project2.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Section2/Section5/Section1/Project2.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Section2/Section5/Section1/Project2.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Section5/Section1/Project2">ASP.NET MVC App</a><br>
+	<!--#elif expr="$vPage == 3" -->
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section1/Project3.html">Basic HTML</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section1/Project3.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Section2/Section5/Section1/Project3.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Section2/Section5/Section1/Project3.asp">ASP Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Section2/Section5/Section1/Project3.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section1/Project3.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/Section5/Section1/Project3.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/Section5/Section1/Project3.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Section2/Section5/Section1/Project3.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Section2/Section5/Section1/Project3.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Section5/Section1/Project3">ASP.NET MVC App</a><br>
+	<!--#elif expr="$vPage == 4" -->
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section1/Project4.html">Basic HTML</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section1/Project4.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Section2/Section5/Section1/Project4.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Section2/Section5/Section1/Project4.asp">ASP Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Section2/Section5/Section1/Project4.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section1/Project4.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/Section5/Section1/Project4.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/Section5/Section1/Project4.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Section2/Section5/Section1/Project4.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Section2/Section5/Section1/Project4.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Section5/Section1/Project4">ASP.NET MVC App</a><br>
+	<!--#elif expr="$vPage == 5" -->
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section1/Project5.html">Basic HTML</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section1/Project5.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Section2/Section5/Section1/Project5.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Section2/Section5/Section1/Project5.asp">ASP Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Section2/Section5/Section1/Project5.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section1/Project5.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/Section5/Section1/Project5.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/Section5/Section1/Project5.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Section2/Section5/Section1/Project5.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Section2/Section5/Section1/Project5.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Section5/Section1/Project5">ASP.NET MVC App</a><br>
+	<!--#elif expr="$vPage == 6" -->
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section1/Project6.html">Basic HTML</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section1/Project6.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Section2/Section5/Section1/Project6.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Section2/Section5/Section1/Project6.asp">ASP Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Section2/Section5/Section1/Project6.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section5/Section1/Project6.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/Section5/Section1/Project6.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/Section5/Section1/Project6.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Section2/Section5/Section1/Project6.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Section2/Section5/Section1/Project6.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Section5/Section1/Project6">ASP.NET MVC App</a><br>
+	<!--#else -->
+		NOPE!
+	<!--#endif -->
+<!--#else -->
+	NOPE!
+<!--#endif -->

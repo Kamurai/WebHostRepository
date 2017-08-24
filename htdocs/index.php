@@ -20,6 +20,23 @@
 	$GDR = "";
 	$winrar = ""; #"<a href='".$path."Section3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a><br>";
 	
+	$infoContent = "This is written with PHP.<br><br>
+					Other versions of this page are here:<br>
+					<a href=\"http://htkb.dyndns.org/index.html\">HTML</a><br>
+					<a href=\"http://htkb.dyndns.org/index.php\">PHP</a><br>
+					<a href=\"http://htkb.dyndns.org/Javascript/index.html\">HTML Javascript</a><br>
+					<a href=\"http://htkb.dyndns.org:81/ASP/index.asp\">ASP Javascript</a><br>
+					<a href=\"http://htkb.dyndns.org:81/ASPNET/index.aspx\">ASP.NET Javascript</a><br>
+					<a href=\"http://htkb.dyndns.org/index.shtml\">Perl</a><br>
+					<a href=\"http://htkb.dyndns.org:8080/JSPApplication/index.jsp\">JSP</a><br>
+					<a href=\"http://htkb.dyndns.org:8080/JSFApplication/index.xhtml\">JSF</a><br>
+					<a href=\"http://htkb.dyndns.org:81/WebApplication/index.cshtml\">ASP.NET Web App</a><br>
+					<a href=\"http://htkb.dyndns.org:81/WebForm/index.aspx\">ASP.NET Webform</a><br>
+					<a href=\"http://htkb.dyndns.org:81/MVC/Main/index\">ASP.NET MVC App</a><br>
+					<a href=\"http://htkb.dyndns.org/SSI/index.html\">Apache SSI</a><br>
+				";
+	
+	
 	#Overall body
 	include $style.'Layout.php';
 ?>

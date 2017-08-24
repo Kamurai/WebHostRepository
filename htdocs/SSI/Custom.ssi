@@ -1,0 +1,237 @@
+<!--#if expr="$vCustom == 0" -->
+	<link href="./moo.css" rel="stylesheet" type="text/css"/>
+<!--#elif expr="$vCustom == 1" -->
+	<span class="navlink">
+		<a href="./AboutUs.html">About Us</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="./Media.html">Media</a>
+	</span>
+	</br>
+	<span class="navlink">
+		<a href="./Minecraft.html">Minecraft!</a>
+	</span>
+	</br>
+<!--#elif expr="$vCustom == 2" -->
+	<title>
+		<!--#if expr="$vPage == 0" -->
+			HTKB Home Page
+		<!--#elif expr="$vPage == 1" -->
+			About Us
+		<!--#elif expr="$vPage == 2" -->
+			Media
+		<!--#elif expr="$vPage == 3" -->
+			Minecraft!
+		<!--#else -->
+			NOPE!
+		<!--#endif -->
+	</title>
+<!--#elif expr="$vCustom == 3" -->
+	<h2>
+		<!--#if expr="$vPage == 0" -->
+			Welcome to the House That Kamurai Built!
+		<!--#elif expr="$vPage == 1" -->
+			About Us
+		<!--#elif expr="$vPage == 2" -->
+			Media
+		<!--#elif expr="$vPage == 3" -->
+			Minecraft!
+		<!--#else -->
+			NOPE!
+		<!--#endif -->
+	</h2>
+<!--#elif expr="$vCustom == 4" -->
+	<!--#if expr="$vPage == 0" -->
+		<p align="left">
+			The House That Kamurai Built is an 
+			entertainment company with the primary 
+			focus of increasing awesome by stimulating 
+			intelligent conversation and entertainment 
+			via discussion and game design. <br>
+			Increase the Awesome with us!<br>
+		</p>
+	<!--#elif expr="$vPage == 1" -->
+		<p align="left">
+			We are working to build this into a better place.</br>
+			If you found this, then you must be at least (Awesome/2).</br>
+			Stay tuned, right now it's all about laying foundation for the future.</br>
+		</p>
+	<!--#elif expr="$vPage == 2" -->
+		<p align="left">
+			You can find us at all these different places:</br>
+		</p>
+		<p align="left">
+			<h3>
+				<p align="left">
+					#WeAreMovieClub:
+				</p>
+			</h3>
+			<p align="left">
+				<a href="http://www.youtube.com/WeAreMovieClub">Youtube.com/WeAreMovieClub:  A place for movie discussion.</a></br>
+				<a href="http://WeAreMovieClub.tumblr.com">WeAreMovieClub.tumblr.com: We have a tumblr!</a></br>
+				<a href="http://www.twitter.com/WeAreMovieClub">@WeArMovieClub on Twitter: Let us know about your movie thoughts.</a></br>
+				<a href="http://www.facebook.com/WeAreMovieClub">facebook.com/WeAreMovieClub: Talk about movie with us.</a></br>
+			</p>
+			<h3>
+				<p align="left">
+					HTKB Productions
+				</p>
+			</h3>
+			<p align="left">
+				<a href="http://www.youtube.com/GamingDivision528">Gaming Division:  A Youtube Channel for game stuff.</a></br>
+				<a href="http://www.youtube.com/JamOnToast528">Jam On Toast:  A Youtube Channel for media stuff.</a></br>
+				<a href="http://www.ustream.tv/HTKB">UStream:  Streams show up here too.</a></br>
+				<a href="http://www.firetalk.com/HTKB">FireTalk:  Streams show up here too.</a></br>
+				<a href="http://www.younow.com/HTKB">YouNow:  Streams show up here too.</a></br>
+				<a href="http://www.soundcloud.com/HTKB">Sound Cloud:  Listen to our podcasts.</a></br>
+				<a href="http://HTKB.podbean.com/">Pod Bean:  Listen to our podcasts.</a></br>
+				<a href="http://www.youtube.com/HTKB">Youtube:  Thoughts and life discussions.</a></br>
+				<a href="http://www.patreon.com/HTKBProductions">Patreon:  You can help make our dreams reality.</a></br>
+				<a href="http://www.facebook.com/HouseThatKamuraiBuilt">Facebook: Talk about movie with us.</a></br>
+				<a href="http://HouseThatKamuraiBuilt.tumblr.com">HouseThatKamuraiBuilt.tumblr.com: We have a tumblr!</a></br>
+				<a href="http://myspace.com/HouseThatKamuraiBuilt">Myspace: Wow, there's even a MySpace!</a></br>
+			</p>
+		</p>
+		<p align="left">
+			Here are some of our member's pages:</br>
+		</p>
+		<h3>
+			<p align="left">
+				Kamurai:
+			</p>
+		</h3>
+		<p align="left">
+			<a href="http://twitter.com/#!/Kamurai25">Kamurai's Twitter.</a></br>
+			<a href="http://Instagram.com/Kamurai25">Kamurai's Instagram.</a></br>
+			<a href="./.">Kamurai's Snapchat: Kamurai</a></br>
+			<a href="http://www.facebook.com/cris.kamurai">Kamurai's Facebook.</a></br>
+			<a href="https://www.gplus.com/Members/Cris-Kamurai">Kamurai's Google Plus.</a></br>
+			<a href="http://www.yoyogames.com/users/Kamurai">Kamurai's YoYo Games page:  See some of the games he's posted.</a></br>
+		</p>
+	<!--#elif expr="$vPage == 3" -->
+		<p align="left">
+			If you would like to play Minecraft with us, we have several different servers:</br>
+			Mo Creatures Server: (1.7.10) htkb.dyndns.org:25565</br>
+			Creative Server:     (1.7.10) htkb.dyndns.org:25567</br>
+				This is a list of mods that we are using on the server, compatible with 1.7.10.</br>
+				<a href='./Downloads/Minecraft/forge-1.7.10-10.13.3.1401-1710ls-installer.jar'>Forge 1.7.10</a></br>
+				<a href='./Downloads/Minecraft/DrZharks MoCreatures Mod v6.3.1.zip'>Dr Zhark's Mo Creatures</a></br>
+				<a href='./Downloads/Minecraft/CustomMobSpawner 3.3.0.zip'>Custom Mob Spawner</a></br>
+				<a href='./Downloads/Minecraft/[1.7.10]Gender-1.0.2.jar'>iPixeli's Gender Mod</a></br>
+				<a href='./Downloads/Minecraft/BspkrsCore-1.7.10.jar'>Bspkrs Core</a></br>
+				<a href='./Downloads/Minecraft/[1.7.10]Treecapitator-universal-2.0.4.jar'>Tree Capitator</a></br>
+				<a href='./Downloads/Minecraft/MoarFood-5.8.0.jar'>Moar Food</a></br>
+				<a href='./Downloads/Minecraft/MoarOres-2.4.5.jar'>Moar Ores</a></br>
+				<a href='./Downloads/Minecraft/BiblioCraft[v1.10.4][MC1.7.10].jar'>Biblio Craft</a></br>
+				<a href='./Downloads/Minecraft/Fossils_Archeology_Revival-1.7.10_Build-6.4b.jar'>Fossils and Archaeology</a></br>
+				<a href='./Downloads/Minecraft/Reis-Minimap-Mod-1.7.10.jar'>Rei's Minimap</a></br>
+				<a href='./Downloads/Minecraft/Xaeros_Minimap_1.10.8_Forge_1.7.10.jar'>Xaero's Minimap</a></br>
+			Vanilla Server:      (1.10.2) htkb.dyndns.org:25566</br>
+			Come Alive Server:   (1.10.2) htkb.dyndns.org:25568</br>
+				This is a list of mods that we are using on the server, compatible with 1.10.2.</br>
+				<a href='./Downloads/Minecraft/forge-1.10.2-12.18.1.2011-installer.jar'>Forge 1.10.2</a></br>
+				<a href='./Downloads/Minecraft/RadixCore-1.10.2-2.1.2-universal.jar'>Radix Core</a></br>
+				<a href='./Downloads/Minecraft/MCA-1.10.2-5.2.1-universal.jar'>Minecraft Comes Alive</a></br>
+				<a href='./Downloads/Minecraft/Xaeros_Minimap_1.10.8_Forge_1.10.2.jar'>Xaero's Minimap</a></br>
+			Pixelmon Server:     (1.8.9)  htkb.dyndns.org:25569</br>
+				This is a list of mods that we are using on the server, compatible with 1.8.9.</br>
+				<a href='./Downloads/Minecraft/forge-1.8.9-11.15.1.1902-1.8.9-installer.jar'>Forge 1.8.9</a></br>
+				<a href='./Downloads/Minecraft/Pixelmon-1.8.9-4.2.7-universal.jar'>Pixelmon</a></br>
+				<a href='./Downloads/Minecraft/Xaeros_Minimap_1.10.8_Forge_1.8.9.jar'>Xaero's Minimap</a></br>
+				<a href='./Downloads/Minecraft/PixelExtras-1.8.9-2.1.5-universal.jar'>Pixelmon Extras</a></br>
+			ArkCraft Server:     (1.8) htkb.dyndns.org:25570</br>
+				This is a list of mods that we are using on the server, compatible with 1.8.</br>
+				<a href='./Downloads/Minecraft/forge-1.8-11.14.4.1577-installer.jar'>Forge 1.8</a></br>
+				<a href='./Downloads/Minecraft/arkcraft-1.1.3-beta.jar'>Ark Craft</a></br>
+			Here is a skin template to make custom skins:</br>
+			<a href='./Downloads/Minecraft/skin_template.png'>Steve skin template</a></br>
+		</p>
+		<p align="left">
+			For first time setups, please follow these steps to make your client compatible with the server:</br>
+				 0) If you don't have Minecraft, go to Minecraft.net and download the latest version of the launcher.</br>
+				 1) From the launcher create a new profile and change its version to the relevant version (e.g. 1.7.10).</br>
+				 2) Save the Profile, select the new profile and click play.</br>
+				 3) Exit the program.</br>
+				 4) Install Forge.  If it is not automatically selected, then browse to your .minecraft folder.</br>
+					Windows: It is in a hidden folder: c:\Users\*Username*\Appdata\Roaming\.minecraft</br>
+					Mac: "Go to" ~/Library/Application Support/minecraft</br>
+				 5) If you are managing multiple non-compatible mods, then you man have to make folders like:</br>
+					"..\Roaming\ComeAlive"</br>
+					"..\Roaming\Pixelmon"</br>
+					"..\Roaming\ArkCraft"</br>
+				 6) If your folder doesn't have a /Mods folder, create one. Place the files from the mod list into the /mods folder.</br>
+					Even if it works, don't put two minimap mods in the same folder.</br>
+				 7) Open the Minecraft Launcher, edit your version (e.g. 1.7.10) profile to use the forge version of the same.</br>
+				 8) If you are using a different folder, then remember to change the Game Directory in the profile.</br>
+					For Pixelmon, then you'll also have to change the Java argument -Xmx1G to -Xmx2G.
+				 9) Save the Profile, select the new profile and click play.</br>
+				10) You should see the mods listed on the side of the Minecraft window.</br>
+				11) Go to multiplayer and click add server.</br>
+				12) Name the server something distinct and put "htkb.dyndns.org:2556x" in the address bar where 'x' is the relevant port.</br>
+				13) Save the server entry.  You should see a connection to the server.  Double click to join.</br>
+		</p>
+	<!--#else -->
+		NOPE!
+	<!--#endif -->
+<!--#elif expr="$vCustom == 5" -->
+	<p>
+		This is written with basic HTML and Server Side Integration.
+	</p>
+	<p align="left">
+		Other versions of this page are here:<br>
+		<!--#if expr="$vPage == 0" -->
+			<a href="http://htkb.dyndns.org/index.html">Basic HTML</a><br>
+			<a href="http://htkb.dyndns.org/index.php">PHP</a><br>
+			<a href="http://htkb.dyndns.org/Javascript/index.html">HTML Javascript</a><br>
+			<a href="http://htkb.dyndns.org:81/ASP/index.asp">ASP Javascript</a><br>
+			<a href="http://htkb.dyndns.org:81/ASPNET/index.aspx">ASP.NET Javascript</a><br>
+			<a href="http://htkb.dyndns.org/index.shtml">Perl</a><br>
+			<a href="http://htkb.dyndns.org:8080/JSPApplication/index.jsp">JSP</a><br>
+			<a href="http://htkb.dyndns.org:8080/JSFApplication/index.xhtml">JSF</a><br>
+			<a href="http://htkb.dyndns.org:81/WebApplication/index.cshtml">ASP.NET Web App</a><br>
+			<a href="http://htkb.dyndns.org:81/WebForm/index.aspx">ASP.NET Webform</a><br>
+			<a href="http://htkb.dyndns.org:81/MVC/Main/index">ASP.NET MVC App</a><br>
+		<!--#elif expr="$vPage == 1" -->
+			<a href="http://htkb.dyndns.org/AboutUs.html">Basic HTML</a><br>
+			<a href="http://htkb.dyndns.org/AboutUs.php">PHP</a><br>
+			<a href="http://htkb.dyndns.org/Javascript/AboutUs.html">HTML Javascript</a><br>
+			<a href="http://htkb.dyndns.org:81/ASP/AboutUs.asp">ASP Javascript</a><br>
+			<a href="http://htkb.dyndns.org:81/ASPNET/AboutUs.aspx">ASP.NET Javascript</a><br>
+			<a href="http://htkb.dyndns.org/AboutUs.shtml">Perl</a><br>
+			<a href="http://htkb.dyndns.org:8080/JSPApplication/AboutUs.jsp">JSP</a><br>
+			<a href="http://htkb.dyndns.org:8080/JSFApplication/AboutUs.xhtml">JSF</a><br>
+			<a href="http://htkb.dyndns.org:81/WebApplication/AboutUs.cshtml">ASP.NET Web App</a><br>
+			<a href="http://htkb.dyndns.org:81/WebForm/AboutUs.aspx">ASP.NET Webform</a><br>
+			<a href="http://htkb.dyndns.org:81/MVC/Main/AboutUs">ASP.NET MVC App</a><br>
+		<!--#elif expr="$vPage == 2" -->
+			<a href="http://htkb.dyndns.org/Media.html">Basic HTML</a><br>
+			<a href="http://htkb.dyndns.org/Media.php">PHP</a><br>
+			<a href="http://htkb.dyndns.org/Javascript/Media.html">HTML Javascript</a><br>
+			<a href="http://htkb.dyndns.org:81/ASP/Media.asp">ASP Javascript</a><br>
+			<a href="http://htkb.dyndns.org:81/ASPNET/Media.aspx">ASP.NET Javascript</a><br>
+			<a href="http://htkb.dyndns.org/Media.shtml">Perl</a><br>
+			<a href="http://htkb.dyndns.org:8080/JSPApplication/Media.jsp">JSP</a><br>
+			<a href="http://htkb.dyndns.org:8080/JSFApplication/Media.xhtml">JSF</a><br>
+			<a href="http://htkb.dyndns.org:81/WebApplication/Media.cshtml">ASP.NET Web App</a><br>
+			<a href="http://htkb.dyndns.org:81/WebForm/Media.aspx">ASP.NET Webform</a><br>
+			<a href="http://htkb.dyndns.org:81/MVC/Main/Media">ASP.NET MVC App</a><br>
+		<!--#elif expr="$vPage == 3" -->
+			<a href="http://htkb.dyndns.org/Minecraft.html">Basic HTML</a><br>
+			<a href="http://htkb.dyndns.org/Minecraft.php">PHP</a><br>
+			<a href="http://htkb.dyndns.org/Javascript/Minecraft.html">HTML Javascript</a><br>
+			<a href="http://htkb.dyndns.org:81/ASP/Minecraft.asp">ASP Javascript</a><br>
+			<a href="http://htkb.dyndns.org:81/ASPNET/Minecraft.aspx">ASP.NET Javascript</a><br>
+			<a href="http://htkb.dyndns.org/Minecraft.shtml">Perl</a><br>
+			<a href="http://htkb.dyndns.org:8080/JSPApplication/Minecraft.jsp">JSP</a><br>
+			<a href="http://htkb.dyndns.org:8080/JSFApplication/Minecraft.xhtml">JSF</a><br>
+			<a href="http://htkb.dyndns.org:81/WebApplication/Minecraft.cshtml">ASP.NET Web App</a><br>
+			<a href="http://htkb.dyndns.org:81/WebForm/Minecraft.aspx">ASP.NET Webform</a><br>
+			<a href="http://htkb.dyndns.org:81/MVC/Main/Minecraft">ASP.NET MVC App</a><br>
+		<!--#else -->
+			NOPE!
+		<!--#endif -->
+	</p>
+<!--#else -->
+	NOPE!
+<!--#endif -->

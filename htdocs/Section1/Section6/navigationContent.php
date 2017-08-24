@@ -42,22 +42,11 @@ echo "
 				<span class='navlink'>
 					<a href='".$path."Section1/Section6/Project5.php'>Postgres</a>
 				</span>
-				<span class='navlink'>
-					<a href='".$path."Section1/Section6/Project6.php'>XML</a>
-				</span>
 			</h5>
 		</span>
 		</br>
 		<span class='navlink'>
-			<a href='".$path."Section1/Project7.php'>HTML5</a>
-		</span>
-		</br>
-		<span class='navlink'>
-			<a href='".$path."Section1/Project8.php'>XSL</a>
-		</span>
-		</br>
-		<span class='navlink'>
-			<a href='".$path."Section1/Project9.php'>XML DOM</a>
+			<a href='http://htkb.dyndns.org/SSI/Section1/index.html'>Apache SSI</a>
 		</span>
 		</br>
 	";

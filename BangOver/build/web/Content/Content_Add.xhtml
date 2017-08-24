@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+    <h:head />
+    <h:body>
+        <c:choose>
+            <c:when test="#{LoginBean.getLoggedIn()}">
+                <title>
+                    Bang Over!
+                </title>
+                <c:choose>
+                    <c:when test="#{LoginBean.admin > 0}">
+                        <h2>
+                            <u>
+                                Add it!
+                            </u>
+                        </h2>
+                        <p align='left'>
+                            This is where you, manager, can add celebrities to the list!
+                        </p>
+                    </c:when>
+                    <c:otherwise>
+                        <h2>
+                            <u>
+                                Suggestion? Yes please!
+                            </u>
+                        </h2>
+                        <p align='left'>
+                            This is where you can suggest celebrities to add to the list!
+                        </p>
+                    </c:otherwise>
+                </c:choose>
+            </c:when>
+        </c:choose>
+    </h:body>
+</html>
+
