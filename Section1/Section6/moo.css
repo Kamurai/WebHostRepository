@@ -138,6 +138,14 @@ h4 {
 	padding-left: 5px;
 }
 
+h5{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 80%;
+	color: #FFF;
+	text-align: left;
+	padding-left: 15px;
+}
+
 a.ivlink {
 	font-family: Verdana, Geneva, sans-serif;
 	color: #FFF;
