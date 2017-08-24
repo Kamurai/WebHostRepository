@@ -1,0 +1,10 @@
+2012-03-26 21:00:01 EDTLOG:  database system was interrupted; last known up at 2012-03-26 14:53:00 EDT
+2012-03-26 21:00:01 EDTLOG:  database system was not properly shut down; automatic recovery in progress
+2012-03-26 21:00:01 EDTFATAL:  the database system is starting up
+2012-03-26 21:00:01 EDTLOG:  record with zero length at 0/C7B968
+2012-03-26 21:00:01 EDTLOG:  redo is not required
+2012-03-26 21:00:02 EDTLOG:  database system is ready to accept connections
+2012-03-26 21:00:02 EDTLOG:  autovacuum launcher started
+2012-03-26 21:04:13 EDTWARNING:  pgstat wait timeout
+2012-03-26 21:04:21 EDTWARNING:  pgstat wait timeout
+2012-03-26 21:05:13 EDTWARNING:  pgstat wait timeout

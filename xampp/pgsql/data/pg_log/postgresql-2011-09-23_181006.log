@@ -1,0 +1,8 @@
+2011-09-23 18:10:06 EDTLOG:  database system was interrupted; last known up at 2011-09-19 13:23:08 EDT
+2011-09-23 18:10:06 EDTFATAL:  the database system is starting up
+2011-09-23 18:10:06 EDTLOG:  database system was not properly shut down; automatic recovery in progress
+2011-09-23 18:10:06 EDTLOG:  record with zero length at 0/A75048
+2011-09-23 18:10:06 EDTLOG:  redo is not required
+2011-09-23 18:10:06 EDTFATAL:  the database system is starting up
+2011-09-23 18:10:07 EDTLOG:  database system is ready to accept connections
+2011-09-23 18:10:07 EDTLOG:  autovacuum launcher started

@@ -1,0 +1,9 @@
+2012-03-27 03:38:03 EDTWARNING:  pgstat wait timeout
+2012-03-27 07:11:33 EDTLOG:  could not receive data from client: No connection could be made because the target machine actively refused it.
+	
+2012-03-27 07:11:33 EDTLOG:  unexpected EOF on client connection
+2012-03-27 07:11:38 EDTLOG:  received fast shutdown request
+2012-03-27 07:11:38 EDTLOG:  aborting any active transactions
+2012-03-27 07:11:38 EDTLOG:  autovacuum launcher shutting down
+2012-03-27 07:11:38 EDTLOG:  shutting down
+2012-03-27 07:11:38 EDTLOG:  database system is shut down

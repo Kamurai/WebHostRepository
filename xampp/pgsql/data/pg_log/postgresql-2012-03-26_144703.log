@@ -1,0 +1,9 @@
+2012-03-26 14:47:05 EDTFATAL:  the database system is starting up
+2012-03-26 14:47:05 EDTLOG:  database system was interrupted; last known up at 2012-03-26 06:32:16 EDT
+2012-03-26 14:47:05 EDTFATAL:  the database system is starting up
+2012-03-26 14:47:05 EDTLOG:  database system was not properly shut down; automatic recovery in progress
+2012-03-26 14:47:06 EDTLOG:  record with zero length at 0/C61F78
+2012-03-26 14:47:06 EDTLOG:  redo is not required
+2012-03-26 14:47:06 EDTLOG:  database system is ready to accept connections
+2012-03-26 14:47:06 EDTLOG:  autovacuum launcher started
+2012-03-26 20:56:09 EDTWARNING:  worker took too long to start; cancelled

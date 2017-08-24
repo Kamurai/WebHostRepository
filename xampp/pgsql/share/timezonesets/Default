@@ -1,0 +1,263 @@
+64
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-DNS-Client
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Dot3svc
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:39, Info                  MIG    Examining replacement options for Microsoft-Windows-ehome-reg-inf
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-ehome-reg-inf
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-EventCollector
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-explorer
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Fax-Client-Applications
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Fax-Client-Feature
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Fax-Common
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:39, Info                  MIG    Examining replacement options for Microsoft-Windows-Fax-Service
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Fax-Service
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Fax-Status-Monitor
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Font-FMS
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-fontext
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-GroupPolicy-CSE-SoftwareInstallation
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-GameExplorer
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-GroupPolicy-Base
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Help-Client
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-HomeGroup-ListSvc
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-HtmlHelp
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-IME-Simplified-Chinese-Core
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:39, Info                  MIG    Examining replacement options for Microsoft-Windows-IPv4IPv6CoexistenceMigration
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-IPv4IPv6CoexistenceMigration
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-International-TimeZones
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-IME-Traditional-Chinese-Core
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-IE-Feeds-Platform
+2012-03-01 06:58:39, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:40, Info                  MIG    Examining replacement options for Microsoft-Windows-IE-InternetExplorer
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-IE-InternetExplorer
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-ieframe
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Kernel32
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-MobilePC-DefaultLocationPremium
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-MobilePC-AuxiliaryDisplay-CPL
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-MediaPlayer-DRM
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:40, Info                  MIG    Examining replacement options for Microsoft-Windows-mmsys
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-mmsys
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-MobilePC-Sensors-CPL
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Network-Security-Domain-Clients-Svc
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-NetworkAccessProtection-Agent
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:40, Info                  MIG    Examining replacement options for Microsoft-Windows-NETFX35CDFComp
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-NETFX35CDFComp
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-NETFX35LinqComp
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:40, Info                  MIG    Examining replacement options for Microsoft-Windows-NETFXCoreComp
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-NETFXCoreComp
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Network-Security
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-NetworkProfile
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-ntshrui
+2012-03-01 06:58:40, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Printing-Spooler-Networkclient
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-PerformanceCounterInfrastructureConsumer
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-PeerDist-Client-Migration
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-ParentalControlsSettings
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-PerformanceCounterInfrastructureNonExecutable
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-PerformanceCounterInfrastructure
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-PeerToPeerBase
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-PeerToPeerCollab
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-PeerToPeerGrouping
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-PeerToPeerPNRP
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-RasBase
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-RasConnectionManager
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-RasServer
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-RemoteAssistance-Exe
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-RPC-Local
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Security-Digest
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Security-Kerberos
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Security-Netlogon
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Security-NTLM
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Security-Schannel
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Security-SPP
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Security-Vault
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-SharedAccess
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                         Entering UpgGetThreadSafeEstimationData method
+2012-03-01 06:58:41, Info                         Leaving UpgGetThreadSafeEstimationData method
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-shell32
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Sidebar
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-SmartCardSubsystem
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-SMBServer
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Smss
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Speech-UserExperience
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-SystemRestore-Main
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-TabletPC-CoreInkRecognition
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-TerminalServices-TerminalServicesClient
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-TerminalServices-RemoteConnectionManager
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-TabletPC-InputPanel
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-TapiSetup
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-TaskScheduler-Service
+2012-03-01 06:58:41, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:42, Info                  MIG    Examining replacement options for Microsoft-Windows-TCPIP
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-TCPIP
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-UPnPDeviceHost
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-UPnPSSDP
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-uxtheme
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Video-TVVideoControl
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:42, Info                  MIG    Examining replacement options for Microsoft-Windows-VirtualDiskService
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-VirtualDiskService
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Winsock-Core-Infrastructure
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Web-Services-for-Management-Core
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:42, Info                  MIG    Examining replacement options for Microsoft-Windows-WCFCoreComp
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-WCFCoreComp
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-WebDAVRedir-ClientOnly
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Wlansvc
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:42, Info                  MIG    Examining replacement options for Microsoft-Windows-WMI-Core
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-WMI-Core
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-WPD-BusEnumService
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component Microsoft.Windows.WinHTTP
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component Networking-MPSSVC-Svc
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component Security-Malware-Windows-Defender
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:42, Info                  MIG    Examining replacement options for WindowsSearchEngine
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component WindowsSearchEngine
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component WSDApi
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture wow64
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component Desktop_Shell-Search-SrchAdmin
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component fdWSD
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:42, Info                  MIG    Examining replacement options for FunDisc
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component FunDisc
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Active-Directory-Services-Interface-LDAP-Extensions
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Active-Directory-Services-Interface-Router
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Active-Directory-Services-Interface-WinNT-Provider
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Active-Directory-Services-Interface-LDAP-Provider
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-accessibilitycpl
+2012-03-01 06:58:42, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:43, Info                  MIG    Examining replacement options for Microsoft-Windows-Audio-MMECore-Other
+2012-03-01 06:58:43, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Audio-MMECore-Other
+2012-03-01 06:58:43, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:43, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Audio-VolumeControl
+2012-03-01 06:58:43, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:43, Info                  MIG    Examining replacement options for Microsoft-Windows-Authentication-AuthUI
+2012-03-01 06:58:43, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Authentication-AuthUI
+2012-03-01 06:58:43, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:44, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Cryptography-CryptoConfig
+2012-03-01 06:58:44, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:45, Info                  MIG    Examining replacement options for Microsoft-Windows-CAPI2-certs
+2012-03-01 06:58:45, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-CAPI2-certs
+2012-03-01 06:58:45, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:45, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-COM-ComPlus-Setup
+2012-03-01 06:58:45, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:45, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-COM-DTC-Setup
+2012-03-01 06:58:45, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:45, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Credential-Manager
+2012-03-01 06:58:45, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:45, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Crypto-keys
+2012-03-01 06:58:45, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:45, Info                  MIG    Examining replacement options for Microsoft-Windows-DHCP-Client-Dll
+2012-03-01 06:58:45, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-DHCP-Client-Dll
+2012-03-01 06:58:45, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:46, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-dpapi-keys
+2012-03-01 06:58:46, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:46, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-ErrorReportingCore
+2012-03-01 06:58:46, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:46, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-ErrorReportingFaults
+2012-03-01 06:58:46, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:46, Info                  MIG    Examining replacement options for Microsoft-Windows-eudcedit
+2012-03-01 06:58:46, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-eudcedit
+2012-03-01 06:58:46, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:46, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Fault-Tolerant-Heap-Core
+2012-03-01 06:58:46, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:46, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-feclient
+2012-03-01 06:58:46, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:46, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-GroupPolicy-Admin-Gpedit-Snapin
+2012-03-01 06:58:46, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:46, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-GroupPolicy-Admin-Gpedit
+2012-03-01 06:58:46, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:46, Info                  MIG    Examining replacement options for Microsoft-Windows-GameUXMig
+2012-03-01 06:58:46, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-GameUXMig
+2012-03-01 06:58:46, Info                  MIG    UPGCSIAgent: filtered out because architecture x86
+2012-03-01 06:58:46, Info                  MIG    UPGCSIAgent: Processing component Microsoft-Windows-Gro

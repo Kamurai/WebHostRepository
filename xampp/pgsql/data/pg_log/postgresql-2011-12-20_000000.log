@@ -1,0 +1,6 @@
+2011-12-20 12:58:14 ESTLOG:  received fast shutdown request
+2011-12-20 12:58:14 ESTLOG:  aborting any active transactions
+2011-12-20 12:58:14 ESTFATAL:  terminating connection due to administrator command
+2011-12-20 12:58:14 ESTLOG:  autovacuum launcher shutting down
+2011-12-20 12:58:14 ESTLOG:  shutting down
+2011-12-20 12:58:15 ESTLOG:  database system is shut down

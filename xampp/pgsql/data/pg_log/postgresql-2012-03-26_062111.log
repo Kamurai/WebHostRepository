@@ -1,0 +1,14 @@
+2012-03-26 06:21:11 EDTLOG:  database system was interrupted; last known up at 2012-03-25 12:54:00 EDT
+2012-03-26 06:21:11 EDTFATAL:  the database system is starting up
+2012-03-26 06:21:12 EDTLOG:  database system was not properly shut down; automatic recovery in progress
+2012-03-26 06:21:12 EDTLOG:  record with zero length at 0/C30A00
+2012-03-26 06:21:12 EDTLOG:  redo is not required
+2012-03-26 06:21:12 EDTFATAL:  the database system is starting up
+2012-03-26 06:21:13 EDTLOG:  database system is ready to accept connections
+2012-03-26 06:21:13 EDTLOG:  autovacuum launcher started
+2012-03-26 06:24:46 EDTLOG:  received fast shutdown request
+2012-03-26 06:24:46 EDTLOG:  aborting any active transactions
+2012-03-26 06:24:46 EDTFATAL:  terminating connection due to administrator command
+2012-03-26 06:24:46 EDTLOG:  autovacuum launcher shutting down
+2012-03-26 06:24:48 EDTLOG:  shutting down
+2012-03-26 06:24:49 EDTLOG:  database system is shut down
