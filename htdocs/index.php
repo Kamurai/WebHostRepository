@@ -1,29 +1,30 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
-<!-- saved from url=(0023)./ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></head><body bgcolor="#000000" link="#C0C0C0" vlink="#808080" alink="#FF0000">
- 
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link href="./Main.css" rel="stylesheet" type="text/css">
+</head>
 <font color="white">
-
+<body id="idBody">
 <?php
 	include 'Path.php';
 	
 	$title = "HTKB Home Page";
-	$centerHeader = "<u>Welcome to the House That Kamurai Built!</u>";
+	$centerHeader = "Welcome to the House That Kamurai Built!";
 	$centerContent = "
-						<p align='left'>
-							The House That Kamurai Built is an entertainment company with the primary 
-							focus of increasing awesome by stimulating intelligent conversation and 
-							entertainment via discussion and game design. <br>
-							Increase the Awesome with us!
-						</p>
-					";
+						The House That Kamurai Built is an 
+						entertainment company with the primary 
+						focus of increasing awesome by stimulating 
+						intelligent conversation and entertainment 
+						via discussion and game design. <br>
+						Increase the Awesome with us!<br>
+                    ";
 	$GDR = "";
-	$winrar = ""; #"<a href='".$path."Section3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a><br>";
+	$winrar = "";
 	
 	$infoContent = "This is written with PHP.<br><br>
 					Other versions of this page are here:<br>
 					<a href=\"http://htkb.dyndns.org/index.html\">HTML</a><br>
-					<a href=\"http://htkb.dyndns.org/index.php\">PHP</a><br>
 					<a href=\"http://htkb.dyndns.org/Javascript/index.html\">HTML Javascript</a><br>
 					<a href=\"http://htkb.dyndns.org:81/ASP/index.asp\">ASP Javascript</a><br>
 					<a href=\"http://htkb.dyndns.org:81/ASPNET/index.aspx\">ASP.NET Javascript</a><br>
@@ -40,5 +41,6 @@
 	#Overall body
 	include $style.'Layout.php';
 ?>
-
-</font></body></html>
+</font>
+</body>
+</html>

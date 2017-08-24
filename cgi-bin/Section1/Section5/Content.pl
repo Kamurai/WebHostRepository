@@ -5,7 +5,7 @@ use warnings;
 
 my $Page = $ARGV[0];
 
-print "<p align='left'>";
+print "<p id=\"idCenterContent\">";
     if($Page <= 0)
     {
         print "This section is dedicated to ASP.NET programming.";

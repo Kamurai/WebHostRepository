@@ -1,17 +1,9 @@
 function Navigation(level, extension)
 {
-    Response.Write("<span class=\"navlink\">");
-        Response.Write("<a href=\""+GetPath(level)+"AboutUs"+GetExtension(extension)+"\">About Us</a>");
-    Response.Write("</span>");
-    Response.Write("<br>");
-    Response.Write("<span class=\"navlink\">");
-        Response.Write("<a href=\""+GetPath(level)+"Media"+GetExtension(extension)+"\">Media</a>");
-    Response.Write("</span>");
-    Response.Write("<br>");
-    Response.Write("<span class=\"navlink\">");
-        Response.Write("<a href=\""+GetPath(level)+"Minecraft"+GetExtension(extension)+"\">Minecraft!</a>");
-    Response.Write("</span>");
-    Response.Write("<br>");
+        Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"AboutUs"+GetExtension(extension)+"\">About Us</a><br/><br/>");
+        Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Media"+GetExtension(extension)+"\">Media</a><br/><br/>");
+        Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Minecraft"+GetExtension(extension)+"\">Minecraft!</a><br/><br/>");
+    
 }
 
 function Title(input)
@@ -38,43 +30,29 @@ function Title(input)
 
 function Header(input)
 {
-        if(input == 0)
+    Response.Write("<h2>");
+		if(input == 0)
         {
-            Response.Write("<h2>");
-                Response.Write("<u>");
-                    Response.Write("Welcome to the House That Kamurai Built!");
-                Response.Write("</u>");
-            Response.Write("</h2>");
+            Response.Write("Welcome to the House That Kamurai Built!");
         }
         else if(input == 1)
         {
-            Response.Write("<h2>");
-                Response.Write("<u>");
-                    Response.Write("About Us");
-                Response.Write("</u>");
-            Response.Write("</h2>");
+            Response.Write("About Us");
         }
         else if(input == 2)
         {
-            Response.Write("<h2>");
-                Response.Write("<u>");
-                    Response.Write("Media");
-                Response.Write("</u>");
-            Response.Write("</h2>");
+            Response.Write("Media");
         }
         else if(input == 3)
         {
-            Response.Write("<h2>");
-                Response.Write("<u>");
-                    Response.Write("Minecraft!");
-                Response.Write("</u>");
-            Response.Write("</h2>");
+            Response.Write("Minecraft!");
         }
+	Response.Write("</h2>");
 }
 
 function Content(input)
 {
-    Response.Write("<p align=\"left\">");
+    Response.Write("<p id=\"idCenterContent\">");
         if(input == 0)
         {
             Response.Write("The House That Kamurai Built is an entertainment company with the primary focus ");
@@ -90,27 +68,21 @@ function Content(input)
         }
         else if(input == 2)
         {
-            Response.Write("<p align=\"left\">");
-				Response.Write("You can find us at all these different places:</br>");
-			Response.Write("</p>");
-			Response.Write("<p align=\"left\">");
-				Response.Write("<h3>");
-					Response.Write("<p align=\"left\">");
+            	Response.Write("You can find us at all these different places:</br>");
+			Response.Write("<br/>");
+			Response.Write("<br/>");
 						Response.Write("#WeAreMovieClub:");
-					Response.Write("</p>");
-				Response.Write("</h3>");
-				Response.Write("<p align=\"left\">");
+			Response.Write("<br/>");
+			Response.Write("<br/>");
 					Response.Write("<a href=\"http://www.youtube.com/WeAreMovieClub\">Youtube.com/WeAreMovieClub:  A place for movie discussion.</a></br>");
 					Response.Write("<a href=\"http://WeAreMovieClub.tumblr.com\">WeAreMovieClub.tumblr.com: We have a tumblr!</a></br>");
 					Response.Write("<a href=\"http://www.twitter.com/WeAreMovieClub\">@WeArMovieClub on Twitter: Let us know about your movie thoughts.</a></br>");
 					Response.Write("<a href=\"http://www.facebook.com/WeAreMovieClub\">facebook.com/WeAreMovieClub: Talk about movie with us.</a></br>");
-				Response.Write("</p>");
-				Response.Write("<h3>");
-					Response.Write("<p align=\"left\">");
+			Response.Write("<br/>");
+			Response.Write("<br/>");
 						Response.Write("HTKB Productions");
-					Response.Write("</p>");
-				Response.Write("</h3>");
-				Response.Write("<p align=\"left\">");
+			Response.Write("<br/>");
+			Response.Write("<br/>");
 					Response.Write("<a href=\"http://www.youtube.com/GamingDivision528\">Gaming Division:  A Youtube Channel for game stuff.</a></br>");
 					Response.Write("<a href=\"http://www.youtube.com/JamOnToast528\">Jam On Toast:  A Youtube Channel for media stuff.</a></br>");
 					Response.Write("<a href=\"http://www.ustream.tv/HTKB\">UStream:  Streams show up here too.</a></br>");
@@ -123,29 +95,26 @@ function Content(input)
 					Response.Write("<a href=\"http://www.facebook.com/HouseThatKamuraiBuilt\">Facebook: Talk about movie with us.</a></br>");
 					Response.Write("<a href=\"http://HouseThatKamuraiBuilt.tumblr.com\">HouseThatKamuraiBuilt.tumblr.com: We have a tumblr!</a></br>");
 					Response.Write("<a href=\"http://myspace.com/HouseThatKamuraiBuilt\">Myspace: Wow, there\"s even a MySpace!</a></br>");
-				Response.Write("</p>");
-			Response.Write("</p>");
-			Response.Write("<p align=\"left\">");
+			Response.Write("<br/>");
+			Response.Write("<br/>");
 				Response.Write("Here are some of our member\"s pages:</br>");
-			Response.Write("</p>");
-			Response.Write("<h3>");
-				Response.Write("<p align=\"left\">");
+			Response.Write("<br/>");
+			Response.Write("<br/>");
 					Response.Write("Kamurai:");
-				Response.Write("</p>");
-			Response.Write("</h3>");
-			Response.Write("<p align=\"left\">");
+			Response.Write("<br/>");
+			Response.Write("<br/>");
 				Response.Write("<a href=\"http://twitter.com/#!/Kamurai25\">Kamurai\"s Twitter.</a></br>");
 				Response.Write("<a href=\"http://Instagram.com/Kamurai25\">Kamurai\"s Instagram.</a></br>");
 				Response.Write("<a href=\"./.\">Kamurai\"s Snapchat: Kamurai</a></br>");
 				Response.Write("<a href=\"http://www.facebook.com/cris.kamurai\">Kamurai\"s Facebook.</a></br>");
 				Response.Write("<a href=\"https://www.gplus.com/Members/Cris-Kamurai\">Kamurai\"s Google Plus.</a></br>");
 				Response.Write("<a href=\"http://www.yoyogames.com/users/Kamurai\">Kamurai\"s YoYo Games page:  See some of the games he\"s posted.</a></br>");
-			Response.Write("</p>");
+			Response.Write("<br/>");
+			
         }
         else if(input == 3)
         {
-            Response.Write("<p align=\"left\">");
-					Response.Write("If you would like to play Minecraft with us, we have several different servers:</br>");
+            		Response.Write("If you would like to play Minecraft with us, we have several different servers:</br>");
 				Response.Write("Mo Creatures Server: (1.7.10) htkb.dyndns.org:25565</br>");
 				Response.Write("Creative Server:     (1.7.10) htkb.dyndns.org:25567</br>");
 					Response.Write("This is a list of mods that we are using on the server, compatible with 1.7.10.</br>");
@@ -180,8 +149,8 @@ function Content(input)
 					Response.Write("<a href='./Downloads/Minecraft/arkcraft-1.1.3-beta.jar'>Ark Craft</a></br>");
 				Response.Write("Here is a skin template to make custom skins:</br>");
 				Response.Write("<a href='./Downloads/Minecraft/skin_template.png'>Steve skin template</a></br>");
-			Response.Write("</p>");
-			Response.Write("<p align=\"left\">");
+			Response.Write("<br/>");
+			Response.Write("<br/>");
 				Response.Write("For first time setups, please follow these steps to make your client compatible with the server:</br>");
 					Response.Write(" 0) If you don\"t have Minecraft, go to Minecraft.net and download the latest version of the launcher.</br>");
 					Response.Write(" 1) From the launcher create a new profile and change its version to the relevant version (e.g. 1.7.10).</br>");
@@ -203,8 +172,8 @@ function Content(input)
 					Response.Write("11) Go to multiplayer and click add server.</br>");
 					Response.Write("12) Name the server something distinct and put \"htkb.dyndns.org:2556x\" in the address bar where \"x\" is the relevant port.</br>");
 					Response.Write("13) Save the server entry.  You should see a connection to the server.  Double click to join.</br>");
-			Response.Write("</p>");
-			Response.Write("<p align=\"left\">");
+			Response.Write("<br/>");
+			Response.Write("<br/>");
 				Response.Write("For first time setups, please follow these steps to make your client compatible with the server:</br>");
 					Response.Write(" 0) If you don\"t have Minecraft, go to Minecraft.net and download the latest version of the launcher.</br>");
 					Response.Write(" 1) From the launcher create a new profile and change its version to the relevant version (e.g. 1.7.10).</br>");
@@ -227,102 +196,100 @@ function Content(input)
 					Response.Write("11) Go to multiplayer and click add server.</br>");
 					Response.Write("12) Name the server something distinct and put \"htkb.dyndns.org:2556x\" in the address bar where \"x\" is the relevant port.</br>");
 					Response.Write("13) Save the server entry.  You should see a connection to the server.  Double click to join.</br>");
-			Response.Write("</p>");
+		
 		}
     Response.Write("</p>");
 }
 
 function Versions(input, extension)
 {
-    Response.Write("<p align=\"left\">");
-		Response.Write("<br><br>");
-		Response.Write("Other versions of this page are here:<br>");
-		if(input == 0)
+	Response.Write("Other versions of this page are here:<br>");
+	if(input == 0)
+	{
+		Response.Write("<a href=\"http://htkb.dyndns.org/index.html\">HTML</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/index.php\">PHP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Javascript/index.html\">HTML Javascript</a><br>");
+		if(extension == 1)
 		{
-			Response.Write("<a href=\"http://htkb.dyndns.org/index.html\">HTML</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/index.php\">PHP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Javascript/index.html\">HTML Javascript</a><br>");
-			if(extension == 1)
-			{
-				Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/index.aspx\">ASP.NET Javascript</a><br>");
-			}
-			else if(extension == 2)
-			{
-				Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/index.asp\">ASP Javascript</a><br>");
-			}
-			Response.Write("<a href=\"http://htkb.dyndns.org/index.shtml\">Perl</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/index.jsp\">JSP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/index.xhtml\">JSF</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/index.cshtml\">ASP.NET Web App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/index.aspx\">ASP.NET Webform</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/index\">ASP.NET MVC App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/SSI/index.html\">Apache SSI</a><br>");
+			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/index.aspx\">ASP.NET Javascript</a><br>");
 		}
-		else if(input == 1)
+		else if(extension == 2)
 		{
-			Response.Write("<a href=\"http://htkb.dyndns.org/AboutUs.html\">HTML</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/AboutUs.php\">PHP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Javascript/AboutUs.html\">HTML Javascript</a><br>");
-			if(extension == 1)
-			{
-				Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/AboutUs.aspx\">ASP.NET Javascript</a><br>");
-			}
-			else if(extension == 2)
-			{
-				Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/AboutUs.asp\">ASP Javascript</a><br>");
-			}
-			Response.Write("<a href=\"http://htkb.dyndns.org/AboutUs.shtml\">Perl</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/AboutUs.jsp\">JSP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/AboutUs.xhtml\">JSF</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/AboutUs.cshtml\">ASP.NET Web App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/AboutUs.aspx\">ASP.NET Webform</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/AboutUs\">ASP.NET MVC App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/SSI/AboutUs.html\">Apache SSI</a><br>");
-		
+			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/index.asp\">ASP Javascript</a><br>");
 		}
-		else if(input == 2)
+		Response.Write("<a href=\"http://htkb.dyndns.org/index.shtml\">Perl</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/index.jsp\">JSP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/index.xhtml\">JSF</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/index.cshtml\">ASP.NET Web App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/index.aspx\">ASP.NET Webform</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/index\">ASP.NET MVC App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/index.html\">Apache SSI</a><br>");
+	}
+	else if(input == 1)
+	{
+		Response.Write("<a href=\"http://htkb.dyndns.org/AboutUs.html\">HTML</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/AboutUs.php\">PHP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Javascript/AboutUs.html\">HTML Javascript</a><br>");
+		if(extension == 1)
 		{
-			Response.Write("<a href=\"http://htkb.dyndns.org/Media.html\">HTML</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Media.php\">PHP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Javascript/Media.html\">HTML Javascript</a><br>");
-			if(extension == 1)
-			{
-				Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Media.aspx\">ASP.NET Javascript</a><br>");
-			}
-			else if(extension == 2)
-			{
-				Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Media.asp\">ASP Javascript</a><br>");
-			}
-			Response.Write("<a href=\"http://htkb.dyndns.org/Media.shtml\">Perl</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Media.jsp\">JSP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Media.xhtml\">JSF</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Media.cshtml\">ASP.NET Web App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Media.aspx\">ASP.NET Webform</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Media\">ASP.NET MVC App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Media.html\">Apache SSI</a><br>");
-		
+			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/AboutUs.aspx\">ASP.NET Javascript</a><br>");
 		}
-		else if(input == 3)
+		else if(extension == 2)
 		{
-			Response.Write("<a href=\"http://htkb.dyndns.org/Minecraft.html\">HTML</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Minecraft.php\">PHP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Javascript/Minecraft.html\">HTML Javascript</a><br>");
-			if(extension == 1)
-			{
-				Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Minecraft.aspx\">ASP.NET Javascript</a><br>");
-			}
-			else if(extension == 2)
-			{
-				Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Minecraft.asp\">ASP Javascript</a><br>");
-			}
-			Response.Write("<a href=\"http://htkb.dyndns.org/Minecraft.shtml\">Perl</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Minecraft.jsp\">JSP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Minecraft.xhtml\">JSF</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Minecraft.cshtml\">ASP.NET Web App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Minecraft.aspx\">ASP.NET Webform</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Minecraft\">ASP.NET MVC App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Minecraft.html\">Apache SSI</a><br>");
-		
+			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/AboutUs.asp\">ASP Javascript</a><br>");
 		}
-    Response.Write("</p>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/AboutUs.shtml\">Perl</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/AboutUs.jsp\">JSP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/AboutUs.xhtml\">JSF</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/AboutUs.cshtml\">ASP.NET Web App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/AboutUs.aspx\">ASP.NET Webform</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/AboutUs\">ASP.NET MVC App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/AboutUs.html\">Apache SSI</a><br>");
+	
+	}
+	else if(input == 2)
+	{
+		Response.Write("<a href=\"http://htkb.dyndns.org/Media.html\">HTML</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Media.php\">PHP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Javascript/Media.html\">HTML Javascript</a><br>");
+		if(extension == 1)
+		{
+			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Media.aspx\">ASP.NET Javascript</a><br>");
+		}
+		else if(extension == 2)
+		{
+			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Media.asp\">ASP Javascript</a><br>");
+		}
+		Response.Write("<a href=\"http://htkb.dyndns.org/Media.shtml\">Perl</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Media.jsp\">JSP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Media.xhtml\">JSF</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Media.cshtml\">ASP.NET Web App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Media.aspx\">ASP.NET Webform</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Media\">ASP.NET MVC App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Media.html\">Apache SSI</a><br>");
+	
+	}
+	else if(input == 3)
+	{
+		Response.Write("<a href=\"http://htkb.dyndns.org/Minecraft.html\">HTML</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Minecraft.php\">PHP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Javascript/Minecraft.html\">HTML Javascript</a><br>");
+		if(extension == 1)
+		{
+			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Minecraft.aspx\">ASP.NET Javascript</a><br>");
+		}
+		else if(extension == 2)
+		{
+			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Minecraft.asp\">ASP Javascript</a><br>");
+		}
+		Response.Write("<a href=\"http://htkb.dyndns.org/Minecraft.shtml\">Perl</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Minecraft.jsp\">JSP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Minecraft.xhtml\">JSF</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Minecraft.cshtml\">ASP.NET Web App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Minecraft.aspx\">ASP.NET Webform</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Minecraft\">ASP.NET MVC App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Minecraft.html\">Apache SSI</a><br>");
+	
+	}
+
 }

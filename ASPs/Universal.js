@@ -1,40 +1,44 @@
-function WriteHeader(level)
+function WriteHeader(level, css)
 {
 	Response.Write("<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>");
 	Response.Write("<link runat='server' rel='shortcut icon' href='"+GetPath(level)+"favicon.ico')' type='image/x-icon' />");
 	Response.Write("<link runat='server' rel='icon' href='"+GetPath(level)+"favicon.ico' type='image/ico' />");
-	Response.Write("<link href='"+GetPath(level-1)+"moo.css' rel='stylesheet' type='text/css'>");
+	Response.Write("<link href='"+GetPath(level-1)+css+"' rel='stylesheet' type='text/css'>");
 	Response.Write("<font color='white'>");
 }
 
 function TitlePicture(level)
 {
-    Response.Write("<img src='"+GetPath(level)+"logo_HouseThatKamuraiBuilt_blueonblack.jpg' width='100%' alt='' border='0' align='center' vspace='0' hspace='0'><br>");
+    Response.Write("<img id=\"idLogo\" src='"+GetPath(level)+"logo_HouseThatKamuraiBuilt_blueonblack.jpg' width='100%' alt='' border='0' align='center' vspace='0' hspace='0'><br>");
 }
 
 function WebMaster()
 {
-    Response.Write("<p align='left'>");
-        Response.Write("<font size='1'>");    
-            Response.Write("Website managed by Kamurai.");    
-        Response.Write("</font>");
-    Response.Write("</p>");
+    Response.Write("Website managed by Kamurai.");
 }
 
 function NavBar(level, extension)
 {
-    Response.Write("<a href='"+GetPath(level)+"index"+GetExtension(extension)+"'>Home</a>");
-    Response.Write("<a href='"+GetPath(level)+"Section1/index"+GetExtension(extension)+"'>Web Programming</a>");
-    Response.Write("<a href='"+GetPath(level)+"Section2/index"+GetExtension(extension)+"'>Private Projects</a>");
-    Response.Write("<a href='"+GetPath(level)+"Section3/index"+GetExtension(extension)+"'>Downloadable Projects</a>");
+    Response.Write("<a class=\"navBar\" href='"+GetPath(level)+"index"+GetExtension(extension)+"'>Home</a>");
+    Response.Write("<a class=\"navBar\" href='"+GetPath(level)+"Section1/index"+GetExtension(extension)+"'>Web Programming</a>");
+    Response.Write("<a class=\"navBar\" href='"+GetPath(level)+"Section2/index"+GetExtension(extension)+"'>Private Projects</a>");
+    Response.Write("<a class=\"navBar\" href='"+GetPath(level)+"Section3/index"+GetExtension(extension)+"'>Downloadable Projects</a>");
+}
+
+function GDR()
+{
+	Response.Write("<a href='http://htkb.dyndns.org/Section3/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>");	
+}
+
+function WinRAR()
+{
+	Response.Write("<a href='http://htkb.dyndns.org/Section3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>");	
 }
 
 function Footer()
 {
-    Response.Write("<p align='center'>");
-        Response.Write("© Copyright 2012 All rights reserved<br>");    
-        Response.Write("House That Kamurai Built<br>");    
-    Response.Write("</p>");
+    Response.Write("© Copyright 2012 All rights reserved<br>");    
+    Response.Write("House That Kamurai Built<br>");    
 }
 
 function GetPath(level)

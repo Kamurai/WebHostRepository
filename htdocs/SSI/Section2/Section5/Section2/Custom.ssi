@@ -1,88 +1,27 @@
 <!--#if expr="$vCustom == 0" -->
-	<link href="<!--#echo var="$vStylePath"-->moo.css" rel="stylesheet" type="text/css"/>
+	<link href="<!--#echo var="$vStylePath"-->Section2.css" rel="stylesheet" type="text/css"/>
 <!--#elif expr="$vCustom == 1" -->
-	<span class="navlink">
-		<a href="../../Section1/index.html">Gynowars</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Project2.html">Assault</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Project3.html">Mars</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Section4/index.html">Renley</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../index.html">Antarrea</a>
-			<h5>
-				<span class="navsublink">
-					<a href="../Section1/index.html">Global:</a>
-				</span>
-				<span class="navsublink">
-					<a href="./index.html">Grendol:</a>
-					<h5>
-						<span class="navsublink">
-							<a href="./Project1.html">Land of the Orcish Empire: Age of Magic</a>
-						</span>
-						<span class="navsublink">
-							<a href="./Project2.html">Coliseum: Arena</a>
-						</span>
-					</h5>
-				</span>
-				<span class="navsublink">
-					<a href="../Section3/index.html">Utopia:</a>
-				</span>
-				<span class="navsublink">
-					<a href="../Section4/index.html">Elvia:</a>
-				</span>
-			</h5>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Section6/index.html">Editations</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Project7.html">Truth</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Project8.html">Kingdoms</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Project9.html">Terminal World</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Project10.html">Monster Office Workplace</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Project11.html">Battle Princesses</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Project12.html">Sacred Offerings</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Project13.html">The Way</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Project14.html">Conspiratorium</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Project15.html">Conversion</a>
-	</span>
-	</br>
+	<a class=\"navlinkA\" href="../../Section1/index.html">Gynowars</a><br><br>
+	<a class=\"navlinkA\" href="../../Project2.html">Assault</a><br><br>
+	<a class=\"navlinkA\" href="../../Project3.html">Mars</a><br><br>
+	<a class=\"navlinkA\" href="../../Section4/index.html">Renley</a><br><br>
+	<a class=\"navlinkA\" href="../index.html">Antarrea</a><br><br>
+		<a class=\"navlinkB\" href="../Section1/index.html">Global:</a><br><br>
+		<a class=\"navlinkB\" href="./index.html">Grendol:</a><br><br>
+			<a class=\"navlinkC\" href="./Project1.html">Land of the Orcish Empire: Age of Magic</a><br><br>
+			<a class=\"navlinkC\" href="./Project2.html">Coliseum: Arena</a><br><br>
+		<a class=\"navlinkB\" href="../Section3/index.html">Utopia:</a><br><br>
+		<a class=\"navlinkB\" href="../Section4/index.html">Elvia:</a><br><br>
+	<a class=\"navlinkA\" href="../../Section6/index.html">Editations</a><br><br>
+	<a class=\"navlinkA\" href="../../Project7.html">Truth</a><br><br>
+	<a class=\"navlinkA\" href="../../Project8.html">Kingdoms</a><br><br>
+	<a class=\"navlinkA\" href="../../Project9.html">Terminal World</a><br><br>
+	<a class=\"navlinkA\" href="../../Project10.html">Monster Office Workplace</a><br><br>
+	<a class=\"navlinkA\" href="../../Project11.html">Battle Princesses</a><br><br>
+	<a class=\"navlinkA\" href="../../Project12.html">Sacred Offerings</a><br><br>
+	<a class=\"navlinkA\" href="../../Project13.html">The Way</a><br><br>
+	<a class=\"navlinkA\" href="../../Project14.html">Conspiratorium</a><br><br>
+	<a class=\"navlinkA\" href="../../Project15.html">Conversion</a><br><br>
 <!--#elif expr="$vCustom == 2" -->
 	<title>
 		<!--#if expr="$vPage == 0" -->

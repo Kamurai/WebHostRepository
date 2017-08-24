@@ -1,117 +1,36 @@
 <!--#if expr="$vCustom == 0" -->
-	<link href="<!--#echo var="$vStylePath"-->moo.css" rel="stylesheet" type="text/css"/>
+	<link href="<!--#echo var="$vStylePath"-->Section2.css" rel="stylesheet" type="text/css"/>
 <!--#elif expr="$vCustom == 1" -->
-	<span class="navlink">
-		<a href="../../../Section1/index.html">Gynowars</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../../Project2.html">Assault</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../../Project3.html">Mars</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../../Section4/index.html">Renley</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../../Section5/index.html">Antarrea</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../../Section6/index.html">Editations</a>
-		<h5>
-			<span class="navsublink">
-				<a href="../../Project1.html">Magic: The Tactical</a>
-			</span>
-			<span class="navsublink">
-				<a href="../../Section2/index.html">Warhammer 40K</a>
-				<h5>
-					<span class="navsublink">
-						<a href="../Project1.html">Mission!</a>
-					</span>
-					<span class="navsublink">
-						<a href="./index.html">HTKB Armies</a>
-						<h5>
-							<span class="navsublink">
-								<a href="./Project1.html">Ad Infinitum</a>
-							</span>
-							<span class="navsublink">
-								<a href="./Project2.html">Avia</a>
-							</span>
-							<span class="navsublink">
-								<a href="./Project3.html">De Luna</a>
-							</span>
-							<span class="navsublink">
-								<a href="./Project4.html">Eve</a>
-							</span>
-							<span class="navsublink">
-								<a href="./Project5.html">Geo Marines</a>
-							</span>
-							<span class="navsublink">
-								<a href="./Project6.html">Twin Fists</a>
-							</span>
-							<span class="navsublink">
-								<a href="./Project7.html">Voboulids</a>
-							</span>
-							<span class="navsublink">
-								<a href="./Project8.html">Fungi</a>
-							</span>
-							<span class="navsublink">
-								<a href="./Project9.html">Synergy</a>
-							</span>
-							<span class="navsublink">
-								<a href="./Project10.html">The Dark</a>
-							</span>
-							<span class="navsublink">
-								<a href="./Project11.html">Vivus Mortem</a>
-							</span>
-						</h5>
-					</span>
-				</h5>
-			</span>
-		</h5>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../../Project7.html">Truth</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../../Project8.html">Kingdoms</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../../Project9.html">Terminal World</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../../Project10.html">Monster Office Workplace</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../../Project11.html">Battle Princesses</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../../Project12.html">Sacred Offerings</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../../Project13.html">The Way</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../../Project14.html">Conspiratorium</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../../Project15.html">Conversion</a>
-	</span>
-	</br>
+	<a class=\"navlinkA\" href="../../../Section1/index.html">Gynowars</a><br><br>
+	<a class=\"navlinkA\" href="../../../Project2.html">Assault</a><br><br>
+	<a class=\"navlinkA\" href="../../../Project3.html">Mars</a><br><br>
+	<a class=\"navlinkA\" href="../../../Section4/index.html">Renley</a><br><br>
+	<a class=\"navlinkA\" href="../../../Section5/index.html">Antarrea</a><br><br>
+	<a class=\"navlinkA\" href="../../../Section6/index.html">Editations</a><br><br>
+		<a class=\"navlinkB\" href="../../Project1.html">Magic: The Tactical</a><br><br>
+		<a class=\"navlinkB\" href="../../Section2/index.html">Warhammer 40K</a><br><br>
+			<a class=\"navlinkC\" href="../Project1.html">Mission!</a><br><br>
+			<a class=\"navlinkC\" href="./index.html">HTKB Armies</a><br><br>
+				<a class=\"navlinkD\" href="./Project1.html">Ad Infinitum</a><br><br>
+				<a class=\"navlinkD\" href="./Project2.html">Avia</a><br><br>
+				<a class=\"navlinkD\" href="./Project3.html">De Luna</a><br><br>
+				<a class=\"navlinkD\" href="./Project4.html">Eve</a><br><br>
+				<a class=\"navlinkD\" href="./Project5.html">Geo Marines</a><br><br>
+				<a class=\"navlinkD\" href="./Project6.html">Twin Fists</a><br><br>
+				<a class=\"navlinkD\" href="./Project7.html">Voboulids</a><br><br>
+				<a class=\"navlinkD\" href="./Project8.html">Fungi</a><br><br>
+				<a class=\"navlinkD\" href="./Project9.html">Synergy</a><br><br>
+				<a class=\"navlinkD\" href="./Project10.html">The Dark</a><br><br>
+				<a class=\"navlinkD\" href="./Project11.html">Vivus Mortem</a><br><br>
+	<a class=\"navlinkA\" href="../../../Project7.html">Truth</a><br><br>
+	<a class=\"navlinkA\" href="../../../Project8.html">Kingdoms</a><br><br>
+	<a class=\"navlinkA\" href="../../../Project9.html">Terminal World</a><br><br>
+	<a class=\"navlinkA\" href="../../../Project10.html">Monster Office Workplace</a><br><br>
+	<a class=\"navlinkA\" href="../../../Project11.html">Battle Princesses</a><br><br>
+	<a class=\"navlinkA\" href="../../../Project12.html">Sacred Offerings</a><br><br>
+	<a class=\"navlinkA\" href="../../../Project13.html">The Way</a><br><br>
+	<a class=\"navlinkA\" href="../../../Project14.html">Conspiratorium</a><br><br>
+	<a class=\"navlinkA\" href="../../../Project15.html">Conversion</a><br><br>
 <!--#elif expr="$vCustom == 2" -->
 	<title>
 		<!--#if expr="$vPage == 0" -->
@@ -144,101 +63,79 @@
 	</title>
 <!--#elif expr="$vCustom == 3" -->
 	<h2>
-		<u>
-			<!--#if expr="$vPage == 0" -->
-				HTKB Armies
-			<!--#elif expr="$vPage == 1" -->
-				Ad Infinitum
-			<!--#elif expr="$vPage == 2" -->
-				Avia
-			<!--#elif expr="$vPage == 3" -->
-				De Luna
-			<!--#elif expr="$vPage == 4" -->
-				Eve
-			<!--#elif expr="$vPage == 5" -->
-				Geo Marines
-			<!--#elif expr="$vPage == 6" -->
-				Twin Fists
-			<!--#elif expr="$vPage == 7" -->
-				Voboulids
-			<!--#elif expr="$vPage == 8" -->
-				Fungi
-			<!--#elif expr="$vPage == 9" -->
-				Synergy
-			<!--#elif expr="$vPage == 10" -->
-				The Dark
-			<!--#elif expr="$vPage == 11" -->
-				Vivus Mortem
-	<!--#else -->
-				NOPE!
-			<!--#endif -->
-		</u>
+		<!--#if expr="$vPage == 0" -->
+			HTKB Armies
+		<!--#elif expr="$vPage == 1" -->
+			Ad Infinitum
+		<!--#elif expr="$vPage == 2" -->
+			Avia
+		<!--#elif expr="$vPage == 3" -->
+			De Luna
+		<!--#elif expr="$vPage == 4" -->
+			Eve
+		<!--#elif expr="$vPage == 5" -->
+			Geo Marines
+		<!--#elif expr="$vPage == 6" -->
+			Twin Fists
+		<!--#elif expr="$vPage == 7" -->
+			Voboulids
+		<!--#elif expr="$vPage == 8" -->
+			Fungi
+		<!--#elif expr="$vPage == 9" -->
+			Synergy
+		<!--#elif expr="$vPage == 10" -->
+			The Dark
+		<!--#elif expr="$vPage == 11" -->
+			Vivus Mortem
+		<!--#else -->
+			NOPE!
+		<!--#endif -->
 	</h2>
 <!--#elif expr="$vCustom == 4" -->
 	<!--#if expr="$vPage == 0" -->
-		<p align="left">
-			This section is dedicated to HTKB designed armies based on the Warhammer 40K universe.
-		</p>
+		This section is dedicated to HTKB designed armies based on the Warhammer 40K universe.
 	<!--#elif expr="$vPage == 1" -->
-		<p align="left">
-			Ad Infinitum is a collective of A.I. constructs.  Little is known about these constructs 
-			as they are not known to negotiate.  While some technology has been recovered, it is rare 
-			to find anything viable after battles.
-		</p>
+		Ad Infinitum is a collective of A.I. constructs.  Little is known about these constructs 
+		as they are not known to negotiate.  While some technology has been recovered, it is rare 
+		to find anything viable after battles.
 	<!--#elif expr="$vPage == 2" -->
-		<p align="left">
-			The Avia are a humanoid xenos that are naturally equipped with wings.  They can are the very least 
-			glide for short times without technological assistance.
-		</p>
+		The Avia are a humanoid xenos that are naturally equipped with wings.  They can are the very least 
+		glide for short times without technological assistance.
 	<!--#elif expr="$vPage == 3" -->
-		<p align="left">
-			De Luna is a designation for squads of walker vehicles that tend to ambush their targets.  
-			While De Luna are automated vehicles, wreckage has determine that there are seats for 
-			pilots.  Theories range from A.I. control to remote communication.
-		</p>
+		De Luna is a designation for squads of walker vehicles that tend to ambush their targets.  
+		While De Luna are automated vehicles, wreckage has determine that there are seats for 
+		pilots.  Theories range from A.I. control to remote communication.
 	<!--#elif expr="$vPage == 4" -->
-		<p align="left">
-			The Eve are a race of terrifying beast creatures.  
-			These Xenos somewhat resemble large cats.
-		</p>
+		The Eve are a race of terrifying beast creatures.  
+		These Xenos somewhat resemble large cats.
 	<!--#elif expr="$vPage == 5" -->
-		<p align="left">
-			Geo Marines are a specialized Chapter concentrating equipment speciality.
-		</p>
+		Geo Marines are a specialized Chapter concentrating equipment speciality.
 	<!--#elif expr="$vPage == 6" -->
-		<p align="left">
-			This lost Chapter spent far too long stranded outside the reach of civilisation.  
-			The Twin Fists specialize in close combat battles.
-		</p>
+		This lost Chapter spent far too long stranded outside the reach of civilisation.  
+		The Twin Fists specialize in close combat battles.
 	<!--#elif expr="$vPage == 7" -->
-		<p align="left">
-			Vouboulids are a plant-like group of entities.  Using a hive structure, 
-			these Xenos seem to concentrate on populating one area at a time, causing a slow expansion.
-		</p>
+		Vouboulids are a plant-like group of entities.  Using a hive structure, 
+		these Xenos seem to concentrate on populating one area at a time, causing a slow expansion.
 	<!--#elif expr="$vPage == 8" -->
-		<p align="left">
-			These Xenos are unidentifiable as anything other than an advanced form of Fungus.  
-			Their appearances range incredible wide, but tend to even resemble familiar forms of fungus.
-		</p>
+		These Xenos are unidentifiable as anything other than an advanced form of Fungus.  
+		Their appearances range incredible wide, but tend to even resemble familiar forms of fungus.
 	<!--#elif expr="$vPage == 9" -->
-		<p align="left">
-			These almost intangible Xenos appear to made of energy itself.  They use technology that appears unstable in nature.
-		</p>
+		These almost intangible Xenos appear to made of energy itself.  They use technology that appears unstable in nature.
 	<!--#elif expr="$vPage == 10" -->
-		<p align="left">
-			The Dark are a Hive centered Xenos resembling a disturbing cross between snake, bird and insect.
-		</p>
+		The Dark are a Hive centered Xenos resembling a disturbing cross between snake, bird and insect.
 	<!--#elif expr="$vPage == 11" -->
-		<p align="left">
-			Vivus mortem is a category for humans that are encountered and exhibit certain traits.  These possibly once humans 
-			have extreme abilities to endure the harshest environment, avoid lighted scenarios whenever possible, and attempt to 
-			take human prisoner whenever possible.  Escapees had stated that the Vivus Mortem would feed on them, and upon death 
-			and exposed bodies lose their excessive durability and seem to disintegrate rapidly enough to appear to "turn to ash".
-		</p>
+		Vivus mortem is a category for humans that are encountered and exhibit certain traits.  These possibly once humans 
+		have extreme abilities to endure the harshest environment, avoid lighted scenarios whenever possible, and attempt to 
+		take human prisoner whenever possible.  Escapees had stated that the Vivus Mortem would feed on them, and upon death 
+		and exposed bodies lose their excessive durability and seem to disintegrate rapidly enough to appear to "turn to ash".
 	<!--#else -->
 		NOPE!
 	<!--#endif -->
 <!--#elif expr="$vCustom == 5" -->
+	This is written with basic HTML and Server Side Integration.
+	<br/>
+	<br/>
+	Other versions of this page are here:<br>
 	<!--#if expr="$vPage == 0" -->
 		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2index.html">Basic HTML</a><br>
 		<a href="http://htkb.dyndns.org/Section2/Section6/Section2/Section2index.php">PHP</a><br>

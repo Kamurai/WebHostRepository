@@ -1,28 +1,26 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
-<!-- saved from url=(0023)./ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></head><body bgcolor="#000000" link="#C0C0C0" vlink="#808080" alink="#FF0000">
- 
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
 <font color="white">
-
+<body id="idBody">
 <?php
 	include 'Path.php';
 	
 	$title = "Conspiratorium";
-	$centerHeader = "<u>Conspiratorium</u>";
+	$centerHeader = "Conspiratorium";
 	$centerContent = "
-						<p align='left'>
 							This section is dedicated to the board game project 'Conspiratorium'.<br/>
 							A game of assassins and CIA, you must remember who is friend and who is not.
-						</p>
-						<p align='left'>
+						</br>
+						</br>
 							You can download the Tabletop Simulator mod here:
 							<a href='http://steamcommunity.com/sharedfiles/filedetails/?id=656617895'>Steam Workshop</a>
-						</p>
-						<p align='left'>
-							<u>
+						</br>
+						</br>
 								Consipatorium Ruleset v0.1<br/>
-							</u>
-							<br/>
+						<br/>
 							Setup:<br/>
 								&nbsp;&nbsp;&nbsp;&nbsp;
 								Board<br/>
@@ -30,11 +28,11 @@
 								Token Set: 100 tokens per player<br/>
 								&nbsp;&nbsp;&nbsp;&nbsp;
 								Divide tokens equally amongst players<br/>
-							<br/>	
+						<br/>	
 							Round:<br/>
 								&nbsp;&nbsp;&nbsp;&nbsp;
 								Each player takes a turn performing one action.<br/>
-							<br/>	
+						<br/>	
 							Turn:<br/>
 								&nbsp;&nbsp;&nbsp;&nbsp;
 								On its turn, a player may do one of the following actions:<br/>
@@ -63,7 +61,6 @@
 							Win Condition:<br/>
 								&nbsp;&nbsp;&nbsp;&nbsp;
 								The player matching the affiliation of the last remaining token on the board wins.<br/>
-						</p>
 						
 					";
 	$GDR = "";
@@ -72,7 +69,6 @@
 	$infoContent = "This is written with PHP.<br><br>
 					Other versions of this page are here:<br>
 					<a href=\"http://htkb.dyndns.org/Section2/Project14.html\">HTML</a><br>
-					<a href=\"http://htkb.dyndns.org/Section2/Project14.php\">PHP</a><br>
 					<a href=\"http://htkb.dyndns.org/Javascript/Section2/Project14.html\">HTML Javascript</a><br>
 					<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project14.asp\">ASP Javascript</a><br>
 					<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project14.aspx\">ASP.NET Javascript</a><br>
@@ -89,5 +85,6 @@
 	#Overall body
 	include $style.'Layout.php';
 ?>
-
-</font></body></html>
+</body>
+</font>
+</html>

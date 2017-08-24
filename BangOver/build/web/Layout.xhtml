@@ -8,80 +8,49 @@
     <h:head>
         <link href='#{MainBean.GetPath()}Pictures/favicon.ico' rel='shortcut icon' type='image/x-icon' />
         <link href='#{MainBean.GetPath()}Pictures/favicon.ico' rel='icon'          type='image/x-icon' />
-        <link href='#{MainBean.GetStylePath()}moo.css'         rel='stylesheet'    type='text/css' />
+        <link href='#{MainBean.GetStylePath()}BangOver.css'    rel='stylesheet'    type='text/css' />
     </h:head>
-    <h:body>
+    <h:body id="idBody">
+    <font color="white">
         <f:event type="preRenderView" listener="#{BangBean.PullAdvertPair()}" />
-            <div align='center' width='100%'>
-                <!--Table to place all subsections-->
-                <table width='100%' cellpadding='0px' cellspacing='0px' border='10' align='center'>
-                    <!--Top Row-->
-                    <tr>
-                        <h:form>
-                             <ui:include src="#{MainBean.GetPath()}Common/Logo.xhtml"></ui:include>
+           <table id="idTableMain">
+                <tr id="idHeaderRow">
+                    <td id="idHeaderRowCenter" colspan="3">
+                        <ui:include src="#{MainBean.GetPath()}Common/Logo.xhtml" ></ui:include>
+                    </td>
+                </tr>
+                <tr id="idNavigationRow">
+                    <td id="idNavigationBar" colspan="3">
+                        <h:form  id="idNavForm">
+                            <ui:include src="#{MainBean.GetPath()}Common/NavBar.xhtml"></ui:include>
                         </h:form>
-                    </tr>
-                    <!--2nd Row-->
-                    <tr>
-                        <!--NavBar-->
-                        <td class='td-navbar' colspan='3' alt=''>
-                                <ul id='list-nav'>
-                                        <h:form>
-                                            <ui:include src="#{MainBean.GetPath()}Common/NavBar.xhtml"></ui:include>
-                                        </h:form>
-                                    
-                                </ul>
-                        </td>
-                    </tr>
-                    <!--3rd Row-->
-                    <tr>
-                        <!--Left Sub Section-->
-                        <td class='td-left' valign='top'>
-                            <div align='center'>
-                                <img src="#{BangBean.getpath()}#{BangBean.getadvertfolder()}#{BangBean.advert1}"  width="200px" height="400px"/>
-                            </div>
-                        </td>
-                        <!--Center Sub Section-->
-                        <td class='td-content'>
-                            <div align='center' valign='top'>
-                                <div class='content-box'>
-                                    <div>
-                                        <h:form>
-                                            <ui:include src="#{MainBean.Content()}"></ui:include>
-                                        </h:form>
-                                     </div>
-                                    <br/>
-                                    <br/>
-                                </div>
-                            </div>
-                        </td>
-                        <!--Right Sub Section-->
-                        <td class='td-right' valign='top'>
-                            <div align='center'>");
-                                <img src="#{BangBean.getpath()}#{BangBean.getadvertfolder()}#{BangBean.advert2}"  width="200px" height="400px"/>
-                            </div>
-                        </td>
-                    </tr>
-                    <!--4th Row-->
-                    <tr>
-                        <!--Center Sub Section-->
-                        <td class='td-footer' colspan='3'>
-                            <div align='center'>
-                                <div class='footer-box'>
-                                    <h:form>
-                                        <ui:include src="#{MainBean.GetPath()}Common/Footer.xhtml"></ui:include>
-                                    </h:form>
-                                    <p align='left'>
-                                        <font size='1'>
-                                            #{MainBean.WebMaster()}
-                                        </font>
-                                    </p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+                    </td>
+                </tr>
+                <tr id="idCenterRow">
+                    <td id="idCenterRowLeft">
+                        <img id="idAdvertLeft" src="#{BangBean.getpath()}#{BangBean.getadvertfolder()}#{BangBean.advert1}" />
+                    </td>
+                    <td id="idCenterRowMain">
+                        <h:form id="idForm">
+                            <ui:include src="#{MainBean.Content()}"></ui:include>
+                        </h:form>
+                    </td>
+                    <td id="idCenterRowRight">
+                        <img id="idAdvertRight" src="#{BangBean.getpath()}#{BangBean.getadvertfolder()}#{BangBean.advert2}" />
+                    </td>
+                </tr>
+                <tr id="idFooterRow">
+                    <td id="idFooterMain" colspan="3">
+                        <p id="idFooterContent">
+                            <ui:include src="#{MainBean.GetPath()}Common/Footer.xhtml"></ui:include>
+                        </p>
+                        <p id="idFooterManagement">
+                            #{MainBean.WebMaster()}
+                        </p>
+                    </td>
+                </tr>
+            </table>
+    </font>    
     </h:body>
 </html>
 

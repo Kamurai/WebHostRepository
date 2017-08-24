@@ -21,12 +21,11 @@
             int pagenumber = 0;
             int extension = 3;
 
-            out.println(uni.WriteHeader(level));
+            out.println(uni.WriteHeader(level, 0));
         %>
     </head>
-    <body>
         <%
             out.println(lay.WriteWebpage(pagenumber,level,extension));
         %>
-    </body>
+
 </html>

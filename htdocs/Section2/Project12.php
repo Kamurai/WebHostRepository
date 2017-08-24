@@ -1,30 +1,28 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
-<!-- saved from url=(0023)./ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></head><body bgcolor="#000000" link="#C0C0C0" vlink="#808080" alink="#FF0000">
- 
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
 <font color="white">
-
+<body id="idBody">
 <?php
 	include 'Path.php';
 	
 	$title = "Sacred Offerings";
-	$centerHeader = "<u>Sacred Offerings</u>";
+	$centerHeader = "Sacred Offerings";
 	$centerContent = "
-						<p align='left'>
 							This section is dedicated to the board game project \"Sacred Offerings\".<br/>
 							Being a god is hard, you have to eat, but
 							don't want to fall out favor with the people more than the other deities.
 							Draw people to worship you, but be discerning about who is sacrificed.
-						</p>
-						<p align='left'>
+						</br>
+						</br>
 							You can download the Tabletop Simulator mod here:
 							<a href='http://steamcommunity.com/sharedfiles/filedetails/?id=652957007'>Steam Workshop</a>
-						</p>
-						<p align='left'>
-							<u>
+						</br>
+						</br>
 								Sacred Offerings Ruleset v0.1<br/>
-							</u>
-							<br/>
+						<br/>
 							Setup:<br/>
 								&nbsp;&nbsp;&nbsp;&nbsp;
 								Select a board for the number of players (from 2 to 6):<br/>
@@ -122,7 +120,6 @@
 							Victory condition:<br/>
 								&nbsp;&nbsp;&nbsp;&nbsp;
 								The player with the lower points wins!<br/>
-						</p>
 					";
 	$GDR = "";
 	$winrar = "";
@@ -130,7 +127,6 @@
 	$infoContent = "This is written with PHP.<br><br>
 					Other versions of this page are here:<br>
 					<a href=\"http://htkb.dyndns.org/Section2/Project12.html\">HTML</a><br>
-					<a href=\"http://htkb.dyndns.org/Section2/Project12.php\">PHP</a><br>
 					<a href=\"http://htkb.dyndns.org/Javascript/Section2/Project12.html\">HTML Javascript</a><br>
 					<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project12.asp\">ASP Javascript</a><br>
 					<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project12.aspx\">ASP.NET Javascript</a><br>
@@ -147,5 +143,6 @@
 	#Overall body
 	include $style.'Layout.php';
 ?>
-
-</font></body></html>
+</body>
+</font>
+</html>

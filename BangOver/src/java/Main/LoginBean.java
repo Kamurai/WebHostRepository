@@ -36,7 +36,19 @@ public class LoginBean implements Serializable
     private boolean boolMen;
     private boolean boolTransWomen;
     private boolean boolTransMen;
-
+    
+    private String strCelebrityToSuggest;
+    private String strURLToSuggest;
+    private String strSexToSuggest;
+    
+    private String strCelebrityToAdd;
+    private String strURLToAdd;
+    private String strSexToAdd;
+    
+    private String email;
+    private String confirmPassword;
+    
+    
     public LoginBean()
     {
         connect = null;
@@ -57,6 +69,17 @@ public class LoginBean implements Serializable
         boolMen = false;
         boolTransWomen = false;
         boolTransMen = false;
+        
+        strCelebrityToSuggest = "";
+        strURLToSuggest = "";
+        strSexToSuggest = "F";
+        
+        strCelebrityToAdd = "";
+        strURLToAdd = "";
+        strSexToAdd = "F";
+        
+        email = "";
+        confirmPassword = "";
         
     }
     
@@ -208,28 +231,6 @@ public class LoginBean implements Serializable
         LoggedIn = input;
     }
             
-    public void UpdateOptions()
-    {
-        String sqlQuery = "";
-        
-        //set local
-        setLoggedIn(true);
-        
-        //open connection
-        //connect = db.openConnection(driver, url, dbName, dbUsername, dbPassword);
-        connect = dbi.openConnection();
-        
-        sqlQuery = "update Users set Women = " + boolWomen + ", Men = "+ boolMen + ", TransWomen = " + boolTransWomen + ", TransMen = " + boolTransMen + " where Indext = " + userindex + ";";
-        
-        //db.executeStatement(connect, sqlQuery);
-        dbi.executeStatement(sqlQuery);
-        
-        //close connection
-        //db.closeConnection(connect);
-        dbi.closeConnection(connect);
-        
-    }
-    
     public void setOnline(String user)
     {
         String sqlQuery = "";
@@ -294,11 +295,6 @@ public class LoginBean implements Serializable
         boolMen = input;
     }
     
-    public void setPassword(boolean input)
-    {
-        boolMen = input;
-    }
-     
     public boolean getboolTransWomen()
     {
         return boolTransWomen;
@@ -338,5 +334,212 @@ public class LoginBean implements Serializable
     {
         admin = input;
     }
+    
+    public void UpdateOptions()
+    {
+        String sqlQuery = "";
+        
+        //if all are false
+        if( !getboolWomen() && !getboolMen() && !getboolTransWomen() && !getboolTransMen())
+        {
+            //then set female to true
+            setboolWomen(true);
+        }
+        
+        //Update preferences to match check boxes (local variables)
+        try
+        {
+            //validate given username
+                //open connection
+            connect = dbi.openConnection();
+        }
+        catch(Exception ex)
+        {
+            //return null;
+        }
+        
+        sqlQuery = "UpdateOptions " + getuserindex() + ", " + getboolWomen() + ", " + getboolMen() + ", " + getboolTransWomen() + ", " + getboolTransMen() + ";";
+        
+        ResultSet rs = dbi.executeStatement(sqlQuery);
+        
+        dbi.closeConnection(connect);
+    }
+    
+    public String getstrCelebrityToAdd()
+    {
+        return strCelebrityToAdd;
+    }
+    
+    public String getstrSexToAdd()
+    {
+        return strSexToAdd;
+    }
+    
+    public String getstrURLToAdd()
+    {
+        return strURLToAdd;
+    }
+    
+    public String getEmail()
+    {
+        return email;
+    }
+    
+    public String getconfirmPassword()
+    {
+        return confirmPassword;
+    }
+    
+    public void setstrCelebrityToAdd(String input)
+    {
+        strCelebrityToAdd = input;
+    }
+    
+    public void setstrSexToAdd(String input)
+    {
+        strSexToAdd = input;
+    }
+    
+    public void setstrURLToAdd(String input)
+    {
+        strURLToAdd = input;
+    }
+    
+    public void setEmail(String input)
+    {
+        email = input;
+    }
+    
+    public void setconfirmPassword(String input)
+    {
+        confirmPassword = input;
+    }
+    
+    public String getstrCelebrityToSuggest()
+    {
+        return strCelebrityToSuggest;
+    }
+    
+    public String getstrSexToSuggest()
+    {
+        return strSexToSuggest;
+    }
+    
+    public String getstrURLToSuggest()
+    {
+        return strURLToSuggest;
+    }
+    
+    public void setstrCelebrityToSuggest(String input)
+    {
+        strCelebrityToSuggest = input;
+    }
+    
+    public void setstrSexToSuggest(String input)
+    {
+        strSexToSuggest = input;
+    }
+    
+    public void setstrURLToSuggest(String input)
+    {
+        strURLToSuggest = input;
+    }
+    
+    public void AddCelebrity()
+    {
+        String sqlQuery = "";
+        
+        //Update preferences to match check boxes (local variables)
+        try
+        {
+            //validate given username
+                //open connection
+            connect = dbi.openConnection();
+        }
+        catch(Exception ex)
+        {
+            //return null;
+        }
+        
+        sqlQuery = "AddCelebrity '" + strCelebrityToAdd + "', '" + strSexToAdd + "', '" + strURLToAdd + "';";
+        
+        ResultSet rs = dbi.executeStatement(sqlQuery);
+        
+        dbi.closeConnection(connect);
+        
+        strCelebrityToAdd = "";
+        strSexToAdd = "F";
+        strURLToAdd = "";
+    }
+    
+    public void AddCelebritySuggestion()
+    {
+        String sqlQuery = "";
+        
+        //Update preferences to match check boxes (local variables)
+        try
+        {
+            //validate given username
+                //open connection
+            connect = dbi.openConnection();
+        }
+        catch(Exception ex)
+        {
+            //return null;
+        }
+        
+        sqlQuery = "AddCelebritySuggestion '" + strCelebrityToSuggest + "', '" + strSexToSuggest + "', '" + strURLToSuggest + "';";
+        
+        ResultSet rs = dbi.executeStatement(sqlQuery);
+        
+        dbi.closeConnection(connect);
+        
+        strCelebrityToSuggest = "";
+        strSexToSuggest = "F";
+        strURLToSuggest = "";
+    }
+    
+    public String SignUp()
+    {
+        String sqlQuery = "";
+        String Result = "";
+        
+        if( password.compareTo(confirmPassword) == 0 )
+        {
+        
+            //Update preferences to match check boxes (local variables)
+            try
+            {
+                //validate given username
+                    //open connection
+                connect = dbi.openConnection();
+            }
+            catch(Exception ex)
+            {
+                //return null;
+            }
+
+            sqlQuery = "SignUp '" + username + "', '" + email + "', '" + password + "', '" + boolWomen + "', '" + boolMen + "', '" + boolTransWomen + "', '" + boolTransMen + "';";
+
+            ResultSet rs = dbi.executeStatement(sqlQuery);
+
+            dbi.closeConnection(connect);
+            
+            
+            
+            
+            Result = "Login.xhtml";
+        }
+        else
+        {
+            //Return error for passwords not matching
+            error = "Passwords do not match.";
+            Result = "SignUp.xhtml";
+        }
+        
+        
+        return Result;
+    }
+    
     
 }

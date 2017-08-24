@@ -1,22 +1,21 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
-<!-- saved from url=(0023)./ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></head><body bgcolor="#000000" link="#C0C0C0" vlink="#808080" alink="#FF0000">
- 
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
 <font color="white">
-
+<body id="idBody">
 <?php
 	include 'Path.php';
 	
 	$title = "Grendol";
-	$centerHeader = "<u>Grendol</u>";
+	$centerHeader = "Grendol";
 	$centerContent = "
-						<p align='left'>
-							Here are projects based in the Grendol Empire:</br>
-							</br>
-							Land of the Orcish Empire: Age of Magic: a CCG based on the different factions that 
-							comprise the Grendol Empire.</br>
-							Coliseum: Arena: a CCG representing the gladitorial arenas of Grendol.</br>
-						</p>
+						Here are projects based in the Grendol Empire:</br>
+						</br>
+						Land of the Orcish Empire: Age of Magic: a CCG based on the different factions that 
+						comprise the Grendol Empire.</br>
+						Coliseum: Arena: a CCG representing the gladitorial arenas of Grendol.</br>
 					";
 	$GDR = "<a href='../Downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";
 	$winrar = "<a href='../Downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";
@@ -24,7 +23,6 @@
 	$infoContent = "This is written with PHP.<br><br>
 					Other versions of this page are here:<br>
 					<a href=\"http://htkb.dyndns.org/Section2/Section5/Section2/index.html\">HTML</a><br>
-					<a href=\"http://htkb.dyndns.org/Section2/Section5/Section2/index.php\">PHP</a><br>
 					<a href=\"http://htkb.dyndns.org/Javascript/Section2/Section5/Section2/index.html\">HTML Javascript</a><br>
 					<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Section5/Section2/index.asp\">ASP Javascript</a><br>
 					<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Section5/Section2/index.aspx\">ASP.NET Javascript</a><br>
@@ -41,5 +39,6 @@
 	#Overall body
 	include $style.'Layout.php';
 ?>
-
-</font></body></html>
+</body>
+</font>
+</html>

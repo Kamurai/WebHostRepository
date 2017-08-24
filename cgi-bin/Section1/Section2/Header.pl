@@ -8,8 +8,6 @@ my $Page = $ARGV[0];
 if($Page <= 0)
 {
     print "<h2>";
-        print "<u>";
-            print "Javascript";
-        print "</u>";
+		print "Javascript";
     print "</h2>";
 }

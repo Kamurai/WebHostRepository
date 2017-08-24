@@ -4,46 +4,38 @@
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:c="http://java.sun.com/jsp/jstl/core">
-    <h:head />
-    <h:body>
-        <c:choose>
-            <c:when test="#{LoginBean.getLoggedIn()}">
-                <title>
-                    Bang Over!
-                </title>
-                <h2>
-                    <u>
-                        Welcome to Bang Over!
-                    </u>
-                </h2>
-                <p align='center'>
-                    Select which Celebrity you'd Bang Over the other.
-                </p>
-                <!--<c:set value="#{BangBean.PullCelebrityPair(LoginBean.userindex)}" var="tickle"></c:set>-->
-                <table>
-                    <tr>
-                        <td width="50%">
-                            <h:commandLink action="#{BangBean.SwapPositions(LoginBean.userindex,BangBean.celebrityName1,BangBean.celebrityName2)}"> 
-                                <h:graphicImage value="#{BangBean.getpath()}#{BangBean.getfolder()}#{BangBean.celebrityURL1}" alt="#{BangBean.celebrityName1}"  width="240px" height="320px"/>
-                            </h:commandLink>
-                        </td>
-                        <td width="50%">
-                            <h:commandLink action="#{BangBean.SwapPositions(LoginBean.userindex,BangBean.celebrityName2,BangBean.celebrityName1)}"> 
-                                <h:graphicImage value="#{BangBean.getpath()}#{BangBean.getfolder()}#{BangBean.celebrityURL2}" alt="#{BangBean.celebrityName2}"  width="240px" height="320px"/>
-                            </h:commandLink>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="50%">
-                            <h:outputText value='#{BangBean.celebrityName1}' />
-                        </td>
-                        <td width="50%">
-                            <h:outputText value='#{BangBean.celebrityName2}' />
-                        </td>
-                    </tr>
-                </table>
-            </c:when>
-        </c:choose>
-    </h:body>
+    <c:choose>
+        <c:when test="#{LoginBean.getLoggedIn()}">
+            <title>
+                Bang Over!
+            </title>
+            <!--<c:set value="#{BangBean.PullCelebrityPair(LoginBean.userindex)}" var="tickle"></c:set>-->
+            <table id="idTableBangOver">
+                <tr id="idTableBangOverRowPictures">
+                    <td id="idTableBangOverRowDataPicturesLeft">
+                        <h:commandLink action="#{BangBean.SwapPositions(LoginBean.userindex,BangBean.celebrityName1,BangBean.celebrityName2)}"> 
+                            <h:graphicImage id="idTableBangOverRowPicturesLeft" value="#{BangBean.getpath()}#{BangBean.getfolder()}#{BangBean.celebrityURL1}" alt="#{BangBean.celebrityName1}" />
+                        </h:commandLink>
+                    </td>
+                    <td id="idTableBangOverRowDataPicturesRight">
+                        <h:commandLink action="#{BangBean.SwapPositions(LoginBean.userindex,BangBean.celebrityName2,BangBean.celebrityName1)}"> 
+                            <h:graphicImage id="idTableBangOverRowPicturesRight" value="#{BangBean.getpath()}#{BangBean.getfolder()}#{BangBean.celebrityURL2}" alt="#{BangBean.celebrityName2}" />
+                        </h:commandLink>
+                    </td>
+                </tr>
+                <tr id="idTableBangOverRowNames">
+                    <td id="idTableBangOverRowNamesLeft">
+                        <h:outputText value='#{BangBean.celebrityName1}' />
+                    </td>
+                    <td id="idTableBangOverRowNamesRight">
+                        <h:outputText value='#{BangBean.celebrityName2}' />
+                    </td>
+                </tr>
+            </table>
+            <p id="idCenterContent">
+                Select which Celebrity you'd Bang Over the other.
+            </p>
+        </c:when>
+    </c:choose>
 </html>
 

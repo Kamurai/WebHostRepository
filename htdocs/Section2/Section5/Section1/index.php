@@ -1,23 +1,22 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
-<!-- saved from url=(0023)./ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></head><body bgcolor="#000000" link="#C0C0C0" vlink="#808080" alink="#FF0000">
- 
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
 <font color="white">
-
+<body id="idBody">
 <?php
 	include 'Path.php';
 	
 	$title = "Global Antarrea";
-	$centerHeader = "<u>Global Antarrea</u>";
+	$centerHeader = "Global Antarrea";
 	$centerContent = "
-						<p align='left'>
-							Team Tactical: Crash Ball:               Tactical board game centered on a battle version of football.</br>
-							Wars of Antarrea:                        Table-top game where two or more armies battle for supremacy.</br>
-							Revolutions: Invading Nations:           Tactical RPG, 1st story arc.</br>
-							Revolutions: Rebellion Against the Fist: Tactical RPG, 2nd story arc.</br>
-							Revolutions: Return to Arms:             Tactical RPG, 3rd story arc.</br>
-							Revoultions: Post Wars:                  Tactical RPG, 4th story arc.</br>
-						</p>
+						Team Tactical: Crash Ball:               Tactical board game centered on a battle version of football.</br>
+						Wars of Antarrea:                        Table-top game where two or more armies battle for supremacy.</br>
+						Revolutions: Invading Nations:           Tactical RPG, 1st story arc.</br>
+						Revolutions: Rebellion Against the Fist: Tactical RPG, 2nd story arc.</br>
+						Revolutions: Return to Arms:             Tactical RPG, 3rd story arc.</br>
+						Revoultions: Post Wars:                  Tactical RPG, 4th story arc.</br>
 					";
 	$GDR = "<a href='../Downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";
 	$winrar = "<a href='../Downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";
@@ -25,7 +24,6 @@
 	$infoContent = "This is written with PHP.<br><br>
 					Other versions of this page are here:<br>
 					<a href=\"http://htkb.dyndns.org/Section2/Section5/Section1/index.html\">HTML</a><br>
-					<a href=\"http://htkb.dyndns.org/Section2/Section5/Section1/index.php\">PHP</a><br>
 					<a href=\"http://htkb.dyndns.org/Javascript/Section2/Section5/Section1/index.html\">HTML Javascript</a><br>
 					<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Section5/Section1/index.asp\">ASP Javascript</a><br>
 					<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Section5/Section1/index.aspx\">ASP.NET Javascript</a><br>
@@ -42,5 +40,6 @@
 	#Overall body
 	include $style.'Layout.php';
 ?>
-
-</font></body></html>
+</body>
+</font>
+</html>

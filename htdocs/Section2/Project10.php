@@ -1,24 +1,24 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
-<!-- saved from url=(0023)./ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></head><body bgcolor="#000000" link="#C0C0C0" vlink="#808080" alink="#FF0000">
- 
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
 <font color="white">
-
+<body id="idBody">
 <?php
 	include 'Path.php';
 	
 	$title = "Monster Office Workplace";
-	$centerHeader = "<u>Monster Office Workplace</u>";
+	$centerHeader = "Monster Office Workplace";
 	$centerContent = "
-						<p align='left'>
 							This section is dedicated to the card and board game project 'Monster Office Workplace'.  These monsters mean serious business.<br/>
 							Can you earn the most credit and smooze your way into a promotion?<br/>
-						</p>
-						<p align='left'>
+						</br>
+						</br>
 							You can download the Tabletop Simulator mod here:<br/>
 							<a href='http://steamcommunity.com/sharedfiles/filedetails/?id=691344800'>Steam Workshop</a><br/>
-						</p>
-						<p align='left'>
+						</br>
+						</br>
 							Monster Office Ruleset v0.1<br/>
 							<br/>
 							1) Player resources:<br/>
@@ -70,7 +70,6 @@
 							8) End Conditions:<br/>
 								&nbsp;&nbsp;&nbsp;&nbsp;1) Game ends when 10 projects have been completed.<br/>
 								&nbsp;&nbsp;&nbsp;&nbsp;2) Player with the most 'credit' wins.<br/>						
-						</p>
 						
 					";
 	$GDR = "";
@@ -79,7 +78,6 @@
 	$infoContent = "This is written with PHP.<br><br>
 					Other versions of this page are here:<br>
 					<a href=\"http://htkb.dyndns.org/Section2/Project10.html\">HTML</a><br>
-					<a href=\"http://htkb.dyndns.org/Section2/Project10.php\">PHP</a><br>
 					<a href=\"http://htkb.dyndns.org/Javascript/Section2/Project10.html\">HTML Javascript</a><br>
 					<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project10.asp\">ASP Javascript</a><br>
 					<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project10.aspx\">ASP.NET Javascript</a><br>
@@ -96,5 +94,6 @@
 	#Overall body
 	include $style.'Layout.php';
 ?>
-
-</font></body></html>
+</body>
+</font>
+</html>

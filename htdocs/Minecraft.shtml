@@ -1,5 +1,5 @@
 <html>
-	<body>
-        <!--#include virtual="/cgi-bin/Layout.pl?vCSS=./&vPage=3&vPath=./&vDownPath=./&vScriptPath=./&vScriptDownPath=./" -->
+	<body id="idBody">
+        <!--#include virtual="/cgi-bin/Layout.pl?vCSS=./Main.css&vPage=3&vPath=./&vDownPath=./&vScriptPath=./&vScriptDownPath=./" -->
 	</body>
 </html>

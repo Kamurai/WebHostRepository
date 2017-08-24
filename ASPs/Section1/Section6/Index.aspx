@@ -9,10 +9,11 @@
 	var vPage  = 0;
 	var vLevel = 2;
 	var vExtension = 2;
-	Response.Write("<head>");
-	    WriteHeader(vLevel);
-    Response.Write("</head>");
-	Response.Write("<body bgcolor='#000000' link='#C0C0C0' vlink='#808080' alink='#FF0000'>");
+	var vCSS = "Section1.css";
+	Response.Write("<head>")
+		Call WriteHeader(vLevel, vCSS)
+	Response.Write("</head>")
+	Response.Write("<body id=\"idBody\">")
 		WriteWebpage(vPage, vLevel, vExtension);
 	Response.Write("</body>");
 %>

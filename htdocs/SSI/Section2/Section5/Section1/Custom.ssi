@@ -1,100 +1,31 @@
 <!--#if expr="$vCustom == 0" -->
-	<link href="<!--#echo var="$vStylePath"-->moo.css" rel="stylesheet" type="text/css"/>
+	<link href="<!--#echo var="$vStylePath"-->Section2.css" rel="stylesheet" type="text/css"/>
 <!--#elif expr="$vCustom == 1" -->
-	<span class="navlink">
-		<a href="../../Section1/index.html">Gynowars</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Project2.html">Assault</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Project3.html">Mars</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Section4/index.html">Renley</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../index.html">Antarrea</a>
-			<h5>
-				<span class="navsublink">
-					<a href="./index.html">Global:</a>
-					<h5>
-						<span class="navsublink">
-							<a href="./Project1.html">Team Tactial: Crash Ball</a>
-						</span>
-						<span class="navsublink">
-							<a href="./Project2.html">Wars of Antarrea</a>
-						</span>
-						<span class="navsublink">
-							<a href="./Project3.html">Revolutions: Invading Nations:</a>
-						</span>
-						<span class="navsublink">
-							<a href="./Project4.html">Revolutions: Rebellion Against the Fist</a>
-						</span>
-						<span class="navsublink">
-							<a href="./Project5.html">Revolutions: Return to Arms</a>
-						</span>
-						<span class="navsublink">
-							<a href="./Project6.html">Revolutions: Post Wars</a>
-						</span>
-					</h5>
-				</span>
-				<span class="navsublink">
-					<a href="../Section2/index.html">Grendol:</a>
-				</span>
-				<span class="navsublink">
-					<a href="../Section3/index.html">Utopia:</a>
-				</span>
-				<span class="navsublink">
-					<a href="../Section4/index.html">Elvia:</a>
-				</span>
-			</h5>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Section6/index.html">Editations</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Project7.html">Truth</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Project8.html">Kingdoms</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Project9.html">Terminal World</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Project10.html">Monster Office Workplace</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Project11.html">Battle Princesses</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Project12.html">Sacred Offerings</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Project13.html">The Way</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Project14.html">Conspiratorium</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="../../Project15.html">Conversion</a>
-	</span>
-	</br>
+	<a class=\"navlinkA\" href="../../Section1/index.html">Gynowars</a><br><br>
+	<a class=\"navlinkA\" href="../../Project2.html">Assault</a><br><br>
+	<a class=\"navlinkA\" href="../../Project3.html">Mars</a><br><br>
+	<a class=\"navlinkA\" href="../../Section4/index.html">Renley</a><br><br>
+	<a class=\"navlinkA\" href="../index.html">Antarrea</a><br><br>
+		<a class=\"navlinkB\" href="./index.html">Global:</a><br><br>
+			<a class=\"navlinkC\" href="./Project1.html">Team Tactial: Crash Ball</a><br><br>
+			<a class=\"navlinkC\" href="./Project2.html">Wars of Antarrea</a><br><br>
+			<a class=\"navlinkC\" href="./Project3.html">Revolutions: Invading Nations:</a><br><br>
+			<a class=\"navlinkC\" href="./Project4.html">Revolutions: Rebellion Against the Fist</a><br><br>
+			<a class=\"navlinkC\" href="./Project5.html">Revolutions: Return to Arms</a><br><br>
+			<a class=\"navlinkC\" href="./Project6.html">Revolutions: Post Wars</a><br><br>
+		<a class=\"navlinkB\" href="../Section2/index.html">Grendol:</a><br><br>
+		<a class=\"navlinkB\" href="../Section3/index.html">Utopia:</a><br><br>
+		<a class=\"navlinkB\" href="../Section4/index.html">Elvia:</a><br><br>
+	<a class=\"navlinkA\" href="../../Section6/index.html">Editations</a><br><br>
+	<a class=\"navlinkA\" href="../../Project7.html">Truth</a><br><br>
+	<a class=\"navlinkA\" href="../../Project8.html">Kingdoms</a><br><br>
+	<a class=\"navlinkA\" href="../../Project9.html">Terminal World</a><br><br>
+	<a class=\"navlinkA\" href="../../Project10.html">Monster Office Workplace</a><br><br>
+	<a class=\"navlinkA\" href="../../Project11.html">Battle Princesses</a><br><br>
+	<a class=\"navlinkA\" href="../../Project12.html">Sacred Offerings</a><br><br>
+	<a class=\"navlinkA\" href="../../Project13.html">The Way</a><br><br>
+	<a class=\"navlinkA\" href="../../Project14.html">Conspiratorium</a><br><br>
+	<a class=\"navlinkA\" href="../../Project15.html">Conversion</a><br><br>
 <!--#elif expr="$vCustom == 2" -->
 	<title>
 		<!--#if expr="$vPage == 0" -->
@@ -117,67 +48,54 @@
 	</title>
 <!--#elif expr="$vCustom == 3" -->
 	<h2>
-		<u>
-			<!--#if expr="$vPage == 0" -->
-				Global Antarrea
-			<!--#elif expr="$vPage == 1" -->
-				Team Tactical: Crash Ball
-			<!--#elif expr="$vPage == 2" -->
-				Wars of Antarrea
-			<!--#elif expr="$vPage == 3" -->
-				Revolutions: Invading Nations
-			<!--#elif expr="$vPage == 4" -->
-				Revolutions: Rebellion Against the Fist
-			<!--#elif expr="$vPage == 5" -->
-				Revolutions: Return to Arms
-			<!--#elif expr="$vPage == 6" -->
-				Revolutions: Post Wars
-			<!--#else -->
-				NOPE!
-			<!--#endif -->
-		</u>
+		<!--#if expr="$vPage == 0" -->
+			Global Antarrea
+		<!--#elif expr="$vPage == 1" -->
+			Team Tactical: Crash Ball
+		<!--#elif expr="$vPage == 2" -->
+			Wars of Antarrea
+		<!--#elif expr="$vPage == 3" -->
+			Revolutions: Invading Nations
+		<!--#elif expr="$vPage == 4" -->
+			Revolutions: Rebellion Against the Fist
+		<!--#elif expr="$vPage == 5" -->
+			Revolutions: Return to Arms
+		<!--#elif expr="$vPage == 6" -->
+			Revolutions: Post Wars
+		<!--#else -->
+			NOPE!
+		<!--#endif -->
 	</h2>
 <!--#elif expr="$vCustom == 4" -->
 	<!--#if expr="$vPage == 0" -->
-		<p align="left">
-			Here are projects based in the Antarrea universe:</br>
-			</br>
-			Team Tactical: Crash Ball:               Tactical board game centered on a battle version of football.</br>
-			Wars of Antarrea:                        Table-top game where two or more armies battle for supremacy.</br>
-			Revolutions: Invading Nations:           Tactical RPG, 1st story arc.</br>
-			Revolutions: Rebellion Against the Fist: Tactical RPG, 2nd story arc.</br>
-			Revolutions: Return to Arms:             Tactical RPG, 3rd story arc.</br>
-			Revoultions: Post Wars:                  Tactical RPG, 4th story arc.</br>
-		</p>
+		Here are projects based in the Antarrea universe:</br>
+		</br>
+		Team Tactical: Crash Ball:               Tactical board game centered on a battle version of football.</br>
+		Wars of Antarrea:                        Table-top game where two or more armies battle for supremacy.</br>
+		Revolutions: Invading Nations:           Tactical RPG, 1st story arc.</br>
+		Revolutions: Rebellion Against the Fist: Tactical RPG, 2nd story arc.</br>
+		Revolutions: Return to Arms:             Tactical RPG, 3rd story arc.</br>
+		Revoultions: Post Wars:                  Tactical RPG, 4th story arc.</br>
 	<!--#elif expr="$vPage == 1" -->
-		<p align="left">
-			Team Tactical: Crash Ball is a tactical board game centered on a battle version of football.
-			</br>
-		</p>
+		Team Tactical: Crash Ball is a tactical board game centered on a battle version of football.</br>
 	<!--#elif expr="$vPage == 2" -->
-		<p align="left">
-			Wars of Antarrea is a table-top game where two or more armies battle for supremacy.</br>
-		</p>
+		Wars of Antarrea is a table-top game where two or more armies battle for supremacy.</br>
 	<!--#elif expr="$vPage == 3" -->
-		<p align="left">
-			Revolutions is a Tactical RPG with Invading Nations as its 1st story arc.</br>
-		</p>
+		Revolutions is a Tactical RPG with Invading Nations as its 1st story arc.</br>
 	<!--#elif expr="$vPage == 4" -->
-		<p align="left">
-			Revolutions is a Tactical RPG with Rebellion Against the Fist as its 2nd story arc.</br>
-		</p>
+		Revolutions is a Tactical RPG with Rebellion Against the Fist as its 2nd story arc.</br>
 	<!--#elif expr="$vPage == 5" -->
-		<p align="left">
-			Revolutions is a Tactical RPG with Return to Arms as its 3rd story arc.</br>
-		</p>
+		Revolutions is a Tactical RPG with Return to Arms as its 3rd story arc.</br>
 	<!--#elif expr="$vPage == 6" -->
-		<p align="left">
-			Revolutions is a Tactical RPG with Post Wars as its 4th story arc.</br>
-		</p>
+		Revolutions is a Tactical RPG with Post Wars as its 4th story arc.</br>
 	<!--#else -->
 		NOPE!
 	<!--#endif -->
 <!--#elif expr="$vCustom == 5" -->
+	This is written with basic HTML and Server Side Integration.
+	<br/>
+	<br/>
+	Other versions of this page are here:<br>
 	<!--#if expr="$vPage == 0" -->
 		<a href="http://htkb.dyndns.org/Section2/Section5/Section1/index.html">Basic HTML</a><br>
 		<a href="http://htkb.dyndns.org/Section2/Section5/Section1/index.php">PHP</a><br>

@@ -98,7 +98,6 @@ insert into Celebrities (Name, Sex, Picture) VALUES ('Thomas Beatie', 'T', 'Thom
 insert into Celebrities (Name, Sex, Picture) VALUES ('Sofia Vergara', 'F', 'SofiaVergara.jpg');
 insert into Celebrities (Name, Sex, Picture) VALUES ('Jacqueline Toboni', 'F', 'JacquelineToboni.jpg');
 insert into Celebrities (Name, Sex, Picture) VALUES ('Jaime Ray Newman', 'F', 'JaimeRayNewman.jpg');
-insert into Celebrities (Name, Sex, Picture) VALUES ('Amy Adams', 'F', 'AmyAdams.jpg');
 insert into Celebrities (Name, Sex, Picture) VALUES ('Ariel Winter', 'F', 'ArielWinter.jpg');
 insert into Celebrities (Name, Sex, Picture) VALUES ('Bella Thorne', 'F', 'BellaThorne.jpg');
 insert into Celebrities (Name, Sex, Picture) VALUES ('Claire Coffee', 'F', 'ClaireCoffee.jpg');
@@ -126,5 +125,6 @@ insert into CelebrityRequests (Name, Sex, Picture) VALUES ('Jacqueline Emerson',
 insert into Users (Username, Passcode, Email, LoggedOn, Women, Men, TransWomen, TransMen, Access) VALUES ('Kamurai', 'green20', 'KamuraiBlue25@gmail.com', 1, 1, 0, 1, 0, 2);
 insert into Users (Username, Passcode, Email, LoggedOn, Women, Men, TransWomen, TransMen, Access) VALUES ('Aethenis', 'green20', 'KamuraiBlue25@gmail.com', 1, 1, 0, 1, 0, 1);
 insert into Users (Username, Passcode, Email, LoggedOn, Women, Men, TransWomen, TransMen, Access) VALUES ('Stevens', 'green20', 'KamuraiBlue25@gmail.com', 1, 1, 0, 1, 0, 0);
-
+insert into Users (Username, Passcode, Email, LoggedOn, Women, Men, TransWomen, TransMen, Access) VALUES ('MBaker', 'green20', 'JonathanLBaker@hotmail.com', 1, 1, 0, 0, 0, 0);
+insert into Users (Username, Passcode, Email, LoggedOn, Women, Men, TransWomen, TransMen, Access) VALUES ('JBaker', 'green20', 'JonathanLBaker@hotmail.com', 1, 1, 0, 0, 0, 0);
 

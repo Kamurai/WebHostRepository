@@ -3,9 +3,10 @@ sub WriteHeader
 	##  Writes the header of the webpage
 
 	my $Path = $_[0];
+	my $Style = $_[1];
 
 	print "<head>";
-		print "<link href='".$Path."moo.css' rel='stylesheet' type='text/css'>";
+		print "<link href='".$Path."' rel='stylesheet' type='text/css'>";
 		print "<font color='white'>";
 	print "</head>";
 }
@@ -14,7 +15,7 @@ sub Footer
 {
 	##  Writes the footer of the webpage
 
-	print "<p align='center'>";
+	print "<p id=\"idFooterContent\">";
 		print "© Copyright 2012 All rights reserved<br>";
 		print "House That Kamurai Built<br>";
 	print "</p>";
@@ -24,9 +25,8 @@ sub GDR
 {
 	##  Writes the footer of the webpage
 
-	print "<p align='center'>";
-		print "<a href='http://htkb.dyndns.org/Downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";
-	print "</p>";
+	print "<a href='http://htkb.dyndns.org/Downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";
+
 }
 
 sub NavBar
@@ -35,10 +35,10 @@ sub NavBar
 
 	my $Path = $_[0];
 
-	print "<a href='".$Path."Index.shtml'>Home</a>";
-	print "<a href='".$Path."Section1/Index.shtml'>Web Programming</a>";
-	print "<a href='".$Path."Section2/Index.shtml'>Private Projects</a>";
-	print "<a href='".$Path."Section3/Index.shtml'>Downloadable Projects</a>";
+	print "<a class=\"navBar\" href='".$Path."Index.shtml'>Home</a>";
+	print "<a class=\"navBar\" href='".$Path."Section1/Index.shtml'>Web Programming</a>";
+	print "<a class=\"navBar\" href='".$Path."Section2/Index.shtml'>Private Projects</a>";
+	print "<a class=\"navBar\" href='".$Path."Section3/Index.shtml'>Downloadable Projects</a>";
 }
 
 sub TitlePicture
@@ -47,17 +47,15 @@ sub TitlePicture
 
 	my $Path = $_[0];
 
-	print "<img src='".$Path."logo_HouseThatKamuraiBuilt_blueonblack.jpg' width='100%' alt='' border='0' align='center' vspace='0' hspace='0'><br>";
+	print "<img id=\"idLogo\" src='".$Path."logo_HouseThatKamuraiBuilt_blueonblack.jpg'><br>";
 }
 
 sub WebMaster
 {
 	##  Writes the webmaster of the webpage
 								
-	print "<p align='left'>";
-		print "<font size='1'>";
-			print "Website managed by Kamurai.";
-		print "</font>";
+	print "<p id=\"idFooterManagement\">";
+		print "Website managed by Kamurai.";
 	print "</p>";
 }
 
@@ -65,9 +63,8 @@ sub WinRAR
 {
 	##  Writes the footer of the webpage
 
-	print "<p align='center'>";
-		print "<a href='http://htkb.dyndns.org/Downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";
-	print "</p>";
+	print "<a href='http://htkb.dyndns.org/Downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";
+
 }
 
 sub Information
@@ -76,9 +73,7 @@ sub Information
 
 	my $Page = $_[0];
 	
-	print "<p align='center'>";
-		print "This page is written using Perl.";
-	print "</p>";
+	print "This page is written using Perl.";
 	Versions($Page);
 }
 

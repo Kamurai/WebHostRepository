@@ -1,65 +1,21 @@
 function Navigation(level, extension)
 {
-	Response.Write("<span class=\"navlink\">");
-		Response.Write("<a href=\""+GetPath(level)+"Section2/Section1/Index"+GetExtension(extension)+"\">Gynowars</a>");
-	Response.Write("</span>");
-	Response.Write("<br>");
-	Response.Write("<span class=\"navlink\">");
-		Response.Write("<a href=\""+GetPath(level)+"Section2/Project2"+GetExtension(extension)+"\">Assault</a>");
-	Response.Write("</span>");
-	Response.Write("<br>");
-	Response.Write("<span class=\"navlink\">");
-		Response.Write("<a href=\""+GetPath(level)+"Section2/Project3"+GetExtension(extension)+"\">Mars</a>");
-	Response.Write("</span>");
-	Response.Write("<br>");
-	Response.Write("<span class=\"navlink\">");
-		Response.Write("<a href=\""+GetPath(level)+"Section2/Section4/Index"+GetExtension(extension)+"\">Renley</a>");
-	Response.Write("</span>");
-	Response.Write("<br>");
-	Response.Write("<span class=\"navlink\">");
-		Response.Write("<a href=\""+GetPath(level)+"Section2/Section5/Index"+GetExtension(extension)+"\">Antarrea</a>");
-	Response.Write("</span>");
-	Response.Write("<br>");
-	Response.Write("<span class=\"navlink\">");
-		Response.Write("<a href=\""+GetPath(level)+"Section2/Section6/Index"+GetExtension(extension)+"\">Editations</a>");
-	Response.Write("</span>");
-	Response.Write("<br>");
-	Response.Write("<span class=\"navlink\">");
-		Response.Write("<a href=\""+GetPath(level)+"Section2/Project7"+GetExtension(extension)+"\">Truth</a>");
-	Response.Write("</span>");
-	Response.Write("<br>");
-	Response.Write("<span class=\"navlink\">");
-		Response.Write("<a href=\""+GetPath(level)+"Section2/Project8"+GetExtension(extension)+"\">Kingdoms</a>");
-	Response.Write("</span>");
-	Response.Write("<br>");
-	Response.Write("<span class=\"navlink\">");
-		Response.Write("<a href=\""+GetPath(level)+"Section2/Project9"+GetExtension(extension)+"\">Terminal World</a>");
-	Response.Write("</span>");
-	Response.Write("<br>");
-	Response.Write("<span class=\"navlink\">");
-		Response.Write("<a href=\""+GetPath(level)+"Section2/Project10"+GetExtension(extension)+"\">Monster Office Workplace</a>");
-	Response.Write("</span>");
-	Response.Write("<br>");
-	Response.Write("<span class=\"navlink\">");
-		Response.Write("<a href=\""+GetPath(level)+"Section2/Project11"+GetExtension(extension)+"\">Battle Princesses</a>");
-	Response.Write("</span>");
-	Response.Write("<br>");
-	Response.Write("<span class=\"navlink\">");
-		Response.Write("<a href=\""+GetPath(level)+"Section2/Project12"+GetExtension(extension)+"\">Sacred Offerings</a>");
-	Response.Write("</span>");
-	Response.Write("<br>");
-	Response.Write("<span class=\"navlink\">");
-		Response.Write("<a href=\""+GetPath(level)+"Section2/Project13"+GetExtension(extension)+"\">The Way</a>");
-	Response.Write("</span>");
-	Response.Write("<br>");
-	Response.Write("<span class=\"navlink\">");
-		Response.Write("<a href=\""+GetPath(level)+"Section2/Project14"+GetExtension(extension)+"\">Conspiratorium</a>");
-	Response.Write("</span>");
-	Response.Write("<br>");
-	Response.Write("<span class=\"navlink\">");
-		Response.Write("<a href=\""+GetPath(level)+"Section2/Project15"+GetExtension(extension)+"\">Conversion</a>");
-	Response.Write("</span>");
-	Response.Write("<br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Section1/Index"+GetExtension(extension)+"\">Gynowars</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project2"+GetExtension(extension)+"\">Assault</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project3"+GetExtension(extension)+"\">Mars</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Section4/Index"+GetExtension(extension)+"\">Renley</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Section5/Index"+GetExtension(extension)+"\">Antarrea</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Section6/Index"+GetExtension(extension)+"\">Editations</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project7"+GetExtension(extension)+"\">Truth</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project8"+GetExtension(extension)+"\">Kingdoms</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project9"+GetExtension(extension)+"\">Terminal World</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project10"+GetExtension(extension)+"\">Monster Office Workplace</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project11"+GetExtension(extension)+"\">Battle Princesses</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project12"+GetExtension(extension)+"\">Sacred Offerings</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project13"+GetExtension(extension)+"\">The Way</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project14"+GetExtension(extension)+"\">Conspiratorium</a><br><br>");
+	Response.Write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section2/Project15"+GetExtension(extension)+"\">Conversion</a><br><br>");
+
 }
 
 function Title(input)
@@ -118,108 +74,63 @@ function Title(input)
 
 function Header(input)
 {
+	Response.Write("<h2>");
 		if(input == 0)
 		{
-			Response.Write("<h2>");
-				Response.Write("<u>");
-					Response.Write("Private Projects");
-				Response.Write("</u>");
-			Response.Write("</h2>");
+			Response.Write("Private Projects");
 		}
 		else if(input == 2)
 		{
-			Response.Write("<h2>");
-				Response.Write("<u>");
-					Response.Write("Assault CCG");
-				Response.Write("</u>");
-			Response.Write("</h2>");
+			Response.Write("Assault CCG");
 		}
 		else if(input == 3)
 		{
-			Response.Write("<h2>");
-				Response.Write("<u>");
-					Response.Write("Mars Projects");
-				Response.Write("</u>");
-			Response.Write("</h2>");
+			Response.Write("Mars Projects");
 		}
 		else if(input == 7)
 		{
-			Response.Write("<h2>");
-				Response.Write("<u>");
-					Response.Write("Truth");
-				Response.Write("</u>");
-			Response.Write("</h2>");
+			Response.Write("Truth");
 		}
 		else if(input == 8)
 		{
-			Response.Write("<h2>");
-				Response.Write("<u>");
-					Response.Write("Kingdoms");
-				Response.Write("</u>");
-			Response.Write("</h2>");
+			Response.Write("Kingdoms");
 		}
 		else if(input == 9)
 		{
-			Response.Write("<h2>");
-				Response.Write("<u>");
-					Response.Write("Terminal World");
-				Response.Write("</u>");
-			Response.Write("</h2>");
+			Response.Write("Terminal World");
 		}
 		else if(input == 10)
 		{
-			Response.Write("<h2>");
-				Response.Write("<u>");
-					Response.Write("Monster Office Workplace");
-				Response.Write("</u>");
-			Response.Write("</h2>");
+			Response.Write("Monster Office Workplace");
 		}
 		else if(input == 11)
 		{
-			Response.Write("<h2>");
-				Response.Write("<u>");
-					Response.Write("Battle Princesses");
-				Response.Write("</u>");
-			Response.Write("</h2>");
+			Response.Write("Battle Princesses");
 		}
 		else if(input == 12)
 		{
-			Response.Write("<h2>");
-				Response.Write("<u>");
-					Response.Write("Sacred Offerings");
-				Response.Write("</u>");
-			Response.Write("</h2>");
+			Response.Write("Sacred Offerings");
 		}
 		else if(input == 13)
 		{
-			Response.Write("<h2>");
-				Response.Write("<u>");
-					Response.Write("The Way");
-				Response.Write("</u>");
-			Response.Write("</h2>");
+			Response.Write("The Way");
 		}
 		else if(input == 14)
 		{
-			Response.Write("<h2>");
-				Response.Write("<u>");
-					Response.Write("Conspiratorium");
-				Response.Write("</u>");
-			Response.Write("</h2>");
+			Response.Write("Conspiratorium");
 		}
 		else if(input == 15)
 		{
-			Response.Write("<h2>");
-				Response.Write("<u>");
-					Response.Write("Conversion");
-				Response.Write("</u>");
-			Response.Write("</h2>");
+			Response.Write("Conversion");
 		}
+	Response.Write("</h2>");
+
 }
 
 function Content(input)
 {
-	Response.Write("<p align=\"left\">");
-		if(input == 0)
+	Response.Write("<p id=\"idCenterContent\">");
+    	if(input == 0)
 		{
 			Response.Write("This section is dedicated to HTKB projects");
 		}
@@ -280,187 +191,185 @@ function Content(input)
 
 function Versions(input)
 {
-    Response.Write("<p align=\"left\">");
-        		Response.Write("<br><br>");
-		Response.Write("Other versions of this page are here:<br>");
-		if(input == 0)
-		{
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/index.html\">HTML</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/index.php\">PHP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/index.aspx\">ASP.NET Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/index.asp\">ASP Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/index.shtml\">Perl</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/index.jsp\">JSP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/index.xhtml\">JSF</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/index.cshtml\">ASP.NET Web App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/index.aspx\">ASP.NET Webform</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/index\">ASP.NET MVC App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/index.html\">Apache SSI</a><br>");
-		}
-		else if(input == 2)
-		{
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project2.html\">HTML</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project2.php\">PHP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project2.aspx\">ASP.NET Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project2.asp\">ASP Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project2.shtml\">Perl</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project2.jsp\">JSP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project2.xhtml\">JSF</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project2.cshtml\">ASP.NET Web App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project2.aspx\">ASP.NET Webform</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project2\">ASP.NET MVC App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project2.html\">Apache SSI</a><br>");
-		
-		}
-		else if(input == 3)
-		{
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project3.html\">HTML</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project3.php\">PHP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project3.aspx\">ASP.NET Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project3.asp\">ASP Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project3.shtml\">Perl</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project3.jsp\">JSP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project3.xhtml\">JSF</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project3.cshtml\">ASP.NET Web App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project3.aspx\">ASP.NET Webform</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project3\">ASP.NET MVC App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project3.html\">Apache SSI</a><br>");
-		
-		}
-    	else if(input == 7)
-		{
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project7.html\">HTML</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project7.php\">PHP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project7.aspx\">ASP.NET Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project7.asp\">ASP Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project7.shtml\">Perl</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project7.jsp\">JSP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project7.xhtml\">JSF</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project7.cshtml\">ASP.NET Web App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project7.aspx\">ASP.NET Webform</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project7\">ASP.NET MVC App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project7.html\">Apache SSI</a><br>");
-		
-		}
-    	else if(input == 8)
-		{
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project8.html\">HTML</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project8.php\">PHP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project8.aspx\">ASP.NET Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project8.asp\">ASP Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project8.shtml\">Perl</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project8.jsp\">JSP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project8.xhtml\">JSF</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project8.cshtml\">ASP.NET Web App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project8.aspx\">ASP.NET Webform</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project8\">ASP.NET MVC App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project8.html\">Apache SSI</a><br>");
-		
-		}
-    	else if(input == 9)
-		{
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project9.html\">HTML</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project9.php\">PHP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project9.aspx\">ASP.NET Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project9.asp\">ASP Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project9.shtml\">Perl</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project9.jsp\">JSP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project9.xhtml\">JSF</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project9.cshtml\">ASP.NET Web App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project9.aspx\">ASP.NET Webform</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project9\">ASP.NET MVC App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project9.html\">Apache SSI</a><br>");
-		
-		}
-    	else if(input == 10)
-		{
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project10.html\">HTML</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project10.php\">PHP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project10.aspx\">ASP.NET Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project10.asp\">ASP Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project10.shtml\">Perl</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project10.jsp\">JSP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project10.xhtml\">JSF</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project10.cshtml\">ASP.NET Web App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project10.aspx\">ASP.NET Webform</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project10\">ASP.NET MVC App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project10.html\">Apache SSI</a><br>");
-		
-		}
-    	else if(input == 11)
-		{
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project11.html\">HTML</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project11.php\">PHP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project11.aspx\">ASP.NET Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project11.asp\">ASP Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project11.shtml\">Perl</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project11.jsp\">JSP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project11.xhtml\">JSF</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project11.cshtml\">ASP.NET Web App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project11.aspx\">ASP.NET Webform</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project11\">ASP.NET MVC App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project11.html\">Apache SSI</a><br>");
-		
-		}
-    	else if(input == 12)
-		{
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project12.html\">HTML</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project12.php\">PHP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project12.aspx\">ASP.NET Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project12.asp\">ASP Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project12.shtml\">Perl</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project12.jsp\">JSP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project12.xhtml\">JSF</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project12.cshtml\">ASP.NET Web App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project12.aspx\">ASP.NET Webform</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project12\">ASP.NET MVC App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project12.html\">Apache SSI</a><br>");
-		
-		}
-    	else if(input == 13)
-		{
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project13.html\">HTML</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project13.php\">PHP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project13.aspx\">ASP.NET Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project13.asp\">ASP Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project13.shtml\">Perl</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project13.jsp\">JSP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project13.xhtml\">JSF</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project13.cshtml\">ASP.NET Web App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project13.aspx\">ASP.NET Webform</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project13\">ASP.NET MVC App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project13.html\">Apache SSI</a><br>");
-		
-		}
-    	else if(input == 14)
-		{
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project14.html\">HTML</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project14.php\">PHP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project14.aspx\">ASP.NET Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project14.asp\">ASP Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project14.shtml\">Perl</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project14.jsp\">JSP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project14.xhtml\">JSF</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project14.cshtml\">ASP.NET Web App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project14.aspx\">ASP.NET Webform</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project14\">ASP.NET MVC App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project14.html\">Apache SSI</a><br>");
-		
-		}
-    	else if(input == 15)
-		{
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project15.html\">HTML</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project15.php\">PHP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project15.aspx\">ASP.NET Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project15.asp\">ASP Javascript</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project15.shtml\">Perl</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project15.jsp\">JSP</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project15.xhtml\">JSF</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project15.cshtml\">ASP.NET Web App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project15.aspx\">ASP.NET Webform</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project15\">ASP.NET MVC App</a><br>");
-			Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project15.html\">Apache SSI</a><br>");
-		
-		}
-    Response.Write("</p>");
+	Response.Write("Other versions of this page are here:<br>");
+	if(input == 0)
+	{
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/index.html\">HTML</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/index.php\">PHP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/index.aspx\">ASP.NET Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/index.asp\">ASP Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/index.shtml\">Perl</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/index.jsp\">JSP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/index.xhtml\">JSF</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/index.cshtml\">ASP.NET Web App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/index.aspx\">ASP.NET Webform</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/index\">ASP.NET MVC App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/index.html\">Apache SSI</a><br>");
+	}
+	else if(input == 2)
+	{
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project2.html\">HTML</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project2.php\">PHP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project2.aspx\">ASP.NET Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project2.asp\">ASP Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project2.shtml\">Perl</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project2.jsp\">JSP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project2.xhtml\">JSF</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project2.cshtml\">ASP.NET Web App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project2.aspx\">ASP.NET Webform</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project2\">ASP.NET MVC App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project2.html\">Apache SSI</a><br>");
+	
+	}
+	else if(input == 3)
+	{
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project3.html\">HTML</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project3.php\">PHP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project3.aspx\">ASP.NET Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project3.asp\">ASP Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project3.shtml\">Perl</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project3.jsp\">JSP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project3.xhtml\">JSF</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project3.cshtml\">ASP.NET Web App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project3.aspx\">ASP.NET Webform</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project3\">ASP.NET MVC App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project3.html\">Apache SSI</a><br>");
+	
+	}
+	else if(input == 7)
+	{
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project7.html\">HTML</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project7.php\">PHP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project7.aspx\">ASP.NET Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project7.asp\">ASP Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project7.shtml\">Perl</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project7.jsp\">JSP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project7.xhtml\">JSF</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project7.cshtml\">ASP.NET Web App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project7.aspx\">ASP.NET Webform</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project7\">ASP.NET MVC App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project7.html\">Apache SSI</a><br>");
+	
+	}
+	else if(input == 8)
+	{
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project8.html\">HTML</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project8.php\">PHP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project8.aspx\">ASP.NET Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project8.asp\">ASP Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project8.shtml\">Perl</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project8.jsp\">JSP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project8.xhtml\">JSF</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project8.cshtml\">ASP.NET Web App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project8.aspx\">ASP.NET Webform</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project8\">ASP.NET MVC App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project8.html\">Apache SSI</a><br>");
+	
+	}
+	else if(input == 9)
+	{
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project9.html\">HTML</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project9.php\">PHP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project9.aspx\">ASP.NET Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project9.asp\">ASP Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project9.shtml\">Perl</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project9.jsp\">JSP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project9.xhtml\">JSF</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project9.cshtml\">ASP.NET Web App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project9.aspx\">ASP.NET Webform</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project9\">ASP.NET MVC App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project9.html\">Apache SSI</a><br>");
+	
+	}
+	else if(input == 10)
+	{
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project10.html\">HTML</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project10.php\">PHP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project10.aspx\">ASP.NET Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project10.asp\">ASP Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project10.shtml\">Perl</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project10.jsp\">JSP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project10.xhtml\">JSF</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project10.cshtml\">ASP.NET Web App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project10.aspx\">ASP.NET Webform</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project10\">ASP.NET MVC App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project10.html\">Apache SSI</a><br>");
+	
+	}
+	else if(input == 11)
+	{
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project11.html\">HTML</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project11.php\">PHP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project11.aspx\">ASP.NET Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project11.asp\">ASP Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project11.shtml\">Perl</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project11.jsp\">JSP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project11.xhtml\">JSF</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project11.cshtml\">ASP.NET Web App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project11.aspx\">ASP.NET Webform</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project11\">ASP.NET MVC App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project11.html\">Apache SSI</a><br>");
+	
+	}
+	else if(input == 12)
+	{
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project12.html\">HTML</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project12.php\">PHP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project12.aspx\">ASP.NET Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project12.asp\">ASP Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project12.shtml\">Perl</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project12.jsp\">JSP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project12.xhtml\">JSF</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project12.cshtml\">ASP.NET Web App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project12.aspx\">ASP.NET Webform</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project12\">ASP.NET MVC App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project12.html\">Apache SSI</a><br>");
+	
+	}
+	else if(input == 13)
+	{
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project13.html\">HTML</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project13.php\">PHP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project13.aspx\">ASP.NET Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project13.asp\">ASP Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project13.shtml\">Perl</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project13.jsp\">JSP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project13.xhtml\">JSF</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project13.cshtml\">ASP.NET Web App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project13.aspx\">ASP.NET Webform</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project13\">ASP.NET MVC App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project13.html\">Apache SSI</a><br>");
+	
+	}
+	else if(input == 14)
+	{
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project14.html\">HTML</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project14.php\">PHP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project14.aspx\">ASP.NET Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project14.asp\">ASP Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project14.shtml\">Perl</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project14.jsp\">JSP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project14.xhtml\">JSF</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project14.cshtml\">ASP.NET Web App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project14.aspx\">ASP.NET Webform</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project14\">ASP.NET MVC App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project14.html\">Apache SSI</a><br>");
+	
+	}
+	else if(input == 15)
+	{
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project15.html\">HTML</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project15.php\">PHP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project15.aspx\">ASP.NET Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project15.asp\">ASP Javascript</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/Section2/Project15.shtml\">Perl</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section2/Project15.jsp\">JSP</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section2/Project15.xhtml\">JSF</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section2/Project15.cshtml\">ASP.NET Web App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section2/Project15.aspx\">ASP.NET Webform</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section2/Project15\">ASP.NET MVC App</a><br>");
+		Response.Write("<a href=\"http://htkb.dyndns.org/SSI/Section2/Project15.html\">Apache SSI</a><br>");
+	
+	}
+    
 }

@@ -5,18 +5,10 @@ sub Navigation
 	my $Path = $_[0];
 	my $DownPath = $_[1];
 	
-	print "<span class='navlink'>";
-		print "<a href='".$Path.$DownPath."AboutUs.shtml'>About Us</a>";
-	print "</span>";
-	print "<br>";
-	print "<span class='navlink'>";
-		print "<a href='".$Path.$DownPath."Media.shtml'>Media</a>";
-	print "</span>";
-	print "<br>";
-	print "<span class='navlink'>";
-		print "<a href='".$Path.$DownPath."Minecraft.shtml'>Minecraft!</a>";
-	print "</span>";
-	print "<br>";
+	print "<a class=\"navlinkA\" href='".$Path.$DownPath."AboutUs.shtml'>About Us</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$Path.$DownPath."Media.shtml'>Media</a><br><br>";
+	print "<a class=\"navlinkA\" href='".$Path.$DownPath."Minecraft.shtml'>Minecraft!</a><br><br>";
+	
 }
 
 sub Title
@@ -54,33 +46,25 @@ sub Header
 	if($Page <= 0)
 	{
 		print "<h2>";
-			print "<u>";
-				print "Welcome to the House That Kamurai Built!";
-			print "</u>";
+			print "Welcome to the House That Kamurai Built!";
 		print "</h2>";
 	}
 	elsif($Page == 1)
 	{
 		print "<h2>";
-			print "<u>";
-				print "About Us";
-			print "</u>";
+			print "About Us";
 		print "</h2>";
 	}
 	elsif($Page == 2)
 	{
 		print "<h2>";
-			print "<u>";
-				print "Media";
-			print "</u>";
+			print "Media";
 		print "</h2>";
 	}
 	elsif($Page == 3)
 	{
 		print "<h2>";
-			print "<u>";
-				print "Minecraft!";
-			print "</u>";
+			print "Minecraft!";
 		print "</h2>";
 	}
 }
@@ -91,7 +75,7 @@ sub Content
 
 	my $Page = $_[0];
 
-	print "<p align='left'>";
+	print "<p id=\"idCenterContent\">";
 		if($Page <= 0)
 		{
 			print "The House That Kamurai Built is an entertainment company with the primary focus ";
@@ -107,27 +91,21 @@ sub Content
 		}
 		elsif($Page == 2)
 		{
-			print "<p align='left'>";
 				print "You can find us at all these different places:</br>";
-			print "</p>";
-			print "<p align='left'>";
-				print "<h3>";
-					print "<p align='left'>";
+			print "<br>";
+			print "<br>";
 						print "#WeAreMovieClub:";
-					print "</p>";
-				print "</h3>";
-				print "<p align='left'>";
+				print "<br>";
+				print "<br>";
 					print "<a href='http://www.youtube.com/WeAreMovieClub'>Youtube.com/WeAreMovieClub:  A place for movie discussion.</a></br>";
 					print "<a href='http://WeAreMovieClub.tumblr.com'>WeAreMovieClub.tumblr.com: We have a tumblr!</a></br>";
 					print "<a href='http://www.twitter.com/WeAreMovieClub'>@WeArMovieClub on Twitter: Let us know about your movie thoughts.</a></br>";
 					print "<a href='http://www.facebook.com/WeAreMovieClub'>facebook.com/WeAreMovieClub: Talk about movie with us.</a></br>";
-				print "</p>";
-				print "<h3>";
-					print "<p align='left'>";
+				print "<br>";
+				print "<br>";
 						print "HTKB Productions";
-					print "</p>";
-				print "</h3>";
-				print "<p align='left'>";
+				print "<br>";
+				print "<br>";
 					print "<a href='http://www.youtube.com/GamingDivision528'>Gaming Division:  A Youtube Channel for game stuff.</a></br>";
 					print "<a href='http://www.youtube.com/JamOnToast528'>Jam On Toast:  A Youtube Channel for media stuff.</a></br>";
 					print "<a href='http://www.ustream.tv/HTKB'>UStream:  Streams show up here too.</a></br>";
@@ -140,28 +118,26 @@ sub Content
 					print "<a href='http://www.facebook.com/HouseThatKamuraiBuilt'>Facebook: Talk about movie with us.</a></br>";
 					print "<a href='http://HouseThatKamuraiBuilt.tumblr.com'>HouseThatKamuraiBuilt.tumblr.com: We have a tumblr!</a></br>";
 					print "<a href='http://myspace.com/HouseThatKamuraiBuilt'>Myspace: Wow, there's even a MySpace!</a></br>";
-				print "</p>";
-			print "</p>";
-			print "<p align='left'>";
+			print "<br>";
+			print "<br>";
 				print "Here are some of our member's pages:</br>";
-			print "</p>";
-			print "<h3>";
+			print "<br>";
+			print "<br>";
 				print "<p align='left'>";
 					print "Kamurai:";
 				print "</p>";
-			print "</h3>";
-			print "<p align='left'>";
+			print "<br>";
+			print "<br>";
 				print "<a href='http://twitter.com/#!/Kamurai25'>Kamurai's Twitter.</a></br>";
 				print "<a href='http://Instagram.com/Kamurai25'>Kamurai's Instagram.</a></br>";
 				print "<a href='./.'>Kamurai's Snapchat: Kamurai</a></br>";
 				print "<a href='http://www.facebook.com/cris.kamurai'>Kamurai's Facebook.</a></br>";
 				print "<a href='https://www.gplus.com/Members/Cris-Kamurai'>Kamurai's Google Plus.</a></br>";
 				print "<a href='http://www.yoyogames.com/users/Kamurai'>Kamurai's YoYo Games page:  See some of the games he's posted.</a></br>";
-			print "</p>";
+			
 		}
 		elsif($Page == 3)
 		{
-			print "<p align=\"left\">";
 				print "If you would like to play Minecraft with us, we have several different servers:</br>";
 				print "Mo Creatures Server: (1.7.10) htkb.dyndns.org:25565</br>";
 				print "Creative Server:     (1.7.10) htkb.dyndns.org:25567</br>";
@@ -197,8 +173,8 @@ sub Content
 					print "<a href='./Downloads/Minecraft/arkcraft-1.1.3-beta.jar'>Ark Craft</a></br>";
 				print "Here is a skin template to make custom skins:</br>";
 				print "<a href='./Downloads/Minecraft/skin_template.png'>Steve skin template</a></br>";
-			print "</p>";
-			print "<p align=\"left\">";
+			print "<br>";
+			print "<br>";
 				print "For first time setups, please follow these steps to make your client compatible with the server:</br>";
 					print " 0) If you don't have Minecraft, go to Minecraft.net and download the latest version of the launcher.</br>";
 					print " 1) From the launcher create a new profile and change its version to the relevant version (e.g. 1.7.10).</br>";
@@ -221,7 +197,6 @@ sub Content
 					print "11) Go to multiplayer and click add server.</br>";
 					print "12) Name the server something distinct and put \"htkb.dyndns.org:2556x\" in the address bar where \"x\" is the relevant port.</br>";
 					print "13) Save the server entry.  You should see a connection to the server.  Double click to join.</br>";
-			print "</p>";
 		}
 	print "</p>";
 }
@@ -230,7 +205,6 @@ sub Versions
 {
 	my $Page = $_[0];
 
-	print "<p align='left'>";
 		print "Other versions of this page are here:<br>";
 		if($Page <= 0)
 		{
@@ -291,7 +265,7 @@ sub Versions
 			print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Minecraft\">ASP.NET MVC App</a><br>";
 			print "<a href=\"http://htkb.dyndns.org/SSI/Minecraft.html\">Apache SSI</a><br>";
 		}
-	print "</p>";
+
 }
 
 

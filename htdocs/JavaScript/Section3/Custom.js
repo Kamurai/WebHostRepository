@@ -1,25 +1,10 @@
 function Navigation(level, extension)
 {
-	document.write("<span class=\"navlink\">");
-		document.write("<a href=\""+GetPath(level)+"Section3/Project1"+GetExtension(extension)+"\">Online Experience Downloads</a>");
-	document.write("</span>");
-	document.write("<br>");
-	document.write("<span class=\"navlink\">");
-		document.write("<a href=\""+GetPath(level)+"Section3/Project2"+GetExtension(extension)+"\">Game Maker Downloads</a>");
-	document.write("</span>");
-	document.write("<br>");
-	document.write("<span class=\"navlink\">");
-		document.write("<a href=\""+GetPath(level)+"Section3/Project3"+GetExtension(extension)+"\">Java Downloads</a>");
-	document.write("</span>");
-	document.write("<br>");
-	document.write("<span class=\"navlink\">");
-		document.write("<a href=\""+GetPath(level)+"Section3/Project4"+GetExtension(extension)+"\">C# Downloads</a>");
-	document.write("</span>");
-	document.write("<br>");
-	document.write("<span class=\"navlink\">");
-		document.write("<a href=\""+GetPath(level)+"Section3/Project5"+GetExtension(extension)+"\">C++ Downloads</a>");
-	document.write("</span>");
-	document.write("<br>");
+	document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section3/Project1"+GetExtension(extension)+"\">Online Experience Downloads</a><br><br>");
+	document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section3/Project2"+GetExtension(extension)+"\">Game Maker Downloads</a><br><br>");
+	document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section3/Project3"+GetExtension(extension)+"\">Java Downloads</a><br><br>");
+	document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section3/Project4"+GetExtension(extension)+"\">C# Downloads</a><br><br>");
+	document.write("<a class=\"navlinkA\" href=\""+GetPath(level)+"Section3/Project5"+GetExtension(extension)+"\">C++ Downloads</a><br><br>");
 }
 
 function Title(input)
@@ -54,60 +39,38 @@ function Title(input)
 
 function Header(input)
 {
+	document.write("<h2>");
 		if(input == 0)
 		{
-			document.write("<h2>");
-				document.write("<u>");
-					document.write("Downloadable Projects");
-				document.write("</u>");
-			document.write("</h2>");
+			document.write("Downloadable Projects");
 		}
 		else if(input == 1)
 		{
-			document.write("<h2>");
-				document.write("<u>");
-					document.write("Online Experience Downloads");
-				document.write("</u>");
-			document.write("</h2>");
+			document.write("Online Experience Downloads");
 		}
 		else if(input == 2)
 		{
-			document.write("<h2>");
-				document.write("<u>");
-					document.write("Game Maker Downloads");
-				document.write("</u>");
-			document.write("</h2>");
+			document.write("Game Maker Downloads");
 		}
 		else if(input == 3)
 		{
-			document.write("<h2>");
-				document.write("<u>");
-					document.write("Java Downloads");
-				document.write("</u>");
-			document.write("</h2>");
+			document.write("Java Downloads");
 		}
 		else if(input == 4)
 		{
-			document.write("<h2>");
-				document.write("<u>");
-					document.write("C# Downloads");
-				document.write("</u>");
-			document.write("</h2>");
+			document.write("C# Downloads");
 		}
 		else if(input == 5)
 		{
-			document.write("<h2>");
-				document.write("<u>");
-					document.write("C++ Downloads");
-				document.write("</u>");
-			document.write("</h2>");
+			document.write("C++ Downloads");
 		}
+	document.write("</h2>");
 }
 
 function Content(input, level)
 {
-	document.write("<p align=\"left\">");
-		if(input == 0)
+	document.write("<p id=\"idCenterContent\">");
+    	if(input == 0)
 		{
 			document.write("This section is dedicated to downloadable projects.");
 		}
@@ -160,67 +123,65 @@ function Content(input, level)
 
 function Versions(input)
 {
-    document.write("<p align=\"left\">");
-        		document.write("<br><br>");
-		document.write("Other versions of this page are here:<br>");
-		if(input == 0)
-		{
-			document.write("<a href=\"http://htkb.dyndns.org/Section3/index.html\">HTML</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org/Section3/index.php\">PHP</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section3/index.aspx\">ASP.NET Javascript</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:81/ASP/Section3/index.asp\">ASP Javascript</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org/Section3/index.shtml\">Perl</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section3/index.jsp\">JSP</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section3/index.xhtml\">JSF</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section3/index.cshtml\">ASP.NET Web App</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section3/index.aspx\">ASP.NET Webform</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section3/index\">ASP.NET MVC App</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org/SSI/Section3/index.html\">Apache SSI</a><br>");
-		}
-		else if(input == 1)
-		{
-			document.write("<a href=\"http://htkb.dyndns.org/Section3/Project1.html\">HTML</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org/Section3/Project1.php\">PHP</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section3/Project1.aspx\">ASP.NET Javascript</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:81/ASP/Section3/Project1.asp\">ASP Javascript</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org/Section3/Project1.shtml\">Perl</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section3/Project1.jsp\">JSP</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section3/Project1.xhtml\">JSF</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section3/Project1.cshtml\">ASP.NET Web App</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section3/Project1.aspx\">ASP.NET Webform</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section3/Project1\">ASP.NET MVC App</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org/SSI/Section3/Project1.html\">Apache SSI</a><br>");
-		
-		}
-		else if(input == 2)
-		{
-			document.write("<a href=\"http://htkb.dyndns.org/Section3/Project2.html\">HTML</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org/Section3/Project2.php\">PHP</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section3/Project2.aspx\">ASP.NET Javascript</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:81/ASP/Section3/Project2.asp\">ASP Javascript</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org/Section3/Project2.shtml\">Perl</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section3/Project2.jsp\">JSP</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section3/Project2.xhtml\">JSF</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section3/Project2.cshtml\">ASP.NET Web App</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section3/Project2.aspx\">ASP.NET Webform</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section3/Project2\">ASP.NET MVC App</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org/SSI/Section3/Project2.html\">Apache SSI</a><br>");
-		
-		}
-		else if(input == 3)
-		{
-			document.write("<a href=\"http://htkb.dyndns.org/Section3/Project3.html\">HTML</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org/Section3/Project3.php\">PHP</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section3/Project3.aspx\">ASP.NET Javascript</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:81/ASP/Section3/Project3.asp\">ASP Javascript</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org/Section3/Project3.shtml\">Perl</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section3/Project3.jsp\">JSP</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section3/Project3.xhtml\">JSF</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section3/Project3.cshtml\">ASP.NET Web App</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section3/Project3.aspx\">ASP.NET Webform</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section3/Project3\">ASP.NET MVC App</a><br>");
-			document.write("<a href=\"http://htkb.dyndns.org/SSI/Section3/Project3.html\">Apache SSI</a><br>");
-		
-		}
-    document.write("</p>");
+	document.write("Other versions of this page are here:<br>");
+	if(input == 0)
+	{
+		document.write("<a href=\"http://htkb.dyndns.org/Section3/index.html\">HTML</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org/Section3/index.php\">PHP</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section3/index.aspx\">ASP.NET Javascript</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:81/ASP/Section3/index.asp\">ASP Javascript</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org/Section3/index.shtml\">Perl</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section3/index.jsp\">JSP</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section3/index.xhtml\">JSF</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section3/index.cshtml\">ASP.NET Web App</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section3/index.aspx\">ASP.NET Webform</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section3/index\">ASP.NET MVC App</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org/SSI/Section3/index.html\">Apache SSI</a><br>");
+	}
+	else if(input == 1)
+	{
+		document.write("<a href=\"http://htkb.dyndns.org/Section3/Project1.html\">HTML</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org/Section3/Project1.php\">PHP</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section3/Project1.aspx\">ASP.NET Javascript</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:81/ASP/Section3/Project1.asp\">ASP Javascript</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org/Section3/Project1.shtml\">Perl</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section3/Project1.jsp\">JSP</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section3/Project1.xhtml\">JSF</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section3/Project1.cshtml\">ASP.NET Web App</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section3/Project1.aspx\">ASP.NET Webform</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section3/Project1\">ASP.NET MVC App</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org/SSI/Section3/Project1.html\">Apache SSI</a><br>");
+	
+	}
+	else if(input == 2)
+	{
+		document.write("<a href=\"http://htkb.dyndns.org/Section3/Project2.html\">HTML</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org/Section3/Project2.php\">PHP</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section3/Project2.aspx\">ASP.NET Javascript</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:81/ASP/Section3/Project2.asp\">ASP Javascript</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org/Section3/Project2.shtml\">Perl</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section3/Project2.jsp\">JSP</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section3/Project2.xhtml\">JSF</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section3/Project2.cshtml\">ASP.NET Web App</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section3/Project2.aspx\">ASP.NET Webform</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section3/Project2\">ASP.NET MVC App</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org/SSI/Section3/Project2.html\">Apache SSI</a><br>");
+	
+	}
+	else if(input == 3)
+	{
+		document.write("<a href=\"http://htkb.dyndns.org/Section3/Project3.html\">HTML</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org/Section3/Project3.php\">PHP</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:81/ASPNET/Section3/Project3.aspx\">ASP.NET Javascript</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:81/ASP/Section3/Project3.asp\">ASP Javascript</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org/Section3/Project3.shtml\">Perl</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:8080/JSPApplication/Section3/Project3.jsp\">JSP</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:8080/JSFApplication/Section3/Project3.xhtml\">JSF</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:81/WebApplication/Section3/Project3.cshtml\">ASP.NET Web App</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:81/WebForm/Section3/Project3.aspx\">ASP.NET Webform</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org:81/MVC/Main/Section3/Project3\">ASP.NET MVC App</a><br>");
+		document.write("<a href=\"http://htkb.dyndns.org/SSI/Section3/Project3.html\">Apache SSI</a><br>");
+	
+	}
+    
 }

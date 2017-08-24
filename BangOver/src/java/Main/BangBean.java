@@ -81,127 +81,8 @@ public class BangBean implements Serializable
         String Result = "index";
         String sqlQuery = "";
         
-        //Swap and or add Celebrities to Personal list
-        sqlQuery += "DECLARE @intUserIndex int = " + intUserIndex + ";\n";
-        sqlQuery += "DECLARE @strCelebrity1 VARCHAR(MAX) = '" + strCelebrity1 + "';\n";
-        sqlQuery += "DECLARE @strCelebrity2 VARCHAR(MAX) = '" + strCelebrity2 + "';\n";
-
-        sqlQuery += "DECLARE @strUserIndex int = " + intUserIndex + ";\n";
-        //Swap and or add Celebrities to Personal list
-        sqlQuery += "DECLARE @intCelebrityCount int = 0;\n";
-        sqlQuery += "DECLARE @intCelebrityIndex1 int = -2;\n"; //Higher rank, lower number, at end
-        sqlQuery += "DECLARE @intCelebrityIndex2 int = -2;\n";
-
-        sqlQuery += "set @intCelebrityCount = (select count(*) from Celebrities, BangOverLists where Celebrities.Indext = BangOverLists.CelebrityIndex and BangOverLists.UserIndex = @intUserIndex and (Name = @strCelebrity1 or Name = @strCelebrity2));\n";
-        sqlQuery += "set @intCelebrityIndex1 = (select top 1 Indext from Celebrities where Name = @strCelebrity1);\n";
-        sqlQuery += "set @intCelebrityIndex2 = (select top 1 Indext from Celebrities where Name = @strCelebrity2);\n";
-
-        //if Neither Celebrity is already in the personal list
-        sqlQuery += "if( @intCelebrityCount = 0)\n";
-        sqlQuery += "BEGIN\n";
-            //add to table at OrderRank 0 and 1
-            sqlQuery += "insert into BangOverLists (UserIndex, OrderRank, CelebrityIndex) VALUES (@intUserIndex,  0, @intCelebrityIndex1);\n";
-            sqlQuery += "insert into BangOverLists (UserIndex, OrderRank, CelebrityIndex) VALUES (@intUserIndex,  1, @intCelebrityIndex2);\n";
-        sqlQuery += "END\n";
-        sqlQuery += "ELSE\n";
-        //else if One Celebrity is already in the personal list
-        sqlQuery += "if( @intCelebrityCount = 1 )\n";
-        sqlQuery += "BEGIN\n";
-                //if one celebrity is first on the list
-                sqlQuery += "if( (select top 1 OrderRank from BangOverLists where UserIndex = @intUserIndex and CelebrityIndex = @intCelebrityIndex1 or CelebrityIndex = @intCelebrityIndex2 ) = 0 )\n";
-                sqlQuery += "BEGIN\n";
-                        //if first celebrity is ordered first
-                        sqlQuery += "if( (select count(Indext) from BangOverLists where UserIndex = @intUserIndex and CelebrityIndex = @intCelebrityIndex1 and OrderRank = 0)  > 0)\n";
-                        sqlQuery += "BEGIN\n";
-                                //Add the second celebrity to table at -1 OrderRank
-                                sqlQuery += "insert into BangOverLists (UserIndex, OrderRank, CelebrityIndex) VALUES (@intUserIndex, -1, @intCelebrityIndex2);\n";
-                        sqlQuery += "END\n";
-                        //if second celebrity is ordered first
-                        sqlQuery += "if( (select count(Indext) from BangOverLists where UserIndex = @intUserIndex and CelebrityIndex = @intCelebrityIndex2 and OrderRank = 0)  > 0)\n";
-                        sqlQuery += "BEGIN\n";
-                                //Add the first celebrity to table at -1 OrderRank
-                                sqlQuery += "insert into BangOverLists (UserIndex, OrderRank, CelebrityIndex) VALUES (@intUserIndex, -1, @intCelebrityIndex1);\n";
-                        sqlQuery += "END\n";
-
-                        //Increment all celebrities on the list by 1
-                        sqlQuery += "update BangOverLists set OrderRank = OrderRank + 1 where UserIndex = @intUserIndex;\n";
-                sqlQuery += "END\n";
-                sqlQuery += "ELSE\n";
-                //else one celebrity is last on the list
-                sqlQuery += "BEGIN\n";
-                        sqlQuery += "DECLARE @intOrderCount int = 0;\n";
-                        sqlQuery += "SET @intOrderCount = (select count(Indext) from BangOverLists where UserIndex = @intUserIndex);\n";
-                        //if first celebrity is ordered last (at count)-1
-                        sqlQuery += "if( (select count(Indext) from BangOverLists where CelebrityIndex = @intCelebrityIndex1 and OrderRank = @intOrderCount-1 ) > 0)\n";
-                        sqlQuery += "BEGIN\n";
-                                //Add the second celebrity to table at (count) OrderRank
-                                sqlQuery += "insert into BangOverLists (UserIndex, OrderRank, CelebrityIndex) VALUES (@intUserIndex, @intOrderCount, @intCelebrityIndex2);\n";
-                        sqlQuery += "END\n";
-                        //if second celebrity is ordered last (at count)-1
-                        sqlQuery += "if( (select count(Indext) from BangOverLists where CelebrityIndex = @intCelebrityIndex2 and OrderRank = @intOrderCount-1 ) > 0)\n";
-                        sqlQuery += "BEGIN\n";
-                                //Add the first celebrity to table at (count) OrderRank
-                                sqlQuery += "insert into BangOverLists (UserIndex, OrderRank, CelebrityIndex) VALUES (@intUserIndex, @intOrderCount, @intCelebrityIndex1);\n";
-                        sqlQuery += "END\n";
-                sqlQuery += "END\n";
-        sqlQuery += "END\n";
-
-        //Set variable for swapping
-        sqlQuery += "DECLARE @boolSwapped bit;\n";
-        sqlQuery += "SET @boolSwapped = 0;\n";
-
-        //Both Celebrities are NOW in the personal list
-          //Celebrities should also be adjacent
-        sqlQuery += "if( (select top 1 OrderRank from BangOverLists where UserIndex = @intUserIndex and CelebrityIndex = @intCelebrityIndex1) > (select top 1 OrderRank from BangOverLists where UserIndex = @intUserIndex and CelebrityIndex = @intCelebrityIndex2) )\n";
+        sqlQuery += "SwapCelebrities " + intUserIndex + ", '" + strCelebrity1 + "', '" + strCelebrity2 + "';\n";
         
-        sqlQuery += "BEGIN\n";
-                //Swap the orderranks on the two celebrities
-                        //Lower the number on the first and lock down
-                sqlQuery += "update BangOverLists set OrderRank = OrderRank-1, UpLock = 0, DownLock = 1 where UserIndex = @intUserIndex and CelebrityIndex = @intCelebrityIndex1;\n";
-                        //Raise the number of the second and lock up
-                sqlQuery += "update BangOverLists set OrderRank = OrderRank+1, UpLock = 1, DownLock = 0 where UserIndex = @intUserIndex and CelebrityIndex = @intCelebrityIndex2;\n";
-                sqlQuery += "SET @boolSwapped = 1;\n";
-
-        sqlQuery += "END\n";
-        sqlQuery += "ELSE\n";
-        sqlQuery += "BEGIN\n";
-                //DON'T Swap the orderranks on the two celebrities: already in correct order
-                //update BangOverLists set OrderRank = OrderRank-1 where UserIndex = @intUserIndex and CelebrityIndex = @intCelebrityIndex1;
-                //update BangOverLists set OrderRank = OrderRank+1 where UserIndex = @intUserIndex and CelebrityIndex = @intCelebrityIndex2;
-                        //Only lock down
-                sqlQuery += "update BangOverLists set DownLock = 1 where UserIndex = @intUserIndex and CelebrityIndex = @intCelebrityIndex1;\n";
-                        //Only lock up
-                sqlQuery += "update BangOverLists set UpLock = 1 where UserIndex = @intUserIndex and CelebrityIndex = @intCelebrityIndex2;\n";
-        sqlQuery += "END\n";
-
-
-        //Clear adjacent locks
-                //Get Orders of swapped Celebrities
-        sqlQuery += "DECLARE @intCelebrityOrder1 int = -2;\n";
-        sqlQuery += "DECLARE @intCelebrityOrder2 int = -2;\n";
-        sqlQuery += "DECLARE @intCelebrityTotal int = 0;\n";
-
-        sqlQuery += "SET @intCelebrityOrder1 = (select top 1 OrderRank from BangOverLists where UserIndex = @intUserIndex and CelebrityIndex = @intCelebrityIndex1);\n";
-        sqlQuery += "SET @intCelebrityOrder2 = (select top 1 OrderRank from BangOverLists where UserIndex = @intUserIndex and CelebrityIndex = @intCelebrityIndex2);\n";
-        sqlQuery += "SET @intCelebrityTotal = (select count(Indext) from BangOverLists where UserIndex = @intUserIndex);\n";
-
-        //if celebrities were swapped
-        sqlQuery += "if( @boolSwapped = 1)\n";
-        //Clear adjacent locks
-        sqlQuery += "BEGIN\n";
-                //if Celebrity1's OrderRank is > 0
-                sqlQuery += "if( @intCelebrityOrder1 > 0 )\n";
-                sqlQuery += "BEGIN\n";
-                        //set DownLock to 0 on record with -1 order
-                        sqlQuery += "update BangOverLists set DownLock = 0 where UserIndex = @intUserIndex and (OrderRank = @intCelebrityOrder1-1 or OrderRank = @intCelebrityOrder2);\n";
-                sqlQuery += "END\n";
-                //if Celebrity2's OrderRank is < Count
-                sqlQuery += "if( @intCelebrityOrder2 < (@intCelebrityTotal) )\n";
-                sqlQuery += "BEGIN\n";
-                        //set UpLock to 0 on record with +1 order
-                        sqlQuery += "update BangOverLists set UpLock = 0 where UserIndex = @intUserIndex and (OrderRank = @intCelebrityOrder2+1 or OrderRank = @intCelebrityOrder1);\n";
-                sqlQuery += "END\n";
-        sqlQuery += "END\n";
         try
         {
             //open connection
@@ -237,15 +118,9 @@ public class BangBean implements Serializable
     }
     
     //set Global List
-    public void setGlobalList(Boolean boolWomen, Boolean boolMen, Boolean boolTransWomen, Boolean boolTransMen)
-    {
-        gl = PullGlobalList(boolWomen, boolMen, boolTransWomen, boolTransMen);
-    }
-    
-    //set Global List
     public void setGlobalList(LoginBean userBean)
     {
-        gl = PullGlobalList(userBean.getboolWomen(), userBean.getboolMen(), userBean.getboolTransWomen(), userBean.getboolTransMen());
+        gl = PullGlobalList(userBean);
     }
     
     //set Personal List
@@ -261,72 +136,13 @@ public class BangBean implements Serializable
     }
     
     //Pull Global List
-    public ArrayList<ArrayList<String>> PullGlobalList(Boolean boolWomen, Boolean boolMen, Boolean boolTransWomen, Boolean boolTransMen)
+    public ArrayList<ArrayList<String>> PullGlobalList(LoginBean userBean)
     {
         ArrayList<ArrayList<String>> ResultList = new ArrayList<ArrayList<String>>();
         ArrayList<String> Sub = new ArrayList<String>();
+        String tempSex = "";
         
-        String sqlQuery = "select * from Celebrities";
-        String strOr = " or ";
-        String strWhere = " where ";
-        String strFemale =  " sex = 'F'";
-        String strMale =  " sex = 'M'";
-        String strTransWoman =  " sex = 'W'";
-        String strTransMan =  " sex = 'T'";
-        String strSemiColon = ";";
-        
-        
-        //if not all
-        if(!(boolWomen && boolMen && boolTransWomen && boolTransMen))
-        {
-            //add where
-            sqlQuery += strWhere;
-            //if female
-            if(boolWomen)
-            {
-                //add female
-                sqlQuery += strFemale;
-            }
-            //if or is true
-            if(boolWomen && boolMen)
-            {
-                //add or
-                sqlQuery += strOr;
-            }
-            //if male
-            if(boolMen)
-            {
-                //add male
-                sqlQuery += strMale;
-            }
-            //if or is false
-            if( (boolWomen || boolMen) && boolTransWomen )
-            {
-                //add or
-                sqlQuery += strOr;
-            }
-            //if transwoman
-            if(boolTransWomen)
-            {
-                //add transwoman
-                sqlQuery += strTransWoman;
-            }
-            //if or is false
-            if( (boolWomen || boolMen || boolTransWomen) && boolTransMen )
-            {
-                //add or
-                sqlQuery += strOr;
-            }
-            //if transman
-            if(boolTransMen)
-            {
-                //add transman
-                sqlQuery += strTransMan;
-            }
-        }
-        
-        //add semi colon
-        sqlQuery += strSemiColon;
+        String sqlQuery = "PullGlobalListAll;";
         
         try
         {
@@ -350,6 +166,26 @@ public class BangBean implements Serializable
             {
                 Sub.add(rs.getString("NAME"));
                 Sub.add(rs.getString("Picture"));
+                tempSex = rs.getString("Sex");
+                
+                if( tempSex.compareTo("F") == 0 )
+                {
+                    Sub.add("Woman");
+                }
+                else if( tempSex.compareTo("M") == 0 )
+                {
+                    Sub.add("Man");
+                }
+                else if( tempSex.compareTo("W") == 0 )
+                {
+                    Sub.add("Trans Woman");
+                }
+                else if( tempSex.compareTo("T") == 0 )
+                {
+                    Sub.add("Trans Man");
+                }
+                
+                Sub.add(rs.getString("Ranking"));
                 
                 ResultList.add(new ArrayList<String>(Sub));
                 Sub.clear();
@@ -900,81 +736,8 @@ public class BangBean implements Serializable
         //ArrayList<String> PairList = new ArrayList<String>();
         ArrayList<ArrayList<String>> PairList = new ArrayList<ArrayList<String>>();
         String sqlQuery = "";
-        sqlQuery += "DECLARE @strUserIndex int = " + strUserIndex + ";\n";
-        sqlQuery += "DECLARE @UserCount int = 0;\n";
-        sqlQuery += "DECLARE @OrderCount int = 0;\n";
-        sqlQuery += "DECLARE @TargetIndex int = 0;\n";
-        sqlQuery += "DECLARE @SavedOrder int = 0;\n";
-
-        //request count of records related to user
-        sqlQuery += "SET @UserCount = (select count(UserIndex) from BangOverLists where userindex = @strUserIndex);\n";
-        //if count != 0 (user has records)
-        sqlQuery += "if @UserCount > 0\n";
-        sqlQuery += "BEGIN\n";
-            //request count of random non-locked celebrities from personal list
-            sqlQuery += "SET @OrderCount = (select count(Indext) from BangOverLists where UserIndex = @strUserIndex and (UpLock = 0 or DownLock = 0));\n";
-            //if count is not 0 (there are some unlocked records)
-            sqlQuery += "if @OrderCount != 0\n";
-                sqlQuery += "BEGIN\n";
-                    //request random non-locked celebrity from personal list
-                    sqlQuery += "SET @TargetIndex = (select top 1 Indext from BangOverLists where UserIndex = @strUserIndex and (UpLock = 0 or DownLock = 0) order by newid());\n";
-                    //find a record to compare to the one we have
-                        //if order is 1 or equal to count
-                    sqlQuery += "if ( (select count(UserIndex) from BangOverLists \n";
-                        sqlQuery += "where (Indext = @TargetIndex and OrderRank = 0) or (Indext = @TargetIndex and OrderRank = @UserCount-1) ) > 0 )\n";
-                        sqlQuery += "BEGIN\n";
-                            //request @TargetIndex from personal list
-                            sqlQuery += "select Celebrities.Indext, Name, Sex, Picture from BangOverLists, Celebrities where BangOverLists.Indext = @TargetIndex and CelebrityIndex = Celebrities.Indext\n";
-                            sqlQuery += "UNION\n";
-                            //request random from global list
-                                //exclude from personal list
-                            sqlQuery += "select * from ( select Top 1 Celebrities.Indext, Name, Sex, Picture from Celebrities, Users \n";
-                                sqlQuery += "where ((Sex = 'F' and Women = 1) or (Sex = 'M' and Men = 1) or (Sex = 'W' and TransWomen = 1) or (Sex = 'T' and TransMen = 1)) \n";
-                                sqlQuery += "and Users.Indext = @strUserIndex \n";
-                                sqlQuery += "and Celebrities.Indext not in( \n";
-                                sqlQuery += "select Celebrities.Indext from Celebrities, BangOverLists, Users \n";
-                                sqlQuery += "where Users.Indext = @strUserIndex and UserIndex = Users.Indext and CelebrityIndex = Celebrities.Indext \n";
-                                sqlQuery += ") order by newid() ) T1;\n";
-                        sqlQuery += "END\n";
-                        //else we're looking for an adjacent celebrity from the personal list
-                        sqlQuery += "ELSE\n";
-                        sqlQuery += "BEGIN\n";
-                            sqlQuery += "SET @SavedOrder = (select OrderRank from BangOverLists where Indext = @TargetIndex);\n";
-                            //request @TargetIndex from personal list
-                            sqlQuery += "select Celebrities.Indext, Name, Sex, Picture from  Celebrities, BangOverLists where BangOverLists.Indext = @TargetIndex and CelebrityIndex = Celebrities.Indext\n";
-                            sqlQuery += "UNION\n";
-                            //request adjacent non-locked celebrity from personal list
-                            sqlQuery += "select * from ( \n";
-                                sqlQuery += "select top 1 Celebrities.Indext, Name, Sex, Picture from Celebrities, BangOverLists where UserIndex = @strUserIndex and Celebrities.Indext = CelebrityIndex and ( (OrderRank = @SavedOrder-1 and DownLock = 0) or (OrderRank = @SavedOrder+1 and UpLock = 0) ) order by newid() \n";
-                                sqlQuery += ") T2;\n";
-                        sqlQuery += "END\n";
-                sqlQuery += "END \n";
-                //else (there are no unlocked records)
-            sqlQuery += "ELSE\n";
-            sqlQuery += "BEGIN\n";
-                //request Order = 0 or Order = count from personal list
-                sqlQuery += "select * from ( \n";
-                    sqlQuery += "select top 1 Celebrities.Indext, Name, Sex, Picture from Celebrities, BangOverLists where BangOverLists.Indext = @TargetIndex \n";
-                    sqlQuery += "order by newid() ) T3\n";
-                sqlQuery += "UNION\n";
-                //request random from global list
-                    //exclude from personal list
-                sqlQuery += "select * from ( select Top 1 Celebrities.Indext, Name, Sex, Picture from Celebrities, Users \n";
-                    sqlQuery += "where ((Sex = 'F' and Women = 1) or (Sex = 'M' and Men = 1) or (Sex = 'W' and TransWomen = 1) or (Sex = 'T' and TransMen = 1)) \n";
-                    sqlQuery += "and Users.Indext = @strUserIndex \n";
-                    sqlQuery += "and Celebrities.Indext not in( \n";
-                    sqlQuery += "select Celebrities.Indext from Celebrities, BangOverLists, Users \n";
-                    sqlQuery += "where Users.Indext = @strUserIndex and UserIndex = Users.Indext and CelebrityIndex = Celebrities.Indext \n";
-                    sqlQuery += ") order by newid() ) T4;\n";
-            sqlQuery += "END\n";
-        sqlQuery += "END\n";
-        //else (if user has no records)
-        sqlQuery += "ELSE\n";
-        sqlQuery += "BEGIN\n";
-            //request 2 random celebrities from global list
-            sqlQuery += "select top 2 * from Celebrities, Users where ((Sex = 'F' and Women = 1) or (Sex = 'M' and Men = 1) or (Sex = 'W' and TransWomen = 1) or (Sex = 'T' and TransMen = 1)) order by newid();\n";
-        sqlQuery += "END\n";
-
+        sqlQuery += "PullCelebrityPair " + strUserIndex + ";\n";
+        
         try
         {
             //open connection
@@ -1034,7 +797,7 @@ public class BangBean implements Serializable
         }
         else
         {
-            CelebrityName2 = "_Samara.png";
+            CelebrityURL2 = "_Samara.png";
         }
         
         return PairList;
@@ -1286,4 +1049,8 @@ public class BangBean implements Serializable
         
         return Result;
     }
+    
+    
+    
+    
 }   

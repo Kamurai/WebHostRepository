@@ -8,11 +8,12 @@
 		vPage = 3
 		vLevel = 0
 		vExtension = 1
+		vCSS = "Main.css"
 		Response.Write("<head>")
-			Call WriteHeader(vLevel)
+			Call WriteHeader(vLevel, vCSS)
         Response.Write("</head>")
-		Response.Write("<body bgcolor='#000000' link='#C0C0C0' vlink='#808080' alink='#FF0000'>")
-			Call WriteWebpage(vPage, vLevel, vExtension)
+        Response.Write("<body id=""idBody"">")
+        	Call WriteWebpage(vPage, vLevel, vExtension)
 		Response.Write("</body>")
 	%>
 </html>

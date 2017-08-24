@@ -8,103 +8,58 @@
     <h:head>
         <link href='#{MainBean.GetPath()}Pictures/favicon.ico' rel='shortcut icon' type='image/x-icon' />
         <link href='#{MainBean.GetPath()}Pictures/favicon.ico' rel='icon'          type='image/x-icon' />
-        <link href='#{MainBean.GetStylePath()}moo.css'         rel='stylesheet'    type='text/css' />
+        <link href='#{MainBean.GetStylePath()}Section2.css'    rel='stylesheet'    type='text/css' />
     </h:head>
-    <h:body>
-        <div align='center'>
-            <!--Table to place all subsections-->
-            <table width='100%' cellpadding='0px' cellspacing='0px' border='0' align='center'>
-                <tbody>
-                    <!--Top Row-->
-                    <tr>
-                         <h:form>
-                             <ui:include src="#{Bean2_4.GetPath()}Common/Logo.xhtml"></ui:include>
+    <h:body id="idBody">
+    <font color="white">
+        <table id="idTableMain">
+            <tr id="idHeaderRow">
+                <td id="idHeaderRowCenter" colspan="3">
+                    <h:form>
+                        <ui:include src="#{Bean2_4.GetPath()}Common/Logo.xhtml"></ui:include>
+                    </h:form>
+                </td>
+            </tr>
+            <tr id="idNavigationRow">
+                <td id="idNavigationBar" colspan="3">
+                    <h:form>
+                        <ui:include src="#{Bean2_4.GetPath()}Common/NavBar.xhtml"></ui:include>
+                    </h:form>
+                </td>
+            </tr>
+            <tr id="idCenterRow">
+                <td id="idCenterRowLeft">
+                    <h4>
+                        Navigation
+                    </h4>
+                    <h:form>
+                        <ui:include src="#{Bean2_4.GetPath()}Section2/Section4/Navigation.xhtml"></ui:include>
+                    </h:form>
+                </td>
+                <td id="idCenterRowMain">
+                    <h:form>
+                        <ui:include src="#{Bean2_4.Content()}"></ui:include>
+                    </h:form>
+                    <td id="idCenterRowRight">
+                        <h4>
+                            Information
+                        </h4>
+                        <h:form>
+                            <ui:include src="#{MainBean.Versions()}"></ui:include>
                         </h:form>
-                    </tr>
-                    <!--2nd Row-->
-                    <tr>
-                        <!--NavBar-->
-                        <td class='td-navbar' colspan='3' alt=''>
-                            <div>
-                                <ul id='list-nav'>
-                                    <li>
-                                        <h:form>
-                                            <ui:include src="#{Bean2_4.GetPath()}Common/NavBar.xhtml"></ui:include>
-                                        </h:form>
-                                    </li>
-                                </ul>
-                            </div>
-                        </td>
-                    </tr>
-                    <!--3rd Row-->
-                    <tr>
-                        <!--Left Sub Section-->
-                        <td class='td-left' valign='top'>
-                            <div align='center'>
-                                <div class='left-box'>
-                                    <div class='navlinks'>
-                                        <h4>
-                                            Navigation
-                                        </h4>
-                                        <!--Navigation(level, extension);-->
-                                        <h:form>
-                                            <ui:include src="#{Bean2_4.GetPath()}Section2/Section4/Navigation.xhtml"></ui:include>
-                                        </h:form>
-                                    </div>;
-                                </div>
-                            </div>
-                        </td>
-                        <!--Center Sub Section-->
-                        <td class='td-content'>
-                            <div align='center'>
-                                <div class='content-box'>
-                                    <div>
-                                        <h:form>
-                                            <ui:include src="#{Bean2_4.Content()}"></ui:include>
-                                        </h:form>
-                                     </div>
-                                    <br/>
-                                    <br/>
-                                </div>
-                            </div>
-                        </td>
-                        <!--Right Sub Section-->
-                        <td class='td-right' valign='top'>
-                            <div align='center'>");
-                                <div class='right-box'>
-                                    <h4>
-                                        Information
-                                    </h4>
-                                    <h:form>
-                                        <ui:include src="#{MainBean.Versions()}"></ui:include>
-                                    </h:form>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <!--4th Row-->
-                    <tr>
-                        <!--Center Sub Section-->
-                        <td class='td-footer' colspan='3'>
-                            <div align='center'>
-                                <div class='footer-box'>
-                                    <h:form>
-                                        <ui:include src="#{Bean2_4.GetPath()}Common/GDR.xhtml"></ui:include>
-                                        <ui:include src="#{Bean2_4.GetPath()}Common/WinRAR.xhtml"></ui:include>
-                                        <ui:include src="#{Bean2_4.GetPath()}Common/Footer.xhtml"></ui:include>
-                                    </h:form>
-                                    <p align='left'>
-                                        <font size='1'>
-                                            #{MainBean.WebMaster()}
-                                        </font>
-                                    </p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+                    </td>
+                </td>
+            </tr>
+            <tr id="idFooterRow">
+                <td id="idFooterMain" colspan="3">
+                    <h:form>
+                        <ui:include src="#{Bean2_4.GetPath()}Common/GDR.xhtml"></ui:include>
+                        <ui:include src="#{Bean2_4.GetPath()}Common/WinRAR.xhtml"></ui:include>
+                        <ui:include src="#{Bean2_4.GetPath()}Common/Footer.xhtml"></ui:include>
+                    </h:form>
+                </td>
+            </tr>
+        </table>
+    </font>    
     </h:body>
 </html>
-

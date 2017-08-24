@@ -12,66 +12,21 @@ public class Custom extends Main.Custom
     public String Navigation(int level, int extension)
     {
         String Result = "";
-        Result += "<span class='navlink'>";
-            Result += "<a href='"+bob.GetPath(level)+"Section2/Section1/index"+bob.GetExtension(extension)+"'>Gynowars</a>";
-        Result += "</span>";
-        Result += "<br>";
-        Result += "<span class='navlink'>";
-            Result += "<a href='"+bob.GetPath(level)+"Section2/Project2"+bob.GetExtension(extension)+"'>Assault</a>";
-        Result += "</span>";
-        Result += "<br>";
-        Result += "<span class='navlink'>";
-            Result += "<a href='"+bob.GetPath(level)+"Section2/Project3"+bob.GetExtension(extension)+"'>Mars</a>";
-        Result += "</span>";
-        Result += "<br>";
-        Result += "<span class='navlink'>";
-            Result += "<a href='"+bob.GetPath(level)+"Section2/Section4/index"+bob.GetExtension(extension)+"'>Renley</a>";
-        Result += "</span>";
-        Result += "<br>";
-        Result += "<span class='navlink'>";
-            Result += "<a href='"+bob.GetPath(level)+"Section2/Section5/index"+bob.GetExtension(extension)+"'>Antarrea</a>";
-        Result += "</span>";
-        Result += "<br>";
-        Result += "<span class='navlink'>";
-            Result += "<a href='"+bob.GetPath(level)+"Section2/Section6/index"+bob.GetExtension(extension)+"'>Editations</a>";
-        Result += "</span>";
-        Result += "<br>";
-        Result += "<span class='navlink'>";
-            Result += "<a href='"+bob.GetPath(level)+"Section2/Project7/index"+bob.GetExtension(extension)+"'>Truth</a>";
-        Result += "</span>";
-        Result += "<br>";
-        Result += "<span class='navlink'>";
-            Result += "<a href='"+bob.GetPath(level)+"Section2/Project8"+bob.GetExtension(extension)+"'>Kingdoms</a>";
-        Result += "</span>";
-        Result += "<br>";
-        Result += "<span class='navlink'>";
-            Result += "<a href='"+bob.GetPath(level)+"Section2/Project9"+bob.GetExtension(extension)+"'>Terminal World</a>";
-        Result += "</span>";
-        Result += "<br>";
-        Result += "<span class='navlink'>";
-            Result += "<a href='"+bob.GetPath(level)+"Section2/Project10"+bob.GetExtension(extension)+"'>Monster Office Workplace</a>";
-        Result += "</span>";
-        Result += "<br>";
-        Result += "<span class='navlink'>";
-            Result += "<a href='"+bob.GetPath(level)+"Section2/Project11"+bob.GetExtension(extension)+"'>Battle Princesses</a>";
-        Result += "</span>";
-        Result += "<br>";
-        Result += "<span class='navlink'>";
-            Result += "<a href='"+bob.GetPath(level)+"Section2/Project12"+bob.GetExtension(extension)+"'>Sacred Offerings</a>";
-        Result += "</span>";
-        Result += "<br>";
-        Result += "<span class='navlink'>";
-            Result += "<a href='"+bob.GetPath(level)+"Section2/Project13"+bob.GetExtension(extension)+"'>The Way</a>";
-        Result += "</span>";
-        Result += "<br>";
-        Result += "<span class='navlink'>";
-            Result += "<a href='"+bob.GetPath(level)+"Section2/Project14"+bob.GetExtension(extension)+"'>Conspiratorium</a>";
-        Result += "</span>";
-        Result += "<br>";
-        Result += "<span class='navlink'>";
-            Result += "<a href='"+bob.GetPath(level)+"Section2/Project15"+bob.GetExtension(extension)+"'>Conversion</a>";
-        Result += "</span>";
-        Result += "<br>";
+        Result += "<a class=\"navlinkA\" href='"+bob.GetPath(level)+"Section2/Section1/index"+bob.GetExtension(extension)+"'>Gynowars</a><br/><br/>";
+        Result += "<a class=\"navlinkA\" href='"+bob.GetPath(level)+"Section2/Project2"+bob.GetExtension(extension)+"'>Assault</a><br/><br/>";
+        Result += "<a class=\"navlinkA\" href='"+bob.GetPath(level)+"Section2/Project3"+bob.GetExtension(extension)+"'>Mars</a><br/><br/>";
+        Result += "<a class=\"navlinkA\" href='"+bob.GetPath(level)+"Section2/Section4/index"+bob.GetExtension(extension)+"'>Renley</a><br/><br/>";
+        Result += "<a class=\"navlinkA\" href='"+bob.GetPath(level)+"Section2/Section5/index"+bob.GetExtension(extension)+"'>Antarrea</a><br/><br/>";
+        Result += "<a class=\"navlinkA\" href='"+bob.GetPath(level)+"Section2/Section6/index"+bob.GetExtension(extension)+"'>Editations</a><br/><br/>";
+        Result += "<a class=\"navlinkA\" href='"+bob.GetPath(level)+"Section2/Project7/index"+bob.GetExtension(extension)+"'>Truth</a><br/><br/>";
+        Result += "<a class=\"navlinkA\" href='"+bob.GetPath(level)+"Section2/Project8"+bob.GetExtension(extension)+"'>Kingdoms</a><br/><br/>";
+        Result += "<a class=\"navlinkA\" href='"+bob.GetPath(level)+"Section2/Project9"+bob.GetExtension(extension)+"'>Terminal World</a><br/><br/>";
+        Result += "<a class=\"navlinkA\" href='"+bob.GetPath(level)+"Section2/Project10"+bob.GetExtension(extension)+"'>Monster Office Workplace</a><br/><br/>";
+        Result += "<a class=\"navlinkA\" href='"+bob.GetPath(level)+"Section2/Project11"+bob.GetExtension(extension)+"'>Battle Princesses</a><br/><br/>";
+        Result += "<a class=\"navlinkA\" href='"+bob.GetPath(level)+"Section2/Project12"+bob.GetExtension(extension)+"'>Sacred Offerings</a><br/><br/>";
+        Result += "<a class=\"navlinkA\" href='"+bob.GetPath(level)+"Section2/Project13"+bob.GetExtension(extension)+"'>The Way</a><br/><br/>";
+        Result += "<a class=\"navlinkA\" href='"+bob.GetPath(level)+"Section2/Project14"+bob.GetExtension(extension)+"'>Conspiratorium</a><br/><br/>";
+        Result += "<a class=\"navlinkA\" href='"+bob.GetPath(level)+"Section2/Project15"+bob.GetExtension(extension)+"'>Conversion</a><br/><br/>";
         return Result;
     }
 
@@ -134,109 +89,63 @@ public class Custom extends Main.Custom
     public String Header(int input)
     {
         String Result = "";
+        Result += "<h2>";
         if(input == 0)
         {
-            Result += "<h2>";
-                Result += "<u>";
-                    Result += "Private Projects";
-                Result += "</u>";
-            Result += "</h2>";
+            Result += "Private Projects";
         }
         else if(input == 2)
         {
-            Result += "<h2>";
-                Result += "<u>";
-                    Result += "Assault CCG";
-                Result += "</u>";
-            Result += "</h2>";
+            Result += "Assault CCG";
         }
         else if(input == 3)
         {
-            Result += "<h2>";
-                Result += "<u>";
-                    Result += "Mars Projects";
-                Result += "</u>";
-            Result += "</h2>";
+            Result += "Mars Projects";
         }
         else if(input == 7)
         {
-            Result += "<h2>";
-                Result += "<u>";
-                    Result += "Truth";
-                Result += "</u>";
-            Result += "</h2>";
+            Result += "Truth";
         }
         else if(input == 8)
         {
-            Result += "<h2>";
-                Result += "<u>";
-                    Result += "Kingdoms";
-                Result += "</u>";
-            Result += "</h2>";
+            Result += "Kingdoms";
         }
         else if(input == 9)
         {
-            Result += "<h2>";
-                Result += "<u>";
-                    Result += "Terminal World";
-                Result += "</u>";
-            Result += "</h2>";
+            Result += "Terminal World";
         }
         else if(input == 10)
         {
-            Result += "<h2>";
-                Result += "<u>";
-                    Result += "Monster Office Workplace";
-                Result += "</u>";
-            Result += "</h2>";
+            Result += "Monster Office Workplace";
         }
         else if(input == 11)
         {
-            Result += "<h2>";
-                Result += "<u>";
-                    Result += "Battle Princesses";
-                Result += "</u>";
-            Result += "</h2>";
+            Result += "Battle Princesses";
         }
         else if(input == 12)
         {
-            Result += "<h2>";
-                Result += "<u>";
-                    Result += "Sacred Offerings";
-                Result += "</u>";
-            Result += "</h2>";
+            Result += "Sacred Offerings";
         }
         else if(input == 13)
         {
-            Result += "<h2>";
-                Result += "<u>";
-                    Result += "The Way";
-                Result += "</u>";
-            Result += "</h2>";
+            Result += "The Way";
         }
         else if(input == 14)
         {
-            Result += "<h2>";
-                Result += "<u>";
-                    Result += "Conspiratorium";
-                Result += "</u>";
-            Result += "</h2>";
+            Result += "Conspiratorium";
         }
         else if(input == 15)
         {
-            Result += "<h2>";
-                Result += "<u>";
-                    Result += "Conversion";
-                Result += "</u>";
-            Result += "</h2>";
+            Result += "Conversion";
         }
+        Result += "</h2>";
         return Result;
     }
 
     public String Content(int input)
     {
         String Result = "";
-        Result += "<p align='left'>";
+        Result += "<p id=\"idCenterContent\">";
             if(input == 0)
             {
                 Result += "This section is dedicated to HTKB projects.";
@@ -300,7 +209,6 @@ public class Custom extends Main.Custom
     public String Versions(int input)
     {
         String Result = "";
-        Result += "<p align='left'>";
         if(input == 0)
         {
             Result += "<a href=\"http://htkb.dyndns.org/Section2/index.html\">HTML</a><br/>";
@@ -525,7 +433,6 @@ public class Custom extends Main.Custom
             Result += "<a href=\"http://htkb.dyndns.org:81/MVC/Section2/Project15\">ASP.NET MVC App</a><br/>";
             Result += "<a href=\"http://htkb.dyndns.org/SSI/Section2/Project15.html\">Apache SSI</a><br/>";
         }
-        Result += "</p>";
         return Result;
     }
 }

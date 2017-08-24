@@ -21,7 +21,7 @@
             int pagenumber = 1;
             int extension = 3;
 
-            out.println(uni.WriteHeader(level));
+            out.println(uni.WriteHeader(level, 1));
         %>
     </head>
     <body>

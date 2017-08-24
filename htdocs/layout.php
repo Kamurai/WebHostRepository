@@ -2,115 +2,72 @@
 	include $path.'Universal.php';
 	
 	echo "
+	<link href=\"".$style."Main.css\" rel=\"stylesheet\" type=\"text/css\">
 	<title>$title</title>
-	<link href='".$style."moo.css' rel='stylesheet' type='text/css'>
-	<!--Centered division.-->
-	<div align='center'>
-		<!--Table to place all subsections-->
-		<table width='100%' cellpadding='0px' cellspacing='0px' border='0' align='center'>
-			<tbody>
-				<!--Top Row-->
-				<tr>
-					<!--Center Sub Section-->
-					<td class='td-header' colspan='3' alt='' valign='top'>
-						<p align='center'>
-							<!--Primary Header: Main Splash / Logo-->
-							<img src='".$path."logo_HouseThatKamuraiBuilt_blueonblack.jpg' width='100%' alt='' border='0' align='center' vspace='0' hspace='0'><br>
-						</p>
-					</td>
-				</tr>
-				<!--2nd Row-->
-				<tr>
-					<!--NavBar-->
-					<td class='td-navbar' colspan='3' alt=''>
-		";
-						include $path.'navBar.php';
+	<table id=\"idTableMain\">
+        <tr id=\"idHeaderRow\">
+            <td id=\"idHeaderRowCenter\" colspan=\"3\">
+                <img id=\"idLogo\" src='".$path."logo_HouseThatKamuraiBuilt_blueonblack.jpg'><br>
+			</td>
+		</tr>
+		<tr id=\"idNavigationRow\">
+            <td id=\"idNavigationBar\" colspan=\"3\">
+         ";
+                include $path.'navBar.php';
 		echo "
-					</td>
-				</tr>				
-				<!--3rd Row-->
-				<tr>
-					<!--Left Sub Section-->
-					<td class='td-left' valign='top'>
-						<div align='center'>
-							<div class='left-box'>
-								<div class='navlinks'>
-									<h4>
+			</td>
+        </tr>				
+		<tr id=\"idCenterRow\">
+            <td id=\"idCenterRowLeft\">
+                <h4>
 		";
-										echo $navHeader;
+                    echo $navHeader;
 		echo "
-									</h4>
+				</h4>
 		";
-										include './navigationContent.php';
+				include './navigationContent.php';
 		echo "
-								</div>
-							</div>
-						</div>
-					</td>
-					<!--Center Sub Section-->
-					<td class='td-content'>
-						<div align='center'>
-							<div class='content-box'>
-								<div>
-									<h2>
+			</td>
+            <td id=\"idCenterRowMain\">
+            	<h2>
 		";
-										echo $centerHeader;
+					echo $centerHeader;
 		echo "
-									</h2>
-									<p align='left'>
+				</h2>
+				<p id=\"idCenterContent\">
 		";
 										echo $centerContent;
 		echo "
-									</p>
-								</div>
-								<br>
-								<br>
-							</div>
-						</div>
-					</td>
-					<!--Right Sub Section-->
-					<td class='td-right' valign='top'>
-						<div align='center'>
-							<div class='right-box'>
-								<h4>
+				</p>
+			</td>
+			<td id=\"idCenterRowRight\">
+                <h4>
 		";
-									echo $infoHeader;
+					echo $infoHeader;
 		echo "
-								</h4>
+				</h4>
 		";
-									echo $infoContent;
+				echo $infoContent;
 		echo "
-							</div>
-						</div>
-					</td>
-				</tr>
-				<!--4th Row-->
-				<tr>
-					<!--Center Sub Section-->
-					<td class='td-footer' colspan='3'>
-						<div align='center'>
-							<div class='footer-box'>
-								<p align='center'>
+			</td>
+		</tr>
+        <tr id=\"idFooterRow\">
+            <td id=\"idFooterMain\" colspan=\"3\">
+                <p id=\"idFooterContent\">
 		";
-									echo $GDR;
-									echo $winrar;
-									echo $footer;
+                    echo $GDR;
+                    echo $winrar;
+                    echo $footer;
 		echo "
-								</p>
-								<p align='left'>
-									<font size='1'>
-		";
-		
-									echo $management;
+				</p>
+				<p id=\"idFooterManagement\">
+        ";
+                    echo $management;
 		echo "
-									</font>
-								</p>
-							</div>
-						</div>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
+				</p>
+            </td>
+        </tr>
+    </table>
+    </body>
 	";
 ?>

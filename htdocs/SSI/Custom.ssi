@@ -1,18 +1,9 @@
 <!--#if expr="$vCustom == 0" -->
-	<link href="./moo.css" rel="stylesheet" type="text/css"/>
+	<link href="./Main.css" rel="stylesheet" type="text/css"/>
 <!--#elif expr="$vCustom == 1" -->
-	<span class="navlink">
-		<a href="./AboutUs.html">About Us</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="./Media.html">Media</a>
-	</span>
-	</br>
-	<span class="navlink">
-		<a href="./Minecraft.html">Minecraft!</a>
-	</span>
-	</br>
+	<a class="navlinkA" href="./AboutUs.html">About Us</a><br/><br/>
+	<a class="navlinkA" href="./Media.html">Media</a><br/><br/>
+	<a class="navlinkA" href="./Minecraft.html">Minecraft!</a><br/><br/>
 <!--#elif expr="$vCustom == 2" -->
 	<title>
 		<!--#if expr="$vPage == 0" -->
@@ -43,42 +34,32 @@
 	</h2>
 <!--#elif expr="$vCustom == 4" -->
 	<!--#if expr="$vPage == 0" -->
-		<p align="left">
-			The House That Kamurai Built is an 
-			entertainment company with the primary 
-			focus of increasing awesome by stimulating 
-			intelligent conversation and entertainment 
-			via discussion and game design. <br>
-			Increase the Awesome with us!<br>
-		</p>
+		The House That Kamurai Built is an 
+		entertainment company with the primary 
+		focus of increasing awesome by stimulating 
+		intelligent conversation and entertainment 
+		via discussion and game design. <br>
+		Increase the Awesome with us!<br>
 	<!--#elif expr="$vPage == 1" -->
-		<p align="left">
-			We are working to build this into a better place.</br>
-			If you found this, then you must be at least (Awesome/2).</br>
-			Stay tuned, right now it's all about laying foundation for the future.</br>
-		</p>
+		We are working to build this into a better place.</br>
+		If you found this, then you must be at least (Awesome/2).</br>
+		Stay tuned, right now it's all about laying foundation for the future.</br>
 	<!--#elif expr="$vPage == 2" -->
-		<p align="left">
 			You can find us at all these different places:</br>
-		</p>
-		<p align="left">
-			<h3>
-				<p align="left">
+		<br/>
+		<br/>
 					#WeAreMovieClub:
-				</p>
-			</h3>
-			<p align="left">
+		<br/>
+		<br/>
 				<a href="http://www.youtube.com/WeAreMovieClub">Youtube.com/WeAreMovieClub:  A place for movie discussion.</a></br>
 				<a href="http://WeAreMovieClub.tumblr.com">WeAreMovieClub.tumblr.com: We have a tumblr!</a></br>
 				<a href="http://www.twitter.com/WeAreMovieClub">@WeArMovieClub on Twitter: Let us know about your movie thoughts.</a></br>
 				<a href="http://www.facebook.com/WeAreMovieClub">facebook.com/WeAreMovieClub: Talk about movie with us.</a></br>
-			</p>
-			<h3>
-				<p align="left">
+		<br/>
+		<br/>
 					HTKB Productions
-				</p>
-			</h3>
-			<p align="left">
+		<br/>
+		<br/>
 				<a href="http://www.youtube.com/GamingDivision528">Gaming Division:  A Youtube Channel for game stuff.</a></br>
 				<a href="http://www.youtube.com/JamOnToast528">Jam On Toast:  A Youtube Channel for media stuff.</a></br>
 				<a href="http://www.ustream.tv/HTKB">UStream:  Streams show up here too.</a></br>
@@ -91,26 +72,21 @@
 				<a href="http://www.facebook.com/HouseThatKamuraiBuilt">Facebook: Talk about movie with us.</a></br>
 				<a href="http://HouseThatKamuraiBuilt.tumblr.com">HouseThatKamuraiBuilt.tumblr.com: We have a tumblr!</a></br>
 				<a href="http://myspace.com/HouseThatKamuraiBuilt">Myspace: Wow, there's even a MySpace!</a></br>
-			</p>
-		</p>
-		<p align="left">
+		<br/>
+		<br/>
 			Here are some of our member's pages:</br>
-		</p>
-		<h3>
-			<p align="left">
+		<br/>
+		<br/>
 				Kamurai:
-			</p>
-		</h3>
-		<p align="left">
+		<br/>
+		<br/>
 			<a href="http://twitter.com/#!/Kamurai25">Kamurai's Twitter.</a></br>
 			<a href="http://Instagram.com/Kamurai25">Kamurai's Instagram.</a></br>
 			<a href="./.">Kamurai's Snapchat: Kamurai</a></br>
 			<a href="http://www.facebook.com/cris.kamurai">Kamurai's Facebook.</a></br>
 			<a href="https://www.gplus.com/Members/Cris-Kamurai">Kamurai's Google Plus.</a></br>
 			<a href="http://www.yoyogames.com/users/Kamurai">Kamurai's YoYo Games page:  See some of the games he's posted.</a></br>
-		</p>
 	<!--#elif expr="$vPage == 3" -->
-		<p align="left">
 			If you would like to play Minecraft with us, we have several different servers:</br>
 			Mo Creatures Server: (1.7.10) htkb.dyndns.org:25565</br>
 			Creative Server:     (1.7.10) htkb.dyndns.org:25567</br>
@@ -146,9 +122,9 @@
 				<a href='./Downloads/Minecraft/arkcraft-1.1.3-beta.jar'>Ark Craft</a></br>
 			Here is a skin template to make custom skins:</br>
 			<a href='./Downloads/Minecraft/skin_template.png'>Steve skin template</a></br>
-		</p>
-		<p align="left">
-			For first time setups, please follow these steps to make your client compatible with the server:</br>
+	<br/>
+		<br/>
+				For first time setups, please follow these steps to make your client compatible with the server:</br>
 				 0) If you don't have Minecraft, go to Minecraft.net and download the latest version of the launcher.</br>
 				 1) From the launcher create a new profile and change its version to the relevant version (e.g. 1.7.10).</br>
 				 2) Save the Profile, select the new profile and click play.</br>
@@ -170,15 +146,13 @@
 				11) Go to multiplayer and click add server.</br>
 				12) Name the server something distinct and put "htkb.dyndns.org:2556x" in the address bar where 'x' is the relevant port.</br>
 				13) Save the server entry.  You should see a connection to the server.  Double click to join.</br>
-		</p>
 	<!--#else -->
 		NOPE!
 	<!--#endif -->
 <!--#elif expr="$vCustom == 5" -->
-	<p>
 		This is written with basic HTML and Server Side Integration.
-	</p>
-	<p align="left">
+	<br/>
+		<br/>
 		Other versions of this page are here:<br>
 		<!--#if expr="$vPage == 0" -->
 			<a href="http://htkb.dyndns.org/index.html">Basic HTML</a><br>
@@ -231,7 +205,6 @@
 		<!--#else -->
 			NOPE!
 		<!--#endif -->
-	</p>
 <!--#else -->
 	NOPE!
 <!--#endif -->

@@ -1,27 +1,27 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
-<!-- saved from url=(0023)./ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></head><body bgcolor="#000000" link="#C0C0C0" vlink="#808080" alink="#FF0000">
- 
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
 <font color="white">
-
+<body id="idBody">
 <?php
 	include 'Path.php';
 	
 	$title = "Conversion";
-	$centerHeader = "<u>Conversion</u>";
+	$centerHeader = "Conversion";
 	$centerContent = "
-						<p align='left'>
 							This section is dedicated to the board game project \"Conversion\".<br/>
 							Compete on the elemental market by processing elements and becoming the elemental kingpin.
-						</p>
-						<p align='left'>
+						</br>
+						</br>
 							You can download the Tabletop Simulator mod here:
 							<a href='http://steamcommunity.com/sharedfiles/filedetails/?id=658966981'>Steam Workshop</a>
-						</p>
-						<p align='left'>
-							<u>
+						</br>
+						</br>
+							
 								Conversion Ruleset v0.1<br/>
-							</u>
+							
 							<br/>
 							Setup:<br/>
 								&nbsp;&nbsp;&nbsp;&nbsp;
@@ -110,7 +110,6 @@
 							Win condition:<br/>
 								&nbsp;&nbsp;&nbsp;&nbsp;
 								In the event of a tie, then the player that triggered the event wins.<br/>
-						</p>
 						
 					";
 	$GDR = "";
@@ -119,7 +118,6 @@
 	$infoContent = "This is written with PHP.<br><br>
 					Other versions of this page are here:<br>
 					<a href=\"http://htkb.dyndns.org/Section2/Project15.html\">HTML</a><br>
-					<a href=\"http://htkb.dyndns.org/Section2/Project15.php\">PHP</a><br>
 					<a href=\"http://htkb.dyndns.org/Javascript/Section2/Project15.html\">HTML Javascript</a><br>
 					<a href=\"http://htkb.dyndns.org:81/ASP/Section2/Project15.asp\">ASP Javascript</a><br>
 					<a href=\"http://htkb.dyndns.org:81/ASPNET/Section2/Project15.aspx\">ASP.NET Javascript</a><br>
@@ -136,5 +134,6 @@
 	#Overall body
 	include $style.'Layout.php';
 ?>
-
-</font></body></html>
+</body>
+</font>
+</html>

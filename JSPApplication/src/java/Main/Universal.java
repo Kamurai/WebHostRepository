@@ -7,19 +7,34 @@ public class Universal
 
     }
 
-    public String WriteHeader(int level)
+    public String WriteHeader(int level, int section)
     {
         String Result = "";
         Result += "<link rel='shortcut icon' href='"+GetPath(level)+"Pictures/favicon.ico' type='image/x-icon' />";
         Result += "<link rel='icon' href='"+GetPath(level)+"Pictures/favicon.ico' type='image/x-icon' />";
-        Result += "<link href='"+GetPath(level-1)+"moo.css' rel='stylesheet' type='text/css'>";
+        if(section == 1)
+        {
+            Result += "<link href='"+GetPath(level-1)+"Section1.css' rel='stylesheet' type='text/css'>";
+        }
+        else if(section == 2)
+        {
+            Result += "<link href='"+GetPath(level-1)+"Section2.css' rel='stylesheet' type='text/css'>";
+        }
+        else if(section == 3)
+        {
+            Result += "<link href='"+GetPath(level-1)+"Section3.css' rel='stylesheet' type='text/css'>";
+        }
+        else
+        {
+            Result += "<link href='"+GetPath(level-1)+"Main.css' rel='stylesheet' type='text/css'>";
+        }
         return Result;
     }
 
     public String TitlePicture(int level)
     {
         String Result = "";
-        Result += "<img src='"+GetPath(level)+"Pictures/logo_HouseThatKamuraiBuilt_blueonblack.jpg' width='100%' alt='' border='0' align='center' vspace='0' hspace='0'><br>";
+        Result += "<img  id=\"idLogo\" src='"+GetPath(level)+"Pictures/logo_HouseThatKamuraiBuilt_blueonblack.jpg'><br>";
 
         return Result;
     }
@@ -27,49 +42,39 @@ public class Universal
     public String WebMaster()
     {
         String Result = "";
-        Result += "<p align='left'>";
-            Result += "<font size='1'>";
-                Result += "Website managed by Kamurai.";
-            Result += "</font>";
-        Result += "</p>";
+            Result += "Website managed by Kamurai.";
         return Result;
     }
 
     public String NavBar(int level, int extension)
     {
         String Result = "";
-        Result += "<a href='"+GetPath(level)+"index"+GetExtension(extension)+"'>Home</a>";
-        Result += "<a href='"+GetPath(level)+"Section1/index"+GetExtension(extension)+"'>Web Programming</a>";
-        Result += "<a href='"+GetPath(level)+"Section2/index"+GetExtension(extension)+"'>Private Projects</a>";
-        Result += "<a href='"+GetPath(level)+"Section3/index"+GetExtension(extension)+"'>Downloadable Projects</a>";
+        Result += "<a class=\"navBar\" href='"+GetPath(level)+"index"+GetExtension(extension)+"'>Home</a>";
+        Result += "<a class=\"navBar\" href='"+GetPath(level)+"Section1/index"+GetExtension(extension)+"'>Web Programming</a>";
+        Result += "<a class=\"navBar\" href='"+GetPath(level)+"Section2/index"+GetExtension(extension)+"'>Private Projects</a>";
+        Result += "<a class=\"navBar\" href='"+GetPath(level)+"Section3/index"+GetExtension(extension)+"'>Downloadable Projects</a>";
         return Result;
     }
 
     public String GDR()
     {
         String Result = "";
-        Result += "<p align='center'>";
-                Result += "<a href='http://htkb.dyndns.org/Section3/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";
-        Result += "</p>";
+        Result += "<a href='http://htkb.dyndns.org/Section3/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>";
         return Result;
     }
 
     public String WinRAR()
     {
         String Result = "";
-        Result += "<p align='center'>";
-                Result += "<a href='http://htkb.dyndns.org/Section3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";
-        Result += "</p>";
+        Result += "<a href='http://htkb.dyndns.org/Section3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>";
         return Result;
     }
 
     public String Footer()
     {
         String Result = "";
-        Result += "<p align='center'>";
-            Result += "© Copyright 2012 All rights reserved<br>";
-            Result += "House That Kamurai Built<br>";
-        Result += "</p>";
+        Result += "© Copyright 2012 All rights reserved<br>";
+        Result += "House That Kamurai Built<br>";
         return Result;
     }
 

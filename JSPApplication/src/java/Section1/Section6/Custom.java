@@ -29,55 +29,19 @@ public class Custom extends Section1.Custom
     public String Navigation(int level, int extension)
     {
         String Result = "";
-        Result += "<span class='navlink'>";
-            Result += "<a href='http://htkb.dyndns.org/Section1/Project1.html'>Basic HTML</a>";
-        Result += "</span>";
-        Result += "<br>";
-        Result += "<span class='navlink'>";
-            Result += "<a href='http://htkb.dyndns.org/Section1/Project1.php'>PHP</a>";
-        Result += "</span>";
-        Result += "<br>";
-        Result += "<span class='navlink'>";
-            Result += "<a href='"+bob.GetPath(level)+"Section1/Section2/index"+bob.GetExtension(extension)+"'>Javascript</a>";
-        Result += "</span>";
-        Result += "<br>";
-        Result += "<span class='navlink'>";
-            Result += "<a href='http://htkb.dyndns.org/Section1/Project3.shtml'>Perl</a>";
-        Result += "</span>";
-        Result += "<br>";
-        Result += "<span class='navlink'>";
-            Result += "<a href='"+bob.GetPath(level)+"Section1/Section4/index"+bob.GetExtension(extension)+"'>Java</a>";
-        Result += "</span>";
-        Result += "<br>";
-        Result += "<span class='navlink'>";
-            Result += "<a href='"+bob.GetPath(level)+"Section1/Section5/index"+bob.GetExtension(extension)+"'>ASP.Net</a>";
-        Result += "</span>";
-        Result += "<br>";
-        Result += "<span class='navlink'>";
-            Result += "<a href='"+bob.GetPath(level)+"Section1/Section6/index"+bob.GetExtension(extension)+"'>Databases</a>";
-         	Result += "<h5>";
-			Result += "<span class='navlink'>";
-				Result += "<a href='"+bob.GetPath(level)+"Section1/Section6/Project1"+bob.GetExtension(extension)+"'>Oracle</a>";
-			Result += "</span>";
-			Result += "<span class='navlink'>";
-				Result += "<a href='"+bob.GetPath(level)+"Section1/Section6/Project2"+bob.GetExtension(extension)+"'>Derby</a>";
-			Result += "</span>";
-			Result += "<span class='navlink'>";
-				Result += "<a href='"+bob.GetPath(level)+"Section1/Section6/Project3"+bob.GetExtension(extension)+"'>MySQL</a>";
-			Result += "</span>";
-			Result += "<span class='navlink'>";
-				Result += "<a href='"+bob.GetPath(level)+"Section1/Section6/Project4"+bob.GetExtension(extension)+"'>SQL Server</a>";
-			Result += "</span>";
-			Result += "<span class='navlink'>";
-				Result += "<a href='"+bob.GetPath(level)+"Section1/Section6/Project5"+bob.GetExtension(extension)+"'>Postgres</a>";
-			Result += "</span>";
-		Result += "</h5>";
-        Result += "</span>";
-        Result += "<br>";
-        Result += "<span class='navlink'>";
-            Result += "<a href=\"http://htkb.dyndns.org/SSI/Section1/index.html\">Apache SSI</a>";
-        Result += "</span>";
-        Result += "<br>";
+        Result += "<a class=\"navlinkA\" href='http://htkb.dyndns.org/Section1/Project1.html'>Basic HTML</a><br/><br/>";
+        Result += "<a class=\"navlinkA\" href='http://htkb.dyndns.org/Section1/Project1.php'>PHP</a><br/><br/>";
+        Result += "<a class=\"navlinkA\" href='"+bob.GetPath(level)+"Section1/Section2/index"+bob.GetExtension(extension)+"'>Javascript</a><br/><br/>";
+        Result += "<a class=\"navlinkA\" href='http://htkb.dyndns.org/Section1/Project3.shtml'>Perl</a><br/><br/>";
+        Result += "<a class=\"navlinkA\" href='"+bob.GetPath(level)+"Section1/Section4/index"+bob.GetExtension(extension)+"'>Java</a><br/><br/>";
+        Result += "<a class=\"navlinkA\" href='"+bob.GetPath(level)+"Section1/Section5/index"+bob.GetExtension(extension)+"'>ASP.Net</a><br/><br/>";
+        Result += "<a class=\"navlinkA\" href='"+bob.GetPath(level)+"Section1/Section6/index"+bob.GetExtension(extension)+"'>Databases</a><br/><br/>";
+            Result += "<a class=\"navlinkB\" href='"+bob.GetPath(level)+"Section1/Section6/Project1"+bob.GetExtension(extension)+"'>Oracle</a><br/><br/>";
+            Result += "<a class=\"navlinkB\" href='"+bob.GetPath(level)+"Section1/Section6/Project2"+bob.GetExtension(extension)+"'>Derby</a><br/><br/>";
+            Result += "<a class=\"navlinkB\" href='"+bob.GetPath(level)+"Section1/Section6/Project3"+bob.GetExtension(extension)+"'>MySQL</a><br/><br/>";
+            Result += "<a class=\"navlinkB\" href='"+bob.GetPath(level)+"Section1/Section6/Project4"+bob.GetExtension(extension)+"'>SQL Server</a><br/><br/>";
+            Result += "<a class=\"navlinkB\" href='"+bob.GetPath(level)+"Section1/Section6/Project5"+bob.GetExtension(extension)+"'>Postgres</a><br/><br/>";
+        Result += "<a class=\"navlinkA\" href=\"http://htkb.dyndns.org/SSI/Section1/index.html\">Apache SSI</a><br/><br/>";
         return Result;
     }
 
@@ -117,62 +81,40 @@ public class Custom extends Section1.Custom
     public String Header(int input)
     {
         String Result = "";
+        Result += "<h2>";
         if(input == 0)
         {
-            Result += "<h2>";
-                Result += "<u>";
-                    Result += "Database Programming";
-                Result += "</u>";
-            Result += "</h2>";
+            Result += "Database Programming";
         }
         else if(input == 1)
         {
-            Result += "<h2>";
-                Result += "<u>";
-                    Result += "Oracle Programming";
-                Result += "</u>";
-            Result += "</h2>";
+            Result += "Oracle Programming";
         }
         else if(input == 2)
         {
-            Result += "<h2>";
-                Result += "<u>";
-                    Result += "Derby Programming";
-                Result += "</u>";
-            Result += "</h2>";
+            Result += "Derby Programming";
         }
         else if(input == 3)
         {
-            Result += "<h2>";
-                Result += "<u>";
-                    Result += "MySQL Programming";
-                Result += "</u>";
-            Result += "</h2>";
+            Result += "MySQL Programming";
         }
         else if(input == 4)
         {
-            Result += "<h2>";
-                Result += "<u>";
-                    Result += "SQL Server Programming";
-                Result += "</u>";
-            Result += "</h2>";
+            Result += "SQL Server Programming";
         }
         else if(input == 5)
         {
-            Result += "<h2>";
-                Result += "<u>";
-                    Result += "Postgres Programming";
-                Result += "</u>";
-            Result += "</h2>";
+            Result += "Postgres Programming";
         }
-
+        Result += "</h2>";
+        
         return Result;
     }
 
     public String Content(int input)
     {
         String Result = "";
-        Result += "<p align='left'>";
+        Result += "<p id=\"idCenterContent\">";
             if(input == 0)
             {
                 Result += "This section is dedicated to database based programming.";
@@ -667,7 +609,6 @@ public class Custom extends Section1.Custom
     public String Versions(int input)
     {
         String Result = "";
-        Result += "<p align='left'>";
         if(input == 0)
         {
             Result += "<a href=\"http://htkb.dyndns.org/Section1/Section6/index.html\">HTML</a><br/>";
@@ -757,7 +698,6 @@ public class Custom extends Section1.Custom
             Result += "<a href=\"http://htkb.dyndns.org/SSI/Section1/Section6/Project5.html\">Apache SSI</a><br/>";
             
         }
-        Result += "</p>";
         return Result;
     }
 }
