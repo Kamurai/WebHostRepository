@@ -1,4 +1,4 @@
-﻿<%@ page title="Database Programming" language="C#" masterpagefile="~/Section1/Section5/Template.master" autoeventwireup="true" inherits="_Index1_5, App_Web_fhfa41ru" %>
+﻿<%@ page title=">ASP.NET Programming" language="C#" masterpagefile="~/Section1/Section5/Template.master" autoeventwireup="true" inherits="_Index1_5, App_Web_cba34l3m" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>
@@ -6,10 +6,10 @@
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
 
 <h1>
-	<u>Database Programming</u>
+	<u>ASP.NET Programming</u>
 </h1>
 <p align="left">
-	This section is dedicated to database programming.
+	This section is dedicated to ASP.NET programming.
 </p>
     
 </asp:Content>

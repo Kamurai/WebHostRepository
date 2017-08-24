@@ -1,0 +1,8 @@
+<html>
+	<head>
+        <!--#include virtual="/cgi-bin/WriteHeader.pl?vCSS=./" -->
+	</head>
+	<body>
+        <!--#include virtual="/cgi-bin/Section2/WriteWebPage.pl?vPage=0&vPath=../../../&vDownPath=Section2/Section6/&vScriptPath=../&vScriptDownPath=Section2/Section6/Section2/" -->
+	</body>
+</html>

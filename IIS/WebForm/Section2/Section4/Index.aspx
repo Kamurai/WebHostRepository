@@ -1,4 +1,4 @@
-﻿<%@ page title="Renley" language="C#" masterpagefile="~/Section2/Section4/Template.master" autoeventwireup="true" inherits="_Index2_4, App_Web_ecev0smz" %>
+﻿<%@ page title="Renley" language="C#" masterpagefile="~/Section2/Section4/Template.master" autoeventwireup="true" inherits="_Index2_4, App_Web_oyml4nfm" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>

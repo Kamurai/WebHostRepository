@@ -1,4 +1,4 @@
-﻿<%@ page title="Land of the Orcish Empire: Age of Magic" language="C#" masterpagefile="~/Section2/Section5/Section2/Template.master" autoeventwireup="true" inherits="_Project2_5_2_1, App_Web_2mymuhkh" %>
+﻿<%@ page title="Land of the Orcish Empire: Age of Magic" language="C#" masterpagefile="~/Section2/Section5/Section2/Template.master" autoeventwireup="true" inherits="_Project2_5_2_1, App_Web_0gfiqtab" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>

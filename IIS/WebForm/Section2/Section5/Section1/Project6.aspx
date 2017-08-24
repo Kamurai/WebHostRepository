@@ -1,4 +1,4 @@
-﻿<%@ page title="Revolutions: Invading Nations" language="C#" masterpagefile="~/Section2/Section5/Section1/Template.master" autoeventwireup="true" inherits="_Project2_5_1_6, App_Web_fuhbdh0a" %>
+﻿<%@ page title="Revolutions: Invading Nations" language="C#" masterpagefile="~/Section2/Section5/Section1/Template.master" autoeventwireup="true" inherits="_Project2_5_1_6, App_Web_5vzdl01w" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>

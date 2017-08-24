@@ -1,11 +1,12 @@
-﻿<%@ master language="C#" autoeventwireup="true" inherits="Template1_5Master, App_Web_sjer1e2j" %>
+﻿<%@ master language="C#" autoeventwireup="true" inherits="Template1_5Master, App_Web_swzdflrb" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head runat="server">
     <title></title>
     <link href="~/Styles/Section1/moo.css" rel="stylesheet" type="text/css" />
-    <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+    <link rel="icon" href="~/favicon.ico" type="image/ico">
+	<asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
 </head>
 <body>
     <form runat="server">
@@ -51,7 +52,7 @@
 										Navigation
 									</h4>
 									    <span class="navlink">
-										    <a href="http://htkb.dyndns.org/Section1/Project1.html">HTML</a>
+										    <a href="http://htkb.dyndns.org/Section1/Project1.html">Basic HTML</a>
 									    </span>
 									    </br>
 									    <span class="navlink">
@@ -59,19 +60,19 @@
 									    </span>
 									    </br>
 									<span class="navlink">
-										<a href="../Project2.aspx">Java Script</a>
+									    <a href="../Section2/Index.aspx">Javascript</a>
 									</span>
 									</br>
 									<span class="navlink">
-										<a href="../Project3.aspx">Perl</a>
+										<a href="http://htkb.dyndns.org/Section1/Project3.shtml">Perl</a>
 									</span>
 									</br>
 									<span class="navlink">
-										<a href="../Project4.aspx">Xhtml</a>
+										<a href="../Project4.aspx">XHTML</a>
 									</span>
 									</br>
 									<span class="navlink">
-										<a href="../Project5.aspx">ASP.Net</a>
+										<a href="../Section5/index.aspx">ASP.NET</a>
 			                            <h5>
 				                            <span class='navlink'>
 					                            <a href='http://htkb.dyndns.org:81/WebApplication/Section1/Section5/Project1.cshtml'>Webpage Application</a>

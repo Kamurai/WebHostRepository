@@ -1,4 +1,4 @@
-﻿<%@ page title="HTKB Affiliation" language="C#" masterpagefile="~/Template.master" autoeventwireup="true" inherits="_Affiliation, App_Web_q3tg1jas" %>
+﻿<%@ page title="HTKB Affiliation" language="C#" masterpagefile="~/Template.master" autoeventwireup="true" inherits="_Affiliation, App_Web_hdid11p3" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>

@@ -1,11 +1,12 @@
-﻿<%@ master language="C#" autoeventwireup="true" inherits="Template2_6_2Master, App_Web_21d2oeph" %>
+﻿<%@ master language="C#" autoeventwireup="true" inherits="Template2_6_2Master, App_Web_2e4bqotr" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head runat="server">
     <title></title>
     <link href="~/Styles/Section2/moo.css" rel="stylesheet" type="text/css" />
-    <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+    <link rel="icon" href="~/favicon.ico" type="image/ico">
+	<asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
 </head>
 <body>
     <form runat="server">
@@ -102,6 +103,14 @@
 										<a href="../../Project9.aspx">Terminal World</a>
 									</span>
 									</br>
+									<span class="navlink">
+										<a href="../../Project10.aspx">Monster Office Workplace</a>
+									</span>
+									</br>
+									<span class="navlink">
+										<a href="../../Project11.aspx">Battle Princesses</a>
+									</span>
+									</br>
 								</div>
 							</div>
 						</div>
@@ -136,6 +145,8 @@
 						<div align="center">
 							<div class="footer-box">
 								<p align="center">
+								<a href="http://htkb.dyndns.org/Section2/Downloads/GDR.zip">You can download my Games Development Report here.</a></br>
+								<a href="http://htkb.dyndns.org/Section3/Downloads/wrar371.exe">You may need WinRar to open zip files from this site.</a></br>
 									© Copyright 2012 All rights reserved<br>
 									House That Kamurai Built<br>
 								</p>

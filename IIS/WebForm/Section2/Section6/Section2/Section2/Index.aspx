@@ -1,4 +1,4 @@
-﻿<%@ page title="HTKB Armies" language="C#" masterpagefile="~/Section2/Section6/Section2/Section2/Template.master" autoeventwireup="true" inherits="_Index2_6_2_2, App_Web_krbxgxrm" %>
+﻿<%@ page title="HTKB Armies" language="C#" masterpagefile="~/Section2/Section6/Section2/Section2/Template.master" autoeventwireup="true" inherits="_Index2_6_2_2, App_Web_v5z24kfl" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>

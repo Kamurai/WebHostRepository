@@ -1,4 +1,4 @@
-﻿<%@ page title="Coliseum: Arena" language="C#" masterpagefile="~/Section2/Section5/Section2/Template.master" autoeventwireup="true" inherits="_Project2_5_2_2, App_Web_2mymuhkh" %>
+﻿<%@ page title="Coliseum: Arena" language="C#" masterpagefile="~/Section2/Section5/Section2/Template.master" autoeventwireup="true" inherits="_Project2_5_2_2, App_Web_0gfiqtab" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>

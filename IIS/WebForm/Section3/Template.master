@@ -1,11 +1,12 @@
-﻿<%@ master language="C#" autoeventwireup="true" inherits="Template3Master, App_Web_oq4esghb" %>
+﻿<%@ master language="C#" autoeventwireup="true" inherits="Template3Master, App_Web_u242qyql" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head runat="server">
     <title></title>
     <link href="~/Styles/Section3/moo.css" rel="stylesheet" type="text/css" />
-    <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+    <link rel="icon" href="~/favicon.ico" type="image/ico">
+	<asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
 </head>
 <body>
     <form runat="server">
@@ -104,7 +105,7 @@
 						<div align="center">
 							<div class="footer-box">
 								<p align="center">
-								<a href="http://htkb.dyndns.org/Section3/downloads/wrar371.exe">You may need WinRar to open zip files from this site.</a>
+								<a href="http://htkb.dyndns.org/Section3/downloads/wrar371.exe">You may need WinRar to open zip files from this site.</a></br>
 									© Copyright 2012 All rights reserved<br>
 									House That Kamurai Built<br>
 								</p>

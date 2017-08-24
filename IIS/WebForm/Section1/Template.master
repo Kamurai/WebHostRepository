@@ -1,11 +1,12 @@
-﻿<%@ master language="C#" autoeventwireup="true" inherits="Template1Master, App_Web_umqf54mz" %>
+﻿<%@ master language="C#" autoeventwireup="true" inherits="Template1Master, App_Web_d0pkq02g" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head runat="server">
     <title></title>
     <link href="~/Styles/Section1/moo.css" rel="stylesheet" type="text/css" />
-    <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+    <link rel="icon" href="~/favicon.ico" type="image/ico">
+	<asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
 </head>
 <body>
     <form runat="server">
@@ -51,7 +52,7 @@
 										Navigation
 									</h4>
 									<span class="navlink">
-										<a href="http://htkb.dyndns.org/Section1/Project1.html">HTML</a>
+										<a href="http://htkb.dyndns.org/Section1/Project1.html">Basic HTML</a>
 									</span>
 									</br>
 									<span class="navlink">
@@ -59,23 +60,23 @@
 									</span>
 									</br>
 									<span class="navlink">
-										<a href="./Project2.aspx">Java Script</a>
+									    <a href="./Section2/Index.aspx">Javascript</a>
 									</span>
 									</br>
 									<span class="navlink">
-										<a href="./Project3.aspx">Perl</a>
+										<a href="http://htkb.dyndns.org/Section1/Project3.shtml">Perl</a>
 									</span>
 									</br>
 									<span class="navlink">
-										<a href="./Project4.aspx">Xhtml</a>
+										<a href="./Project4.aspx">XHTML</a>
 									</span>
 									</br>
 									<span class="navlink">
-										<a href="./Section5/index.aspx">ASP.Net</a>
+										<a href="./Section5/Index.aspx">ASP.NET</a>
 									</span>
 									</br>
 									<span class="navlink">
-										<a href="./Section6/index.aspx">Databases</a>
+										<a href="./Section6/Index.aspx">Databases</a>
 									</span>
 									</br>
 								</div>

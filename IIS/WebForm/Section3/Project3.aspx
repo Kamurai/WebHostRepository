@@ -1,4 +1,4 @@
-﻿<%@ page title="Java Downloads" language="C#" masterpagefile="~/Section3/Template.master" autoeventwireup="true" inherits="_Index3_3, App_Web_wnliozez" %>
+﻿<%@ page title="Java Downloads" language="C#" masterpagefile="~/Section3/Template.master" autoeventwireup="true" inherits="_Project3_3, App_Web_go3x0vi1" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>

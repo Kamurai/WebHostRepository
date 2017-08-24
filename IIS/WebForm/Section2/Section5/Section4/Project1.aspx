@@ -1,4 +1,4 @@
-﻿<%@ page title="Nine Card" language="C#" masterpagefile="~/Section2/Section5/Section4/Template.master" autoeventwireup="true" inherits="_Project2_5_4_1, App_Web_2gomklbp" %>
+﻿<%@ page title="Nine Card" language="C#" masterpagefile="~/Section2/Section5/Section4/Template.master" autoeventwireup="true" inherits="_Project2_5_4_1, App_Web_0pg3uouw" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>
