@@ -1,0 +1,52 @@
+var universal = require('./Universal');
+var custom = require('./Custom');
+
+exports.WriteWebPage = function (vPage, vLevel, vSection, vCSS)
+{
+    var result = "<html>";
+        result += "<head>";
+            result += universal.WriteHeader(vLevel, universal.GetPath(vLevel-1)+vCSS);
+        result += "</head>";
+        result += "<body id=\"idBody\">";
+            result += "<table id=\"idTableMain\">";
+            result += "<tr id=\"idHeaderRow\">";
+                result += "<td id=\"idHeaderRowCenter\" colspan=\"3\">";
+                    result += universal.TitlePicture(vLevel);
+                result += "</td>";
+            result += "</tr>";
+            result += "<tr id=\"idNavigationRow\">";
+                result += "<td id=\"idNavigationBar\" colspan=\"3\">";
+                    result += universal.NavBar(vLevel);
+                result += "</td>";
+            result += "</tr>";    
+            result += "<tr id=\"idCenterRow\">";
+                result += "<td id=\"idCenterRowLeft\">";
+                    result += universal.GetNavigationHeader();
+                    result += custom.Navigation(vLevel);
+                result += "</td>";
+                result += "<td id=\"idCenterRowMain\">";
+                    result += custom.Title(vPage);
+                    result += custom.Header(vPage);
+                    result += custom.Content(vPage);
+                result += "</td>";
+                result += "<td id=\"idCenterRowRight\">";
+                    result += universal.GetInformationHeader();
+                    result += universal.GetInformation();
+                    result += custom.Versions(vPage);
+                result += "</td>";
+            result += "</tr>";
+            result += "<tr id=\"idFooterRow\">";
+                result += "<td id=\"idFooterMain\" colspan=\"3\">";
+                    result += "<p id=\"idFooterContent\">";
+                        result += universal.Footer();
+                    result += "</p>";
+                    result += "<p id=\"idFooterManagement\">";
+                        result += universal.WebMaster();
+                    result += "</p>";
+                result += "</td>";
+            result += "</tr>";
+        result += "</table>";
+        result += "</body>";
+    result += "</html>";
+    return result;
+}

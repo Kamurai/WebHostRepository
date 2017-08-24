@@ -1,5 +1,5 @@
 def getContent(vKey):
-    if vKey == '0':
+    if vKey == '0_0P':
         vResult = '<title>HTKB Home Page</title>'
         vResult += '<h2>'
         vResult += '    Welcome to the House That Kamurai Built!'
@@ -115,7 +115,7 @@ def getContent(vKey):
         vResult += '            12) Name the server something distinct and put \'htkb.dyndns.org:2556x\' in the address bar where \'x\' is the relevant port.</br>'
         vResult += '            13) Save the server entry.  You should see a connection to the server.  Double click to join.</br>'
         vResult += '    </p>'
-    elif vKey == '1':
+    elif vKey == '1_0P':
         vResult  = '<title>Web Programming</title>'
         vResult += '<h1>'
         vResult += '    Web Programming'
@@ -131,7 +131,7 @@ def getContent(vKey):
         vResult += '<p id=\'idCenterContent\'>'
         vResult += '    This section is dedicated to HTML based programming.'
         vResult += '</p>'
-    elif vKey == '1_2':
+    elif vKey == '1_2_0P':
         vResult  = '<title>Database Programming</title>'
         vResult += '<h1>'
         vResult += '    Database Programming'
@@ -139,7 +139,7 @@ def getContent(vKey):
         vResult += '<p id=\'idCenterContent\'>'
         vResult += '    This section is dedicated to database based programming.'
         vResult += '</p>'
-    elif vKey == '1_4':
+    elif vKey == '1_4_0P':
         vResult  = '<title>Java Programming</title>'
         vResult += '<h1>'
         vResult += '    Java Programming'
@@ -147,7 +147,7 @@ def getContent(vKey):
         vResult += '<p id=\'idCenterContent\'>'
         vResult += '    This section is dedicated to Java based programming.'
         vResult += '</p>'
-    elif vKey == '1_5':
+    elif vKey == '1_5_0P':
         vResult = '<title>ASP.NET Programming</title>'
         vResult += '<h1>'
         vResult += '    ASP.NET Programming'
@@ -155,7 +155,7 @@ def getContent(vKey):
         vResult += '<p id=\'idCenterContent\'>'
         vResult += '    This section is dedicated to ASP.NET based programming.'
         vResult += '</p>'
-    elif vKey == '1_6':
+    elif vKey == '1_6_0P':
         vResult  = '<title>Database Programming</title>'
         vResult += '<h1>'
         vResult += '    Database Programming'
@@ -203,7 +203,7 @@ def getContent(vKey):
         vResult += '<p id=\'idCenterContent\'>'
         vResult += '    This section is dedicated to Postgres programming.'
         vResult += '</p>'
-    elif vKey == '2':
+    elif vKey == '2_0P':
         vResult  = '<title>'
         vResult += '    Private Projects'
         vResult += '</title>'
@@ -323,7 +323,7 @@ def getContent(vKey):
         vResult += '<p id=\'idCenterContent\'>'
         vResult += '    This section is dedicated to the board game project \'Conversion\'.  Compete on the elemental market by processing elements and becoming the elemental kingpin.'
         vResult += '</p>'
-    elif vKey == '2_1':
+    elif vKey == '2_1_0P':
         vResult = '<title>'
         vResult += '    Gynowars'
         vResult += '</title>'
@@ -363,7 +363,7 @@ def getContent(vKey):
         vResult += '<p id=\'idCenterContent\'>'
         vResult += '    Gynowars: Crash Ball is a turn based strategy board game.  Basically it\'s gridiron with Gynos.'
         vResult += '</p>'
-    elif vKey == '2_4':
+    elif vKey == '2_4_0P':
         vResult  = '<title>'
         vResult += '    Renley'
         vResult += '</title>'
@@ -393,7 +393,7 @@ def getContent(vKey):
         vResult += '<p id=\'idCenterContent\'>'
         vResult += '    Psychodom: The One Empire is a 3rd person perspective Adventure / RPG.  The protagonist is tasked with investigating various situations leading to a conspiracy about who is really ruling the continent.'
         vResult += '</p>'
-    elif vKey == '2_5':
+    elif vKey == '2_5_0P':
         vResult = '<title>'
         vResult += '    Antarrea Projects'
         vResult += '</title>'
@@ -524,7 +524,7 @@ def getContent(vKey):
         vResult += '<p id=\'idCenterContent\'>'
         vResult += '    Revolutions is a Tactical RPG with Post Wars as its 4th story arc.</br>'
         vResult += '</p>'
-    elif vKey == '2_5_2':
+    elif vKey == '2_5_2_0P':
         vResult = '<title>'
         vResult += '    Grendol'
         vResult += '</title>'
@@ -558,7 +558,7 @@ def getContent(vKey):
         vResult += '<p id=\'idCenterContent\'>'
         vResult += '    Coliseum: Arena is a CCG representing the gladitorial arenas of Grendol.'
         vResult += '</p>'
-    elif vKey == '2_5_3':
+    elif vKey == '2_5_3_0P':
         vResult = '<title>'
         vResult += '    Utopia'
         vResult += '</title>'
@@ -580,7 +580,7 @@ def getContent(vKey):
         vResult += '<p id=\'idCenterContent\'>'
         vResult += '    Elemental Angels: Adventure game with RPG elements based in the Avia Nation.</br>'
         vResult += '</p>'
-    elif vKey == '2_5_4':
+    elif vKey == '2_5_4_0P':
         vResult = '<title>'
         vResult += '    Elvia'
         vResult += '</title>'
@@ -602,7 +602,7 @@ def getContent(vKey):
         vResult += '<p id=\'idCenterContent\'>'
         vResult += '    Nine Card is a Tactical card game played through the Elvia Empire.</br>'
         vResult += '</p>'
-    elif vKey == '2_6':
+    elif vKey == '2_6_0P':
         vResult = '<title>'
         vResult += '    Editations'
         vResult += '</title>'
@@ -622,7 +622,7 @@ def getContent(vKey):
         vResult += '<p id=\'idCenterContent\'>'
         vResult += '    This section is dedicated to a modified game based on the \'Magic: The Gathering\' CCG.'
         vResult += '</p>'
-    elif vKey == '2_6_2':
+    elif vKey == '2_6_2_0P':
         vResult = '<title>'
         vResult += '    Warhammer 40K'
         vResult += '</title>'
@@ -642,7 +642,7 @@ def getContent(vKey):
         vResult += '<p id=\'idCenterContent\'>'
         vResult += '    This section is dedicated to an adventure RPG project in the Warhammer 40K universe.'
         vResult += '</p>'
-    elif vKey == '2_6_2_2':
+    elif vKey == '2_6_2_2_0P':
         vResult = '<title>'
         vResult += '    HTKB Armies'
         vResult += '</title>'
@@ -774,7 +774,7 @@ def getContent(vKey):
         vResult += '    take human prisoner whenever possible.  Escapees had stated that the Vivus Mortem would feed on them, and upon death '
         vResult += '    and exposed bodies lose their excessive durability and seem to disintegrate rapidly enough to appear to \'turn to ash\'.'
         vResult += '</p>'
-    elif vKey == '3':
+    elif vKey == '3_0P':
         vResult  = '<title>'
         vResult += '    Downloadable Projects'
         vResult += '</title>'

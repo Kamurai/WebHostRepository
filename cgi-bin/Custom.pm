@@ -200,6 +200,7 @@ sub Versions
 			print "<a href=\"http://htkb.dyndns.org:81/WebForm/index.aspx\">ASP.NET Webform</a><br>";
 			print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/index\">ASP.NET MVC App</a><br>";
 			print "<a href=\"http://htkb.dyndns.org/SSI/index.html\">Apache SSI</a><br>";
+            print "<a href=\"http://htkb.dyndns.org:82/index\">Python Web.py</a><br>";
 			
 		}
 		elsif($Page == 1)
@@ -215,6 +216,7 @@ sub Versions
 			print "<a href=\"http://htkb.dyndns.org:81/WebForm/AboutUs.aspx\">ASP.NET Webform</a><br>";
 			print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/AboutUs\">ASP.NET MVC App</a><br>";
 			print "<a href=\"http://htkb.dyndns.org/SSI/AboutUs.html\">Apache SSI</a><br>";
+		    print "<a href=\"http://htkb.dyndns.org:82/AboutUs\">Python Web.py</a><br>";
 			
 		}
 		elsif($Page == 2)
@@ -230,7 +232,8 @@ sub Versions
 			print "<a href=\"http://htkb.dyndns.org:81/WebForm/Media.aspx\">ASP.NET Webform</a><br>";
 			print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Media\">ASP.NET MVC App</a><br>";
 			print "<a href=\"http://htkb.dyndns.org/SSI/Media.html\">Apache SSI</a><br>";
-			
+            print "<a href=\"http://htkb.dyndns.org:82/Media\">Python Web.py</a><br>";
+		
 		}
 		elsif($Page == 3)
 		{
@@ -245,6 +248,8 @@ sub Versions
 			print "<a href=\"http://htkb.dyndns.org:81/WebForm/Minecraft.aspx\">ASP.NET Webform</a><br>";
 			print "<a href=\"http://htkb.dyndns.org:81/MVC/Main/Minecraft\">ASP.NET MVC App</a><br>";
 			print "<a href=\"http://htkb.dyndns.org/SSI/Minecraft.html\">Apache SSI</a><br>";
+            print "<a href=\"http://htkb.dyndns.org:82/Minecraft\">Python Web.py</a><br>";
+		
 		}
 
 }
