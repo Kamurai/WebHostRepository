@@ -1,4 +1,4 @@
-﻿<%@ master language="C#" autoeventwireup="true" inherits="Template1Master, App_Web_ogtmc4y0" %>
+﻿<%@ master language="C#" autoeventwireup="true" inherits="Template1Master, App_Web_umqf54mz" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
@@ -51,7 +51,11 @@
 										Navigation
 									</h4>
 									<span class="navlink">
-										<a href="./Project1.aspx">PHP</a>
+										<a href="http://htkb.dyndns.org/Section1/Project1.html">HTML</a>
+									</span>
+									</br>
+									<span class="navlink">
+										<a href="http://htkb.dyndns.org/Section1/Project1.php">PHP</a>
 									</span>
 									</br>
 									<span class="navlink">
@@ -67,7 +71,7 @@
 									</span>
 									</br>
 									<span class="navlink">
-										<a href="./Project5.aspx">ASP.Net</a>
+										<a href="./Section5/index.aspx">ASP.Net</a>
 									</span>
 									</br>
 									<span class="navlink">

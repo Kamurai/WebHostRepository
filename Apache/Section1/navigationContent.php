@@ -1,6 +1,10 @@
 <?php
 echo "
 		<span class='navlink'>
+			<a href='./Project1.html'>HTML</a>
+		</span>
+		</br>
+		<span class='navlink'>
 			<a href='./Project1.php'>PHP</a>
 		</span>
 		</br>
@@ -17,7 +21,7 @@ echo "
 		</span>
 		</br>
 		<span class='navlink'>
-			<a href='./Project5.php'>ASP.Net</a>
+			<a href='./Section5/index.php'>ASP.Net</a>
 		</span>
 		</br>
 		<span class='navlink'>

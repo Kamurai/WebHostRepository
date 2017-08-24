@@ -1,4 +1,4 @@
-﻿<%@ page title="Terminal World" language="C#" masterpagefile="~/Section2/Template.master" autoeventwireup="true" inherits="_Project2_9, App_Web_oqvorktj" %>
+﻿<%@ page title="Terminal World" language="C#" masterpagefile="~/Section2/Template.master" autoeventwireup="true" inherits="_Project2_9, App_Web_amimdkfj" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>

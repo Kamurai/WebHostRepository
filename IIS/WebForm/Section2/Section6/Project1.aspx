@@ -1,4 +1,4 @@
-﻿<%@ page title="Magic: The Tactical" language="C#" masterpagefile="~/Section2/Section6/Template.master" autoeventwireup="true" inherits="_Project2_6_1, App_Web_lyaida1l" %>
+﻿<%@ page title="Magic: The Tactical" language="C#" masterpagefile="~/Section2/Section6/Template.master" autoeventwireup="true" inherits="_Project2_6_1, App_Web_5olzca3w" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>

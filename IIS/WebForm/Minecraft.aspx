@@ -1,4 +1,4 @@
-﻿<%@ page title="Minecraft!" language="C#" masterpagefile="~/Template.master" autoeventwireup="true" inherits="_Minecraft, App_Web_jxikaxsr" %>
+﻿<%@ page title="Minecraft!" language="C#" masterpagefile="~/Template.master" autoeventwireup="true" inherits="_Minecraft, App_Web_q3tg1jas" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>

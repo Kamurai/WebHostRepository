@@ -1,4 +1,4 @@
-﻿<%@ page title="Warring Nations" language="C#" masterpagefile="~/Section2/Section4/Template.master" autoeventwireup="true" inherits="_Project2_4_1, App_Web_fuzdro4k" %>
+﻿<%@ page title="Warring Nations" language="C#" masterpagefile="~/Section2/Section4/Template.master" autoeventwireup="true" inherits="_Project2_4_1, App_Web_ecev0smz" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>

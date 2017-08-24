@@ -1,4 +1,4 @@
-﻿<%@ page title="Warhammer 40K" language="C#" masterpagefile="~/Section2/Section6/Section2/Template.master" autoeventwireup="true" inherits="_Index2_6_2, App_Web_opy2kjg1" %>
+﻿<%@ page title="Warhammer 40K" language="C#" masterpagefile="~/Section2/Section6/Section2/Template.master" autoeventwireup="true" inherits="_Index2_6_2, App_Web_nmh5bhpr" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>

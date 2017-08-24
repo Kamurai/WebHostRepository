@@ -1,4 +1,4 @@
-﻿<%@ page title="Synergy" language="C#" masterpagefile="~/Section2/Section6/Section2/Section2/Template.master" autoeventwireup="true" inherits="_Project2_6_2_2_9, App_Web_vx5fu3un" %>
+﻿<%@ page title="Synergy" language="C#" masterpagefile="~/Section2/Section6/Section2/Section2/Template.master" autoeventwireup="true" inherits="_Project2_6_2_2_9, App_Web_krbxgxrm" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>

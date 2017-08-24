@@ -1,4 +1,4 @@
-﻿<%@ page title="Javascript Programming" language="C#" masterpagefile="~/Section1/Template.master" autoeventwireup="true" inherits="_Project1_2, App_Web_zt2mcnjl" %>
+﻿<%@ page title="Javascript Programming" language="C#" masterpagefile="~/Section1/Template.master" autoeventwireup="true" inherits="_Project1_2, App_Web_nk4ob0vw" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>

@@ -1,4 +1,4 @@
-﻿<%@ page title="Psychodom: The One Empire" language="C#" masterpagefile="~/Section2/Section4/Template.master" autoeventwireup="true" inherits="_Project2_4_2, App_Web_fuzdro4k" %>
+﻿<%@ page title="Psychodom: The One Empire" language="C#" masterpagefile="~/Section2/Section4/Template.master" autoeventwireup="true" inherits="_Project2_4_2, App_Web_ecev0smz" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>

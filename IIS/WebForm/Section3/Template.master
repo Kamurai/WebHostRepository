@@ -1,4 +1,4 @@
-﻿<%@ master language="C#" autoeventwireup="true" inherits="Template3Master, App_Web_ljgdqnr5" %>
+﻿<%@ master language="C#" autoeventwireup="true" inherits="Template3Master, App_Web_oq4esghb" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
@@ -104,7 +104,7 @@
 						<div align="center">
 							<div class="footer-box">
 								<p align="center">
-								<a href="../Section3/downloads/wrar371.exe">You may need WinRar to open zip files from this site.</a>
+								<a href="http://htkb.dyndns.org/Section3/downloads/wrar371.exe">You may need WinRar to open zip files from this site.</a>
 									© Copyright 2012 All rights reserved<br>
 									House That Kamurai Built<br>
 								</p>

@@ -1,4 +1,4 @@
-﻿<%@ page title="Java Downloads" language="C#" masterpagefile="~/Section3/Template.master" autoeventwireup="true" inherits="_Index3_3, App_Web_nqxlh5fu" %>
+﻿<%@ page title="Java Downloads" language="C#" masterpagefile="~/Section3/Template.master" autoeventwireup="true" inherits="_Index3_3, App_Web_wnliozez" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>
@@ -11,7 +11,7 @@
 <p align="left">
 	Here are Java Programs to download:</br>
 	</br>
-	"Blood Bowl Manager":<t><a href="../downloads/pichaku.zip">This is currently not available.</a></br>
+	"Blood Bowl Manager":<t><a href=".http://htkb.dyndns.org/Section3/Downloads/pichaku.zip">This is currently not available.</a></br>
 </p>
     
 </asp:Content>

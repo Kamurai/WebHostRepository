@@ -1,4 +1,4 @@
-﻿<%@ page title="Database Programming" language="C#" masterpagefile="~/Section1/Section6/Template.master" autoeventwireup="true" inherits="_Index1_6, App_Web_dpv4bqkt" %>
+﻿<%@ page title="Database Programming" language="C#" masterpagefile="~/Section1/Section6/Template.master" autoeventwireup="true" inherits="_Index1_6, App_Web_3c5b2mcv" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>

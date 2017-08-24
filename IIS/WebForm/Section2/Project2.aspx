@@ -1,4 +1,4 @@
-﻿<%@ page title="Assault CCG" language="C#" masterpagefile="~/Section2/Template.master" autoeventwireup="true" inherits="_Project2_2, App_Web_oqvorktj" %>
+﻿<%@ page title="Assault CCG" language="C#" masterpagefile="~/Section2/Template.master" autoeventwireup="true" inherits="_Project2_2, App_Web_amimdkfj" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>

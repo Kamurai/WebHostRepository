@@ -11,9 +11,8 @@
 						<p align='left'>
 							Here are downloads to play Minecraft with us:</br>
 							</br>
-							Mo Creatures (Minecraft v1.6.4):<t><a href='./downloads/Minecraft_MoCreatures.rar'>Come play Mo' Creatures!</a></br>
-							Pixelmon (Minecraft v1.6.2):<t><a href='./downloads/Minecraft_Pixelmon.rar'>Come play Pixelmon!</a></br>
-							Just follow the instructions in the compressed file.</br>
+							    Mo Creatures (Minecraft v1.7.2):<t><a href='http://mocreatures.org/'>Go here to download and manually install Mo' Creatures!</a></br>
+							</br>
 						</p>
 						<p align='left'>
 							Here are downloads to play Cube World with us:</br>

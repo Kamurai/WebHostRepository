@@ -1,4 +1,4 @@
-﻿<%@ page title="Gynowars" language="C#" masterpagefile="~/Section2/Section1/Template.master" autoeventwireup="true" inherits="_Project2_1_2, App_Web_aeja31qh" %>
+﻿<%@ page title="Gynowars" language="C#" masterpagefile="~/Section2/Section1/Template.master" autoeventwireup="true" inherits="_Project2_1_2, App_Web_ponqwbc0" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>
