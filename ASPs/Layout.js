@@ -1,0 +1,45 @@
+function WriteWebpage(input, level, extension)
+{
+    Response.Write("<table id=\"idTableMain\">");
+		Response.Write("<tr id=\"idHeaderRow\">");
+            Response.Write("<td id=\"idHeaderRowCenter\" colspan=\"3\">");
+                TitlePicture(level);
+			Response.Write("</td>");
+        Response.Write("</tr>");
+        Response.Write("<tr id=\"idNavigationRow\">");
+            Response.Write("<td id=\"idNavigationBar\" colspan=\"3\">");
+                NavBar(level, extension);
+            Response.Write("</td>");
+        Response.Write("</tr>");    
+        Response.Write("<tr id=\"idCenterRow\">");
+			Response.Write("<td id=\"idCenterRowLeft\">");
+				Response.Write("<h4>");
+					Response.Write("Navigation");
+				Response.Write("</h4>");
+				Navigation(level, extension);
+			Response.Write("</td>");
+			Response.Write("<td id=\"idCenterRowMain\">");
+				Title(input);
+				Header(input);
+				Content(input);
+			Response.Write("</td>");
+			Response.Write("<td id=\"idCenterRowRight\">");
+				Response.Write("<h4>");
+					Response.Write("Information");
+				Response.Write("</h4>");
+				GetInformation(extension);
+				Versions(input);
+			Response.Write("</td>");
+		Response.Write("</tr>");
+        Response.Write("<tr id=\"idFooterRow\">");
+			Response.Write("<td id=\"idFooterMain\" colspan=\"3\">");
+				Response.Write("<p id=\"idFooterContent\">");
+					Footer();
+				Response.Write("</p>");
+				Response.Write("<p id=\"idFooterManagement\">");
+					WebMaster();
+				Response.Write("</p>");
+			Response.Write("</td>");
+		Response.Write("</tr>");
+    Response.Write("</table>");
+}

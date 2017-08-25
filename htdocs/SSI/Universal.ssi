@@ -1,0 +1,42 @@
+<!--#if expr="$vUniversal == 0" -->
+	<head>
+		<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>
+		<link href="<!--#echo var="vStylePath"-->Main.css" rel="stylesheet" type="text/css">
+	</head>
+<!--#elif expr="$vUniversal == 01" -->
+	<head>
+		<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>
+		<link href="<!--#echo var="vStylePath"-->Section1.css" rel="stylesheet" type="text/css">
+	</head>
+<!--#elif expr="$vUniversal == 02" -->
+	<head>
+		<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>
+		<link href="<!--#echo var="vStylePath"-->Section2.css" rel="stylesheet" type="text/css">
+	</head>
+<!--#elif expr="$vUniversal == 03" -->
+	<head>
+		<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>
+		<link href="<!--#echo var="vStylePath"-->Section3.css" rel="stylesheet" type="text/css">
+	</head>
+<!--#elif expr="$vUniversal == 1" -->
+	<!--Primary Header: Main Splash / Logo-->
+	<img id="idLogo" src="<!--#echo var="vPath"-->logo_HouseThatKamuraiBuilt_blueonblack.jpg" width="100%" alt="" border="0" align="center" vspace="0" hspace="0"><br>
+<!--#elif expr="$vUniversal == 2" -->
+	<a class=\"navBar\" href="<!--#echo var="vPath"-->index.html">Home</a>
+	<a class=\"navBar\" href="<!--#echo var="vPath"-->Section1/index.html">Web Programming</a>
+	<a class=\"navBar\" href="<!--#echo var="vPath"-->Section2/index.html">Private Projects</a>
+	<a class=\"navBar\" href="<!--#echo var="vPath"-->Section3/index.html">Downloadable Projects</a>
+<!--#elif expr="$vUniversal == 3" -->
+	This is written with basic HTML and Server Side Integration.
+<!--#elif expr="$vUniversal == 4" -->
+	© Copyright 2012 All rights reserved<br>
+	House That Kamurai Built<br>
+<!--#elif expr="$vUniversal == 5" -->
+	<a href='<!--#echo var="vTopPath"-->downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>
+<!--#elif expr="$vUniversal == 6" -->
+	<a href='<!--#echo var="vTopPath"-->downloads/GDR.zip'>You can download my Games Development Report here.</a></br>
+<!--#elif expr="$vUniversal == 7" -->
+	Website managed by Kamurai.
+<!--#else -->
+	NOPE!
+<!--#endif -->

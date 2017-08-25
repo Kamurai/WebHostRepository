@@ -1,0 +1,102 @@
+<!--#if expr="$vCustom == 0" -->
+	<link href="<!--#echo var="$vStylePath"-->Section2.css" rel="stylesheet" type="text/css"/>
+<!--#elif expr="$vCustom == 1" -->
+	<a class=\"navlinkA\" href="../Section1/index.html">Gynowars</a><br><br>
+	<a class=\"navlinkA\" href="../Project2.html">Assault</a><br><br>
+	<a class=\"navlinkA\" href="../Project3.html">Mars</a><br><br>
+	<a class=\"navlinkA\" href="../Section4/index.html">Renley</a><br><br>
+	<a class=\"navlinkA\" href="../Section5/index.html">Antarrea</a><br><br>
+		<a class=\"navlinkA\" href="./Section1/index.html">Global</a><br><br>
+		<a class=\"navlinkA\" href="./Section2/index.html">Grendol</a><br><br>
+		<a class=\"navlinkA\" href="./Section3/index.html">Utopia</a><br><br>
+		<a class=\"navlinkA\" href="./Section4/index.html">Elvia</a><br><br>
+	<a class=\"navlinkA\" href="../Section6/index.html">Editations</a><br><br>
+	<a class=\"navlinkA\" href="../Project7.html">Truth</a><br><br>
+	<a class=\"navlinkA\" href="../Project8.html">Kingdoms</a><br><br>
+	<a class=\"navlinkA\" href="../Project9.html">Terminal World</a><br><br>
+	<a class=\"navlinkA\" href="../Project10.html">Monster Office Workplace</a><br><br>
+	<a class=\"navlinkA\" href="../Project11.html">Battle Princesses</a><br><br>
+	<a class=\"navlinkA\" href="../Project12.html">Sacred Offerings</a><br><br>
+	<a class=\"navlinkA\" href="../Project13.html">The Way</a><br><br>
+	<a class=\"navlinkA\" href="../Project14.html">Conspiratorium</a><br><br>
+	<a class=\"navlinkA\" href="../Project15.html">Conversion</a><br><br>
+<!--#elif expr="$vCustom == 2" -->
+	<title>
+		<!--#if expr="$vPage == 0" -->
+			Antarrea Projects
+		<!--#else -->
+			NOPE!
+		<!--#endif -->
+	</title>
+<!--#elif expr="$vCustom == 3" -->
+	<h2>
+		<!--#if expr="$vPage == 0" -->
+			Antarrea Projects
+		<!--#else -->
+			NOPE!
+		<!--#endif -->
+	</h2>
+<!--#elif expr="$vCustom == 4" -->
+	<!--#if expr="$vPage == 0" -->
+		Global:
+    <br/>
+    <br/>
+		Here are projects based in the Antarrea universe:</br>
+			</br>
+			Team Tactical: Crash Ball:               Tactical board game centered on a battle version of football.</br>
+			Wars of Antarrea:                        Table-top game where two or more armies battle for supremacy.</br>
+			Revolutions: Invading Nations:           Tactical RPG, 1st story arc.</br>
+			Revolutions: Rebellion Against the Fist: Tactical RPG, 2nd story arc.</br>
+			Revolutions: Return to Arms:             Tactical RPG, 3rd story arc.</br>
+			Revoultions: Post Wars:                  Tactical RPG, 4th story arc.</br>
+    <br/>
+    <br/>
+			Grendol:
+	<br/>
+	<br/>
+			Here are projects based in the Grendol universe:</br>
+			</br>
+			Grendol: Land of the Orcish Empire: Age of Magic: CCG.</br>
+			Grendol: Coliseum: Arena:                         CCG.</br>
+	<br/>
+	<br/>
+				Utopia:
+	<br/>
+	<br/>
+			Here are projects based in the Utopia universe:</br>
+			</br>
+			Avia: Elemental Angels: Adventure game with RPG elements.</br>
+	<br/>
+	<br/>
+				Elvia:
+	<br/>
+	<br/>
+			Here are projects based in the Elvia universe:</br>
+			</br>
+			Nine Card: Tactical card game.</br>
+	<!--#else -->
+		NOPE!
+	<!--#endif -->
+<!--#elif expr="$vCustom == 5" -->
+	This is written with basic HTML and Server Side Integration.
+	<br/>
+	<br/>
+	Other versions of this page are here:<br>
+	<!--#if expr="$vPage == 0" -->
+		<a href="http://htkb.dyndns.org/Section2/Section5/index.html">Basic HTML</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section5/index.php">PHP</a><br>
+		<a href="http://htkb.dyndns.org/Javascript/Section2/Section5/index.html">HTML Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASP/Section2/Section5/index.asp">ASP Javascript</a><br>
+		<a href="http://htkb.dyndns.org:81/ASPNET/Section2/Section5/index.aspx">ASP.NET Javascript</a><br>
+		<a href="http://htkb.dyndns.org/Section2/Section5/index.shtml">Perl</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSPApplication/Section2/Section5/index.jsp">JSP</a><br>
+		<a href="http://htkb.dyndns.org:8080/JSFApplication/Section2/Section5/index.xhtml">JSF</a><br>
+		<a href="http://htkb.dyndns.org:81/WebApplication/Section2/Section5/index.cshtml">ASP.NET Web App</a><br>
+		<a href="http://htkb.dyndns.org:81/WebForm/Section2/Section5/index.aspx">ASP.NET Webform</a><br>
+		<a href="http://htkb.dyndns.org:81/MVC/Main/Section2/Section5/index">ASP.NET MVC App</a><br>
+	<!--#else -->
+		NOPE!
+	<!--#endif -->
+<!--#else -->
+	NOPE!
+<!--#endif -->
