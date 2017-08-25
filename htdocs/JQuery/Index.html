@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script language="JavaScript" src="Universal.js" runat="server"></script>
+    <script language="JavaScript" src="Layout.js" runat="server"></script>
+    <script language="JavaScript" src="Custom.js" runat="server"></script>
+    <script>
+    $(document).ready
+    (
+        function()
+        {
+            var vPage  = 0;
+            var vLevel = 0;
+            var vExtension = 0;
+            var vSection = 0;
+            var vCSS = "Main.css";
+            
+            WriteWebpage(vPage, vLevel, vExtension, vSection, vCSS);
+		}
+        /*
+        function()
+        {
+            var testDiv = document.createElement("div");
+            testDiv.setAttribute("id", "butts");
+            
+            $( "body" ).append( testDiv );
+            
+            $( "#butts" ).append( "yummy" );
+            
+        }*/
+    );
+    </script>
+</html>
