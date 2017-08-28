@@ -29,10 +29,10 @@
 * Updating table HTML structure to use a newer Div / Div inline block structure
 
 * Over project needs the following:
-* * New logos
-* * Update CSS:
-* * * Media query
-* * Secure text fields / database requests
+    New logos
+    Update CSS:
+        Media query
+    Secure text fields / database requests
 
 ## Particular Challenges:
 * Format: Every technology has different requirements, possibly a new IDE, or might require other new technologies.
