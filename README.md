@@ -29,6 +29,7 @@
 * Updating table HTML structure to use a newer Div / Div inline block structure
 
 * Over project needs the following:
+
     New logos
     Update CSS:
         Media query
