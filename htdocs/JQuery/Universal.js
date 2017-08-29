@@ -1,18 +1,14 @@
 function WriteHeader(level, css)
 {
+    /*
 	document.write("<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>");
 	document.write("<link href='"+GetPath(level-1)+css+"' rel='stylesheet' type='text/css'>");
-	document.write("<font color='white'>");
+    */
 }
 
 function TitlePicture(level)
 {
     document.write("<img id=\"idLogo\" src='"+GetPath(level)+"logo_HouseThatKamuraiBuilt_blueonblack.jpg' width='100%' alt='' border='0' align='center' vspace='0' hspace='0'><br>");
-}
-
-function WebMaster()
-{
-    document.write("Website managed by Kamurai.");    
 }
 
 function NavBar(level, extension)
@@ -35,9 +31,15 @@ function WinRAR()
 
 function Footer()
 {
-    document.write("© Copyright 2012 All rights reserved<br>");    
-    document.write("House That Kamurai Built<br>");    
+    $( "#idFooterRowMain" ).append( "© Copyright 2012 All rights reserved<br>" );
+    $( "#idFooterRowMain" ).append( "House That Kamurai Built<br>" );
 }
+
+function WebMaster()
+{
+    document.write("Website managed by Kamurai.");    
+}
+
 
 function GetPath(level)
 {
