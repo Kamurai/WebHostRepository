@@ -1,118 +1,121 @@
-function WriteHeader(level, css)
+function WriteHeader(vLevel, vSection)
 {
-    /*
-	document.write("<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>");
-	document.write("<link href='"+GetPath(level-1)+css+"' rel='stylesheet' type='text/css'>");
-    */
+    $( "head" ).append( "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">");
+    $( "head" ).append( "<link href=\"" + GetPath(vLevel) + GetCSS(vSection) + ".css\" rel=\"stylesheet\" type=\"text/css\">");
 }
 
-function TitlePicture(level)
+function GetCSS(vSection)
 {
-    document.write("<img id=\"idLogo\" src='"+GetPath(level)+"logo_HouseThatKamuraiBuilt_blueonblack.jpg' width='100%' alt='' border='0' align='center' vspace='0' hspace='0'><br>");
+    vDefault = "Main";
+    vResult = "";
+    
+    if( vSection == 0 )
+    {
+        vResult = vDefault;
+    }
+    else if( vSection == 1 )
+    {
+        vResult = "Section1";
+    }
+    else if( vSection == 2 )
+    {
+        vResult = "Section2";
+    }
+    else if( vSection == 3 )
+    {
+        vResult = "Section3";
+    }
+    else
+    {
+        vResult = vDefault;
+    }
+    
+    return vResult;
 }
 
-function NavBar(level, extension)
+function TitlePicture(vLevel)
 {
-    document.write("<a class=\"navBar\" href='"+GetPath(level)+"Index"+GetExtension(extension)+"'>Home</a>");
-    document.write("<a class=\"navBar\" href='"+GetPath(level)+"Section1/Index"+GetExtension(extension)+"'>Web Programming</a>");
-    document.write("<a class=\"navBar\" href='"+GetPath(level)+"Section2/Index"+GetExtension(extension)+"'>Private Projects</a>");
-    document.write("<a class=\"navBar\" href='"+GetPath(level)+"Section3/Index"+GetExtension(extension)+"'>Downloadable Projects</a>");
+    $( "#idHeaderRowCenter" ).append( "<img id=\"idLogo\" src='"+GetPath(vLevel)+"logo_HouseThatKamuraiBuilt_blueonblack.jpg' alt=''>" );
+}
+
+function NavBar(vLevel)
+{
+    $( "#idNavigationBar" ).append( "<a class=\"navBar\" href='"+GetPath(vLevel)+"Index.html'>Home</a>");
+    $( "#idNavigationBar" ).append( "<a class=\"navBar\" href='"+GetPath(vLevel)+"Section1/Index.html'>Web Programming</a>");
+    $( "#idNavigationBar" ).append( "<a class=\"navBar\" href='"+GetPath(vLevel)+"Section2/Index.html'>Private Projects</a>");
+    $( "#idNavigationBar" ).append( "<a class=\"navBar\" href='"+GetPath(vLevel)+"Section3/Index.html'>Downloadable Projects</a>");
+}
+
+function NavigationHeader()
+{
+    var tableRowCenterLeftHeader = document.createElement("h4");
+    tableRowCenterLeftHeader.textContent = "Navigation";
+    $( "#idCenterRowLeft" ).append( tableRowCenterLeftHeader );
+}
+
+function InformationHeader()
+{
+    var tableRowCenterRightHeader = document.createElement("h4");
+    tableRowCenterRightHeader.textContent = "Information";
+    $( "#idCenterRowRight" ).append( tableRowCenterRightHeader );
+    
+    $( "#idCenterRowRight" ).append( "This is written with basic HTML and JQuery.<br>" );
+    $( "#idCenterRowRight" ).append( "Other versions of this page are here:<br>" );
 }
 
 function GDR()
 {
-	document.write("<a href='http://htkb.dyndns.org/Section3/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>");	
+    $( "#idFooterContent" ).append( "<a href='http://htkb.dyndns.org/Section3/downloads/GDR.zip'>You can download my Games Development Report here.</a></br>" );
 }
 
 function WinRAR()
 {
-	document.write("<a href='http://htkb.dyndns.org/Section3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>");	
+    $( "#idFooterContent" ).append( "<a href='http://htkb.dyndns.org/Section3/downloads/wrar371.exe'>You may need WinRar to open zip files from this site.</a></br>" );
 }
 
 function Footer()
 {
-    $( "#idFooterRowMain" ).append( "© Copyright 2012 All rights reserved<br>" );
-    $( "#idFooterRowMain" ).append( "House That Kamurai Built<br>" );
+    $( "#idFooterContent" ).append( "© Copyright 2012 All rights reserved<br>" );
+    $( "#idFooterContent" ).append( "House That Kamurai Built<br>" );
 }
 
 function WebMaster()
 {
-    document.write("Website managed by Kamurai.");    
+    $( "#idFooterManagement" ).append( "Website managed by Kamurai." );
 }
 
-
-function GetPath(level)
+function GetPath(vLevel)
 {
-    if(level <= 0)
+    if(vLevel <= 0)
     {
         return "./";
     }
-    else if(level == 1)
+    else if(vLevel == 1)
     {
         return "../";
     }
-    else if(level == 2)
+    else if(vLevel == 2)
     {
         return "../../";
     }
-    else if(level == 3)
+    else if(vLevel == 3)
     {
         return "../../../";
     }
-    else if(level == 4)
+    else if(vLevel == 4)
     {
         return "../../../../";
     }
-    else if(level == 5)
+    else if(vLevel == 5)
     {
         return "../../../../../";
     }
-    else if(level == 6)
+    else if(vLevel == 6)
     {
         return "../../../../../../";
     }
-    else if(level == 7)
+    else if(vLevel == 7)
     {
         return "../../../../../../../";
     }
 }
-
-function GetExtension(extension)
-{
-    if(extension == 0)
-    {
-        //Basic HTML
-        return ".html";
-    }
-    else if(extension == 1)
-    {
-        //ASP
-        return ".asp";
-    }
-    else if(extension == 2)
-    {
-        //ASP.NET
-        return ".aspx";
-    }
-}
-
-function GetInformation(extension)
-{
-    if(extension == 0)
-    {
-        //Basic HTML
-        document.write("This is written with basic HTML and javascript.");
-    }
-    else if(extension == 1)
-    {
-        //ASP
-        document.write("This is written with classic ASP and javascript.");
-    }
-    else if(extension == 2)
-    {
-        //ASP.NET
-        document.write("This is written with generic ASP.NET and javascript.");
-    }
-}
-
-

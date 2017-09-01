@@ -1,45 +1,115 @@
-function WriteWebpage(input, level, extension)
+function WriteWebpage(vPage, vLevel, vSection)
 {
-    document.write("<table id=\"idTableMain\">");
-		document.write("<tr id=\"idHeaderRow\">");
-            document.write("<td id=\"idHeaderRowCenter\" colspan=\"3\">");
-                TitlePicture(level);
-			document.write("</td>");
-        document.write("</tr>");
-        document.write("<tr id=\"idNavigationRow\">");
-            document.write("<td id=\"idNavigationBar\" colspan=\"3\">");
-                NavBar(level, extension);
-            document.write("</td>");
-        document.write("</tr>");    
-        document.write("<tr id=\"idCenterRow\">");
-			document.write("<td id=\"idCenterRowLeft\">");
-				document.write("<h4>");
-					document.write("Navigation");
-				document.write("</h4>");
-				Navigation(level, extension);
-			document.write("</td>");
-			document.write("<td id=\"idCenterRowMain\">");
-				Title(input);
-				Header(input);
-				Content(input);
-			document.write("</td>");
-			document.write("<td id=\"idCenterRowRight\">");
-				document.write("<h4>");
-					document.write("Information");
-				document.write("</h4>");
-				GetInformation(extension);
-				Versions(input);
-			document.write("</td>");
-		document.write("</tr>");
-        document.write("<tr id=\"idFooterRow\">");
-			document.write("<td id=\"idFooterMain\" colspan=\"3\">");
-				document.write("<p id=\"idFooterContent\">");
-					Footer();
-				document.write("</p>");
-				document.write("<p id=\"idFooterManagement\">");
-					WebMaster();
-				document.write("</p>");
-			document.write("</td>");
-		document.write("</tr>");
-    document.write("</table>");
+    BuildLayout(vPage, vLevel);
+    
+    FillLayout(vPage, vLevel, vSection);
+}
+
+function BuildLayout(vPage, vLevel)
+{
+    var tableMain = document.createElement("table");
+    tableMain.setAttribute("id", "idTableMain");
+    $( "body" ).append( tableMain );
+    
+    var tableRowHeader = document.createElement("tr");
+    tableRowHeader.setAttribute("id", "idHeaderRow");
+    $( "#idTableMain" ).append( tableRowHeader );
+    
+    var tableRowHeaderCenter = document.createElement("td");
+    tableRowHeaderCenter.setAttribute("id", "idHeaderRowCenter");
+    tableRowHeaderCenter.setAttribute("colSpan", 3);
+    $( "#idHeaderRow" ).append( tableRowHeaderCenter );
+    
+    //TitlePicture(vLevel);
+    
+    var tableRowNavigation = document.createElement("tr");
+    tableRowNavigation.setAttribute("id", "idNavigationRow");
+    $( "#idTableMain" ).append( tableRowNavigation );
+    
+    var tableRowNavigationCenter = document.createElement("td");
+    tableRowNavigationCenter.setAttribute("id", "idNavigationBar");
+    tableRowNavigationCenter.setAttribute("colSpan", 3);
+    $( "#idNavigationRow" ).append( tableRowNavigationCenter );
+    
+    //NavBar(vLevel);
+    
+    var tableRowCenter = document.createElement("tr");
+    tableRowCenter.setAttribute("id", "idCenterRow");
+    $( "#idTableMain" ).append( tableRowCenter );
+    
+    var tableRowCenterLeft = document.createElement("td");
+    tableRowCenterLeft.setAttribute("id", "idCenterRowLeft");
+    $( "#idCenterRow" ).append( tableRowCenterLeft );
+    
+    //NavigationHeader(tableRowCenterLeft);
+    
+    //Navigation(vLevel)
+    
+
+    var tableRowCenterMain = document.createElement("td");
+    tableRowCenterMain.setAttribute("id", "idCenterRowMain");
+    $( "#idCenterRow" ).append( tableRowCenterMain );
+    
+    //Title(vPage);
+    //Header(vPage, tableRowCenterMain);
+    //Content(vPage, tableRowCenterMain);
+    
+    var tableRowCenterRight = document.createElement("td");
+    tableRowCenterRight.setAttribute("id", "idCenterRowRight");
+    $( "#idCenterRow" ).append( tableRowCenterRight );
+
+    //InformationHeader(tableRowCenterRight);
+    //Versions(vPage, tableRowCenterRight);
+
+    var tableRowFooter = document.createElement("tr");
+    tableRowFooter.setAttribute("id", "idFooterRow");
+    $( "#idTableMain" ).append( tableRowFooter );
+    
+    var tableFooterMain = document.createElement("td");
+    tableFooterMain.setAttribute("id", "idFooterRowMain");
+    tableFooterMain.setAttribute("colSpan", 3);
+    $( "#idFooterRow" ).append( tableFooterMain );
+    
+    var tableFooterMainContent = document.createElement("p");
+    tableFooterMainContent.setAttribute("id", "idFooterContent");
+    $( "#idFooterRowMain" ).append( tableFooterMainContent );
+        
+    var tableFooterMainManagement = document.createElement("p");
+    tableFooterMainManagement.setAttribute("id", "idFooterManagement");
+    $( "#idFooterRowMain" ).append( tableFooterMainManagement );
+        
+    //Footer();
+    //WebMaster();
+}
+
+function FillLayout(vPage, vLevel, vSection)
+{
+    
+    FillHead(vLevel, vSection);
+    FillBody(vPage, vLevel);
+}
+
+function FillHead(vLevel, vSection)
+{
+    WriteHeader(vLevel, vSection);
+}
+
+function FillBody(vPage, vLevel)
+{
+    TitlePicture(vLevel);
+    NavBar(vLevel);
+    
+    NavigationHeader();
+    Navigation(vLevel)
+    
+    Title(vPage);
+    Header(vPage);
+    Content(vPage);
+    
+    InformationHeader();
+    Versions(vPage);
+
+	WinRAR();
+    Footer();
+    WebMaster();
 }
